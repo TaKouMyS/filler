@@ -13,15 +13,16 @@
 NAME = amamy.filler
 SHELL = /bin/sh
 CC = clang
-CFLAGS += -Wall -Werror -Wextra
+CFLAGS += -Wall -Werror -Wextra -g
 OBJDIR = obj
 SRCDIR = src
+SRC_READ_DIR = $(SRCDIR)/read
 LIBDIR	= libft
 INCDIR	= $(LIBDIR)
 HEAD	= $(SRCDIR)/filler.h
 
 SRCS 	= $(SRCDIR)/main.c		\
-		$(SRCDIR)/read.c
+		$(SRC_READ_DIR)/read.c
 
 ALLFLAGS = -I$(LIBDIR) -I$(SRCDIR) -o
 OBJ = $(addprefix $(OBJDIR)/, $(SRCS:.c=.o))
@@ -52,7 +53,7 @@ $(OBJDIR)/%.o: %.c $(HEAD)
 
 
 $(OBJDIR) :
-	@mkdir  $@ $@/$(SRCDIR) $@/$(LIBDIR)
+	@mkdir  $@ $@/$(SRCDIR) $@/$(LIBDIR) $@/$(SRC_READ_DIR)
 
 $(OBJ) : | $(OBJDIR)
 

@@ -6,7 +6,7 @@
 #    By: amamy <amamy@student.42.fr>                +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/11/10 20:19:54 by amamy             #+#    #+#              #
-#    Updated: 2019/05/29 16:10:15 by amamy            ###   ########.fr        #
+#    Updated: 2019/05/30 16:59:42 by amamy            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -82,7 +82,7 @@ SRC = 	ft_memset.c 	\
 		get_next_line.c
 
 SRCO = $(SRC:.c=.o)
-CFLAGS = -Wall -Wextra -Werror
+CFLAGS = -Wall -Wextra -Werror -g
 HEADER = libft.h
 
 _GREEN=\e[32m
