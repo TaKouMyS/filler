@@ -6,7 +6,7 @@
 /*   By: amamy <amamy@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/28 18:03:42 by amamy             #+#    #+#             */
-/*   Updated: 2019/05/30 16:14:30 by amamy            ###   ########.fr       */
+/*   Updated: 2019/06/01 12:32:56 by amamy            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,9 @@
 
 int main()
 {
-	ft_read();
+	t_data	*data;
+	if (!(data = ft_memalloc(sizeof(t_data))))
+		return (0);
+	ft_read(data);
 	return(0);
 }

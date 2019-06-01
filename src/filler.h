@@ -6,7 +6,7 @@
 /*   By: amamy <amamy@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/28 17:57:31 by amamy             #+#    #+#             */
-/*   Updated: 2019/05/30 14:39:06 by amamy            ###   ########.fr       */
+/*   Updated: 2019/06/01 12:39:28 by amamy            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,14 @@
 # define FILLER_H
 
 # include <fcntl.h>
-# include <libft.h>
 # include <stdlib.h>
+# include <libft.h>
 
-void	ft_read();
+typedef struct	s_data
+{
+	int			*map_size;
+}				t_data;
+
+void	ft_read(t_data *data);
 
 #endif
