@@ -6,16 +6,12 @@
 /*   By: amamy <amamy@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/28 17:57:31 by amamy             #+#    #+#             */
-/*   Updated: 2019/06/01 18:39:22 by amamy            ###   ########.fr       */
+/*   Updated: 2019/06/02 15:30:45 by amamy            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef FILLER_H
 # define FILLER_H
-
-# include <fcntl.h>
-# include <stdlib.h>
-# include <libft.h>
 
 typedef struct	s_data
 {
@@ -27,5 +23,7 @@ typedef struct	s_data
 }				t_data;
 
 void	ft_read(t_data *data);
+void	ft_read_piece(t_data *data);
+void	ft_read_map(t_data *data);
 
 #endif

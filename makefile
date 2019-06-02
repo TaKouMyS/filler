@@ -18,11 +18,12 @@ OBJDIR = obj
 SRCDIR = src
 SRC_READ_DIR = $(SRCDIR)/read
 LIBDIR	= libft
-INCDIR	= $(LIBDIR)
 HEAD	= $(SRCDIR)/filler.h
 
-SRCS 	= $(SRCDIR)/main.c		\
-		$(SRC_READ_DIR)/read.c
+SRCS 	= $(SRCDIR)/main.c					\
+		$(SRC_READ_DIR)/read.c				\
+		$(SRC_READ_DIR)/read_map.c			\
+		$(SRC_READ_DIR)/read_piece.c
 
 ALLFLAGS = -I$(LIBDIR) -I$(SRCDIR) -o
 OBJ = $(addprefix $(OBJDIR)/, $(SRCS:.c=.o))
