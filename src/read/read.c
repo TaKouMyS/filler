@@ -6,7 +6,7 @@
 /*   By: amamy <amamy@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/30 14:26:37 by amamy             #+#    #+#             */
-/*   Updated: 2019/06/02 17:56:21 by amamy            ###   ########.fr       */
+/*   Updated: 2019/06/02 19:20:21 by amamy            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,14 @@
 
 
 #include <stdio.h>
+
+static void	ft_get_player(t_data *data, char* str_p1, char *str_p2)
+{
+	if (ft_strstr(str_p1, "amamy"))
+		data->player_number = 1;
+	else if (ft_strstr(str_p2, "amamy"))
+		data->player_number = 2;
+}
 
 static void	ft_read_map_size(char *tmp, t_data *data)
 {
@@ -49,7 +57,6 @@ static int	ft_data_mallocation(t_data *data, char *str_read)
 	if (!(data->map_size = ft_memalloc(sizeof(int) * 2)))
 		return (-1);
 	ft_read_map_size(str_read, data);
-	// printf("map size[0] : %d\n", data->map_size[0]);
 	if (!(data->piece = ft_memalloc(sizeof(char*) * data->map_size[0])))
 		return (-1);
 	ft_read_map_size(str_read, data);
@@ -72,6 +79,8 @@ void	ft_read(t_data *data)
 		gnl_ret = get_next_line(0, &str_read[i++]);
 	if (ft_data_mallocation(data, str_read[9]) == -1)
 		return ;
+	ft_get_player(data, str_read[6], str_read[8]);
+	printf("\nplayer number : %d\n", data->player_number);
 	ft_read_map(data);
 	ft_read_piece(data);
 	i = 0;

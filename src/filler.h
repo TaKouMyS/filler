@@ -6,7 +6,7 @@
 /*   By: amamy <amamy@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/28 17:57:31 by amamy             #+#    #+#             */
-/*   Updated: 2019/06/02 15:30:45 by amamy            ###   ########.fr       */
+/*   Updated: 2019/06/02 19:15:58 by amamy            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,7 @@ typedef struct	s_data
 	char		**map;
 	int			*piece_size;
 	char		**piece;
+	int			player_number;
 
 }				t_data;
 
