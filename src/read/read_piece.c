@@ -6,7 +6,7 @@
 /*   By: amamy <amamy@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/02 11:02:39 by amamy             #+#    #+#             */
-/*   Updated: 2019/06/02 17:56:16 by amamy            ###   ########.fr       */
+/*   Updated: 2019/06/02 19:42:05 by amamy            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,13 @@
 
 #include <stdio.h>
 
+/*
+** ft_read_piece_size :
+** Given the strings written by th VM which specifies pieces's size, get and
+** store pieces's size in int data->piece_size.
+** data->piece_size[0] = Y;
+** data->piece_size[1] = X;
+*/
 static void ft_read_piece_size(t_data *data, char *str)
 {
 	int		i;

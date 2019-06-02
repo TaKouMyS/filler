@@ -6,7 +6,7 @@
 /*   By: amamy <amamy@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/30 14:26:37 by amamy             #+#    #+#             */
-/*   Updated: 2019/06/02 19:20:21 by amamy            ###   ########.fr       */
+/*   Updated: 2019/06/02 19:38:43 by amamy            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,10 @@
 
 #include <stdio.h>
 
+/*
+** ft_get_player :
+** Given the strings written by th VM which specifies players number, get and ** store the player's number in int data->player_number.
+*/
 static void	ft_get_player(t_data *data, char* str_p1, char *str_p2)
 {
 	if (ft_strstr(str_p1, "amamy"))
@@ -24,6 +28,13 @@ static void	ft_get_player(t_data *data, char* str_p1, char *str_p2)
 		data->player_number = 2;
 }
 
+/*
+** ft_read_map_size :
+** Given the string written by th VM which specifies the map size, get and store
+** the map size in int *data->map_size.
+** data->map_size[0] = Y
+** data->map_size[1] = X.
+*/
 static void	ft_read_map_size(char *tmp, t_data *data)
 {
 	int		i;
@@ -50,6 +61,10 @@ static void	ft_read_map_size(char *tmp, t_data *data)
 	data->map_size[1] = ft_atoi(str_map_size[1]);
 }
 
+/*
+** ft_data_mallocation :
+** Get memory allocation for most of the structure data (t_data type).
+*/
 static int	ft_data_mallocation(t_data *data, char *str_read)
 {
 	if (!(data->piece_size = ft_memalloc(sizeof(int) * 2)))
@@ -65,6 +80,10 @@ static int	ft_data_mallocation(t_data *data, char *str_read)
 	return (0);
 }
 
+/*
+** ft_read :
+** Central point of stdin reading.
+*/
 void	ft_read(t_data *data)
 {
 	char	**str_read;
@@ -80,7 +99,6 @@ void	ft_read(t_data *data)
 	if (ft_data_mallocation(data, str_read[9]) == -1)
 		return ;
 	ft_get_player(data, str_read[6], str_read[8]);
-	printf("\nplayer number : %d\n", data->player_number);
 	ft_read_map(data);
 	ft_read_piece(data);
 	i = 0;

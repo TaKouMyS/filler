@@ -6,15 +6,19 @@
 /*   By: amamy <amamy@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/28 18:03:42 by amamy             #+#    #+#             */
-/*   Updated: 2019/06/02 16:29:50 by amamy            ###   ########.fr       */
+/*   Updated: 2019/06/02 19:39:43 by amamy            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <filler.h>
+#include "filler.h"
 #include "libft.h"
 
 #include <stdio.h>
 
+/*
+** ft_free :
+** free all remaining allocation for the data structure (t_data).
+*/
 static void	ft_free(t_data *data)
 {
 	int i;
