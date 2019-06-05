@@ -6,7 +6,7 @@
 /*   By: amamy <amamy@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/30 14:26:37 by amamy             #+#    #+#             */
-/*   Updated: 2019/06/02 19:38:43 by amamy            ###   ########.fr       */
+/*   Updated: 2019/06/05 11:50:39 by amamy            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -84,7 +84,7 @@ static int	ft_data_mallocation(t_data *data, char *str_read)
 ** ft_read :
 ** Central point of stdin reading.
 */
-void	ft_read(t_data *data)
+int	ft_read(t_data *data)
 {
 	char	**str_read;
 	int		gnl_ret;
@@ -93,16 +93,20 @@ void	ft_read(t_data *data)
 	i = 0;
 	gnl_ret = 1;
 	if (!(str_read = ft_memalloc(sizeof(char*) * 10)))
-		return ;
+		return (-1);
 	while (i < 10)
 		gnl_ret = get_next_line(0, &str_read[i++]);
+	if (ft_checks(data, str_read) != 0)
+		return (-1);
 	if (ft_data_mallocation(data, str_read[9]) == -1)
-		return ;
+		return (-1);
 	ft_get_player(data, str_read[6], str_read[8]);
-	ft_read_map(data);
+	if (ft_read_map(data) == -1)
+		return (-1);
 	ft_read_piece(data);
 	i = 0;
 	while (i < 10)
 		free(str_read[i++]);
 	free(str_read);
+	return (0);
 }

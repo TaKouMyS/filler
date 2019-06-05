@@ -1,31 +1,48 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   read_map.c                                         :+:      :+:    :+:   */
+/*   free.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: amamy <amamy@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/06/01 17:41:13 by amamy             #+#    #+#             */
-/*   Updated: 2019/06/05 11:50:19 by amamy            ###   ########.fr       */
+/*   Created: 2019/06/05 09:09:54 by amamy             #+#    #+#             */
+/*   Updated: 2019/06/05 10:56:38 by amamy            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "filler.h"
 #include "libft.h"
 
-int	ft_read_map(t_data *data)
+void	ft_free_checks(t_data *data, char **str_read)
 {
 	int	i;
-	int	err;
+
+	(void)data;
 
 	i = 0;
-	err = 0;
+	while (i < 10)
+		free(str_read[i++]);
+	free(str_read);
+}
+
+/*
+** ft_free :
+** free all remaining allocation for the data structure (t_data).
+** Used if everything runned as expected.
+*/
+void	ft_free(t_data *data)
+{
+	int i;
+
+	i = 0;
 	while (i < data->map_size[0] + 1)
-		get_next_line(0, &data->map[i++]);
-	if (ft_check_map(data) == -1)
-	{
-		ft_putstr("\n\nBad map\n\n");
-		return (-1);
-	}
-	return (0);
+		free(data->map[i++]);
+	free(data->map);
+	i = 0;
+	while (i < data->map_size[0])
+		free(data->piece[i++]);
+	free(data->map_size);
+	free(data->piece);
+	free(data->piece_size);
+	free(data);
 }

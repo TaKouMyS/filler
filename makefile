@@ -17,13 +17,17 @@ CFLAGS += -Wall -Werror -Wextra -g
 OBJDIR = obj
 SRCDIR = src
 SRC_READ_DIR = $(SRCDIR)/read
+SRC_CHECKS_DIR = $(SRCDIR)/checks
 LIBDIR	= libft
 HEAD	= $(SRCDIR)/filler.h
 
 SRCS 	= $(SRCDIR)/main.c					\
+		$(SRCDIR)/free.c					\
 		$(SRC_READ_DIR)/read.c				\
 		$(SRC_READ_DIR)/read_map.c			\
-		$(SRC_READ_DIR)/read_piece.c
+		$(SRC_READ_DIR)/read_piece.c		\
+		$(SRC_CHECKS_DIR)/checks.c			\
+		$(SRC_CHECKS_DIR)/check_map.c
 
 ALLFLAGS = -I$(LIBDIR) -I$(SRCDIR) -o
 OBJ = $(addprefix $(OBJDIR)/, $(SRCS:.c=.o))
@@ -54,7 +58,7 @@ $(OBJDIR)/%.o: %.c $(HEAD)
 
 
 $(OBJDIR) :
-	@mkdir  $@ $@/$(SRCDIR) $@/$(LIBDIR) $@/$(SRC_READ_DIR)
+	@mkdir  $@ $@/$(SRCDIR) $@/$(LIBDIR) $@/$(SRC_READ_DIR) $@/$(SRC_CHECKS_DIR)
 
 $(OBJ) : | $(OBJDIR)
 
