@@ -6,7 +6,7 @@
 /*   By: amamy <amamy@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/02 11:02:39 by amamy             #+#    #+#             */
-/*   Updated: 2019/06/02 19:42:05 by amamy            ###   ########.fr       */
+/*   Updated: 2019/06/16 17:39:30 by amamy            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,7 +48,7 @@ static void ft_read_piece_size(t_data *data, char *str)
 	data->piece_size[1] = ft_atoi(str_piece_size[1]);
 }
 
-void	ft_read_piece(t_data *data)
+int	ft_read_piece(t_data *data)
 {
 	int		i;
 	char	*str_piece_size;
@@ -59,4 +59,6 @@ void	ft_read_piece(t_data *data)
 	free(str_piece_size);
 	while (i < data->piece_size[0])
 		get_next_line(0, &data->piece[i++]);
+	if (ft_check_piece(data) != 0)
+		return ;
 }

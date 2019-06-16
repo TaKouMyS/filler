@@ -27,7 +27,8 @@ SRCS 	= $(SRCDIR)/main.c					\
 		$(SRC_READ_DIR)/read_map.c			\
 		$(SRC_READ_DIR)/read_piece.c		\
 		$(SRC_CHECKS_DIR)/checks.c			\
-		$(SRC_CHECKS_DIR)/check_map.c
+		$(SRC_CHECKS_DIR)/check_map.c		\
+		$(SRC_CHECKS_DIR)/check_piece.c
 
 ALLFLAGS = -I$(LIBDIR) -I$(SRCDIR) -o
 OBJ = $(addprefix $(OBJDIR)/, $(SRCS:.c=.o))

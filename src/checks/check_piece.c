@@ -6,12 +6,11 @@
 /*   By: amamy <amamy@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/15 20:23:00 by amamy             #+#    #+#             */
-/*   Updated: 2019/06/15 21:31:27 by amamy            ###   ########.fr       */
+/*   Updated: 2019/06/16 17:38:16 by amamy            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
 
 static int	ft_count_links(t_data *data, int y, int x, int stars)
 {
@@ -32,12 +31,17 @@ static int	ft_count_links(t_data *data, int y, int x, int stars)
 			links++;
 	return (links);
 }
+
 static int	ft_check_integrity(t_data *data, int y, int x, int stars)
 {
 	int links;
 
 	links = ft_count_links(data, y, x, stars);
-
+	if (star > 2 && links < ((stars * 2) - 2))
+		return (-1);
+	if (stars = 2 && links < 2)
+		return (-1);
+	return (0);
 }
 
 int	ft_check_piece(t_data *data)
@@ -58,7 +62,7 @@ int	ft_check_piece(t_data *data)
 		{
 			if (data->piece[i][i2] != '.' && data->piece[i][i2] != '*')
 					return (-1);
-			if (data->piece[i][i2] == '*' && stars++)
+			if (data->piece[i][i2] == '*' && stars++ && stars > 0)
 				if (ft_check_integrity(data, i, i2, stars) != 0)
 					return (-1);
 			i2++;
