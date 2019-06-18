@@ -6,7 +6,7 @@
 /*   By: amamy <amamy@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/02 11:02:39 by amamy             #+#    #+#             */
-/*   Updated: 2019/06/16 17:39:30 by amamy            ###   ########.fr       */
+/*   Updated: 2019/06/17 10:45:16 by amamy            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,5 +60,9 @@ int	ft_read_piece(t_data *data)
 	while (i < data->piece_size[0])
 		get_next_line(0, &data->piece[i++]);
 	if (ft_check_piece(data) != 0)
-		return ;
+	{
+		ft_putstr("\n\nPiece error.\n\n");
+		return (-1);
+	}
+	return (0);
 }

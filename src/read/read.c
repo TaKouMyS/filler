@@ -6,7 +6,7 @@
 /*   By: amamy <amamy@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/30 14:26:37 by amamy             #+#    #+#             */
-/*   Updated: 2019/06/05 11:50:39 by amamy            ###   ########.fr       */
+/*   Updated: 2019/06/17 10:43:46 by amamy            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -103,7 +103,8 @@ int	ft_read(t_data *data)
 	ft_get_player(data, str_read[6], str_read[8]);
 	if (ft_read_map(data) == -1)
 		return (-1);
-	ft_read_piece(data);
+	if (ft_read_piece(data) == -1)
+			return (-1);
 	i = 0;
 	while (i < 10)
 		free(str_read[i++]);

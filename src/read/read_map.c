@@ -6,7 +6,7 @@
 /*   By: amamy <amamy@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/01 17:41:13 by amamy             #+#    #+#             */
-/*   Updated: 2019/06/16 17:43:27 by amamy            ###   ########.fr       */
+/*   Updated: 2019/06/17 10:45:28 by amamy            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ int	ft_read_map(t_data *data)
 		get_next_line(0, &data->map[i++]);
 	if (ft_check_map(data) == -1)
 	{
-		ft_putstr("\n\nBad map\n\n");
+		ft_putstr("\n\nMap error\n\n");
 		return (-1);
 	}
 	return (0);
