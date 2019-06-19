@@ -6,7 +6,7 @@
 /*   By: amamy <amamy@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/15 20:23:00 by amamy             #+#    #+#             */
-/*   Updated: 2019/06/18 18:43:39 by amamy            ###   ########.fr       */
+/*   Updated: 2019/06/19 13:12:42 by amamy            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -78,10 +78,10 @@ static int	ft_check_integrity(t_data *data, int stars)
 	char	**piece;
 
 	piece = NULL;
-	y = -1;
+	y = 0;
 	if (!(piece = ft_piece_cpy(data, piece)))
 		return (-1);
-	while (y < data->piece_size[0] + 1 && (y++))
+	while (y < data->piece_size[0] + 1)
 	{
 		x = 0;
 		while (data->piece[y][x] != '\0')
@@ -89,16 +89,13 @@ static int	ft_check_integrity(t_data *data, int stars)
 			if (data->piece[y][x] == '*')
 			{
 				piece[y][x] = 'F';
-				if ((ft_check_block(data, y, x, piece)) != stars)
-				{
-					ft_free_piece(data, piece);
-					return (-1);
-				}
+				y = ft_check_block(data, y, x, piece);
 				ft_free_piece(data, piece);
-				return (0);
+				return (y == stars) ? 0 : -1;
 			}
 			x++;
 		}
+		y++;
 	}
 	return (0);
 }
