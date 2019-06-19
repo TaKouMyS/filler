@@ -6,13 +6,17 @@
 /*   By: amamy <amamy@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/15 20:23:00 by amamy             #+#    #+#             */
-/*   Updated: 2019/06/19 13:12:42 by amamy            ###   ########.fr       */
+/*   Updated: 2019/06/19 17:50:35 by amamy            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include "filler.h"
 
+/*
+** ft_free_piece :
+** Free allocations made for data->piece;
+*/
 static void	ft_free_piece(t_data *data, char **piece)
 {
 	int y;
@@ -25,6 +29,10 @@ static void	ft_free_piece(t_data *data, char **piece)
 	free(piece);
 }
 
+/*
+** ft_piece_cpy :
+** make a copy of data->piece.
+*/
 static char	**ft_piece_cpy(t_data *data, char **piece)
 {
 	int y;
@@ -50,7 +58,11 @@ static char	**ft_piece_cpy(t_data *data, char **piece)
 	return (piece);
 }
 
-static int	ft_check_block(t_data *data, int y, int x, char **piece)
+/*
+** ft_check_block :
+** Recursive function which verifies that the shape is in one piece.
+*/
+static int	ft_check_shape(t_data *data, int y, int x, char **piece)
 {
 	int		found;
 
@@ -71,6 +83,12 @@ static int	ft_check_block(t_data *data, int y, int x, char **piece)
 	return (found);
 }
 
+/*
+** ft_check_integrity :
+** Forerunner of ft_check_shape. Make a copy of data->piece with ft_piece_cpy,
+** find the first star and send the piece copy and star's coordonates to
+** ft_check_shape allowint it to do the job;
+*/
 static int	ft_check_integrity(t_data *data, int stars)
 {
 	int		y;
@@ -89,7 +107,7 @@ static int	ft_check_integrity(t_data *data, int stars)
 			if (data->piece[y][x] == '*')
 			{
 				piece[y][x] = 'F';
-				y = ft_check_block(data, y, x, piece);
+				y = ft_check_shape(data, y, x, piece);
 				ft_free_piece(data, piece);
 				return (y == stars) ? 0 : -1;
 			}
@@ -100,6 +118,12 @@ static int	ft_check_integrity(t_data *data, int stars)
 	return (0);
 }
 
+/*
+** ft_check_piece:
+** CHeck if the cell received match the size given, that it contains only '.'
+** and '*', and with ft_check_integrity, that all the stars are next to an other
+** star.
+*/
 int			ft_check_piece(t_data *data)
 {
 	int	y;
