@@ -6,7 +6,7 @@
 /*   By: amamy <amamy@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/15 20:23:00 by amamy             #+#    #+#             */
-/*   Updated: 2019/06/18 18:38:42 by amamy            ###   ########.fr       */
+/*   Updated: 2019/06/18 18:43:39 by amamy            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -90,7 +90,10 @@ static int	ft_check_integrity(t_data *data, int stars)
 			{
 				piece[y][x] = 'F';
 				if ((ft_check_block(data, y, x, piece)) != stars)
+				{
+					ft_free_piece(data, piece);
 					return (-1);
+				}
 				ft_free_piece(data, piece);
 				return (0);
 			}

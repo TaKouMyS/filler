@@ -6,7 +6,7 @@
 /*   By: amamy <amamy@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/30 14:26:37 by amamy             #+#    #+#             */
-/*   Updated: 2019/06/17 10:43:46 by amamy            ###   ########.fr       */
+/*   Updated: 2019/06/19 10:36:10 by amamy            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,16 @@
 
 
 #include <stdio.h>
+
+static void ft_free_str_read(char **str_read)
+{
+	int i;
+
+	i = 0;
+	while (i < 10)
+		free(str_read[i++]);
+	free(str_read);
+}
 
 /*
 ** ft_get_player :
@@ -104,10 +114,10 @@ int	ft_read(t_data *data)
 	if (ft_read_map(data) == -1)
 		return (-1);
 	if (ft_read_piece(data) == -1)
-			return (-1);
-	i = 0;
-	while (i < 10)
-		free(str_read[i++]);
-	free(str_read);
+	{
+		ft_free_str_read(str_read);
+		return (-1);
+	}
+	ft_free_str_read(str_read);
 	return (0);
 }
