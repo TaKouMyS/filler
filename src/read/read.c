@@ -6,7 +6,7 @@
 /*   By: amamy <amamy@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/30 14:26:37 by amamy             #+#    #+#             */
-/*   Updated: 2019/06/19 10:36:10 by amamy            ###   ########.fr       */
+/*   Updated: 2019/06/19 11:33:20 by amamy            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,26 +16,12 @@
 
 #include <stdio.h>
 
-static void ft_free_str_read(char **str_read)
+static void ft_free_str_read(char **head, int i)
 {
-	int i;
-
-	i = 0;
-	while (i < 10)
-		free(str_read[i++]);
-	free(str_read);
-}
-
-/*
-** ft_get_player :
-** Given the strings written by th VM which specifies players number, get and ** store the player's number in int data->player_number.
-*/
-static void	ft_get_player(t_data *data, char* str_p1, char *str_p2)
-{
-	if (ft_strstr(str_p1, "amamy"))
-		data->player_number = 1;
-	else if (ft_strstr(str_p2, "amamy"))
-		data->player_number = 2;
+	i--;
+	while (i >= 0)
+		free(head[i--]);
+	free(head);
 }
 
 /*
@@ -96,28 +82,28 @@ static int	ft_data_mallocation(t_data *data, char *str_read)
 */
 int	ft_read(t_data *data)
 {
-	char	**str_read;
+	char	**head;
 	int		gnl_ret;
 	int		i;
 
 	i = 0;
 	gnl_ret = 1;
-	if (!(str_read = ft_memalloc(sizeof(char*) * 10)))
+	if (!(head = ft_memalloc(sizeof(char*) * 10)))
 		return (-1);
 	while (i < 10)
-		gnl_ret = get_next_line(0, &str_read[i++]);
-	if (ft_checks(data, str_read) != 0)
-		return (-1);
-	if (ft_data_mallocation(data, str_read[9]) == -1)
-		return (-1);
-	ft_get_player(data, str_read[6], str_read[8]);
-	if (ft_read_map(data) == -1)
-		return (-1);
-	if (ft_read_piece(data) == -1)
+		if ((gnl_ret = get_next_line(0, &head[i++])) && gnl_ret == -1)
+		{
+			ft_free_str_read(head, i);
+			return (-1);
+		}
+	if ((ft_checks(data, head) != 0) \
+		|| (ft_data_mallocation(data, head[9]) == -1) \
+		|| (ft_read_map(data, head[6], head[8]) == -1) \
+		|| (ft_read_piece(data) == -1))
 	{
-		ft_free_str_read(str_read);
+		ft_free_str_read(head, i);
 		return (-1);
 	}
-	ft_free_str_read(str_read);
+	ft_free_str_read(head, i);
 	return (0);
 }
