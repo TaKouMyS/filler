@@ -6,7 +6,7 @@
 /*   By: amamy <amamy@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/15 20:23:00 by amamy             #+#    #+#             */
-/*   Updated: 2019/06/19 17:50:35 by amamy            ###   ########.fr       */
+/*   Updated: 2019/06/20 12:00:57 by amamy            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -71,13 +71,13 @@ static int	ft_check_shape(t_data *data, int y, int x, char **piece)
 		found = 1;
 	piece[y][x] = '.';
 	if (y > 0 && piece[y - 1][x] == '*' && (found += 1))
-		found += ft_check_block(data, y - 1, x, piece);
+		found += ft_check_shape(data, y - 1, x, piece);
 	if (piece[y][x] != '\0' && piece[y][x + 1] == '*' && (found += 1))
-		found += ft_check_block(data, y, x + 1, piece);
+		found += ft_check_shape(data, y, x + 1, piece);
 	if (y < (data->piece_size[0] - 1) && piece[y + 1][x] == '*' && (found += 1))
-		found += ft_check_block(data, y + 1, x, piece);
+		found += ft_check_shape(data, y + 1, x, piece);
 	if (x > 0 && piece[y][x - 1] == '*' && (found += 1))
-		found += ft_check_block(data, y, x - 1, piece);
+		found += ft_check_shape(data, y, x - 1, piece);
 	if (found == 0)
 		return (0);
 	return (found);

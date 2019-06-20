@@ -6,7 +6,7 @@
 /*   By: amamy <amamy@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/30 14:26:37 by amamy             #+#    #+#             */
-/*   Updated: 2019/06/19 11:33:20 by amamy            ###   ########.fr       */
+/*   Updated: 2019/06/20 18:56:59 by amamy            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -72,6 +72,12 @@ static int	ft_data_mallocation(t_data *data, char *str_read)
 		return (-1);
 	ft_read_map_size(str_read, data);
 	if (!(data->map = ft_memalloc(sizeof(char*) * (data->map_size[0] + 1))))
+		return (-1);
+	if (!(data->coo_me = ft_memalloc(sizeof(int) * 2)))
+		return (-1);
+	if (!(data->coo_you = ft_memalloc(sizeof(int) * 2)))
+		return (-1);
+	if (!(data->coo = ft_memalloc(sizeof(int) * 2)))
 		return (-1);
 	return (0);
 }
