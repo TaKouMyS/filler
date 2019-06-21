@@ -6,7 +6,7 @@
 /*   By: amamy <amamy@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/01 17:41:13 by amamy             #+#    #+#             */
-/*   Updated: 2019/06/20 14:33:17 by amamy            ###   ########.fr       */
+/*   Updated: 2019/06/21 16:24:04 by amamy            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,7 +40,7 @@ int	ft_read_map(t_data *data, char* str_p1, char *str_p2)
 	i = 0;
 	err = 0;
 	while (i < data->map_size[0] + 1)
-		get_next_line(0, &data->map[i++]);
+		get_next_line(data->fd, &data->map[i++]);
 	if (ft_check_map(data) == -1)
 	{
 		ft_putstr("\n\nMap error\n\n");

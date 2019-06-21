@@ -6,7 +6,7 @@
 /*   By: amamy <amamy@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/28 18:03:42 by amamy             #+#    #+#             */
-/*   Updated: 2019/06/20 12:58:08 by amamy            ###   ########.fr       */
+/*   Updated: 2019/06/21 16:27:09 by amamy            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,14 +15,20 @@
 
 #include <stdio.h>
 
-int main()
+int main(int argc, char **argv)
 {
+
 	t_data	*data;
 	if (!(data = ft_memalloc(sizeof(t_data))))
 		return (0);
+	//DEBUG
+	(void)argc;
+	#include <fcntl.h>
+	data->fd = open(argv[1], O_RDONLY);
+	//
 	if (ft_read(data) == -1)
 		return (-1);
-	ft_analyse(data);
+	ft_play(data);
 	if (data->piece)
 		ft_free(data);
 	else

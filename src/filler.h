@@ -6,7 +6,7 @@
 /*   By: amamy <amamy@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/28 17:57:31 by amamy             #+#    #+#             */
-/*   Updated: 2019/06/20 18:56:21 by amamy            ###   ########.fr       */
+/*   Updated: 2019/06/21 16:22:01 by amamy            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,6 +30,8 @@ typedef struct	s_data
 	int			*coo;
 	int			aim;
 
+	int			fd;
+
 }				t_data;
 
 int		ft_read(t_data *data);
@@ -40,6 +42,7 @@ int		ft_read_map(t_data *data, char* str_p1, char *str_p2);
 int		ft_check_map(t_data *data);
 int		ft_check_piece(t_data *data);
 int		ft_checks(t_data *data, char **head);
+void	ft_play(t_data *data);
 void	ft_analyse(t_data *data);
 
 #endif
