@@ -6,7 +6,7 @@
 /*   By: amamy <amamy@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/30 14:26:37 by amamy             #+#    #+#             */
-/*   Updated: 2019/06/21 16:26:07 by amamy            ###   ########.fr       */
+/*   Updated: 2019/06/24 18:44:39 by amamy            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -94,17 +94,20 @@ int	ft_read(t_data *data)
 
 	i = 0;
 	gnl_ret = 1;
-	if (!(head = ft_memalloc(sizeof(char*) * 10)))
+	if (!(head = ft_memalloc(sizeof(char*) * 2)))
 		return (-1);
-	while (i < 10)
+	while (i < 2)
+	{
 		if ((gnl_ret = get_next_line(data->fd, &head[i++])) && gnl_ret == -1)
 		{
 			ft_free_str_read(head, i);
 			return (-1);
 		}
+
+	}
 	if ((ft_checks(data, head) != 0) \
-		|| (ft_data_mallocation(data, head[9]) == -1) \
-		|| (ft_read_map(data, head[6], head[8]) == -1) \
+		|| (ft_data_mallocation(data, head[1]) == -1) \
+		|| (ft_read_map(data, head[0]) == -1) \
 		|| (ft_read_piece(data) == -1))
 	{
 		ft_free_str_read(head, i);

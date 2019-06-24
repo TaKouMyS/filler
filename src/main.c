@@ -6,7 +6,7 @@
 /*   By: amamy <amamy@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/28 18:03:42 by amamy             #+#    #+#             */
-/*   Updated: 2019/06/21 16:27:09 by amamy            ###   ########.fr       */
+/*   Updated: 2019/06/24 19:05:49 by amamy            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,16 +15,18 @@
 
 #include <stdio.h>
 
-int main(int argc, char **argv)
+int main()
 {
 
 	t_data	*data;
 	if (!(data = ft_memalloc(sizeof(t_data))))
 		return (0);
 	//DEBUG
-	(void)argc;
+	// char *file = "tests";
 	#include <fcntl.h>
-	data->fd = open(argv[1], O_RDONLY);
+	// if ((data->fd = open(file, O_RDONLY) == -1))
+	// 	return (-1);
+	data->fd = 0;
 	//
 	if (ft_read(data) == -1)
 		return (-1);
