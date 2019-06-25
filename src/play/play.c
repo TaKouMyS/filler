@@ -6,7 +6,7 @@
 /*   By: amamy <amamy@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/20 16:29:17 by amamy             #+#    #+#             */
-/*   Updated: 2019/06/24 19:04:20 by amamy            ###   ########.fr       */
+/*   Updated: 2019/06/25 18:11:43 by amamy            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,6 +59,7 @@ void ft_play(t_data *data)
 	{
 		ft_near_star_UL(data, data->piece_size[0] - 1, data->piece_size[1] - 1);
 		// ft_putstr("SEG\n");
+		dprintf(data->fd2, "<---------Coup : \n%d %d\n<-----------fin coup", data->coo[0], data->coo[1]);
 		ft_putnbr(data->coo[0]);
 		ft_putstr(" ");
 		ft_putnbr(data->coo[1]);

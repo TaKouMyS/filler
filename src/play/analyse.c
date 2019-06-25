@@ -6,7 +6,7 @@
 /*   By: amamy <amamy@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/19 16:28:09 by amamy             #+#    #+#             */
-/*   Updated: 2019/06/24 14:34:45 by amamy            ###   ########.fr       */
+/*   Updated: 2019/06/25 18:49:05 by amamy            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -84,7 +84,8 @@ static	void ft_get_aim(t_data *data)
 
 void ft_analyse(t_data *data)
 {
-	ft_get_first_piece(data);
+	if (data->coo_me[0] = 0)
+		ft_get_first_piece(data);
 	// printf("coo me : %d:%d 	| coo you : %d:%d\n", data->coo_me[1], data->coo_me[0], data->coo_you[1], data->coo_you[0]);
 	ft_get_aim(data);
 

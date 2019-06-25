@@ -6,7 +6,7 @@
 /*   By: amamy <amamy@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/02 11:02:39 by amamy             #+#    #+#             */
-/*   Updated: 2019/06/24 18:30:51 by amamy            ###   ########.fr       */
+/*   Updated: 2019/06/25 18:49:49 by amamy            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,10 +55,19 @@ int	ft_read_piece(t_data *data)
 	i = 0;
 
 	get_next_line(data->fd, &str_piece_size);
+		dprintf(data->fd2, "%s\n", "<-----------start piece size");
+		dprintf(data->fd2, "%s\n", str_piece_size);
+		dprintf(data->fd2, "%s\n", "<-----------end piece size");
 	ft_read_piece_size(data, str_piece_size);
 	free(str_piece_size);
+		dprintf(data->fd2, "%s\n", "<-----------strart read-piece");
 	while (i < data->piece_size[0])
-		get_next_line(data->fd, &data->piece[i++]);
+	{
+		get_next_line(data->fd, &data->piece[i]);
+			dprintf(data->fd2, "%s\n", data->piece[i]);
+		i++;
+	}
+		dprintf(data->fd2, "%s\n", "<-----------end read-piece-->");
 	if (ft_check_piece(data) != 0)
 	{
 		ft_putstr("\n\nPiece error.\n\n");

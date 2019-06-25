@@ -6,7 +6,7 @@
 /*   By: amamy <amamy@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/01 17:41:13 by amamy             #+#    #+#             */
-/*   Updated: 2019/06/24 18:28:22 by amamy            ###   ########.fr       */
+/*   Updated: 2019/06/25 18:07:59 by amamy            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,40 +15,61 @@
 
 #include <stdio.h>
 
-
-/*
-** ft_get_player :
-** Given the strings written by th VM which specifies players number, get and ** store the player's number in int data->player_number.
-*/
-static int	ft_get_player(t_data *data, char* player)
+static int	ft_check_map(t_data *data)
 {
-	if (ft_strstr(player, "p1"))
-		data->player_number = 1;
-	else if (ft_strstr(player, "p2"))
-		data->player_number = 2;
-	else
-		return (-1);
-	return (0);
+	int	i;
+	int	i2;
 
+	i = 1;
+	i2 = 0;
+	while (i < data->map_size[0] + 1)
+	{
+		if ((int)ft_strlen(data->map[i]) != (data->map_size[1] + 4))
+			return (-1);
+		while (i2 < 3)
+			if (!(ft_isdigit(data->map[i][i2++])))
+				return (-1);
+		if (data->map[i][i2++] != ' ')
+			return (-1);
+		while (data->map[i][i2] != '\0')
+		{
+			if (data->map[i][i2] != '.' && data->map[i][i2] != 'O'		\
+				&& data->map[i][i2] != 'o' && data->map[i][i2] != 'X'	\
+				&& data->map[i][i2] != 'x')
+					return (-1);
+			i2++;
+		}
+		i++;
+		i2 = 0;
+	}
+	return (0);
 }
 
-int	ft_read_map(t_data *data, char* player)
+int	ft_read_map(t_data *data)
 {
 	int	i;
 	int	err;
 
 	i = 0;
 	err = 0;
+	if (data->piece_size[0])
+	{
+		dprintf(data->fd2, "%s\n", "<-----------start map_size");
+		get_next_line(data->fd, &data->map[i]);
+		dprintf(data->fd2, "%s\n", "<-----------end map_size");
+	}
+
+	dprintf(data->fd2, "%s\n", "<-----------start read-map");
 	while (i < data->map_size[0] + 1)
-		get_next_line(data->fd, &data->map[i++]);
+	{
+		get_next_line(data->fd, &data->map[i]);
+		dprintf(data->fd2, "%s\n", data->map[i]);
+		i++;
+	}
+	dprintf(data->fd2, "%s\n", "<-----------end read-map");
 	if (ft_check_map(data) == -1)
 	{
 		ft_putstr("\n\nMap error\n\n");
-		return (-1);
-	}
-	if (ft_get_player(data, player) == -1)
-	{
-		ft_putstr("\n\nPlayer error\n\n");
 		return (-1);
 	}
 	return (0);
