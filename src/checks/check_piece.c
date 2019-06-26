@@ -6,7 +6,7 @@
 /*   By: amamy <amamy@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/15 20:23:00 by amamy             #+#    #+#             */
-/*   Updated: 2019/06/20 12:00:57 by amamy            ###   ########.fr       */
+/*   Updated: 2019/06/26 12:39:59 by amamy            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -89,7 +89,7 @@ static int	ft_check_shape(t_data *data, int y, int x, char **piece)
 ** find the first star and send the piece copy and star's coordonates to
 ** ft_check_shape allowint it to do the job;
 */
-static int	ft_check_integrity(t_data *data, int stars)
+static int	ft_check_integrity(t_data *data)
 {
 	int		y;
 	int		x;
@@ -109,7 +109,7 @@ static int	ft_check_integrity(t_data *data, int stars)
 				piece[y][x] = 'F';
 				y = ft_check_shape(data, y, x, piece);
 				ft_free_piece(data, piece);
-				return (y == stars) ? 0 : -1;
+				return (y == data->stars) ? 0 : -1;
 			}
 			x++;
 		}
@@ -128,11 +128,9 @@ int			ft_check_piece(t_data *data)
 {
 	int	y;
 	int	x;
-	int	stars;
 
 	y = 0;
 	x = 0;
-	stars = 0;
 	while (y < data->piece_size[0])
 	{
 		if ((int)ft_strlen(data->piece[y]) != (data->piece_size[1]))
@@ -142,13 +140,13 @@ int			ft_check_piece(t_data *data)
 			if (data->piece[y][x] != '.' && data->piece[y][x] != '*')
 				return (-1);
 			if (data->piece[y][x] == '*')
-				stars++;
+				data->stars++;
 			x++;
 		}
 		x = 0;
 		y++;
 	}
-	if (ft_check_integrity(data, stars) != 0)
+	if (ft_check_integrity(data) != 0)
 		return (-1);
 	return (0);
 }

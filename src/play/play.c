@@ -6,7 +6,7 @@
 /*   By: amamy <amamy@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/20 16:29:17 by amamy             #+#    #+#             */
-/*   Updated: 2019/06/25 18:11:43 by amamy            ###   ########.fr       */
+/*   Updated: 2019/06/26 16:04:32 by amamy            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,40 +41,32 @@ static void	ft_near_star_UL(t_data *data, int y, int x)
 	}
 		data->coo[0] = data->coo_me[0] - y;
 		data->coo[1] = data->coo_me[1] - x;
-
 }
 
-// static int	ft_point_dist(int xa, int ya, int xb, int yb)
-// {
-// 	int ret;
-//
-// 	ret = (xa + ya) - (xb + yb);
-// 	return (ret);
-// }
+
+static void	ft_go_down(t_data *data)
+static void	ft_go_cut(t_data *data)
+static void	ft_go_fill(t_data *data)
+
+static void	ft_go_up(t_data *data)
+{
+
+}
 
 void ft_play(t_data *data)
 {
 	ft_analyse(data);
-	if (data->aim & UP && data->aim & LEFT)
-	{
-		ft_near_star_UL(data, data->piece_size[0] - 1, data->piece_size[1] - 1);
-		// ft_putstr("SEG\n");
-		dprintf(data->fd2, "<---------Coup : \n%d %d\n<-----------fin coup", data->coo[0], data->coo[1]);
-		ft_putnbr(data->coo[0]);
-		ft_putstr(" ");
-		ft_putnbr(data->coo[1]);
-		ft_putstr("\n");
-	}
-	// if (data->aim & UP && data->aim & RIGHT)
-	// {
-	//
-	// }
-	// if (data->aim & DOWN && data->aim & RIGHT)
-	// {
-	//
-	// }
-	// if (data->aim & DOWN && data->aim & LEFT)
-	// {
-	//
-	// }
+	if (data->aim & FILL)
+		ft_go_fill(data);
+	else if (data->aim & CUT)
+		ft_go_cut(data);
+	else if (data->aim & UP)
+		ft_go_up(data);
+	else if (data->aim & DOWN)
+		ft_go_down(data);
+	dprintf(data->fd2, "<---------Coup : \n%d %d\n<-----------fin coup", data-	>coo[0], data->coo[1]);
+	ft_putnbr(data->coo[0]);
+	ft_putstr(" ");
+	ft_putnbr(data->coo[1]);
+	ft_putstr("\n");
 }

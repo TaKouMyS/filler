@@ -6,7 +6,7 @@
 /*   By: amamy <amamy@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/28 17:57:31 by amamy             #+#    #+#             */
-/*   Updated: 2019/06/25 14:08:40 by amamy            ###   ########.fr       */
+/*   Updated: 2019/06/26 13:56:58 by amamy            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 # define FILLER_H
 
 # define UP 1
-# define RIGHT 2
-# define DOWN 4
-# define LEFT 8
+# define DOWN 2
+# define CUT 4
+# define FILL 8
 
 typedef struct	s_data
 {
@@ -25,9 +25,11 @@ typedef struct	s_data
 	int			*piece_size;
 	char		**piece;
 	int			player_number;
+	char		token;
 	int			*coo_me;
 	int			*coo_you;
 	int			*coo;
+	int			stars;
 	int			aim;
 
 	int			fd;

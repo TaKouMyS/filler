@@ -6,7 +6,7 @@
 /*   By: amamy <amamy@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/30 14:26:37 by amamy             #+#    #+#             */
-/*   Updated: 2019/06/25 17:32:50 by amamy            ###   ########.fr       */
+/*   Updated: 2019/06/26 13:59:20 by amamy            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -102,6 +102,10 @@ static int	ft_get_player(t_data *data)
 		data->player_number = 2;
 	else
 		return (-1);
+	if (data->player_number == 1)
+		data->token = O;
+	if (data->player_number == 2)
+		data->token = X;
 	free(player);
 	return (0);
 }
