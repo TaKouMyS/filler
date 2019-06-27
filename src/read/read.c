@@ -6,7 +6,7 @@
 /*   By: amamy <amamy@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/30 14:26:37 by amamy             #+#    #+#             */
-/*   Updated: 2019/06/26 13:59:20 by amamy            ###   ########.fr       */
+/*   Updated: 2019/06/27 22:28:47 by amamy            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -69,8 +69,8 @@ static int	ft_data_mallocation(t_data *data, char *map_size)
 		return (-1);
 	if (!(data->map = ft_memalloc(sizeof(char*) * (data->map_size[0] + 1))))
 		return (-1);
-	if (!(data->coo_me = ft_memalloc(sizeof(int) * 2)))
-		return (-1);
+	// if (!(data->coo_me = ft_memalloc(sizeof(int) * 2)))
+	// 	return (-1);
 	if (!(data->coo_you = ft_memalloc(sizeof(int) * 2)))
 		return (-1);
 	if (!(data->coo = ft_memalloc(sizeof(int) * 2)))
@@ -103,9 +103,9 @@ static int	ft_get_player(t_data *data)
 	else
 		return (-1);
 	if (data->player_number == 1)
-		data->token = O;
+		data->token = 'O';
 	if (data->player_number == 2)
-		data->token = X;
+		data->token = 'X';
 	free(player);
 	return (0);
 }
@@ -122,9 +122,9 @@ int	ft_read(t_data *data)
 		|| (get_next_line(data->fd, &map_size) == -1) \
 		|| (ft_data_mallocation(data, map_size) == -1))
 			return (-1);
-	dprintf(data->fd2, "%s\n", "<-----------start read-map_size");
+	dprintf(data->fd2, "%s\n", "<-----------start read-map_size - 1");
 	dprintf(data->fd2, "%s\n", map_size);
-	dprintf(data->fd2, "%s\n", "<-----------end read-map_size");
+	dprintf(data->fd2, "%s\n", "<-----------end read-map_size - 1 ");
 	free(map_size);
 	if ((ft_read_map(data) == -1) || (ft_read_piece(data) == -1))
 			return (-1);

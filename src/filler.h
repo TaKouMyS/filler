@@ -6,7 +6,7 @@
 /*   By: amamy <amamy@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/28 17:57:31 by amamy             #+#    #+#             */
-/*   Updated: 2019/06/26 13:56:58 by amamy            ###   ########.fr       */
+/*   Updated: 2019/06/27 18:22:08 by amamy            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ typedef struct	s_data
 	char		**piece;
 	int			player_number;
 	char		token;
-	int			*coo_me;
+	// int			*coo_me;
 	int			*coo_you;
 	int			*coo;
 	int			stars;
@@ -43,8 +43,9 @@ void	ft_free_checks(t_data *data, char **str_read);
 int		ft_read_piece(t_data *data);
 int		ft_read_map(t_data *data);
 int		ft_check_piece(t_data *data);
-int		ft_checks(t_data *data, char **head);
-void	ft_play(t_data *data);
+int		ft_play(t_data *data);
 void	ft_analyse(t_data *data);
+int		ft_go_up(t_data *data);
+int		ft_check_play(t_data *data);
 
 #endif

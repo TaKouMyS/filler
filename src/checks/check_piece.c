@@ -6,12 +6,14 @@
 /*   By: amamy <amamy@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/15 20:23:00 by amamy             #+#    #+#             */
-/*   Updated: 2019/06/26 12:39:59 by amamy            ###   ########.fr       */
+/*   Updated: 2019/06/27 23:04:49 by amamy            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include "filler.h"
+
+#include <stdio.h>
 
 /*
 ** ft_free_piece :
@@ -131,6 +133,7 @@ int			ft_check_piece(t_data *data)
 
 	y = 0;
 	x = 0;
+	data->stars = 0;
 	while (y < data->piece_size[0])
 	{
 		if ((int)ft_strlen(data->piece[y]) != (data->piece_size[1]))

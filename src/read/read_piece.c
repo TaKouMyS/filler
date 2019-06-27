@@ -6,7 +6,7 @@
 /*   By: amamy <amamy@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/02 11:02:39 by amamy             #+#    #+#             */
-/*   Updated: 2019/06/25 18:49:49 by amamy            ###   ########.fr       */
+/*   Updated: 2019/06/27 20:09:38 by amamy            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -64,7 +64,8 @@ int	ft_read_piece(t_data *data)
 	while (i < data->piece_size[0])
 	{
 		get_next_line(data->fd, &data->piece[i]);
-			dprintf(data->fd2, "%s\n", data->piece[i]);
+		dprintf(data->fd2, "%s\n", data->piece[i]);
+		// dprintf(data->fd2, "test\n");
 		i++;
 	}
 		dprintf(data->fd2, "%s\n", "<-----------end read-piece-->");

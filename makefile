@@ -31,7 +31,9 @@ SRCS 	= $(SRCDIR)/main.c					\
 		$(SRC_CHECKS_DIR)/check_map.c		\
 		$(SRC_CHECKS_DIR)/check_piece.c		\
 		$(SRC_PLAY_DIR)/play.c				\
-		$(SRC_PLAY_DIR)/analyse.c
+		$(SRC_PLAY_DIR)/analyse.c			\
+		$(SRC_PLAY_DIR)/go_up.c				\
+		$(SRC_CHECKS_DIR)/check_play.c
 
 ALLFLAGS = -I$(LIBDIR) -I$(SRCDIR) -o
 OBJ = $(addprefix $(OBJDIR)/, $(SRCS:.c=.o))
