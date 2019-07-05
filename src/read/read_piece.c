@@ -6,7 +6,7 @@
 /*   By: amamy <amamy@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/02 11:02:39 by amamy             #+#    #+#             */
-/*   Updated: 2019/06/27 20:09:38 by amamy            ###   ########.fr       */
+/*   Updated: 2019/07/05 16:00:29 by amamy            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,9 +55,17 @@ int	ft_read_piece(t_data *data)
 	i = 0;
 
 	get_next_line(data->fd, &str_piece_size);
+			ft_putstr_fd("ici\n", data->fd2);
+			ft_putstr("ici\n");
 		dprintf(data->fd2, "%s\n", "<-----------start piece size");
+			ft_putstr_fd("la\n", data->fd2);
+			ft_putstr("la\n");
 		dprintf(data->fd2, "%s\n", str_piece_size);
+			ft_putstr_fd("la_bas\n", data->fd2);
+			ft_putstr("la_bas\n");
 		dprintf(data->fd2, "%s\n", "<-----------end piece size");
+			ft_putstr_fd("kiki\n", data->fd2);
+			ft_putstr("kiki\n");
 	ft_read_piece_size(data, str_piece_size);
 	free(str_piece_size);
 		dprintf(data->fd2, "%s\n", "<-----------strart read-piece");

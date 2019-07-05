@@ -6,7 +6,7 @@
 /*   By: amamy <amamy@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/01 17:41:13 by amamy             #+#    #+#             */
-/*   Updated: 2019/06/27 22:09:36 by amamy            ###   ########.fr       */
+/*   Updated: 2019/07/05 14:08:40 by amamy            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,11 +56,16 @@ int	ft_read_map(t_data *data)
 	{
 		dprintf(data->fd2, "%s\n", "<-----------start map_size");
 		get_next_line(data->fd, &data->map[i]);
+		ft_putstr_fd(data->map[i], data->fd2);
+		ft_putstr_fd(" -<PPPP>-\n", data->fd2);
+		// dprintf(data->fd2, "%s\n", data->map[i]);
 		dprintf(data->fd2, "%s\n", "<-----------end map_size");
 	}
 
+	dprintf(data->fd2, "%s\n", "<-----------start solo-line read-map");
 	get_next_line(data->fd, &data->map[i]);
 	dprintf(data->fd2, "%s\n", data->map[i]);
+	dprintf(data->fd2, "%s\n", "<xxxxxxxxxxxend solo-line read-map");
 	dprintf(data->fd2, "%s\n", "<-----------start read-map");
 	while (i < data->map_size[0])
 	{
@@ -68,9 +73,10 @@ int	ft_read_map(t_data *data)
 		dprintf(data->fd2, "%s\n", data->map[i]);
 		i++;
 	}
-	dprintf(data->fd2, "%s\n", "<-----------end read-map");
+	dprintf(data->fd2, "%s\n", "<xxxxxxxxxxx end read-map");
 	if (ft_check_map(data) == -1)
 	{
+		dprintf(data->fd2, "%s\n", "<map error\n");
 		ft_putstr("\n\nMap error\n\n");
 		return (-1);
 	}

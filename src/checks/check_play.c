@@ -6,7 +6,7 @@
 /*   By: amamy <amamy@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/26 12:32:03 by amamy             #+#    #+#             */
-/*   Updated: 2019/06/27 23:30:02 by amamy            ###   ########.fr       */
+/*   Updated: 2019/07/05 16:46:03 by amamy            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -84,7 +84,10 @@ int	ft_check_play(t_data *data)
 		if (data->map[coo_map[0]][coo_map[1]] == data->token)
 			cover++;
 		if (cover != 1)
+		{
+			ft_putstr("cover\n");
 			return (-1);
+		}
 	}
 	free(coo_star);
 	free(coo_map);

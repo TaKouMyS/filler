@@ -6,7 +6,7 @@
 /*   By: amamy <amamy@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/20 16:29:17 by amamy             #+#    #+#             */
-/*   Updated: 2019/06/27 23:09:38 by amamy            ###   ########.fr       */
+/*   Updated: 2019/07/05 15:16:58 by amamy            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -72,7 +72,7 @@ int ft_play(t_data *data)
 	// 	ft_go_up(data);
 	// else if (data->aim & DOWN)
 	// 	ft_go_down(data);
-	dprintf(data->fd2, "<---------Coup : \n%d %d\n<-----------fin coupe\n", data->coo[0], data->coo[1]);
+	dprintf(data->fd2, "<---------Coup : \n%d %d\n<-----------fin coupe\n", data->coo[0], data->coo[1] - 4);
 	ft_putnbr(data->coo[0]);
 	ft_putstr(" ");
 	ft_putnbr(data->coo[1] - 4);
