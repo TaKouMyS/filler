@@ -6,7 +6,7 @@
 /*   By: amamy <amamy@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/20 16:29:17 by amamy             #+#    #+#             */
-/*   Updated: 2019/07/05 15:16:58 by amamy            ###   ########.fr       */
+/*   Updated: 2019/07/06 20:03:11 by amamy            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,9 +51,9 @@
 
 int ft_play(t_data *data)
 {
-	// ft_putstr("ft_play1\n");
+	ft_putstr("ft_play1\n");
 	ft_analyse(data);
-	// ft_putstr("ft_play2\n");
+	ft_putstr("ft_play2\n");
 	if (data->aim & UP)
 	{
 		if (ft_go_up(data) == -1)
@@ -61,7 +61,7 @@ int ft_play(t_data *data)
 			ft_putstr("ft_play -1");
 			return (-1);
 		}
-		// ft_putstr("ft_play3\n");
+		ft_putstr("ft_play3\n");
 	}
 
 	// if (data->aim & FILL)

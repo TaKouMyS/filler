@@ -6,7 +6,7 @@
 /*   By: amamy <amamy@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/13 15:59:25 by amamy             #+#    #+#             */
-/*   Updated: 2019/02/07 20:19:55 by amamy            ###   ########.fr       */
+/*   Updated: 2019/07/05 16:08:28 by amamy            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ char	*ft_strdup(const char *s1)
 	char	*sdest;
 
 	counter = 0;
-	if (!(sdest = (char *)malloc(sizeof(char) * (ft_strlen(s1) + 1))))
+	if (!(sdest = (char *)ft_memalloc(sizeof(char) * (ft_strlen(s1) + 1))))
 		return (NULL);
 	while (s1[counter] != '\0')
 	{

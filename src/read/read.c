@@ -6,7 +6,7 @@
 /*   By: amamy <amamy@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/30 14:26:37 by amamy             #+#    #+#             */
-/*   Updated: 2019/06/27 22:28:47 by amamy            ###   ########.fr       */
+/*   Updated: 2019/07/06 17:04:01 by amamy            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -90,7 +90,10 @@ static int	ft_get_player(t_data *data)
 	player = NULL;
 	dprintf(data->fd2, "%s\n", "<-----------start read-player");
 	if (get_next_line(data->fd, &player) == -1)
+	{
+		ft_putstr("Player, NULL?\n");
 		return (-1);
+	}
 	dprintf(data->fd2, "%s\n", player);
 	dprintf(data->fd2, "%s\n", "<-----------end read-player");
 	if (!(ft_strncmp(player, "$$$ exec p1 : ", 14) == 0 \
