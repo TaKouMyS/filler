@@ -6,7 +6,7 @@
 /*   By: amamy <amamy@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/19 16:28:09 by amamy             #+#    #+#             */
-/*   Updated: 2019/07/07 18:16:46 by amamy            ###   ########.fr       */
+/*   Updated: 2019/07/07 20:14:51 by amamy            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@
 
 static void ft_store_first_piece(t_data *data, int tmp[4])
 {
+	// printf("coo just stored : Y : %d | x : %d\n", data->coo[0], data->coo[1]);
 	if (data->player_number == 1)
 	{
 		data->coo[0] = tmp[0];
@@ -31,7 +32,7 @@ static void ft_store_first_piece(t_data *data, int tmp[4])
 		data->coo_you[0] = tmp[0];
 		data->coo_you[1] = tmp[1] - 4;
 	}
-	// printf("coo just stored : Y : %d | x : %d\n", data->coo[0], data->coo[1]);
+	printf("coo just stored : Y : %d | x : %d\n", data->coo[0], data->coo[1]);
 }
 
 static void ft_get_first_piece(t_data *data)
@@ -45,13 +46,13 @@ static void ft_get_first_piece(t_data *data)
 	// ft_putstr("ft_get_first_piece\n");
 	while (y < data->map_size[0])
 	{
-		if (data->map[y][x] == 'O')
+		if (data->map[y][x] == 'O' || data->map[y][x] == 'o')
 		{
 			tmp[0] = y;
 			tmp[1] = x;
 			// ft_putstr("ft_get_first_piece1\n");
 		}
-		else if (data->map[y][x] == 'X')
+		else if (data->map[y][x] == 'X' || data->map[y][x] == 'x')
 		{
 			// ft_putstr("ft_get_first_piece1 - 5\n");
 			tmp[2] = y;
@@ -81,15 +82,27 @@ static	void ft_get_aim(t_data *data)
 		while (data->map[mid][i] != '\0' && data->map[mid][i] == data->token)
 			i++;
 		if (data->map[mid][i] == '\0')
+		{
 			data->aim |= FILL;
+			dprintf(data->fd2, "***** FILL *****");
+		}
 	}
 	else if (data->coo[0] > mid)
+	{
 		data->aim |= UP;
+		dprintf(data->fd2, "***** UP *****");
+	}
 	else if (data->coo[0] < mid)
+	{
 		data->aim |= DOWN;
+		dprintf(data->fd2, "***** DOWN *****");
+	}
 	else if((data->aim & UP && data->coo[0] <= mid)
-		|| (data->aim & DOWN && data->coo[0] >= mid)
+		|| (data->aim & DOWN && data->coo[0] >= mid))
+	{
 		data->aim |= CUT;
+		dprintf(data->fd2, "***** CUT *****");
+	}
 }
 
 void ft_analyse(t_data *data)

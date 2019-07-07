@@ -6,7 +6,7 @@
 /*   By: amamy <amamy@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/30 14:26:37 by amamy             #+#    #+#             */
-/*   Updated: 2019/07/07 17:57:18 by amamy            ###   ########.fr       */
+/*   Updated: 2019/07/07 19:48:00 by amamy            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -73,8 +73,6 @@ static int	ft_data_mallocation(t_data *data, char *map_size)
 	// 	return (-1);
 	if (!(data->coo_you = ft_memalloc(sizeof(int) * 2)))
 		return (-1);
-	if (!(data->coo = ft_memalloc(sizeof(int) * 2)))
-		return (-1);
 	return (0);
 }
 
@@ -88,6 +86,8 @@ static int	ft_get_player(t_data *data)
 	char	*player;
 
 	player = NULL;
+	if (!(data->coo = ft_memalloc(sizeof(int) * 2)))
+		return (-1);
 	dprintf(data->fd2, "%s\n", "<-----------start read-player");
 	if (get_next_line(data->fd, &player) == -1)
 	{
