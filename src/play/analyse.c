@@ -6,7 +6,7 @@
 /*   By: amamy <amamy@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/19 16:28:09 by amamy             #+#    #+#             */
-/*   Updated: 2019/06/27 21:51:59 by amamy            ###   ########.fr       */
+/*   Updated: 2019/07/07 18:16:46 by amamy            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -87,7 +87,8 @@ static	void ft_get_aim(t_data *data)
 		data->aim |= UP;
 	else if (data->coo[0] < mid)
 		data->aim |= DOWN;
-	else if(data->coo[0] == mid)
+	else if((data->aim & UP && data->coo[0] <= mid)
+		|| (data->aim & DOWN && data->coo[0] >= mid)
 		data->aim |= CUT;
 }
 

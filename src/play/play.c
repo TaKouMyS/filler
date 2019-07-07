@@ -6,7 +6,7 @@
 /*   By: amamy <amamy@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/20 16:29:17 by amamy             #+#    #+#             */
-/*   Updated: 2019/07/06 20:03:11 by amamy            ###   ########.fr       */
+/*   Updated: 2019/07/07 18:17:51 by amamy            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,9 +51,9 @@
 
 int ft_play(t_data *data)
 {
-	ft_putstr("ft_play1\n");
+	// ft_putstr("ft_play1\n");
 	ft_analyse(data);
-	ft_putstr("ft_play2\n");
+	// ft_putstr("ft_play2\n");
 	if (data->aim & UP)
 	{
 		if (ft_go_up(data) == -1)
@@ -61,17 +61,26 @@ int ft_play(t_data *data)
 			ft_putstr("ft_play -1");
 			return (-1);
 		}
-		ft_putstr("ft_play3\n");
+		// ft_putstr("ft_play3\n");
 	}
+	else if (data->aim & DOWN)
+	{
 
+		if (ft_go_down(data) == -1)
+		{
+			ft_putstr("ft_go down -1");
+			return (-1);
+		}
+	}
+	else if (data->aim & CUT)
+		if (ft_go_cut(data) == -1)
+		{
+			ft_putstr("ft_go cut -1");
+			return (-1);
+		}
 	// if (data->aim & FILL)
 	// 	ft_go_fill(data);
-	// else if (data->aim & CUT)
-	// 	ft_go_cut(data);
-	// else if (data->aim & UP)
-	// 	ft_go_up(data);
-	// else if (data->aim & DOWN)
-	// 	ft_go_down(data);
+
 	dprintf(data->fd2, "<---------Coup : \n%d %d\n<-----------fin coupe\n", data->coo[0], data->coo[1] - 4);
 	ft_putnbr(data->coo[0]);
 	ft_putstr(" ");

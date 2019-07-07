@@ -1,3 +1,9 @@
+Work :
+- go up		: ok
+- go down	: ok
+- go cut
+- go fill
+Bugs :
 - CHeck play :
 DOesn't check if piece is in map
 
@@ -6,7 +12,10 @@ DOesn't check if piece is in map
 
  - coo outisde map? seg!
 
-
+- shape like :
+**.
+..*
+are'nt supported, detected as wrong piece
 
 Do a bitwise system to free. Or juste do wide free function which free if exist like I did with data->piece :
 if (data->piece)

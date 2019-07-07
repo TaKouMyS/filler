@@ -6,7 +6,7 @@
 /*   By: amamy <amamy@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/26 12:32:03 by amamy             #+#    #+#             */
-/*   Updated: 2019/07/06 20:06:00 by amamy            ###   ########.fr       */
+/*   Updated: 2019/07/07 15:33:49 by amamy            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -87,30 +87,30 @@ i = 1;
 	first_star = 1;
 	// printf("<---- Start check play \ndata->coo Y : X: [%d ; %d]\n", data->coo[0], data->coo[1]);
 	// printf("three cluster : [%c][%c][%c]\n", data->map[data->coo[0]][data->coo[1]], data->map[data->coo[0]][data->coo[1] + 1], data->map[data->coo[0]][data->coo[1] + 2]);
-	ft_putstr("A\n");
+	// ft_putstr("A\n");
 	if (!(coo_star = ft_memalloc(sizeof(int) * 2)))
 		return (-1);
-		ft_putstr("B\n");
+		// ft_putstr("B\n");
 	if (!(coo_map = ft_memalloc(sizeof(int) * 2)))
 		return (-1);
-		ft_putstr("C\n");
+		// ft_putstr("C\n");
 	while (ft_coo_next_star(data, coo_star, first_star) == 1)
 	{
-		ft_putstr("D\n");
+		// ft_putstr("D\n");
 		// printf(" star no : %d\n", i++);
 		first_star = 0;
 		if (ft_coo_star_map(data, coo_star, coo_map) == -1)
 			return (-1);
-			ft_putstr("E\n");
-		printf("data->map[%d][%d] : \n", coo_map[0], coo_map[1]);
+			// ft_putstr("E\n");
+		// printf("data->map[%d][%d] : \n", coo_map[0], coo_map[1]);
 		if (data->map[coo_map[0]][coo_map[1]] == data->token)
 			cover++;
-			ft_putstr("F\n");
+			// ft_putstr("F\n");
 		// printf(" cover : %d\n", cover);
 	}
 	if (cover != 1)
 	{
-		ft_putstr("coooover\n");
+		// ft_putstr("coooover\n");
 		// printf("<---- end check play \n\n");
 		return (-1);
 	}

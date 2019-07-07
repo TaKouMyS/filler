@@ -6,7 +6,7 @@
 /*   By: amamy <amamy@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/02 11:02:39 by amamy             #+#    #+#             */
-/*   Updated: 2019/07/06 20:02:56 by amamy            ###   ########.fr       */
+/*   Updated: 2019/07/07 15:30:49 by amamy            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,18 +54,26 @@ int	ft_read_piece(t_data *data)
 	char	*str_piece_size;
 	i = 0;
 
-	get_next_line(data->fd, &str_piece_size);
+	// if (!(str_piece_size = ft_memalloc(sizeof(char) * (30))))
+	// 	return (-1);
+	int ret;
+	if ((ret = get_next_line(data->fd, &str_piece_size)) == -1)
+			return (-1);
+	if (ret == 0)
+		return (0);
+
 			ft_putstr_fd("ici\n", data->fd2);
 			// ft_putstr("ici\n");
 		dprintf(data->fd2, "%s\n", "<-----------start piece size");
-			ft_putstr_fd("la\n", data->fd2);
+			// ft_putstr_fd("la\n", data->fd2);
 			// ft_putstr("la\n");
-		dprintf(data->fd2, "%s\n", str_piece_size);
-			ft_putstr_fd("la_bas\n", data->fd2);
+		dprintf(data->fd2, "%s\n", str_piece_size); //Use of uninitialised value of size 8 && Invalid read of size 1
+		// dprintf(data->fd2, "%s\n", str_piece_size); //Use of uninitialised value of size 8 && Invalid read of size 1
+			// ft_putstr_fd("la_bas\n", data->fd2);
 			// ft_putstr("la_bas\n");
 		dprintf(data->fd2, "%s\n", "<-----------end piece size");
-			ft_putstr_fd("kiki\n", data->fd2);
-			// ft_putstr("kiki\n");
+			// ft_putstr_fd("kiki\n", data->fd2);
+			//  ft_putstr("kiki\n");
 	ft_read_piece_size(data, str_piece_size);
 	free(str_piece_size);
 		dprintf(data->fd2, "%s\n", "<-----------strart read-piece");

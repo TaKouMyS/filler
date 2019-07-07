@@ -33,6 +33,7 @@ SRCS 	= $(SRCDIR)/main.c					\
 		$(SRC_PLAY_DIR)/play.c				\
 		$(SRC_PLAY_DIR)/analyse.c			\
 		$(SRC_PLAY_DIR)/go_up.c				\
+		$(SRC_PLAY_DIR)/go_down.c			\
 		$(SRC_CHECKS_DIR)/check_play.c
 
 ALLFLAGS = -I$(LIBDIR) -I$(SRCDIR) -o
