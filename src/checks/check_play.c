@@ -6,7 +6,7 @@
 /*   By: amamy <amamy@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/26 12:32:03 by amamy             #+#    #+#             */
-/*   Updated: 2019/07/07 15:33:49 by amamy            ###   ########.fr       */
+/*   Updated: 2019/07/08 18:26:21 by amamy            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -87,7 +87,6 @@ i = 1;
 	first_star = 1;
 	// printf("<---- Start check play \ndata->coo Y : X: [%d ; %d]\n", data->coo[0], data->coo[1]);
 	// printf("three cluster : [%c][%c][%c]\n", data->map[data->coo[0]][data->coo[1]], data->map[data->coo[0]][data->coo[1] + 1], data->map[data->coo[0]][data->coo[1] + 2]);
-	// ft_putstr("A\n");
 	if (!(coo_star = ft_memalloc(sizeof(int) * 2)))
 		return (-1);
 		// ft_putstr("B\n");
@@ -103,7 +102,8 @@ i = 1;
 			return (-1);
 			// ft_putstr("E\n");
 		// printf("data->map[%d][%d] : \n", coo_map[0], coo_map[1]);
-		if (data->map[coo_map[0]][coo_map[1]] == data->token)
+		if (data->map[coo_map[0]][coo_map[1]] == data->token \
+			|| data->map[coo_map[0]][coo_map[1]] == (data->token + 32))
 			cover++;
 			// ft_putstr("F\n");
 		// printf(" cover : %d\n", cover);

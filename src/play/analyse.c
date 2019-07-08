@@ -6,7 +6,7 @@
 /*   By: amamy <amamy@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/19 16:28:09 by amamy             #+#    #+#             */
-/*   Updated: 2019/07/07 20:14:51 by amamy            ###   ########.fr       */
+/*   Updated: 2019/07/08 18:27:32 by amamy            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,7 @@ static void ft_store_first_piece(t_data *data, int tmp[4])
 		data->coo_you[0] = tmp[0];
 		data->coo_you[1] = tmp[1] - 4;
 	}
-	printf("coo just stored : Y : %d | x : %d\n", data->coo[0], data->coo[1]);
+	// printf("coo just stored : Y : %d | x : %d\n", data->coo[0], data->coo[1]);
 }
 
 static void ft_get_first_piece(t_data *data)
