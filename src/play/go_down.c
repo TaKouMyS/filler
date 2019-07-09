@@ -6,7 +6,7 @@
 /*   By: amamy <amamy@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/26 17:11:58 by amamy             #+#    #+#             */
-/*   Updated: 2019/07/08 18:27:06 by amamy            ###   ########.fr       */
+/*   Updated: 2019/07/09 18:20:21 by amamy            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,13 +53,13 @@ static int	ft_low_token(t_data *data, int *low_tok)
 	x = 0;
 	ret = 0;
 	// printf("0 - Y : %d | x  :%d\n", y ,x);
-	while (data->map[y][x] != data->token && data->map[y][x] != '\0')
+	while (data->map[y][x] != data->tok_me[0] && data->map[y][x] != '\0')
 		x++;
 	// printf("1 - Y : %d | x  :%d\n", y ,x);
-	if (data->map[y][x] != data->token)
+	if (data->map[y][x] != data->tok_me[0])
 	{
 	// printf("2 - Y : %d | x  :%d\n", y ,x);
-		while (y > -1 && (!(ret = ft_star_line(data->map[y], data->token)))	\
+		while (y > -1 && (!(ret = ft_star_line(data->map[y], data->tok_me[0])))	\
 			&& ret != 1 && ret != -1)
 		{
 			// printf("2.5 - Y : %d | x  :%d\nSL_ret : %d\n", y ,x, ret);
@@ -73,15 +73,17 @@ static int	ft_low_token(t_data *data, int *low_tok)
 		}
 		x = 0;
 		while (y > -1 && data->map[y][x] != '\0'
-			&& (!(data->map[y][x] == data->token \
-			|| data->map[y][x] == data->token + 32)))
+			&& (!(data->map[y][x] == data->tok_me[0] \
+			|| data->map[y][x] == data->tok_me[1])))
 				x++;
 	}
 	// printf("4 - Y : %d | x  :%d\n", y ,x);
-	if (!(data->map[y][x] == data->token \
-		|| data->map[y][x] == (data->token + 32)) && y++  == -1)
+	if (y < 0)
+		y = 0;
+	if ((!(data->map[y][x] == data->tok_me[0] \
+		|| data->map[y][x] == (data->tok_me[1]))))
 	{
-		while ((ret = ft_star_line(data->map[y], data->token)) == 0 \
+		while ((ret = ft_star_line(data->map[y], data->tok_me[0])) == 0 \
 			&& ret != -1)
 		{
 			// printf("5 - Y : %d | x  :%d\nSL_ret : %d\n", y ,x, ret);
@@ -93,7 +95,8 @@ static int	ft_low_token(t_data *data, int *low_tok)
 			return (-1);
 		}
 		x = 0;
-		while (data->map[y][x] != data->token && data->map[y][x] != '\0')
+		while ((!(data->map[y][x] == data->tok_me[0] \
+			|| data->map[y][x] == data->tok_me[1])) && data->map[y][x] != '\0')
 			x++;
 	}
 

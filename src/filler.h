@@ -6,7 +6,7 @@
 /*   By: amamy <amamy@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/28 17:57:31 by amamy             #+#    #+#             */
-/*   Updated: 2019/07/07 18:53:16 by amamy            ###   ########.fr       */
+/*   Updated: 2019/07/09 16:59:20 by amamy            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,8 @@ typedef struct	s_data
 	int			*piece_size;
 	char		**piece;
 	int			player_number;
-	char		token;
+	char		*tok_me;
+	char		*tok_op;
 	// int			*coo_me;
 	int			*coo_you;
 	int			*coo;

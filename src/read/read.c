@@ -6,7 +6,7 @@
 /*   By: amamy <amamy@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/30 14:26:37 by amamy             #+#    #+#             */
-/*   Updated: 2019/07/07 19:48:00 by amamy            ###   ########.fr       */
+/*   Updated: 2019/07/09 17:12:50 by amamy            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,28 @@
 
 
 #include <stdio.h>
+/*
+** ft_store_token :
+**
+*/
+static void	ft_store_token(t_data *data)
+{
+	if (data->player_number == 1)
+	{
+		data->tok_me[0] = 'O';
+		data->tok_me[1] = 'o';
+		data->tok_op[0] = 'X';
+		data->tok_op[1] = 'x';
+
+	}
+	if (data->player_number == 2)
+	{
+		data->tok_me[0] = 'X';
+		data->tok_me[1] = 'x';
+		data->tok_op[0] = 'O';
+		data->tok_op[1] = 'o';
+	}
+}
 
 /*
 ** ft_read_map_size :
@@ -73,6 +95,10 @@ static int	ft_data_mallocation(t_data *data, char *map_size)
 	// 	return (-1);
 	if (!(data->coo_you = ft_memalloc(sizeof(int) * 2)))
 		return (-1);
+	if (!(data->tok_me = ft_memalloc(sizeof(char) * 2)))
+		return (-1);
+	if (!(data->tok_op = ft_memalloc(sizeof(char) * 2)))
+		return (-1);
 	return (0);
 }
 
@@ -105,10 +131,6 @@ static int	ft_get_player(t_data *data)
 		data->player_number = 2;
 	else
 		return (-1);
-	if (data->player_number == 1)
-		data->token = 'O';
-	if (data->player_number == 2)
-		data->token = 'X';
 	free(player);
 	return (0);
 }
@@ -125,6 +147,7 @@ int	ft_read(t_data *data)
 		|| (get_next_line(data->fd, &map_size) == -1) \
 		|| (ft_data_mallocation(data, map_size) == -1))
 			return (-1);
+	ft_store_token(data);
 	dprintf(data->fd2, "%s\n", "<-----------start read-map_size - 1");
 	dprintf(data->fd2, "%s\n", map_size);
 	dprintf(data->fd2, "%s\n", "<-----------end read-map_size - 1 ");

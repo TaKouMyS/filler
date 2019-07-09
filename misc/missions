@@ -1,0 +1,58 @@
+Work :
+- go up									: ok
+- go down								: ok
+- finish check play :
+	- check if * is on the map_size 	: ok  - hard to test but
+	- check if * is on adversary token 	:
+- update chek_integrity for pieces like :
+	**.
+	..*
+- go cut	:
+- go fill
+Bugs :
+- CHeck play :
+DOesn't check if piece is in map
+
+- Parse during gnl, like :
+ while gnl != 0 && ft_strcomp(line. <>) &&
+
+ - coo outisde map? seg!
+
+- shape like :
+**.
+..*
+are'nt supported, detected as wrong piece
+
+Do a bitwise system to free. Or juste do wide free function which free if exist like I did with data->piece :
+if (data->piece)
+	free(data->piece)
+
+
+si on met ça en input : pointer being freed was not allocated
+*** set a breakpoint in malloc_error_break to debug :
+
+static void	ft_near_star_UL(t_data *data, int y, int x)
+{
+	char *star;
+	int i;
+
+	i = x;
+	if (data->piece[y][x] != '*')
+	{
+		while (y >= 0 && star != NULL)
+		{
+			star = ft_strchr(data->piece[y--], '*');
+		}
+		y++;
+		if (star != NULL)
+		{
+			while (x >= 0 && data->piece[y][x] != '*')
+			{
+				x--;
+			}
+		}
+	}
+		data->coo[0] = data->coo_me[0] - y;
+		data->coo[1] = data->coo_me[1] - x;
+
+}

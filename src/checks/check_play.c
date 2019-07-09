@@ -6,7 +6,7 @@
 /*   By: amamy <amamy@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/26 12:32:03 by amamy             #+#    #+#             */
-/*   Updated: 2019/07/08 18:26:21 by amamy            ###   ########.fr       */
+/*   Updated: 2019/07/09 17:21:31 by amamy            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -98,12 +98,16 @@ i = 1;
 		// ft_putstr("D\n");
 		// printf(" star no : %d\n", i++);
 		first_star = 0;
-		if (ft_coo_star_map(data, coo_star, coo_map) == -1)
+		if ((ft_coo_star_map(data, coo_star, coo_map) == -1) || coo_map[0] < 0 \
+			|| coo_map[0] > (data->map_size[0] - 1) || coo_map[1] < 4	\
+			|| coo_map[1] > (data->map_size[1] + 4)						\
+			|| data->map[coo_map[0]][coo_map[1]] == data->tok_op[0]		\
+			|| data->map[coo_map[0]][coo_map[1]] == data->tok_op[1])
 			return (-1);
 			// ft_putstr("E\n");
 		// printf("data->map[%d][%d] : \n", coo_map[0], coo_map[1]);
-		if (data->map[coo_map[0]][coo_map[1]] == data->token \
-			|| data->map[coo_map[0]][coo_map[1]] == (data->token + 32))
+		if (data->map[coo_map[0]][coo_map[1]] == data->tok_me[0] \
+			|| data->map[coo_map[0]][coo_map[1]] == (data->tok_me[1]))
 			cover++;
 			// ft_putstr("F\n");
 		// printf(" cover : %d\n", cover);

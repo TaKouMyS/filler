@@ -6,7 +6,7 @@
 /*   By: amamy <amamy@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/26 17:11:58 by amamy             #+#    #+#             */
-/*   Updated: 2019/07/07 15:33:20 by amamy            ###   ########.fr       */
+/*   Updated: 2019/07/09 17:38:39 by amamy            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,12 +31,12 @@ static int ft_star_line(char *line, char token)
 		// ft_putstr("ft_star_line -1");
 		return (-1);
 	}
-	while (line[i] != token && line[i] != '\0')
+	while (!(line[i] == token || line[i] == (token + 32)) && line[i] != '\0')
 	{
 		// printf("line[%d] : %c\n", i, line[i]);
 		i++;
 	}
-	if (line[i] == token)
+	if (line[i] == token || line[i] == (token + 32))
 	{
 		// printf("found\n");
 		found = 1;
@@ -54,34 +54,24 @@ static int	ft_top_token(t_data *data, int *top_tok)
 	y = data->coo[0];
 	x = 0;
 	ret = 0;
-	// printf("y : [%d  x :  %d]\n", y, x);
-	// printf("coo top_tok : Y : %d | x : %d\n", data->coo[0], data->coo[1]);
-	// ft_putstr("top_tok\n");
-	while (data->map[y][x] != data->token && data->map[y][x] != '\0')
+	while (data->map[y][x] != '\0' && (!(data->map[y][x] == data->tok_me[0] \
+		&& data->map[y][x] == data->tok_me[1])))
 		x++;
-	// ft_putstr("top_tok1\n");
-	if (data->map[y][x] != data->token)
+	if (data->map[y][x] != data->tok_me[0] \
+		&& data->map[y][x] != data->tok_me[1])
 	{
-		while ((!(ret = ft_star_line(data->map[y], data->token))) && ret != 1 \
-			&& ret != -1)
-		{
-			// printf("data->map[%d]\n", y);
+		while ((!(ret = ft_star_line(data->map[y], data->tok_me[0]))) \
+			&& ret != 1 && ret != -1)
 			y++;
-		}
 		if (ret == -1)
-		{
-			// ft_putstr("ft_top_token -1\n");
 			return (-1);
-		}
-			// ft_putstr("top_tok2\n");
 		x = 0;
-		while (data->map[y][x] != data->token)
+		while (data->map[y][x] != data->tok_me[0] \
+			&& data->map[y][x] != data->tok_me[1])
 			x++;
-			// ft_putstr("top_tok3\n");
 	}
 	top_tok[0] = y;
 	top_tok[1] = x;
-	// printf("top_tok : [%d ; %d]\n", top_tok[0], top_tok[1]);
 	return (0);
 }
 

@@ -6,7 +6,7 @@
 /*   By: amamy <amamy@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/19 16:28:09 by amamy             #+#    #+#             */
-/*   Updated: 2019/07/08 18:27:32 by amamy            ###   ########.fr       */
+/*   Updated: 2019/07/09 17:30:13 by amamy            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -79,7 +79,9 @@ static	void ft_get_aim(t_data *data)
 	mid = data->map_size[0] / 2;
 	if (data->aim & CUT)
 	{
-		while (data->map[mid][i] != '\0' && data->map[mid][i] == data->token)
+		while (data->map[mid][i] != '\0' \
+			&& (data->map[mid][i] == data->tok_me[0] \
+			|| data->map[mid][i] == data->tok_me[1]))
 			i++;
 		if (data->map[mid][i] == '\0')
 		{
