@@ -6,7 +6,7 @@
 /*   By: amamy <amamy@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/15 20:23:00 by amamy             #+#    #+#             */
-/*   Updated: 2019/07/09 18:34:32 by amamy            ###   ########.fr       */
+/*   Updated: 2019/07/09 21:34:44 by amamy            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,30 +60,42 @@ static char	**ft_piece_cpy(t_data *data, char **piece)
 	return (piece);
 }
 
-/*
-** ft_check_block :
-** Recursive function which verifies that the shape is in one piece.
-*/
-static int	ft_check_shape(t_data *data, int y, int x, char **piece)
-{
-	int		found;
-
-	found = 0;
-	if (piece[y][x] == 'F')
-		found = 1;
-	piece[y][x] = '.';
-	if (y > 0 && piece[y - 1][x] == '*' && (found += 1))
-		found += ft_check_shape(data, y - 1, x, piece);
-	if (piece[y][x] != '\0' && piece[y][x + 1] == '*' && (found += 1))
-		found += ft_check_shape(data, y, x + 1, piece);
-	if (y < (data->piece_size[0] - 1) && piece[y + 1][x] == '*' && (found += 1))
-		found += ft_check_shape(data, y + 1, x, piece);
-	if (x > 0 && piece[y][x - 1] == '*' && (found += 1))
-		found += ft_check_shape(data, y, x - 1, piece);
-	if (found == 0)
-		return (0);
-	return (found);
-}
+// /*
+// ** ft_check_block :
+// ** Recursive function which verifies that the shape is in one piece.
+// */
+// static int	ft_check_shape(t_data *data, int y, int x, char **piece)
+// {
+// 	int		found;
+//
+// 	found = 0;
+// 	if (piece[y][x] == 'F')
+// 		found = 1;
+// 	piece[y][x] = '.';
+// 	if (y > 0 && piece[y - 1][x] == '*' &&(found += 1))
+// 		found += ft_check_shape(data, y - 1, x, piece);
+// 	if (y > 0 && piece[y][x] != '\0' && piece[y - 1][x + 1] == '*' \
+// 		&& (found += 1))
+// 			found += ft_check_shape(data, y - 1, x + 1, piece);
+// 	if (piece[y][x] != '\0' && piece[y][x + 1] == '*' && (found += 1))
+// 		found += ft_check_shape(data, y, x + 1, piece);
+// 	if (piece[y][x] != '\0' && y < (data->piece_size[0] - 1) \
+// 		&& piece[y + 1][x + 1] == '*' && (found += 1))
+// 			found += ft_check_shape(data, y + 1, x + 1, piece);
+// 	if (y < (data->piece_size[0] - 1) && piece[y + 1][x] == '*' && (found += 1))
+// 		found += ft_check_shape(data, y + 1, x, piece);
+// 	if (y < (data->piece_size[0] - 1) && x < 0 && piece[y + 1][x - 1] == '*' \
+// 		&& (found += 1))
+// 			found += ft_check_shape(data, y + 1, x - 1, piece);
+// 	if (x > 0 && piece[y][x - 1] == '*' && (found += 1))
+// 		found += ft_check_shape(data, y, x - 1, piece);
+// 	if (x > 0 && y < (data->piece_size[0] - 1) \
+// 		&& piece[y + 1][x - 1] == '*' && (found += 1))
+// 			found += ft_check_shape(data, y + 1, x - 1, piece);
+// 	if (found == 0)
+// 		return (0);
+// 	return (found);
+// }
 
 /*
 ** ft_check_integrity :

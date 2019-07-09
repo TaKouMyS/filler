@@ -6,7 +6,7 @@
 /*   By: amamy <amamy@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/28 17:57:31 by amamy             #+#    #+#             */
-/*   Updated: 2019/07/09 16:59:20 by amamy            ###   ########.fr       */
+/*   Updated: 2019/07/09 21:19:00 by amamy            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,6 +44,7 @@ void	ft_free_checks(t_data *data, char **str_read);
 int		ft_read_piece(t_data *data);
 int		ft_read_map(t_data *data);
 int		ft_check_piece(t_data *data);
+int		ft_check_shape(t_data *data, int y, int x, char **piece);
 int		ft_play(t_data *data);
 void	ft_analyse(t_data *data);
 int		ft_go_up(t_data *data);

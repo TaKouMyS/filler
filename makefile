@@ -30,6 +30,7 @@ SRCS 	= $(SRCDIR)/main.c					\
 		$(SRC_CHECKS_DIR)/checks.c			\
 		$(SRC_CHECKS_DIR)/check_map.c		\
 		$(SRC_CHECKS_DIR)/check_piece.c		\
+		$(SRC_CHECKS_DIR)/check_shape.c		\
 		$(SRC_PLAY_DIR)/play.c				\
 		$(SRC_PLAY_DIR)/analyse.c			\
 		$(SRC_PLAY_DIR)/go_up.c				\
