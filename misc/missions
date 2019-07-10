@@ -3,12 +3,17 @@ Work :
 - go down								: ok
 - finish check play :
 	- check if * is on the map_size 	: ok  - hard to test but
-	- check if * is on adversary token 	: 
-- update chek_integrity for pieces like :
+	- check if * is on adversary token 	: ok
+- update chek_integrity for pieces like : ok
 	**.
 	..*
-- go cut	:
-- go fill
+
+bug fix : algo seem weaker when go down,
+stuck on gnl in a case : 				: ok
+
+
+- go cut								:
+- go fill								:
 Bugs :
 - CHeck play :
 DOesn't check if piece is in map

@@ -6,7 +6,7 @@
 /*   By: amamy <amamy@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/28 18:03:42 by amamy             #+#    #+#             */
-/*   Updated: 2019/07/07 19:33:06 by amamy            ###   ########.fr       */
+/*   Updated: 2019/07/10 16:07:32 by amamy            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ int main()
 	t_data	*data;
 
 	char *vm = "vm.log";
-	// char *test = "tests";
+	// char *test = "misc/tests";
 	if (!(data = ft_memalloc(sizeof(t_data))))
 		return (0);
 

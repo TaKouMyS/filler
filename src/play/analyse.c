@@ -6,7 +6,7 @@
 /*   By: amamy <amamy@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/19 16:28:09 by amamy             #+#    #+#             */
-/*   Updated: 2019/07/09 17:30:13 by amamy            ###   ########.fr       */
+/*   Updated: 2019/07/10 10:24:01 by amamy            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -77,6 +77,7 @@ static	void ft_get_aim(t_data *data)
 
 	i = 0;
 	mid = data->map_size[0] / 2;
+	dprintf(data->fd2, "\nGet aim : \ndata->coo[0] : %d\n\n", data->coo[0]);
 	if (data->aim & CUT)
 	{
 		while (data->map[mid][i] != '\0' \
