@@ -6,7 +6,7 @@
 /*   By: amamy <amamy@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/19 16:28:09 by amamy             #+#    #+#             */
-/*   Updated: 2019/07/10 10:24:01 by amamy            ###   ########.fr       */
+/*   Updated: 2019/07/10 18:27:25 by amamy            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -90,6 +90,12 @@ static	void ft_get_aim(t_data *data)
 			dprintf(data->fd2, "***** FILL *****");
 		}
 	}
+	else if((data->aim & UP && data->coo[0] <= mid)
+	|| (data->aim & DOWN && data->coo[0] >= mid))
+	{
+		data->aim |= CUT;
+		dprintf(data->fd2, "***** CUT *****");
+	}
 	else if (data->coo[0] > mid)
 	{
 		data->aim |= UP;
@@ -99,12 +105,6 @@ static	void ft_get_aim(t_data *data)
 	{
 		data->aim |= DOWN;
 		dprintf(data->fd2, "***** DOWN *****");
-	}
-	else if((data->aim & UP && data->coo[0] <= mid)
-		|| (data->aim & DOWN && data->coo[0] >= mid))
-	{
-		data->aim |= CUT;
-		dprintf(data->fd2, "***** CUT *****");
 	}
 }
 

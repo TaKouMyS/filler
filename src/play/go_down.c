@@ -6,7 +6,7 @@
 /*   By: amamy <amamy@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/26 17:11:58 by amamy             #+#    #+#             */
-/*   Updated: 2019/07/10 16:03:59 by amamy            ###   ########.fr       */
+/*   Updated: 2019/07/10 17:34:32 by amamy            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -161,7 +161,7 @@ int	ft_go_down(t_data *data)
 			data->coo[1] = x0;
 			data->coo[0]--;
 		}
-		// dprintf(data->fd2, "y : %d | x ; %d\n", data->coo[0], data->coo[1]);
+		dprintf(data->fd2, "y : %d | x ; %d\n", data->coo[0], data->coo[1]);
 	}
 	return (0);
 }

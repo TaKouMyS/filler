@@ -6,7 +6,7 @@
 /*   By: amamy <amamy@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/28 18:03:42 by amamy             #+#    #+#             */
-/*   Updated: 2019/07/10 16:07:32 by amamy            ###   ########.fr       */
+/*   Updated: 2019/07/10 17:24:29 by amamy            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ int main()
 
 	t_data	*data;
 
-	char *vm = "vm.log";
+	char *vm = "/Users/amamy/Documents/project/08-filler/git/misc/vm.log";
 	// char *test = "misc/tests";
 	if (!(data = ft_memalloc(sizeof(t_data))))
 		return (0);
