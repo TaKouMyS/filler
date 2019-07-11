@@ -6,7 +6,7 @@
 /*   By: amamy <amamy@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/28 17:57:31 by amamy             #+#    #+#             */
-/*   Updated: 2019/07/10 20:24:50 by amamy            ###   ########.fr       */
+/*   Updated: 2019/07/11 16:25:03 by amamy            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ typedef struct	s_data
 	char		*tok_me;
 	char		*tok_op;
 	// int			*coo_me;
-	int			*coo_you;
+	int			*coo_op;
 	int			*coo;
 	int			stars;
 	int			aim;
@@ -50,7 +50,9 @@ void	ft_analyse(t_data *data);
 int		ft_go_up(t_data *data);
 int		ft_go_down(t_data *data);
 int		ft_go_cut(t_data *data);
+int		ft_go_fill(t_data *data);
 int		ft_star_line(char *line, char token);
+int		ft_line_mine(t_data *data, char *line);
 int		ft_check_play(t_data *data);
 
 #endif

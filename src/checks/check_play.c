@@ -6,7 +6,7 @@
 /*   By: amamy <amamy@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/26 12:32:03 by amamy             #+#    #+#             */
-/*   Updated: 2019/07/09 17:21:31 by amamy            ###   ########.fr       */
+/*   Updated: 2019/07/11 16:13:24 by amamy            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -100,7 +100,7 @@ i = 1;
 		first_star = 0;
 		if ((ft_coo_star_map(data, coo_star, coo_map) == -1) || coo_map[0] < 0 \
 			|| coo_map[0] > (data->map_size[0] - 1) || coo_map[1] < 4	\
-			|| coo_map[1] > (data->map_size[1] + 4)						\
+			|| coo_map[1] > (data->map_size[1] + 3)						\
 			|| data->map[coo_map[0]][coo_map[1]] == data->tok_op[0]		\
 			|| data->map[coo_map[0]][coo_map[1]] == data->tok_op[1])
 			return (-1);

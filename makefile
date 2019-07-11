@@ -24,7 +24,7 @@ HEAD	= $(SRCDIR)/filler.h
 
 SRCS 	= $(SRCDIR)/main.c					\
 		$(SRCDIR)/free.c					\
-		$(SRCDIR)/ft_star_line.c			\
+		$(SRCDIR)/line_tools.c				\
 		$(SRC_READ_DIR)/read.c				\
 		$(SRC_READ_DIR)/read_map.c			\
 		$(SRC_READ_DIR)/read_piece.c		\
@@ -36,7 +36,7 @@ SRCS 	= $(SRCDIR)/main.c					\
 		$(SRC_PLAY_DIR)/analyse.c			\
 		$(SRC_PLAY_DIR)/go_up.c				\
 		$(SRC_PLAY_DIR)/go_down.c			\
-		$(SRC_PLAY_DIR)/go_cut.c			\
+		$(SRC_PLAY_DIR)/go_cut_fill.c		\
 		$(SRC_CHECKS_DIR)/check_play.c
 
 ALLFLAGS = -I$(LIBDIR) -I$(SRCDIR) -o

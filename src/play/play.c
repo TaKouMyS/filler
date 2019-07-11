@@ -6,7 +6,7 @@
 /*   By: amamy <amamy@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/20 16:29:17 by amamy             #+#    #+#             */
-/*   Updated: 2019/07/10 20:41:02 by amamy            ###   ########.fr       */
+/*   Updated: 2019/07/11 16:24:35 by amamy            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,8 +55,11 @@ int ft_play(t_data *data)
 	ft_analyse(data);
 	if (data->aim & FILL)
 	{
-		dprintf(data->fd2, "OUIiIIIIIIiiiiiiiiiiIIIIII\n");
-		// ft_go_fill(data);
+		if (ft_go_fill(data) == -1)
+		{
+			ft_putstr("ft_go cut -1\n");
+			return (-1);
+		}
 	}
 	else if (data->aim & CUT)
 	{
@@ -68,7 +71,6 @@ int ft_play(t_data *data)
 	}
 	else if (data->aim & UP)
 	{
-		// ft_putstr("ft_play2\n");
 		if (ft_go_up(data) == -1)
 		{
 			ft_putstr("ft_play -1");
@@ -78,7 +80,6 @@ int ft_play(t_data *data)
 	}
 	else if (data->aim & DOWN)
 	{
-	// ft_putstr("ft_play4\n");
 		if (ft_go_down(data) == -1)
 		{
 			ft_putstr("ft_go down -1\n");
