@@ -6,7 +6,7 @@
 /*   By: amamy <amamy@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/19 16:28:09 by amamy             #+#    #+#             */
-/*   Updated: 2019/07/10 18:27:25 by amamy            ###   ########.fr       */
+/*   Updated: 2019/07/10 20:46:37 by amamy            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,19 @@
 #include "filler.h"
 
 #include <stdio.h>
+
+static int	ft_line_full(t_data *data, char *line)
+{
+	int i;
+
+	i = 4;
+	while ((line[i] == data->tok_me[0] || line[i] == data->tok_me[1]) \
+		&& line[i] != '\0')
+			i++;
+	if (line[i] == '\0')
+		return (1);
+	return (0);
+}
 
 static void ft_store_first_piece(t_data *data, int tmp[4])
 {
@@ -74,17 +87,18 @@ static	void ft_get_aim(t_data *data)
 {
 	int mid;
 	int i;
+	int ret;
 
 	i = 0;
-	mid = data->map_size[0] / 2;
+	ret = 0;
+	mid = (data->map_size[0] / 2) - 3;
 	dprintf(data->fd2, "\nGet aim : \ndata->coo[0] : %d\n\n", data->coo[0]);
 	if (data->aim & CUT)
 	{
-		while (data->map[mid][i] != '\0' \
-			&& (data->map[mid][i] == data->tok_me[0] \
-			|| data->map[mid][i] == data->tok_me[1]))
+		dprintf(data->fd2, "GO FOR FILL\n");
+		while (i <= 5 && (ret = ft_line_full(data, data->map[mid])) != 1)
 			i++;
-		if (data->map[mid][i] == '\0')
+		if (ret == 1)
 		{
 			data->aim |= FILL;
 			dprintf(data->fd2, "***** FILL *****");

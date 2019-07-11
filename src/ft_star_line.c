@@ -1,30 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   go_cut.c                                           :+:      :+:    :+:   */
+/*   ft_star_line.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: amamy <amamy@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/07/07 18:27:03 by amamy             #+#    #+#             */
-/*   Updated: 2019/07/10 20:19:04 by amamy            ###   ########.fr       */
+/*   Created: 2019/07/10 20:23:44 by amamy             #+#    #+#             */
+/*   Updated: 2019/07/10 20:24:55 by amamy            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
 #include "filler.h"
+#include "libft.h"
 
-int	ft_go_cut(t_data *data)
+int	ft_star_line(char *line, char token)
 {
-	data->coo[0] = data->map_size[0] / 2;
-	data->coo[1] = 0;
-	while ((ft_check_play(data)) != 0)
-	{
-		data->coo[1]++;
-		if ((data->coo[1] > (data->map_size[1] - 1)))
-		{
-			data->coo[1] = 0;
-			data->coo[0]--;
-		}
-	}
-	return (0);
+	int i;
+	int	found;
+
+
+	i = 0;
+	found = 0;
+	if (line == NULL)
+		return (-1);
+	while (!(line[i] == token || line[i] == (token + 32)) && line[i] != '\0')
+		i++;
+	if (line[i] == token || line[i] == (token + 32))
+		found = 1;
+	return (found);
 }

@@ -6,7 +6,7 @@
 /*   By: amamy <amamy@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/26 17:11:58 by amamy             #+#    #+#             */
-/*   Updated: 2019/07/09 17:38:39 by amamy            ###   ########.fr       */
+/*   Updated: 2019/07/10 20:25:56 by amamy            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,36 +14,6 @@
 #include "filler.h"
 
 #include <stdio.h>
-
-static int ft_star_line(char *line, char token)
-{
-	int i;
-	int	found;
-
-
-	i = 0;
-	found = 0;
-	// ft_putstr("star_line\n");
-	// printf("line : |%s|\n", line);
-	// printf("token : %c\n", token);
-	if (line == NULL)
-	{
-		// ft_putstr("ft_star_line -1");
-		return (-1);
-	}
-	while (!(line[i] == token || line[i] == (token + 32)) && line[i] != '\0')
-	{
-		// printf("line[%d] : %c\n", i, line[i]);
-		i++;
-	}
-	if (line[i] == token || line[i] == (token + 32))
-	{
-		// printf("found\n");
-		found = 1;
-	}
-		// ft_putstr("star_line2\n");
-	return (found);
-}
 
 static int	ft_top_token(t_data *data, int *top_tok)
 {

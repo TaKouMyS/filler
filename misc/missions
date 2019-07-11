@@ -12,7 +12,7 @@ bug fix : algo seem weaker when go down,
 stuck on gnl in a case : 				: ok
 
 
-- go cut								:
+- go cut								: ok
 - go fill								:
 Bugs :
 - CHeck play :

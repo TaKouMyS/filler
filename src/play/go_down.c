@@ -6,7 +6,7 @@
 /*   By: amamy <amamy@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/26 17:11:58 by amamy             #+#    #+#             */
-/*   Updated: 2019/07/10 17:34:32 by amamy            ###   ########.fr       */
+/*   Updated: 2019/07/11 11:36:14 by amamy            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,45 +15,17 @@
 
 #include <stdio.h>
 
-static int ft_star_line(char *line, char token)
-{
-	int i;
-	int	found;
-
-
-	i = 0;
-	found = 0;
-	if (line == NULL)
-	{
-		return (-1);
-	}
-	// dprintf(data->fd2, "######## Start line\n");
-	while (!(line[i] == token || line[i] == (token + 32)) && line[i] != '\0')
-	{
-		i++;
-		// dprintf(data->fd2, "SL - Line[%d] : |%c|\n", i, line[i]);
-	}
-	// dprintf(data->fd2, "######## Stop line\n");
-	// dprintf(data->fd2, "line [%d] : |%c|\n", i, line[i]);
-	if (line[i] == token || line[i] == (token + 32))
-	{
-		// ft_putstr("founnd\n");
-		found = 1;
-	}
-	return (found);
-}
-
 static int	ft_low_token(t_data *data, int *low_tok)
 {
 	int y;
 	int x;
 	int ret;
 
+	x = data->map_size[1] + 3;
 	if ((ret = ft_star_line(data->map[data->map_size[0] / 2], data->tok_me[0])))
 		y = data->map_size[0] - 1;
 	else
 		y = data->map_size[0] / 2;
-	x = 0;
 	while (y >= 0 && (ret = ft_star_line(data->map[y], data->tok_me[0])) != 1)
 		y--;
 	if (ret == -1)
@@ -61,7 +33,7 @@ static int	ft_low_token(t_data *data, int *low_tok)
 	if (ret == 1)
 		while (!(data->map[y][x] == data->tok_me[0] \
 			|| data->map[y][x] == data->tok_me[1]) && data->map[y][x] != '\0')
-				x++;
+				x--;
 	low_tok[0] = y;
 	low_tok[1] = x;
 	dprintf(data->fd2, "\nLow-token : y:%d	| x:%d\n", y , x);
@@ -152,11 +124,10 @@ int	ft_go_down(t_data *data)
 	data->coo[1] = low_tok[1];
 	x0 = data->coo[1];
 	dprintf(data->fd2, "y : %d | x ; %d\n", data->coo[0], data->coo[1]);
-	while ((ret = ft_check_play(data)) != 0)
+	while ((ret = ft_check_play(data)) != 0 && data->coo[0] >= 0)
 	{
-		// ft_putstr("go dowm - 3\n");
 		data->coo[1]--;
-		if ((data->coo[1] + (data->piece_size[1] - 1)) < low_tok[1])
+		if ((data->coo[1] + (data->piece_size[1] - 1)) < 0)
 		{
 			data->coo[1] = x0;
 			data->coo[0]--;

@@ -24,6 +24,7 @@ HEAD	= $(SRCDIR)/filler.h
 
 SRCS 	= $(SRCDIR)/main.c					\
 		$(SRCDIR)/free.c					\
+		$(SRCDIR)/ft_star_line.c			\
 		$(SRC_READ_DIR)/read.c				\
 		$(SRC_READ_DIR)/read_map.c			\
 		$(SRC_READ_DIR)/read_piece.c		\

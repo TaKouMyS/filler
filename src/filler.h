@@ -6,7 +6,7 @@
 /*   By: amamy <amamy@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/28 17:57:31 by amamy             #+#    #+#             */
-/*   Updated: 2019/07/09 21:19:00 by amamy            ###   ########.fr       */
+/*   Updated: 2019/07/10 20:24:50 by amamy            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,6 +50,7 @@ void	ft_analyse(t_data *data);
 int		ft_go_up(t_data *data);
 int		ft_go_down(t_data *data);
 int		ft_go_cut(t_data *data);
+int		ft_star_line(char *line, char token);
 int		ft_check_play(t_data *data);
 
 #endif
