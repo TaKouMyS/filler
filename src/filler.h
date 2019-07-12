@@ -6,7 +6,7 @@
 /*   By: amamy <amamy@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/28 17:57:31 by amamy             #+#    #+#             */
-/*   Updated: 2019/07/11 16:25:03 by amamy            ###   ########.fr       */
+/*   Updated: 2019/07/12 13:16:12 by amamy            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,6 +32,7 @@ typedef struct	s_data
 	int			*coo;
 	int			stars;
 	int			aim;
+	int			mid;
 
 	int			fd;
 	int			fd2;

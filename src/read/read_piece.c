@@ -6,7 +6,7 @@
 /*   By: amamy <amamy@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/02 11:02:39 by amamy             #+#    #+#             */
-/*   Updated: 2019/07/07 15:30:49 by amamy            ###   ########.fr       */
+/*   Updated: 2019/07/12 12:06:22 by amamy            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,9 +61,6 @@ int	ft_read_piece(t_data *data)
 			return (-1);
 	if (ret == 0)
 		return (0);
-
-			ft_putstr_fd("ici\n", data->fd2);
-			// ft_putstr("ici\n");
 		dprintf(data->fd2, "%s\n", "<-----------start piece size");
 			// ft_putstr_fd("la\n", data->fd2);
 			// ft_putstr("la\n");

@@ -6,7 +6,7 @@
 /*   By: amamy <amamy@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/26 17:11:58 by amamy             #+#    #+#             */
-/*   Updated: 2019/07/11 11:36:14 by amamy            ###   ########.fr       */
+/*   Updated: 2019/07/12 11:34:16 by amamy            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -110,6 +110,7 @@ int	ft_go_down(t_data *data)
 	int	x0;
 	int	ret;
 
+		dprintf(data->fd2, "GO_DOWN\n");
 	ret = 0;
 	// ft_putstr("go dowm\n");
 	if (!(low_tok = ft_memalloc(sizeof(int) * 2)))

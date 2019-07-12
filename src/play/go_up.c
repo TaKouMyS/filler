@@ -6,7 +6,7 @@
 /*   By: amamy <amamy@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/26 17:11:58 by amamy             #+#    #+#             */
-/*   Updated: 2019/07/10 20:25:56 by amamy            ###   ########.fr       */
+/*   Updated: 2019/07/12 11:33:41 by amamy            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,6 +51,7 @@ int	ft_go_up(t_data *data)
 	int	x0;
 	int	ret;
 
+		dprintf(data->fd2, "GO_UP\n");
 	ret = 0;
 	if (!(top_tok = ft_memalloc(sizeof(int) * 2)))
 		return (-1);
