@@ -6,7 +6,7 @@
 /*   By: amamy <amamy@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/26 17:11:58 by amamy             #+#    #+#             */
-/*   Updated: 2019/07/12 11:33:41 by amamy            ###   ########.fr       */
+/*   Updated: 2019/07/12 15:58:16 by amamy            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,7 +58,7 @@ int	ft_go_up(t_data *data)
 	// ft_putstr("go_up1\n");
 	if (ft_top_token(data, top_tok) == -1)
 	{
-		ft_putstr("ft_go_up -1\n");
+		// ft_putstr("ft_go_up -1\n");
 		return  (-1);
 	}
 	// ft_putstr("go_up2\n");

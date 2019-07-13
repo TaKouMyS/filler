@@ -8,25 +8,27 @@ Work :
 	**.
 	..*
 
-bug fix : algo seem weaker when go down,
+bug fix : algo seem weaker when go down,.
 stuck on gnl in a case : 				: ok
 
 
 - go cut								: ok
 - go fill								:
-Bugs :
-- CHeck play :
-DOesn't check if piece is in map
 
+
+
+
+Bugs :
+map 00 -> doesnt go to the last 2
+check play, has bugs? often miss
+
+
+ideas :
 - Parse during gnl, like :
  while gnl != 0 && ft_strcomp(line. <>) &&
 
- - coo outisde map? seg!
 
-- shape like :
-**.
-..*
-are'nt supported, detected as wrong piece
+
 
 Do a bitwise system to free. Or juste do wide free function which free if exist like I did with data->piece :
 if (data->piece)

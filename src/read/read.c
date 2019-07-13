@@ -6,7 +6,7 @@
 /*   By: amamy <amamy@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/30 14:26:37 by amamy             #+#    #+#             */
-/*   Updated: 2019/07/11 15:09:24 by amamy            ###   ########.fr       */
+/*   Updated: 2019/07/13 16:15:03 by amamy            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -82,7 +82,8 @@ static int	ft_data_mallocation(t_data *data, char *map_size)
 		return (-1);
 	if (!(data->map_size = ft_memalloc(sizeof(int) * 2)))
 		return (-1);
-		if ((ft_read_map_size(map_size, data) == -1))
+		if (!(ft_strncmp(map_size, "Plateau ", 8) == 0) \
+			|| (ft_read_map_size(map_size, data) == -1))
 		{
 			free(map_size);
 			return (-1);

@@ -6,7 +6,7 @@
 /*   By: amamy <amamy@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/26 12:32:03 by amamy             #+#    #+#             */
-/*   Updated: 2019/07/11 16:13:24 by amamy            ###   ########.fr       */
+/*   Updated: 2019/07/13 15:57:57 by amamy            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -85,35 +85,34 @@ int	i;
 i = 1;
 	cover = 0;
 	first_star = 1;
-	// printf("<---- Start check play \ndata->coo Y : X: [%d ; %d]\n", data->coo[0], data->coo[1]);
-	// printf("three cluster : [%c][%c][%c]\n", data->map[data->coo[0]][data->coo[1]], data->map[data->coo[0]][data->coo[1] + 1], data->map[data->coo[0]][data->coo[1] + 2]);
 	if (!(coo_star = ft_memalloc(sizeof(int) * 2)))
 		return (-1);
-		// ft_putstr("B\n");
 	if (!(coo_map = ft_memalloc(sizeof(int) * 2)))
 		return (-1);
-		// ft_putstr("C\n");
 	while (ft_coo_next_star(data, coo_star, first_star) == 1)
 	{
-		// ft_putstr("D\n");
-		// printf(" star no : %d\n", i++);
 		first_star = 0;
-		if ((ft_coo_star_map(data, coo_star, coo_map) == -1) || coo_map[0] < 0 \
+		if ((ft_coo_star_map(data, coo_star, coo_map) == -1)			\
+			|| coo_map[0] < 0 											\
 			|| coo_map[0] > (data->map_size[0] - 1) || coo_map[1] < 4	\
 			|| coo_map[1] > (data->map_size[1] + 3)						\
 			|| data->map[coo_map[0]][coo_map[1]] == data->tok_op[0]		\
 			|| data->map[coo_map[0]][coo_map[1]] == data->tok_op[1])
-			return (-1);
-			// ft_putstr("E\n");
-		// printf("data->map[%d][%d] : \n", coo_map[0], coo_map[1]);
+			{
+				// dprintf(data->fd2, "\nIL EST LA LE RETURN\n");
+				return (-1);
+			}
 		if (data->map[coo_map[0]][coo_map[1]] == data->tok_me[0] \
 			|| data->map[coo_map[0]][coo_map[1]] == (data->tok_me[1]))
-			cover++;
-			// ft_putstr("F\n");
-		// printf(" cover : %d\n", cover);
+			{
+
+				dprintf(data->fd2, "coo star map : %d:%d\n", coo_map[0], coo_map[1]);
+				cover++;
+			}
 	}
 	if (cover != 1)
 	{
+		dprintf(data->fd2, "\nRETURN : cover : %d\n", cover);
 		// ft_putstr("coooover\n");
 		// printf("<---- end check play \n\n");
 		return (-1);

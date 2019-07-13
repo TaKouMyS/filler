@@ -6,7 +6,7 @@
 /*   By: amamy <amamy@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/19 16:28:09 by amamy             #+#    #+#             */
-/*   Updated: 2019/07/12 13:20:06 by amamy            ###   ########.fr       */
+/*   Updated: 2019/07/12 14:00:41 by amamy            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,9 +32,7 @@ static void ft_store_first_piece(t_data *data, int tmp[4])
 		data->coo_op[0] = tmp[0];
 		data->coo_op[1] = tmp[1] - 4;
 	}
-	data->mid = data->coo[0] - data->coo_op[0];
-	if (data->mid < 0)
-		data->mid = data->mid * -1;
+	data->mid = (data->coo[0] + data->coo_op[0]) / 2;
 	dprintf(data->fd2, "Mid stored : %d\n", data->mid);
 }
 
@@ -75,13 +73,13 @@ static void ft_get_first_piece(t_data *data)
 
 static	void ft_get_aim(t_data *data)
 {
-	int mid;
 	int i;
 	int ret;
+	int mid;
 
 	i = 0;
 	ret = 0;
-	mid = (data->map_size[0] / 2) - 3;
+	mid = data->mid - 3;
 	dprintf(data->fd2, "\nGet aim : \ndata->coo[0] : %d\n\n", data->coo[0]);
 	if (data->aim & CUT)
 	{

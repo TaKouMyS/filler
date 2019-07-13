@@ -6,7 +6,7 @@
 /*   By: amamy <amamy@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/26 17:11:58 by amamy             #+#    #+#             */
-/*   Updated: 2019/07/12 11:34:16 by amamy            ###   ########.fr       */
+/*   Updated: 2019/07/12 13:43:30 by amamy            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,10 +22,10 @@ static int	ft_low_token(t_data *data, int *low_tok)
 	int ret;
 
 	x = data->map_size[1] + 3;
-	if ((ret = ft_star_line(data->map[data->map_size[0] / 2], data->tok_me[0])))
+	if ((ret = ft_star_line(data->map[data->mid], data->tok_me[0])))
 		y = data->map_size[0] - 1;
 	else
-		y = data->map_size[0] / 2;
+		y = data->mid;
 	while (y >= 0 && (ret = ft_star_line(data->map[y], data->tok_me[0])) != 1)
 		y--;
 	if (ret == -1)

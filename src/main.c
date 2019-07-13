@@ -6,7 +6,7 @@
 /*   By: amamy <amamy@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/28 18:03:42 by amamy             #+#    #+#             */
-/*   Updated: 2019/07/11 16:16:51 by amamy            ###   ########.fr       */
+/*   Updated: 2019/07/13 15:34:13 by amamy            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ int main()
 	// data->fd = open(test, O_RDONLY);
 
 	data->fd = 0;
-	// ft_putstr("0\n");
+	// //ft_putstr("0\n");
 	if (ft_read(data) == -1)
 	{
 		dprintf(data->fd2, "Exit at ft_read in main.c\n");
@@ -45,9 +45,11 @@ int main()
 			return (-1);
 		}
 		 // ft_putstr("2\n");
-		ft_read_map(data);
+		if (ft_read_map(data) == -1)
+			return (-1);
 		// ft_putstr("3\n");
-		ft_read_piece(data);
+		if (ft_read_piece(data) == -1)
+			return (-1);
 	}
 	if (data->piece)
 		ft_free(data);
