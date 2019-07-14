@@ -6,7 +6,7 @@
 /*   By: amamy <amamy@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/12/10 19:28:19 by amamy             #+#    #+#             */
-/*   Updated: 2019/07/06 17:00:30 by amamy            ###   ########.fr       */
+/*   Updated: 2019/07/13 19:12:47 by amamy            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -88,10 +88,7 @@ int			get_next_line(const int fd, char **line)
 	char		buf[BUFF_SIZE];
 
 	if (!line || read(fd, buf, 0) == -1 || fd < 0 || BUFF_SIZE < 1)
-	{
-		ft_putstr("\n\nGNL -1\n");
 		return (-1);
-	}
 	if (!str)
 		str = ft_strnew(0);
 	if (((str = (ft_read_str(fd, &str))) == NULL))

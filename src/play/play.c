@@ -6,7 +6,7 @@
 /*   By: amamy <amamy@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/20 16:29:17 by amamy             #+#    #+#             */
-/*   Updated: 2019/07/13 14:36:10 by amamy            ###   ########.fr       */
+/*   Updated: 2019/07/13 16:34:05 by amamy            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,7 +60,7 @@ int ft_play(t_data *data)
 		dprintf(data->fd2, "PLAY - FILL\n");
 		if (ft_go_fill(data) == -1)
 		{
-			//ft_putstr("ft_go cut -1\n");
+			dprintf(data->fd2, "return -1 ft_go_fill\n");
 			return (-1);
 		}
 	}
@@ -69,7 +69,7 @@ int ft_play(t_data *data)
 		dprintf(data->fd2, "PLAY - CUT\n");
 		if (ft_go_cut(data) == -1)
 		{
-			//ft_putstr("ft_go cut -1\n");
+			dprintf(data->fd2, "return -1 ft_go_cut\n");
 			return (-1);
 		}
 	}
@@ -78,7 +78,7 @@ int ft_play(t_data *data)
 		dprintf(data->fd2, "PLAY - UP\n");
 		if (ft_go_up(data) == -1)
 		{
-			//ft_putstr("ft_play -1");
+			dprintf(data->fd2, "return -1 ft_go_up\n");
 			return (-1);
 		}
 		// ////ft_putstr("ft_play3\n");
@@ -88,7 +88,7 @@ int ft_play(t_data *data)
 		dprintf(data->fd2, "PLAY - UP\n");
 		if (ft_go_down(data) == -1)
 		{
-			////ft_putstr("ft_go down -1\n");
+			dprintf(data->fd2, "return -1 ft_go_down\n");
 			return (-1);
 		}
 	}

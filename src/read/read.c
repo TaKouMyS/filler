@@ -6,7 +6,7 @@
 /*   By: amamy <amamy@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/30 14:26:37 by amamy             #+#    #+#             */
-/*   Updated: 2019/07/13 16:15:03 by amamy            ###   ########.fr       */
+/*   Updated: 2019/07/13 20:10:47 by amamy            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -118,7 +118,8 @@ static int	ft_get_player(t_data *data)
 	dprintf(data->fd2, "%s\n", "<-----------start read-player");
 	if (get_next_line(data->fd, &player) == -1)
 	{
-		ft_putstr("Player, NULL?\n");
+
+		dprintf(data->fd2, "GNL error\n");
 		return (-1);
 	}
 	dprintf(data->fd2, "%s\n", player);
@@ -155,5 +156,6 @@ int	ft_read(t_data *data)
 	free(map_size);
 	if ((ft_read_map(data) == -1) || (ft_read_piece(data) == -1))
 			return (-1);
+	ft_get_first_piece(data);
 	return (0);
 }

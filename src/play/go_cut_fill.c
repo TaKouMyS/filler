@@ -6,7 +6,7 @@
 /*   By: amamy <amamy@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/07/07 18:27:03 by amamy             #+#    #+#             */
-/*   Updated: 2019/07/13 16:00:41 by amamy            ###   ########.fr       */
+/*   Updated: 2019/07/13 20:30:02 by amamy            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -76,7 +76,7 @@ static void	ft_fill_bot(t_data *data)
 
 	y_save = data->coo[0];
 		dprintf(data->fd2, "fill_bot\n");
-	while ((ft_check_play(data)) != 0 && data->coo[0] < data->map_size[0] - 1)
+	while ((ft_check_play(data)) != 0 && data->coo[0] < data->map_size[0])
 	{
 		dprintf(data->fd2, "BOT - y : %d 	| x : %d\n", data->coo[0], data->coo[1]);
 		data->coo[1]--;
@@ -120,9 +120,8 @@ int	ft_go_cut(t_data *data)
 	data->coo[0] = data->mid;
 	data->coo[1] = -(data->piece_size[1] - 1);
 	dprintf(data->fd2, "ft_go_cut\n");
-	dprintf(data->fd2, "map_size[1] -1 : %d\n", data->map_size[1] - 1);
-	while ((ft_check_play(data)) != 0 \
-		&& data->coo[0] > data->piece_size[0] - 1)
+	while ((ft_check_play(data)) != 0	\
+		 && data->coo[0] > data->piece_size[0] - 1)
 		{
 			dprintf(data->fd2, "y : %d 	| x : %d\n", data->coo[0], data->coo[1]);
 			data->coo[1]++;

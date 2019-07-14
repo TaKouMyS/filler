@@ -6,7 +6,7 @@
 /*   By: amamy <amamy@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/28 17:57:31 by amamy             #+#    #+#             */
-/*   Updated: 2019/07/12 13:16:12 by amamy            ###   ########.fr       */
+/*   Updated: 2019/07/13 20:10:02 by amamy            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,6 +40,7 @@ typedef struct	s_data
 }				t_data;
 
 int		ft_read(t_data *data);
+void 	ft_get_first_piece(t_data *data);
 void	ft_free(t_data *data);
 void	ft_free_checks(t_data *data, char **str_read);
 int		ft_read_piece(t_data *data);
