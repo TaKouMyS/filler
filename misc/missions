@@ -25,7 +25,7 @@ check play, has bugs? often miss
 ideas :
 - Parse during gnl, like :
  while gnl != 0 && ft_strcomp(line. <>) &&
-
+-put protection before coup, like check play and if not good -> random
 
 
 

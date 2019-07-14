@@ -6,7 +6,7 @@
 /*   By: amamy <amamy@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/15 20:23:00 by amamy             #+#    #+#             */
-/*   Updated: 2019/07/09 21:44:54 by amamy            ###   ########.fr       */
+/*   Updated: 2019/07/14 16:59:50 by amamy            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -76,7 +76,7 @@ static int	ft_check_integrity(t_data *data)
 	y = 0;
 	if (!(piece = ft_piece_cpy(data, piece)))
 		return (-1);
-	while (y < data->piece_size[0] + 1)
+	while (y < data->piece_size[0])
 	{
 		x = 0;
 		while (data->piece[y][x] != '\0')

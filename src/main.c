@@ -6,7 +6,7 @@
 /*   By: amamy <amamy@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/28 18:03:42 by amamy             #+#    #+#             */
-/*   Updated: 2019/07/13 20:11:27 by amamy            ###   ########.fr       */
+/*   Updated: 2019/07/14 11:42:47 by amamy            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,10 +46,16 @@ int main()
 		}
 		 // ft_putstr("2\n");
 		if (ft_read_map(data) == -1)
+		{
+			dprintf(data->fd2, "Read map exit\n");
 			return (-1);
+		}
 		// ft_putstr("3\n");
 		if (ft_read_piece(data) == -1)
+		{
+			dprintf(data->fd2, "Read piece exit\n");
 			return (-1);
+		}
 	}
 	if (data->piece)
 		ft_free(data);

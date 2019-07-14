@@ -6,7 +6,7 @@
 /*   By: amamy <amamy@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/26 12:32:03 by amamy             #+#    #+#             */
-/*   Updated: 2019/07/13 20:21:38 by amamy            ###   ########.fr       */
+/*   Updated: 2019/07/14 14:57:49 by amamy            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,7 +40,7 @@ int	ft_coo_next_star(t_data *data, int *coo, int first_star)
 			{
 				coo[0] = y;
 				coo[1] = x;
-				dprintf(data->fd2, "next _ star Y:X: [%d ; %d]\n", coo[0], coo[1]);
+				// dprintf(data->fd2, "next _ star Y:X: [%d ; %d]\n", coo[0], coo[1]);
 				return (1);
 			}
 			x++;
@@ -94,11 +94,11 @@ i = 1;
 	while (ft_coo_next_star(data, coo_star, first_star) == 1)
 	{
 		first_star = 0;
-
+		// dprintf(data->fd2, "\ncoo to check : %d:%d\n", data->coo[0], data->coo[1]);
 		if ((ft_coo_star_map(data, coo_star, coo_map) == -1)			\
 			|| coo_map[0] < 0 											\
 			|| coo_map[0] > (data->map_size[0] - 1) || coo_map[1] < 4	\
-			|| coo_map[1] > (data->map_size[1] + 3)						\
+			|| coo_map[1] > (data->map_size[1] + 3)		 				\
 			|| data->map[coo_map[0]][coo_map[1]] == data->tok_op[0]		\
 			|| data->map[coo_map[0]][coo_map[1]] == data->tok_op[1])
 			{

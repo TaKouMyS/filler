@@ -6,7 +6,7 @@
 /*   By: amamy <amamy@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/26 17:11:58 by amamy             #+#    #+#             */
-/*   Updated: 2019/07/13 17:16:32 by amamy            ###   ########.fr       */
+/*   Updated: 2019/07/14 14:54:07 by amamy            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,22 +14,6 @@
 #include "filler.h"
 
 #include <stdio.h>
-static void	ft_bruteforce(t_data *data)
-{
-	dprintf(data->fd2, "ft_bruteforce\n");
-	data->coo[1] = -(data->piece_size[1] - 1);
-	data->coo[0] = 0;
-	while ((ft_check_play(data)) != 0)
-	{
-		data->coo[1]++;
-		if (data->coo[1] == data->map_size[1] + 3)
-		{
-			data->coo[1] = -(data->piece_size[1] - 1);
-			data->coo[0]++;
-		}
-	}
-
-}
 
 static int	ft_low_token(t_data *data, int *low_tok)
 {

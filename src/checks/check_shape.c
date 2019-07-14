@@ -6,7 +6,7 @@
 /*   By: amamy <amamy@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/07/09 21:18:00 by amamy             #+#    #+#             */
-/*   Updated: 2019/07/09 21:35:27 by amamy            ###   ########.fr       */
+/*   Updated: 2019/07/14 17:07:34 by amamy            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ static int	ft_next(t_data *data, int y, int x, char **piece)
 	{
 		found += ft_check_shape(data, y + 1, x, piece);
 	}
-	if (y < (data->piece_size[0] - 1) && x < 0 && piece[y + 1][x - 1] == '*' \
+	if (y < (data->piece_size[0] - 1) && x > 0 && piece[y + 1][x - 1] == '*' \
 		&& (found += 1))
 	{
 			found += ft_check_shape(data, y + 1, x - 1, piece);
@@ -36,10 +36,10 @@ static int	ft_next(t_data *data, int y, int x, char **piece)
 	{
 		found += ft_check_shape(data, y, x - 1, piece);
 	}
-	if (x > 0 && y < (data->piece_size[0] - 1) \
-		&& piece[y + 1][x - 1] == '*' && (found += 1))
+	if (x > 0 && y > 0 \
+		&& piece[y - 1][x - 1] == '*' && (found += 1))
 	{
-		found += ft_check_shape(data, y + 1, x - 1, piece);
+		found += ft_check_shape(data, y - 1, x - 1, piece);
 	}
 	return (found);
 }
@@ -52,19 +52,23 @@ int	ft_check_shape(t_data *data, int y, int x, char **piece)
 {
 	int		found;
 
+	dprintf(data->fd2, "coo (Y:X) : %d:%d\n", y, x);
 	found = 0;
 	if (piece[y][x] == 'F')
 		found = 1;
 	piece[y][x] = '.';
+	dprintf(data->fd2, "1\n");
 	if (y > 0 && piece[y - 1][x] == '*' &&(found += 1))
 	{
 		found += ft_check_shape(data, y - 1, x, piece);
 	}
+	dprintf(data->fd2, "2\n");
 	if (y > 0 && piece[y][x] != '\0' && piece[y - 1][x + 1] == '*' \
 		&& (found += 1))
 	{
 			found += ft_check_shape(data, y - 1, x + 1, piece);
 	}
+	dprintf(data->fd2, "3\n");
 	if (piece[y][x] != '\0' && piece[y][x + 1] == '*' && (found += 1))
 	{
 		found += ft_check_shape(data, y, x + 1, piece);

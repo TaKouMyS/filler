@@ -1,0 +1,6848 @@
+<-----------start read-player
+$$$ exec p1 : [../amamy.filler]
+<-----------end read-player
+<-----------start read-map_size - 1
+Plateau 15 17:
+<-----------end read-map_size - 1 
+<-----------start solo-line read-map
+    01234567890123456
+<xxxxxxxxxxxend solo-line read-map
+<-----------start read-map
+000 .................
+001 .................
+002 .................
+003 .................
+004 .................
+005 .................
+006 .................
+007 .................
+008 ..O..............
+009 .................
+010 .................
+011 .................
+012 ..............X..
+013 .................
+014 .................
+<xxxxxxxxxxx end read-map
+<-----------start piece size
+Piece 2 3:
+<-----------end piece size
+<-----------strart read-piece
+**.
+***
+<-----------end read-piece-->
+coo (Y:X) : 0:0
+1
+2
+3
+coo (Y:X) : 0:1
+1
+2
+3
+coo (Y:X) : 1:2
+1
+2
+3
+coo (Y:X) : 1:1
+1
+2
+3
+coo (Y:X) : 1:0
+1
+2
+3
+Mid stored : 10
+PLAY - 1
+
+Get aim : 
+data->coo[0] : 8
+
+***** UP *****PLAY - 2
+PLAY - UP
+GO_UP
+<---------Coup : 
+7 0
+<-----------fin coupe
+<-----------start map_size
+<-----------end map_size
+<-----------start solo-line read-map
+    01234567890123456
+<xxxxxxxxxxxend solo-line read-map
+<-----------start read-map
+000 .................
+001 .................
+002 .................
+003 .................
+004 .................
+005 .................
+006 .................
+007 OO...............
+008 OOO..............
+009 .................
+010 .................
+011 .................
+012 .............XXX.
+013 .................
+014 .................
+<xxxxxxxxxxx end read-map
+<-----------start piece size
+Piece 1 3:
+<-----------end piece size
+<-----------strart read-piece
+.**
+<-----------end read-piece-->
+coo (Y:X) : 0:1
+1
+2
+3
+coo (Y:X) : 0:2
+1
+2
+3
+PLAY - 1
+
+Get aim : 
+data->coo[0] : 7
+
+***** CUT *****PLAY - 2
+PLAY - CUT
+<---------Coup : 
+8 1
+<-----------fin coupe
+<-----------start map_size
+<-----------end map_size
+<-----------start solo-line read-map
+    01234567890123456
+<xxxxxxxxxxxend solo-line read-map
+<-----------start read-map
+000 .................
+001 .................
+002 .................
+003 .................
+004 .................
+005 .................
+006 .................
+007 OO...............
+008 OOOO.............
+009 .................
+010 .................
+011 ...........X.X...
+012 ...........XXXXX.
+013 .................
+014 .................
+<xxxxxxxxxxx end read-map
+<-----------start piece size
+Piece 1 2:
+<-----------end piece size
+<-----------strart read-piece
+**
+<-----------end read-piece-->
+coo (Y:X) : 0:0
+1
+2
+3
+coo (Y:X) : 0:1
+1
+2
+3
+PLAY - 1
+
+Get aim : 
+data->coo[0] : 8
+
+PLAY - 2
+PLAY - CUT
+<---------Coup : 
+8 3
+<-----------fin coupe
+<-----------start map_size
+<-----------end map_size
+<-----------start solo-line read-map
+    01234567890123456
+<xxxxxxxxxxxend solo-line read-map
+<-----------start read-map
+000 .................
+001 .................
+002 .................
+003 .................
+004 .................
+005 .................
+006 .................
+007 OO...............
+008 OOOOO............
+009 .................
+010 ...........X.....
+011 ...........X.X...
+012 ...........XXXXX.
+013 .................
+014 .................
+<xxxxxxxxxxx end read-map
+<-----------start piece size
+Piece 2 3:
+<-----------end piece size
+<-----------strart read-piece
+...
+**.
+<-----------end read-piece-->
+coo (Y:X) : 1:0
+1
+2
+3
+coo (Y:X) : 1:1
+1
+2
+3
+PLAY - 1
+
+Get aim : 
+data->coo[0] : 8
+
+PLAY - 2
+PLAY - CUT
+<---------Coup : 
+7 4
+<-----------fin coupe
+<-----------start map_size
+<-----------end map_size
+<-----------start solo-line read-map
+    01234567890123456
+<xxxxxxxxxxxend solo-line read-map
+<-----------start read-map
+000 .................
+001 .................
+002 .................
+003 .................
+004 .................
+005 .................
+006 .................
+007 OO...............
+008 OOOOOO...........
+009 ...........X.....
+010 ...........X.....
+011 ...........X.X...
+012 ...........XXXXX.
+013 .................
+014 .................
+<xxxxxxxxxxx end read-map
+<-----------start piece size
+Piece 1 2:
+<-----------end piece size
+<-----------strart read-piece
+**
+<-----------end read-piece-->
+coo (Y:X) : 0:0
+1
+2
+3
+coo (Y:X) : 0:1
+1
+2
+3
+PLAY - 1
+
+Get aim : 
+data->coo[0] : 7
+
+PLAY - 2
+PLAY - CUT
+<---------Coup : 
+8 5
+<-----------fin coupe
+<-----------start map_size
+<-----------end map_size
+<-----------start solo-line read-map
+    01234567890123456
+<xxxxxxxxxxxend solo-line read-map
+<-----------start read-map
+000 .................
+001 .................
+002 .................
+003 .................
+004 .................
+005 .................
+006 .................
+007 OO...............
+008 OOOOOOO..........
+009 .........XXX.....
+010 ...........X.....
+011 ...........X.X...
+012 ...........XXXXX.
+013 .................
+014 .................
+<xxxxxxxxxxx end read-map
+<-----------start piece size
+Piece 1 3:
+<-----------end piece size
+<-----------strart read-piece
+.**
+<-----------end read-piece-->
+coo (Y:X) : 0:1
+1
+2
+3
+coo (Y:X) : 0:2
+1
+2
+3
+PLAY - 1
+
+Get aim : 
+data->coo[0] : 8
+
+PLAY - 2
+PLAY - CUT
+<---------Coup : 
+8 5
+<-----------fin coupe
+<-----------start map_size
+<-----------end map_size
+<-----------start solo-line read-map
+    01234567890123456
+<xxxxxxxxxxxend solo-line read-map
+<-----------start read-map
+000 .................
+001 .................
+002 .................
+003 .................
+004 .................
+005 .................
+006 .................
+007 OO...............
+008 OOOOOOOO.........
+009 .........XXX.....
+010 .........XXX.....
+011 ...........X.X...
+012 ...........XXXXX.
+013 .................
+014 .................
+<xxxxxxxxxxx end read-map
+<-----------start piece size
+Piece 2 3:
+<-----------end piece size
+<-----------strart read-piece
+***
+..*
+<-----------end read-piece-->
+coo (Y:X) : 0:0
+1
+2
+3
+coo (Y:X) : 0:1
+1
+2
+3
+coo (Y:X) : 0:2
+1
+2
+3
+coo (Y:X) : 1:2
+1
+2
+3
+PLAY - 1
+
+Get aim : 
+data->coo[0] : 8
+
+PLAY - 2
+PLAY - CUT
+<---------Coup : 
+7 2
+<-----------fin coupe
+<-----------start map_size
+<-----------end map_size
+<-----------start solo-line read-map
+    01234567890123456
+<xxxxxxxxxxxend solo-line read-map
+<-----------start read-map
+000 .................
+001 .................
+002 .................
+003 .................
+004 .................
+005 .................
+006 .................
+007 OOOOO............
+008 OOOOOOOO..X......
+009 .........XXX.....
+010 .........XXX.....
+011 ...........X.X...
+012 ...........XXXXX.
+013 .................
+014 .................
+<xxxxxxxxxxx end read-map
+<-----------start piece size
+Piece 2 3:
+<-----------end piece size
+<-----------strart read-piece
+*..
+*..
+<-----------end read-piece-->
+coo (Y:X) : 0:0
+1
+2
+3
+coo (Y:X) : 1:0
+1
+2
+3
+PLAY - 1
+
+Get aim : 
+data->coo[0] : 7
+
+PLAY - 2
+PLAY - CUT
+<---------Coup : 
+8 0
+<-----------fin coupe
+<-----------start map_size
+<-----------end map_size
+<-----------start solo-line read-map
+    01234567890123456
+<xxxxxxxxxxxend solo-line read-map
+<-----------start read-map
+000 .................
+001 .................
+002 .................
+003 .................
+004 .................
+005 .................
+006 .................
+007 OOOOO............
+008 OOOOOOOO..XXX....
+009 O........XXX.....
+010 .........XXX.....
+011 ...........X.X...
+012 ...........XXXXX.
+013 .................
+014 .................
+<xxxxxxxxxxx end read-map
+<-----------start piece size
+Piece 2 2:
+<-----------end piece size
+<-----------strart read-piece
+.*
+**
+<-----------end read-piece-->
+coo (Y:X) : 0:1
+1
+2
+3
+coo (Y:X) : 1:1
+1
+2
+3
+coo (Y:X) : 1:0
+1
+2
+3
+PLAY - 1
+
+Get aim : 
+data->coo[0] : 8
+
+PLAY - 2
+PLAY - CUT
+<---------Coup : 
+8 1
+<-----------fin coupe
+<-----------start map_size
+<-----------end map_size
+<-----------start solo-line read-map
+    01234567890123456
+<xxxxxxxxxxxend solo-line read-map
+<-----------start read-map
+000 .................
+001 .................
+002 .................
+003 .................
+004 .................
+005 .................
+006 .................
+007 OOOOO............
+008 OOOOOOOO.XXXX....
+009 OOO......XXX.....
+010 .........XXX.....
+011 ...........X.X...
+012 ...........XXXXX.
+013 .................
+014 .................
+<xxxxxxxxxxx end read-map
+<-----------start piece size
+Piece 2 3:
+<-----------end piece size
+<-----------strart read-piece
+.**
+...
+<-----------end read-piece-->
+coo (Y:X) : 0:1
+1
+2
+3
+coo (Y:X) : 0:2
+1
+2
+3
+PLAY - 1
+
+Get aim : 
+data->coo[0] : 8
+
+PLAY - 2
+PLAY - CUT
+<---------Coup : 
+9 1
+<-----------fin coupe
+<-----------start map_size
+<-----------end map_size
+<-----------start solo-line read-map
+    01234567890123456
+<xxxxxxxxxxxend solo-line read-map
+<-----------start read-map
+000 .................
+001 .................
+002 .................
+003 .................
+004 .................
+005 .................
+006 .................
+007 OOOOO......X.....
+008 OOOOOOOO.XXXX....
+009 OOOO.....XXX.....
+010 .........XXX.....
+011 ...........X.X...
+012 ...........XXXXX.
+013 .................
+014 .................
+<xxxxxxxxxxx end read-map
+<-----------start piece size
+Piece 2 1:
+<-----------end piece size
+<-----------strart read-piece
+*
+*
+<-----------end read-piece-->
+coo (Y:X) : 0:0
+1
+2
+3
+coo (Y:X) : 1:0
+1
+2
+3
+PLAY - 1
+
+Get aim : 
+data->coo[0] : 9
+
+PLAY - 2
+PLAY - CUT
+<---------Coup : 
+9 0
+<-----------fin coupe
+<-----------start map_size
+<-----------end map_size
+<-----------start solo-line read-map
+    01234567890123456
+<xxxxxxxxxxxend solo-line read-map
+<-----------start read-map
+000 .................
+001 .................
+002 .................
+003 .................
+004 .................
+005 .................
+006 .................
+007 OOOOO.....XX.....
+008 OOOOOOOO.XXXX....
+009 OOOO.....XXX.....
+010 O........XXX.....
+011 ...........X.X...
+012 ...........XXXXX.
+013 .................
+014 .................
+<xxxxxxxxxxx end read-map
+<-----------start piece size
+Piece 2 2:
+<-----------end piece size
+<-----------strart read-piece
+**
+..
+<-----------end read-piece-->
+coo (Y:X) : 0:0
+1
+2
+3
+coo (Y:X) : 0:1
+1
+2
+3
+PLAY - 1
+
+Get aim : 
+data->coo[0] : 9
+
+PLAY - 2
+PLAY - CUT
+<---------Coup : 
+10 0
+<-----------fin coupe
+<-----------start map_size
+<-----------end map_size
+<-----------start solo-line read-map
+    01234567890123456
+<xxxxxxxxxxxend solo-line read-map
+<-----------start read-map
+000 .................
+001 .................
+002 .................
+003 .................
+004 .................
+005 .................
+006 .................
+007 OOOOO....XXX.....
+008 OOOOOOOO.XXXX....
+009 OOOO.....XXX.....
+010 OO.......XXX.....
+011 ...........X.X...
+012 ...........XXXXX.
+013 .................
+014 .................
+<xxxxxxxxxxx end read-map
+<-----------start piece size
+Piece 1 2:
+<-----------end piece size
+<-----------strart read-piece
+**
+<-----------end read-piece-->
+coo (Y:X) : 0:0
+1
+2
+3
+coo (Y:X) : 0:1
+1
+2
+3
+PLAY - 1
+
+Get aim : 
+data->coo[0] : 10
+
+PLAY - 2
+PLAY - CUT
+<---------Coup : 
+10 1
+<-----------fin coupe
+<-----------start map_size
+<-----------end map_size
+<-----------start solo-line read-map
+    01234567890123456
+<xxxxxxxxxxxend solo-line read-map
+<-----------start read-map
+000 .................
+001 .................
+002 .................
+003 .................
+004 .................
+005 .................
+006 .................
+007 OOOOO....XXX.....
+008 OOOOOOOO.XXXX....
+009 OOOO.....XXXX....
+010 OOO......XXX.....
+011 ...........X.X...
+012 ...........XXXXX.
+013 .................
+014 .................
+<xxxxxxxxxxx end read-map
+<-----------start piece size
+Piece 2 2:
+<-----------end piece size
+<-----------strart read-piece
+**
+..
+<-----------end read-piece-->
+coo (Y:X) : 0:0
+1
+2
+3
+coo (Y:X) : 0:1
+1
+2
+3
+PLAY - 1
+
+Get aim : 
+data->coo[0] : 10
+
+PLAY - 2
+PLAY - CUT
+<---------Coup : 
+10 2
+<-----------fin coupe
+<-----------start map_size
+<-----------end map_size
+<-----------start solo-line read-map
+    01234567890123456
+<xxxxxxxxxxxend solo-line read-map
+<-----------start read-map
+000 .................
+001 .................
+002 .................
+003 .................
+004 .................
+005 .................
+006 .................
+007 OOOOO....XXX.....
+008 OOOOOOOOXXXXX....
+009 OOOO.....XXXX....
+010 OOOO.....XXX.....
+011 ...........X.X...
+012 ...........XXXXX.
+013 .................
+014 .................
+<xxxxxxxxxxx end read-map
+<-----------start piece size
+Piece 1 3:
+<-----------end piece size
+<-----------strart read-piece
+***
+<-----------end read-piece-->
+coo (Y:X) : 0:0
+1
+2
+3
+coo (Y:X) : 0:1
+1
+2
+3
+coo (Y:X) : 0:2
+1
+2
+3
+PLAY - 1
+
+Get aim : 
+data->coo[0] : 10
+
+PLAY - 2
+PLAY - CUT
+<---------Coup : 
+10 3
+<-----------fin coupe
+<-----------start map_size
+<-----------end map_size
+<-----------start solo-line read-map
+    01234567890123456
+<xxxxxxxxxxxend solo-line read-map
+<-----------start read-map
+000 .................
+001 .................
+002 .................
+003 .................
+004 .................
+005 .................
+006 .................
+007 OOOOO....XXX.....
+008 OOOOOOOOXXXXX....
+009 OOOO....XXXXX....
+010 OOOOOO...XXX.....
+011 ...........X.X...
+012 ...........XXXXX.
+013 .................
+014 .................
+<xxxxxxxxxxx end read-map
+<-----------start piece size
+Piece 1 3:
+<-----------end piece size
+<-----------strart read-piece
+**.
+<-----------end read-piece-->
+coo (Y:X) : 0:0
+1
+2
+3
+coo (Y:X) : 0:1
+1
+2
+3
+PLAY - 1
+
+Get aim : 
+data->coo[0] : 10
+
+PLAY - 2
+PLAY - CUT
+<---------Coup : 
+10 5
+<-----------fin coupe
+<-----------start map_size
+<-----------end map_size
+<-----------start solo-line read-map
+    01234567890123456
+<xxxxxxxxxxxend solo-line read-map
+<-----------start read-map
+000 .................
+001 .................
+002 .................
+003 .................
+004 .................
+005 .................
+006 .................
+007 OOOOO....XXXX....
+008 OOOOOOOOXXXXX....
+009 OOOO....XXXXX....
+010 OOOOOOO..XXX.....
+011 ...........X.X...
+012 ...........XXXXX.
+013 .................
+014 .................
+<xxxxxxxxxxx end read-map
+<-----------start piece size
+Piece 2 2:
+<-----------end piece size
+<-----------strart read-piece
+**
+.*
+<-----------end read-piece-->
+coo (Y:X) : 0:0
+1
+2
+3
+coo (Y:X) : 0:1
+1
+2
+3
+coo (Y:X) : 1:1
+1
+2
+3
+PLAY - 1
+
+Get aim : 
+data->coo[0] : 10
+
+PLAY - 2
+PLAY - CUT
+<---------Coup : 
+10 6
+<-----------fin coupe
+<-----------start map_size
+<-----------end map_size
+<-----------start solo-line read-map
+    01234567890123456
+<xxxxxxxxxxxend solo-line read-map
+<-----------start read-map
+000 .................
+001 .................
+002 .................
+003 .................
+004 .................
+005 .................
+006 .................
+007 OOOOO...XXXXX....
+008 OOOOOOOOXXXXX....
+009 OOOO....XXXXX....
+010 OOOOOOOO.XXX.....
+011 .......O...X.X...
+012 ...........XXXXX.
+013 .................
+014 .................
+<xxxxxxxxxxx end read-map
+<-----------start piece size
+Piece 2 3:
+<-----------end piece size
+<-----------strart read-piece
+***
+.*.
+<-----------end read-piece-->
+coo (Y:X) : 0:0
+1
+2
+3
+coo (Y:X) : 0:1
+1
+2
+3
+coo (Y:X) : 0:2
+1
+2
+3
+coo (Y:X) : 1:1
+1
+2
+3
+PLAY - 1
+
+Get aim : 
+data->coo[0] : 10
+
+PLAY - 2
+PLAY - CUT
+<---------Coup : 
+9 4
+<-----------fin coupe
+<-----------start map_size
+<-----------end map_size
+<-----------start solo-line read-map
+    01234567890123456
+<xxxxxxxxxxxend solo-line read-map
+<-----------start read-map
+000 .................
+001 .................
+002 .................
+003 .................
+004 .................
+005 .................
+006 .................
+007 OOOOO...XXXXX....
+008 OOOOOOOOXXXXX....
+009 OOOOOOO.XXXXX....
+010 OOOOOOOOXXXX.....
+011 .......O...X.X...
+012 ...........XXXXX.
+013 .................
+014 .................
+<xxxxxxxxxxx end read-map
+<-----------start piece size
+Piece 1 3:
+<-----------end piece size
+<-----------strart read-piece
+.**
+<-----------end read-piece-->
+coo (Y:X) : 0:1
+1
+2
+3
+coo (Y:X) : 0:2
+1
+2
+3
+PLAY - 1
+
+Get aim : 
+data->coo[0] : 9
+
+PLAY - 2
+PLAY - CUT
+<---------Coup : 
+9 5
+<-----------fin coupe
+<-----------start map_size
+<-----------end map_size
+<-----------start solo-line read-map
+    01234567890123456
+<xxxxxxxxxxxend solo-line read-map
+<-----------start read-map
+000 .................
+001 .................
+002 .................
+003 .................
+004 .................
+005 .................
+006 .................
+007 OOOOO...XXXXX....
+008 OOOOOOOOXXXXX....
+009 OOOOOOOOXXXXXX...
+010 OOOOOOOOXXXX.....
+011 .......O...X.X...
+012 ...........XXXXX.
+013 .................
+014 .................
+<xxxxxxxxxxx end read-map
+<-----------start piece size
+Piece 2 2:
+<-----------end piece size
+<-----------strart read-piece
+**
+.*
+<-----------end read-piece-->
+coo (Y:X) : 0:0
+1
+2
+3
+coo (Y:X) : 0:1
+1
+2
+3
+coo (Y:X) : 1:1
+1
+2
+3
+PLAY - 1
+
+Get aim : 
+data->coo[0] : 9
+
+PLAY - 2
+PLAY - CUT
+<---------Coup : 
+7 5
+<-----------fin coupe
+<-----------start map_size
+<-----------end map_size
+<-----------start solo-line read-map
+    01234567890123456
+<xxxxxxxxxxxend solo-line read-map
+<-----------start read-map
+000 .................
+001 .................
+002 .................
+003 .................
+004 .................
+005 .................
+006 .................
+007 OOOOOOO.XXXXX....
+008 OOOOOOOOXXXXX....
+009 OOOOOOOOXXXXXX...
+010 OOOOOOOOXXXXXX...
+011 .......O...XXX...
+012 ...........XXXXX.
+013 .................
+014 .................
+<xxxxxxxxxxx end read-map
+<-----------start piece size
+Piece 2 3:
+<-----------end piece size
+<-----------strart read-piece
+**.
+**.
+<-----------end read-piece-->
+coo (Y:X) : 0:0
+1
+2
+3
+coo (Y:X) : 0:1
+1
+2
+3
+coo (Y:X) : 1:1
+1
+2
+3
+coo (Y:X) : 1:0
+1
+2
+3
+PLAY - 1
+
+Get aim : 
+data->coo[0] : 7
+
+PLAY - 2
+PLAY - CUT
+<---------Coup : 
+6 6
+<-----------fin coupe
+<-----------start map_size
+<-----------end map_size
+<-----------start solo-line read-map
+    01234567890123456
+<xxxxxxxxxxxend solo-line read-map
+<-----------start read-map
+000 .................
+001 .................
+002 .................
+003 .................
+004 .................
+005 .................
+006 ......OO.........
+007 OOOOOOOOXXXXX....
+008 OOOOOOOOXXXXXX...
+009 OOOOOOOOXXXXXX...
+010 OOOOOOOOXXXXXX...
+011 .......O...XXX...
+012 ...........XXXXX.
+013 .................
+014 .................
+<xxxxxxxxxxx end read-map
+<-----------start piece size
+Piece 2 1:
+<-----------end piece size
+<-----------strart read-piece
+*
+*
+<-----------end read-piece-->
+coo (Y:X) : 0:0
+1
+2
+3
+coo (Y:X) : 1:0
+1
+2
+3
+PLAY - 1
+
+Get aim : 
+data->coo[0] : 6
+
+PLAY - 2
+PLAY - CUT
+<---------Coup : 
+10 0
+<-----------fin coupe
+<-----------start map_size
+<-----------end map_size
+<-----------start solo-line read-map
+    01234567890123456
+<xxxxxxxxxxxend solo-line read-map
+<-----------start read-map
+000 .................
+001 .................
+002 .................
+003 .................
+004 .................
+005 .................
+006 ......OO.........
+007 OOOOOOOOXXXXXX...
+008 OOOOOOOOXXXXXX...
+009 OOOOOOOOXXXXXX...
+010 OOOOOOOOXXXXXX...
+011 O......O...XXX...
+012 ...........XXXXX.
+013 .................
+014 .................
+<xxxxxxxxxxx end read-map
+<-----------start piece size
+Piece 2 1:
+<-----------end piece size
+<-----------strart read-piece
+*
+*
+<-----------end read-piece-->
+coo (Y:X) : 0:0
+1
+2
+3
+coo (Y:X) : 1:0
+1
+2
+3
+PLAY - 1
+
+Get aim : 
+data->coo[0] : 10
+
+PLAY - 2
+PLAY - CUT
+<---------Coup : 
+10 1
+<-----------fin coupe
+<-----------start map_size
+<-----------end map_size
+<-----------start solo-line read-map
+    01234567890123456
+<xxxxxxxxxxxend solo-line read-map
+<-----------start read-map
+000 .................
+001 .................
+002 .................
+003 .................
+004 .................
+005 .................
+006 ......OO.........
+007 OOOOOOOOXXXXXX...
+008 OOOOOOOOXXXXXX...
+009 OOOOOOOOXXXXXX...
+010 OOOOOOOOXXXXXX...
+011 OO.....O.XXXXX...
+012 ...........XXXXX.
+013 .................
+014 .................
+<xxxxxxxxxxx end read-map
+<-----------start piece size
+Piece 2 2:
+<-----------end piece size
+<-----------strart read-piece
+*.
+*.
+<-----------end read-piece-->
+coo (Y:X) : 0:0
+1
+2
+3
+coo (Y:X) : 1:0
+1
+2
+3
+PLAY - 1
+
+Get aim : 
+data->coo[0] : 10
+
+PLAY - 2
+PLAY - CUT
+<---------Coup : 
+10 2
+<-----------fin coupe
+<-----------start map_size
+<-----------end map_size
+<-----------start solo-line read-map
+    01234567890123456
+<xxxxxxxxxxxend solo-line read-map
+<-----------start read-map
+000 .................
+001 .................
+002 .................
+003 .................
+004 .................
+005 .................
+006 ......OO.........
+007 OOOOOOOOXXXXXX...
+008 OOOOOOOOXXXXXX...
+009 OOOOOOOOXXXXXX...
+010 OOOOOOOOXXXXXX...
+011 OOO....OXXXXXX...
+012 ...........XXXXX.
+013 .................
+014 .................
+<xxxxxxxxxxx end read-map
+<-----------start piece size
+Piece 2 3:
+<-----------end piece size
+<-----------strart read-piece
+..*
+.**
+<-----------end read-piece-->
+coo (Y:X) : 0:2
+1
+2
+3
+coo (Y:X) : 1:2
+1
+2
+3
+coo (Y:X) : 1:1
+1
+2
+3
+PLAY - 1
+
+Get aim : 
+data->coo[0] : 10
+
+PLAY - 2
+PLAY - CUT
+<---------Coup : 
+10 2
+<-----------fin coupe
+<-----------start map_size
+<-----------end map_size
+<-----------start solo-line read-map
+    01234567890123456
+<xxxxxxxxxxxend solo-line read-map
+<-----------start read-map
+000 .................
+001 .................
+002 .................
+003 .................
+004 .................
+005 .................
+006 ......OO.........
+007 OOOOOOOOXXXXXX...
+008 OOOOOOOOXXXXXX...
+009 OOOOOOOOXXXXXXX..
+010 OOOOOOOOXXXXXX...
+011 OOOOO..OXXXXXX...
+012 ...........XXXXX.
+013 .................
+014 .................
+<xxxxxxxxxxx end read-map
+<-----------start piece size
+Piece 2 3:
+<-----------end piece size
+<-----------strart read-piece
+***
+.**
+<-----------end read-piece-->
+coo (Y:X) : 0:0
+1
+2
+3
+coo (Y:X) : 0:1
+1
+2
+3
+coo (Y:X) : 0:2
+1
+2
+3
+coo (Y:X) : 1:2
+1
+2
+3
+coo (Y:X) : 1:1
+1
+2
+3
+PLAY - 1
+
+Get aim : 
+data->coo[0] : 10
+
+PLAY - 2
+PLAY - CUT
+<---------Coup : 
+5 4
+<-----------fin coupe
+<-----------start map_size
+<-----------end map_size
+<-----------start solo-line read-map
+    01234567890123456
+<xxxxxxxxxxxend solo-line read-map
+<-----------start read-map
+000 .................
+001 .................
+002 .................
+003 .................
+004 .................
+005 ....OOO..........
+006 .....OOO.........
+007 OOOOOOOOXXXXXX...
+008 OOOOOOOOXXXXXXXX.
+009 OOOOOOOOXXXXXXX..
+010 OOOOOOOOXXXXXX...
+011 OOOOO..OXXXXXX...
+012 ...........XXXXX.
+013 .................
+014 .................
+<xxxxxxxxxxx end read-map
+<-----------start piece size
+Piece 2 2:
+<-----------end piece size
+<-----------strart read-piece
+*.
+**
+<-----------end read-piece-->
+coo (Y:X) : 0:0
+1
+2
+3
+coo (Y:X) : 1:1
+1
+2
+3
+coo (Y:X) : 1:0
+1
+2
+3
+PLAY - 1
+
+Get aim : 
+data->coo[0] : 5
+
+PLAY - 2
+PLAY - CUT
+<---------Coup : 
+10 5
+<-----------fin coupe
+<-----------start map_size
+<-----------end map_size
+<-----------start solo-line read-map
+    01234567890123456
+<xxxxxxxxxxxend solo-line read-map
+<-----------start read-map
+000 .................
+001 .................
+002 .................
+003 .................
+004 .................
+005 ....OOO..........
+006 .....OOO..X......
+007 OOOOOOOOXXXXXX...
+008 OOOOOOOOXXXXXXXX.
+009 OOOOOOOOXXXXXXX..
+010 OOOOOOOOXXXXXX...
+011 OOOOOOOOXXXXXX...
+012 ...........XXXXX.
+013 .................
+014 .................
+<xxxxxxxxxxx end read-map
+<-----------start piece size
+Piece 2 1:
+<-----------end piece size
+<-----------strart read-piece
+*
+*
+<-----------end read-piece-->
+coo (Y:X) : 0:0
+1
+2
+3
+coo (Y:X) : 1:0
+1
+2
+3
+PLAY - 1
+
+Get aim : 
+data->coo[0] : 10
+
+PLAY - 2
+PLAY - CUT
+<---------Coup : 
+6 0
+<-----------fin coupe
+<-----------start map_size
+<-----------end map_size
+<-----------start solo-line read-map
+    01234567890123456
+<xxxxxxxxxxxend solo-line read-map
+<-----------start read-map
+000 .................
+001 .................
+002 .................
+003 .................
+004 .................
+005 ....OOO..........
+006 O....OOO.XX......
+007 OOOOOOOOXXXXXX...
+008 OOOOOOOOXXXXXXXX.
+009 OOOOOOOOXXXXXXX..
+010 OOOOOOOOXXXXXX...
+011 OOOOOOOOXXXXXX...
+012 ...........XXXXX.
+013 .................
+014 .................
+<xxxxxxxxxxx end read-map
+<-----------start piece size
+Piece 2 2:
+<-----------end piece size
+<-----------strart read-piece
+*.
+*.
+<-----------end read-piece-->
+coo (Y:X) : 0:0
+1
+2
+3
+coo (Y:X) : 1:0
+1
+2
+3
+PLAY - 1
+
+Get aim : 
+data->coo[0] : 6
+
+PLAY - 2
+PLAY - CUT
+<---------Coup : 
+6 1
+<-----------fin coupe
+<-----------start map_size
+<-----------end map_size
+<-----------start solo-line read-map
+    01234567890123456
+<xxxxxxxxxxxend solo-line read-map
+<-----------start read-map
+000 .................
+001 .................
+002 .................
+003 .................
+004 .................
+005 ....OOO..........
+006 OO...OOOXXX......
+007 OOOOOOOOXXXXXX...
+008 OOOOOOOOXXXXXXXX.
+009 OOOOOOOOXXXXXXX..
+010 OOOOOOOOXXXXXX...
+011 OOOOOOOOXXXXXX...
+012 ...........XXXXX.
+013 .................
+014 .................
+<xxxxxxxxxxx end read-map
+<-----------start piece size
+Piece 1 3:
+<-----------end piece size
+<-----------strart read-piece
+***
+<-----------end read-piece-->
+coo (Y:X) : 0:0
+1
+2
+3
+coo (Y:X) : 0:1
+1
+2
+3
+coo (Y:X) : 0:2
+1
+2
+3
+PLAY - 1
+
+Get aim : 
+data->coo[0] : 6
+
+PLAY - 2
+PLAY - CUT
+<---------Coup : 
+6 1
+<-----------fin coupe
+<-----------start map_size
+<-----------end map_size
+<-----------start solo-line read-map
+    01234567890123456
+<xxxxxxxxxxxend solo-line read-map
+<-----------start read-map
+000 .................
+001 .................
+002 .................
+003 .................
+004 .................
+005 ....OOO..........
+006 OOOO.OOOXXXX.....
+007 OOOOOOOOXXXXXX...
+008 OOOOOOOOXXXXXXXX.
+009 OOOOOOOOXXXXXXX..
+010 OOOOOOOOXXXXXX...
+011 OOOOOOOOXXXXXX...
+012 ...........XXXXX.
+013 .................
+014 .................
+<xxxxxxxxxxx end read-map
+<-----------start piece size
+Piece 2 1:
+<-----------end piece size
+<-----------strart read-piece
+*
+*
+<-----------end read-piece-->
+coo (Y:X) : 0:0
+1
+2
+3
+coo (Y:X) : 1:0
+1
+2
+3
+PLAY - 1
+
+Get aim : 
+data->coo[0] : 6
+
+PLAY - 2
+PLAY - CUT
+<---------Coup : 
+6 4
+<-----------fin coupe
+<-----------start map_size
+<-----------end map_size
+<-----------start solo-line read-map
+    01234567890123456
+<xxxxxxxxxxxend solo-line read-map
+<-----------start read-map
+000 .................
+001 .................
+002 .................
+003 .................
+004 .................
+005 ....OOO..........
+006 OOOOOOOOXXXXX....
+007 OOOOOOOOXXXXXX...
+008 OOOOOOOOXXXXXXXX.
+009 OOOOOOOOXXXXXXX..
+010 OOOOOOOOXXXXXX...
+011 OOOOOOOOXXXXXX...
+012 ...........XXXXX.
+013 .................
+014 .................
+<xxxxxxxxxxx end read-map
+<-----------start piece size
+Piece 5 13:
+<-----------end piece size
+<-----------strart read-piece
+.............
+...***..*....
+.....****....
+.............
+.............
+<-----------end read-piece-->
+coo (Y:X) : 1:3
+1
+2
+3
+coo (Y:X) : 1:4
+1
+2
+3
+coo (Y:X) : 1:5
+1
+2
+3
+coo (Y:X) : 2:6
+1
+2
+3
+coo (Y:X) : 2:7
+1
+2
+coo (Y:X) : 1:8
+1
+2
+3
+coo (Y:X) : 2:8
+1
+2
+3
+3
+coo (Y:X) : 2:5
+1
+2
+3
+PLAY - 1
+
+Get aim : 
+data->coo[0] : 6
+
+PLAY - 2
+PLAY - CUT
+<---------Coup : 
+3 1
+<-----------fin coupe
+<-----------start map_size
+<-----------end map_size
+<-----------start solo-line read-map
+    01234567890123456
+<xxxxxxxxxxxend solo-line read-map
+<-----------start read-map
+000 .................
+001 .................
+002 .................
+003 .................
+004 ....OOO..O.......
+005 ....OOOOOO.XX....
+006 OOOOOOOOXXXXX....
+007 OOOOOOOOXXXXXX...
+008 OOOOOOOOXXXXXXXX.
+009 OOOOOOOOXXXXXXX..
+010 OOOOOOOOXXXXXX...
+011 OOOOOOOOXXXXXX...
+012 ...........XXXXX.
+013 .................
+014 .................
+<xxxxxxxxxxx end read-map
+<-----------start piece size
+Piece 2 2:
+<-----------end piece size
+<-----------strart read-piece
+**
+.*
+<-----------end read-piece-->
+coo (Y:X) : 0:0
+1
+2
+3
+coo (Y:X) : 0:1
+1
+2
+3
+coo (Y:X) : 1:1
+1
+2
+3
+PLAY - 1
+
+Get aim : 
+data->coo[0] : 3
+
+PLAY - 2
+PLAY - CUT
+<---------Coup : 
+5 0
+<-----------fin coupe
+<-----------start map_size
+<-----------end map_size
+<-----------start solo-line read-map
+    01234567890123456
+<xxxxxxxxxxxend solo-line read-map
+<-----------start read-map
+000 .................
+001 .................
+002 .................
+003 .................
+004 ....OOO..O.......
+005 OO..OOOOOO.XX....
+006 OOOOOOOOXXXXXX...
+007 OOOOOOOOXXXXXX...
+008 OOOOOOOOXXXXXXXX.
+009 OOOOOOOOXXXXXXX..
+010 OOOOOOOOXXXXXX...
+011 OOOOOOOOXXXXXX...
+012 ...........XXXXX.
+013 .................
+014 .................
+<xxxxxxxxxxx end read-map
+<-----------start piece size
+Piece 2 1:
+<-----------end piece size
+<-----------strart read-piece
+*
+*
+<-----------end read-piece-->
+coo (Y:X) : 0:0
+1
+2
+3
+coo (Y:X) : 1:0
+1
+2
+3
+PLAY - 1
+
+Get aim : 
+data->coo[0] : 5
+
+PLAY - 2
+PLAY - CUT
+<---------Coup : 
+5 2
+<-----------fin coupe
+<-----------start map_size
+<-----------end map_size
+<-----------start solo-line read-map
+    01234567890123456
+<xxxxxxxxxxxend solo-line read-map
+<-----------start read-map
+000 .................
+001 .................
+002 .................
+003 .................
+004 ....OOO..O.......
+005 OOO.OOOOOO.XX....
+006 OOOOOOOOXXXXXX...
+007 OOOOOOOOXXXXXX...
+008 OOOOOOOOXXXXXXXX.
+009 OOOOOOOOXXXXXXX..
+010 OOOOOOOOXXXXXX...
+011 OOOOOOOOXXXXXX...
+012 .........XXXXXXX.
+013 .................
+014 .................
+<xxxxxxxxxxx end read-map
+<-----------start piece size
+Piece 2 3:
+<-----------end piece size
+<-----------strart read-piece
+.**
+..*
+<-----------end read-piece-->
+coo (Y:X) : 0:1
+1
+2
+3
+coo (Y:X) : 0:2
+1
+2
+3
+coo (Y:X) : 1:2
+1
+2
+3
+PLAY - 1
+
+Get aim : 
+data->coo[0] : 5
+
+PLAY - 2
+PLAY - CUT
+<---------Coup : 
+4 -1
+<-----------fin coupe
+<-----------start map_size
+<-----------end map_size
+<-----------start solo-line read-map
+    01234567890123456
+<xxxxxxxxxxxend solo-line read-map
+<-----------start read-map
+000 .................
+001 .................
+002 .................
+003 .................
+004 OO..OOO..O.......
+005 OOO.OOOOOO.XX....
+006 OOOOOOOOXXXXXX...
+007 OOOOOOOOXXXXXX...
+008 OOOOOOOOXXXXXXXX.
+009 OOOOOOOOXXXXXXX..
+010 OOOOOOOOXXXXXX...
+011 OOOOOOOOXXXXXX...
+012 .........XXXXXXX.
+013 ...........XX....
+014 .................
+<xxxxxxxxxxx end read-map
+<-----------start piece size
+Piece 2 1:
+<-----------end piece size
+<-----------strart read-piece
+*
+*
+<-----------end read-piece-->
+coo (Y:X) : 0:0
+1
+2
+3
+coo (Y:X) : 1:0
+1
+2
+3
+PLAY - 1
+
+Get aim : 
+data->coo[0] : 4
+
+PLAY - 2
+PLAY - CUT
+<---------Coup : 
+5 3
+<-----------fin coupe
+<-----------start map_size
+<-----------end map_size
+<-----------start solo-line read-map
+    01234567890123456
+<xxxxxxxxxxxend solo-line read-map
+<-----------start read-map
+000 .................
+001 .................
+002 .................
+003 .................
+004 OO..OOO..O.......
+005 OOOOOOOOOOXXX....
+006 OOOOOOOOXXXXXX...
+007 OOOOOOOOXXXXXX...
+008 OOOOOOOOXXXXXXXX.
+009 OOOOOOOOXXXXXXX..
+010 OOOOOOOOXXXXXX...
+011 OOOOOOOOXXXXXX...
+012 .........XXXXXXX.
+013 ...........XX....
+014 .................
+<xxxxxxxxxxx end read-map
+<-----------start piece size
+Piece 2 2:
+<-----------end piece size
+<-----------strart read-piece
+**
+.*
+<-----------end read-piece-->
+coo (Y:X) : 0:0
+1
+2
+3
+coo (Y:X) : 0:1
+1
+2
+3
+coo (Y:X) : 1:1
+1
+2
+3
+PLAY - 1
+
+Get aim : 
+data->coo[0] : 5
+
+PLAY - 2
+PLAY - CUT
+<---------Coup : 
+4 2
+<-----------fin coupe
+<-----------start map_size
+<-----------end map_size
+<-----------start solo-line read-map
+    01234567890123456
+<xxxxxxxxxxxend solo-line read-map
+<-----------start read-map
+000 .................
+001 .................
+002 .................
+003 .................
+004 OOOOOOO..O.......
+005 OOOOOOOOOOXXX....
+006 OOOOOOOOXXXXXX...
+007 OOOOOOOOXXXXXX...
+008 OOOOOOOOXXXXXXXX.
+009 OOOOOOOOXXXXXXX..
+010 OOOOOOOOXXXXXXX..
+011 OOOOOOOOXXXXXXX..
+012 .........XXXXXXX.
+013 ...........XX....
+014 .................
+<xxxxxxxxxxx end read-map
+<-----------start piece size
+Piece 2 2:
+<-----------end piece size
+<-----------strart read-piece
+**
+.*
+<-----------end read-piece-->
+coo (Y:X) : 0:0
+1
+2
+3
+coo (Y:X) : 0:1
+1
+2
+3
+coo (Y:X) : 1:1
+1
+2
+3
+PLAY - 1
+
+Get aim : 
+data->coo[0] : 4
+
+PLAY - 2
+PLAY - CUT
+<---------Coup : 
+4 7
+<-----------fin coupe
+<-----------start map_size
+<-----------end map_size
+<-----------start solo-line read-map
+    01234567890123456
+<xxxxxxxxxxxend solo-line read-map
+<-----------start read-map
+000 .................
+001 .................
+002 .................
+003 .................
+004 OOOOOOOOOO.......
+005 OOOOOOOOOOXXXX...
+006 OOOOOOOOXXXXXX...
+007 OOOOOOOOXXXXXX...
+008 OOOOOOOOXXXXXXXX.
+009 OOOOOOOOXXXXXXX..
+010 OOOOOOOOXXXXXXX..
+011 OOOOOOOOXXXXXXX..
+012 .........XXXXXXX.
+013 ...........XX....
+014 .................
+<xxxxxxxxxxx end read-map
+<-----------start piece size
+Piece 2 1:
+<-----------end piece size
+<-----------strart read-piece
+*
+*
+<-----------end read-piece-->
+coo (Y:X) : 0:0
+1
+2
+3
+coo (Y:X) : 1:0
+1
+2
+3
+PLAY - 1
+
+Get aim : 
+data->coo[0] : 4
+
+PLAY - 2
+PLAY - CUT
+<---------Coup : 
+3 0
+<-----------fin coupe
+<-----------start map_size
+<-----------end map_size
+<-----------start solo-line read-map
+    01234567890123456
+<xxxxxxxxxxxend solo-line read-map
+<-----------start read-map
+000 .................
+001 .................
+002 .................
+003 O................
+004 OOOOOOOOOO.......
+005 OOOOOOOOOOXXXX...
+006 OOOOOOOOXXXXXX...
+007 OOOOOOOOXXXXXX...
+008 OOOOOOOOXXXXXXXX.
+009 OOOOOOOOXXXXXXX..
+010 OOOOOOOOXXXXXXX..
+011 OOOOOOOOXXXXXXX..
+012 .......XXXXXXXXX.
+013 ...........XX....
+014 .................
+<xxxxxxxxxxx end read-map
+<-----------start piece size
+Piece 1 3:
+<-----------end piece size
+<-----------strart read-piece
+***
+<-----------end read-piece-->
+coo (Y:X) : 0:0
+1
+2
+3
+coo (Y:X) : 0:1
+1
+2
+3
+coo (Y:X) : 0:2
+1
+2
+3
+PLAY - 1
+
+Get aim : 
+data->coo[0] : 3
+
+PLAY - 2
+PLAY - CUT
+<---------Coup : 
+4 9
+<-----------fin coupe
+<-----------start map_size
+<-----------end map_size
+<-----------start solo-line read-map
+    01234567890123456
+<xxxxxxxxxxxend solo-line read-map
+<-----------start read-map
+000 .................
+001 .................
+002 .................
+003 O................
+004 OOOOOOOOOOOO.....
+005 OOOOOOOOOOXXXX...
+006 OOOOOOOOXXXXXX...
+007 OOOOOOOOXXXXXX...
+008 OOOOOOOOXXXXXXXX.
+009 OOOOOOOOXXXXXXX..
+010 OOOOOOOOXXXXXXX..
+011 OOOOOOOOXXXXXXX..
+012 .......XXXXXXXXX.
+013 ..........XXX....
+014 .................
+<xxxxxxxxxxx end read-map
+<-----------start piece size
+Piece 2 2:
+<-----------end piece size
+<-----------strart read-piece
+.*
+**
+<-----------end read-piece-->
+coo (Y:X) : 0:1
+1
+2
+3
+coo (Y:X) : 1:1
+1
+2
+3
+coo (Y:X) : 1:0
+1
+2
+3
+PLAY - 1
+
+Get aim : 
+data->coo[0] : 4
+
+PLAY - 2
+PLAY - CUT
+<---------Coup : 
+3 11
+<-----------fin coupe
+<-----------start map_size
+<-----------end map_size
+<-----------start solo-line read-map
+    01234567890123456
+<xxxxxxxxxxxend solo-line read-map
+<-----------start read-map
+000 .................
+001 .................
+002 .................
+003 O...........O....
+004 OOOOOOOOOOOOO....
+005 OOOOOOOOOOXXXX...
+006 OOOOOOOOXXXXXX...
+007 OOOOOOOOXXXXXXXX.
+008 OOOOOOOOXXXXXXXX.
+009 OOOOOOOOXXXXXXX..
+010 OOOOOOOOXXXXXXX..
+011 OOOOOOOOXXXXXXX..
+012 .......XXXXXXXXX.
+013 ..........XXX....
+014 .................
+<xxxxxxxxxxx end read-map
+<-----------start piece size
+Piece 1 3:
+<-----------end piece size
+<-----------strart read-piece
+.**
+<-----------end read-piece-->
+coo (Y:X) : 0:1
+1
+2
+3
+coo (Y:X) : 0:2
+1
+2
+3
+PLAY - 1
+
+Get aim : 
+data->coo[0] : 3
+
+PLAY - 2
+PLAY - CUT
+<---------Coup : 
+4 11
+<-----------fin coupe
+<-----------start map_size
+<-----------end map_size
+<-----------start solo-line read-map
+    01234567890123456
+<xxxxxxxxxxxend solo-line read-map
+<-----------start read-map
+000 .................
+001 .................
+002 .................
+003 O...........O....
+004 OOOOOOOOOOOOOO...
+005 OOOOOOOOOOXXXX...
+006 OOOOOOOOXXXXXX...
+007 OOOOOOOOXXXXXXXX.
+008 OOOOOOOOXXXXXXXX.
+009 OOOOOOOOXXXXXXX..
+010 OOOOOOOOXXXXXXX..
+011 OOOOOOOOXXXXXXX..
+012 .......XXXXXXXXX.
+013 ........XXXXX....
+014 .................
+<xxxxxxxxxxx end read-map
+<-----------start piece size
+Piece 1 2:
+<-----------end piece size
+<-----------strart read-piece
+**
+<-----------end read-piece-->
+coo (Y:X) : 0:0
+1
+2
+3
+coo (Y:X) : 0:1
+1
+2
+3
+PLAY - 1
+
+Get aim : 
+data->coo[0] : 4
+
+PLAY - 2
+PLAY - CUT
+<---------Coup : 
+3 0
+<-----------fin coupe
+<-----------start map_size
+<-----------end map_size
+<-----------start solo-line read-map
+    01234567890123456
+<xxxxxxxxxxxend solo-line read-map
+<-----------start read-map
+000 .................
+001 .................
+002 .................
+003 OO..........O....
+004 OOOOOOOOOOOOOO...
+005 OOOOOOOOOOXXXX...
+006 OOOOOOOOXXXXXX...
+007 OOOOOOOOXXXXXXXX.
+008 OOOOOOOOXXXXXXXX.
+009 OOOOOOOOXXXXXXX..
+010 OOOOOOOOXXXXXXX..
+011 OOOOOOOOXXXXXXX..
+012 .......XXXXXXXXX.
+013 ........XXXXXX...
+014 ............XX...
+<xxxxxxxxxxx end read-map
+<-----------start piece size
+Piece 2 2:
+<-----------end piece size
+<-----------strart read-piece
+**
+..
+<-----------end read-piece-->
+coo (Y:X) : 0:0
+1
+2
+3
+coo (Y:X) : 0:1
+1
+2
+3
+PLAY - 1
+
+Get aim : 
+data->coo[0] : 3
+
+PLAY - 2
+PLAY - CUT
+<---------Coup : 
+3 1
+<-----------fin coupe
+<-----------start map_size
+<-----------end map_size
+<-----------start solo-line read-map
+    01234567890123456
+<xxxxxxxxxxxend solo-line read-map
+<-----------start read-map
+000 .................
+001 .................
+002 .................
+003 OOO.........O....
+004 OOOOOOOOOOOOOO...
+005 OOOOOOOOOOXXXX...
+006 OOOOOOOOXXXXXX...
+007 OOOOOOOOXXXXXXXX.
+008 OOOOOOOOXXXXXXXX.
+009 OOOOOOOOXXXXXXX..
+010 OOOOOOOOXXXXXXX..
+011 OOOOOOOOXXXXXXX..
+012 .......XXXXXXXXX.
+013 .......XXXXXXX...
+014 .......XX...XX...
+<xxxxxxxxxxx end read-map
+<-----------start piece size
+Piece 2 5:
+<-----------end piece size
+<-----------strart read-piece
+..***
+...**
+<-----------end read-piece-->
+coo (Y:X) : 0:2
+1
+2
+3
+coo (Y:X) : 0:3
+1
+2
+3
+coo (Y:X) : 0:4
+1
+2
+3
+coo (Y:X) : 1:4
+1
+2
+3
+coo (Y:X) : 1:3
+1
+2
+3
+PLAY - 1
+
+Get aim : 
+data->coo[0] : 3
+
+PLAY - 2
+PLAY - CUT
+<---------Coup : 
+4 11
+<-----------fin coupe
+<-----------start map_size
+<-----------end map_size
+<-----------start solo-line read-map
+    01234567890123456
+<xxxxxxxxxxxend solo-line read-map
+<-----------start read-map
+000 .................
+001 .................
+002 .................
+003 OOO.........O....
+004 OOOOOOOOOOOOOOOO.
+005 OOOOOOOOOOXXXXOO.
+006 OOOOOOOOXXXXXXX..
+007 OOOOOOOOXXXXXXXX.
+008 OOOOOOOOXXXXXXXX.
+009 OOOOOOOOXXXXXXX..
+010 OOOOOOOOXXXXXXX..
+011 OOOOOOOOXXXXXXX..
+012 .......XXXXXXXXX.
+013 .......XXXXXXX...
+014 .......XX...XX...
+<xxxxxxxxxxx end read-map
+<-----------start piece size
+Piece 1 2:
+<-----------end piece size
+<-----------strart read-piece
+**
+<-----------end read-piece-->
+coo (Y:X) : 0:0
+1
+2
+3
+coo (Y:X) : 0:1
+1
+2
+3
+PLAY - 1
+
+Get aim : 
+data->coo[0] : 4
+
+PLAY - 2
+PLAY - CUT
+<---------Coup : 
+3 2
+<-----------fin coupe
+<-----------start map_size
+<-----------end map_size
+<-----------start solo-line read-map
+    01234567890123456
+<xxxxxxxxxxxend solo-line read-map
+<-----------start read-map
+000 .................
+001 .................
+002 .................
+003 OOOO........O....
+004 OOOOOOOOOOOOOOOO.
+005 OOOOOOOOOOXXXXOO.
+006 OOOOOOOOXXXXXXX..
+007 OOOOOOOOXXXXXXXX.
+008 OOOOOOOOXXXXXXXX.
+009 OOOOOOOOXXXXXXXX.
+010 OOOOOOOOXXXXXXX..
+011 OOOOOOOOXXXXXXX..
+012 .......XXXXXXXXX.
+013 .......XXXXXXX...
+014 .......XX...XX...
+<xxxxxxxxxxx end read-map
+<-----------start piece size
+Piece 2 2:
+<-----------end piece size
+<-----------strart read-piece
+*.
+*.
+<-----------end read-piece-->
+coo (Y:X) : 0:0
+1
+2
+3
+coo (Y:X) : 1:0
+1
+2
+3
+PLAY - 1
+
+Get aim : 
+data->coo[0] : 3
+
+PLAY - 2
+PLAY - CUT
+<---------Coup : 
+3 4
+<-----------fin coupe
+<-----------start map_size
+<-----------end map_size
+<-----------start solo-line read-map
+    01234567890123456
+<xxxxxxxxxxxend solo-line read-map
+<-----------start read-map
+000 .................
+001 .................
+002 .................
+003 OOOOO.......O....
+004 OOOOOOOOOOOOOOOO.
+005 OOOOOOOOOOXXXXOO.
+006 OOOOOOOOXXXXXXX..
+007 OOOOOOOOXXXXXXXX.
+008 OOOOOOOOXXXXXXXX.
+009 OOOOOOOOXXXXXXXX.
+010 OOOOOOOOXXXXXXX..
+011 OOOOOOOOXXXXXXX..
+012 .......XXXXXXXXX.
+013 .......XXXXXXX...
+014 .......XX..XXX...
+<xxxxxxxxxxx end read-map
+<-----------start piece size
+Piece 2 2:
+<-----------end piece size
+<-----------strart read-piece
+*.
+*.
+<-----------end read-piece-->
+coo (Y:X) : 0:0
+1
+2
+3
+coo (Y:X) : 1:0
+1
+2
+3
+PLAY - 1
+
+Get aim : 
+data->coo[0] : 3
+
+PLAY - 2
+PLAY - CUT
+<---------Coup : 
+3 5
+<-----------fin coupe
+<-----------start map_size
+<-----------end map_size
+<-----------start solo-line read-map
+    01234567890123456
+<xxxxxxxxxxxend solo-line read-map
+<-----------start read-map
+000 .................
+001 .................
+002 .................
+003 OOOOOO......O....
+004 OOOOOOOOOOOOOOOO.
+005 OOOOOOOOOOXXXXOO.
+006 OOOOOOOOXXXXXXXX.
+007 OOOOOOOOXXXXXXXX.
+008 OOOOOOOOXXXXXXXX.
+009 OOOOOOOOXXXXXXXX.
+010 OOOOOOOOXXXXXXX..
+011 OOOOOOOOXXXXXXX..
+012 .......XXXXXXXXX.
+013 .......XXXXXXX...
+014 .......XX..XXX...
+<xxxxxxxxxxx end read-map
+<-----------start piece size
+Piece 1 3:
+<-----------end piece size
+<-----------strart read-piece
+**.
+<-----------end read-piece-->
+coo (Y:X) : 0:0
+1
+2
+3
+coo (Y:X) : 0:1
+1
+2
+3
+PLAY - 1
+
+Get aim : 
+data->coo[0] : 3
+
+PLAY - 2
+PLAY - CUT
+<---------Coup : 
+3 5
+<-----------fin coupe
+<-----------start map_size
+<-----------end map_size
+<-----------start solo-line read-map
+    01234567890123456
+<xxxxxxxxxxxend solo-line read-map
+<-----------start read-map
+000 .................
+001 .................
+002 .................
+003 OOOOOOO.....O....
+004 OOOOOOOOOOOOOOOO.
+005 OOOOOOOOOOXXXXOO.
+006 OOOOOOOOXXXXXXXX.
+007 OOOOOOOOXXXXXXXX.
+008 OOOOOOOOXXXXXXXX.
+009 OOOOOOOOXXXXXXXX.
+010 OOOOOOOOXXXXXXX..
+011 OOOOOOOOXXXXXXX..
+012 .....XXXXXXXXXXX.
+013 .....XXXXXXXXX...
+014 .......XX..XXX...
+<xxxxxxxxxxx end read-map
+<-----------start piece size
+Piece 2 3:
+<-----------end piece size
+<-----------strart read-piece
+.**
+.**
+<-----------end read-piece-->
+coo (Y:X) : 0:1
+1
+2
+3
+coo (Y:X) : 0:2
+1
+2
+3
+coo (Y:X) : 1:2
+1
+2
+3
+coo (Y:X) : 1:1
+1
+2
+3
+PLAY - 1
+
+Get aim : 
+data->coo[0] : 3
+
+PLAY - 2
+PLAY - CUT
+<---------Coup : 
+2 5
+<-----------fin coupe
+<-----------start map_size
+<-----------end map_size
+<-----------start solo-line read-map
+    01234567890123456
+<xxxxxxxxxxxend solo-line read-map
+<-----------start read-map
+000 .................
+001 .................
+002 ......OO.........
+003 OOOOOOOO....O....
+004 OOOOOOOOOOOOOOOO.
+005 OOOOOOOOOOXXXXOO.
+006 OOOOOOOOXXXXXXXX.
+007 OOOOOOOOXXXXXXXX.
+008 OOOOOOOOXXXXXXXX.
+009 OOOOOOOOXXXXXXXX.
+010 OOOOOOOOXXXXXXXX.
+011 OOOOOOOOXXXXXXXXX
+012 .....XXXXXXXXXXX.
+013 .....XXXXXXXXX...
+014 .......XX..XXX...
+<xxxxxxxxxxx end read-map
+<-----------start piece size
+Piece 1 2:
+<-----------end piece size
+<-----------strart read-piece
+**
+<-----------end read-piece-->
+coo (Y:X) : 0:0
+1
+2
+3
+coo (Y:X) : 0:1
+1
+2
+3
+PLAY - 1
+
+Get aim : 
+data->coo[0] : 2
+
+PLAY - 2
+PLAY - CUT
+<---------Coup : 
+3 7
+<-----------fin coupe
+<-----------start map_size
+<-----------end map_size
+<-----------start solo-line read-map
+    01234567890123456
+<xxxxxxxxxxxend solo-line read-map
+<-----------start read-map
+000 .................
+001 .................
+002 ......OO.........
+003 OOOOOOOOO...O....
+004 OOOOOOOOOOOOOOOO.
+005 OOOOOOOOOOXXXXOO.
+006 OOOOOOOOXXXXXXXX.
+007 OOOOOOOOXXXXXXXX.
+008 OOOOOOOOXXXXXXXX.
+009 OOOOOOOOXXXXXXXX.
+010 OOOOOOOOXXXXXXXX.
+011 OOOOOOOOXXXXXXXXX
+012 .....XXXXXXXXXXX.
+013 .....XXXXXXXXX.X.
+014 .......XX..XXXXX.
+<xxxxxxxxxxx end read-map
+<-----------start piece size
+Piece 1 3:
+<-----------end piece size
+<-----------strart read-piece
+**.
+<-----------end read-piece-->
+coo (Y:X) : 0:0
+1
+2
+3
+coo (Y:X) : 0:1
+1
+2
+3
+PLAY - 1
+
+Get aim : 
+data->coo[0] : 3
+
+PLAY - 2
+PLAY - CUT
+<---------Coup : 
+3 8
+<-----------fin coupe
+<-----------start map_size
+<-----------end map_size
+<-----------start solo-line read-map
+    01234567890123456
+<xxxxxxxxxxxend solo-line read-map
+<-----------start read-map
+000 .................
+001 .................
+002 ......OO.........
+003 OOOOOOOOOO..O....
+004 OOOOOOOOOOOOOOOO.
+005 OOOOOOOOOOXXXXOO.
+006 OOOOOOOOXXXXXXXX.
+007 OOOOOOOOXXXXXXXX.
+008 OOOOOOOOXXXXXXXX.
+009 OOOOOOOOXXXXXXXX.
+010 OOOOOOOOXXXXXXXX.
+011 OOOOOOOOXXXXXXXXX
+012 .....XXXXXXXXXXX.
+013 .....XXXXXXXXXXX.
+014 .......XX..XXXXX.
+<xxxxxxxxxxx end read-map
+<-----------start piece size
+Piece 2 2:
+<-----------end piece size
+<-----------strart read-piece
+**
+**
+<-----------end read-piece-->
+coo (Y:X) : 0:0
+1
+2
+3
+coo (Y:X) : 0:1
+1
+2
+3
+coo (Y:X) : 1:1
+1
+2
+3
+coo (Y:X) : 1:0
+1
+2
+3
+PLAY - 1
+
+Get aim : 
+data->coo[0] : 3
+
+PLAY - 2
+PLAY - CUT
+<---------Coup : 
+2 9
+<-----------fin coupe
+<-----------start map_size
+<-----------end map_size
+<-----------start solo-line read-map
+    01234567890123456
+<xxxxxxxxxxxend solo-line read-map
+<-----------start read-map
+000 .................
+001 .................
+002 ......OO.OO......
+003 OOOOOOOOOOO.O....
+004 OOOOOOOOOOOOOOOO.
+005 OOOOOOOOOOXXXXOO.
+006 OOOOOOOOXXXXXXXX.
+007 OOOOOOOOXXXXXXXX.
+008 OOOOOOOOXXXXXXXX.
+009 OOOOOOOOXXXXXXXX.
+010 OOOOOOOOXXXXXXXX.
+011 OOOOOOOOXXXXXXXXX
+012 .....XXXXXXXXXXX.
+013 .....XXXXXXXXXXX.
+014 .......XX.XXXXXX.
+<xxxxxxxxxxx end read-map
+<-----------start piece size
+Piece 2 3:
+<-----------end piece size
+<-----------strart read-piece
+**.
+.*.
+<-----------end read-piece-->
+coo (Y:X) : 0:0
+1
+2
+3
+coo (Y:X) : 0:1
+1
+2
+3
+coo (Y:X) : 1:1
+1
+2
+3
+PLAY - 1
+
+Get aim : 
+data->coo[0] : 2
+
+PLAY - 2
+PLAY - CUT
+<---------Coup : 
+2 0
+<-----------fin coupe
+<-----------start map_size
+<-----------end map_size
+<-----------start solo-line read-map
+    01234567890123456
+<xxxxxxxxxxxend solo-line read-map
+<-----------start read-map
+000 .................
+001 .................
+002 OO....OO.OO......
+003 OOOOOOOOOOO.O....
+004 OOOOOOOOOOOOOOOO.
+005 OOOOOOOOOOXXXXOO.
+006 OOOOOOOOXXXXXXXX.
+007 OOOOOOOOXXXXXXXX.
+008 OOOOOOOOXXXXXXXX.
+009 OOOOOOOOXXXXXXXX.
+010 OOOOOOOOXXXXXXXX.
+011 OOOOOOOOXXXXXXXXX
+012 .....XXXXXXXXXXX.
+013 ...XXXXXXXXXXXXX.
+014 .......XX.XXXXXX.
+<xxxxxxxxxxx end read-map
+<-----------start piece size
+Piece 1 2:
+<-----------end piece size
+<-----------strart read-piece
+**
+<-----------end read-piece-->
+coo (Y:X) : 0:0
+1
+2
+3
+coo (Y:X) : 0:1
+1
+2
+3
+PLAY - 1
+
+Get aim : 
+data->coo[0] : 2
+
+PLAY - 2
+PLAY - CUT
+<---------Coup : 
+3 10
+<-----------fin coupe
+<-----------start map_size
+<-----------end map_size
+<-----------start solo-line read-map
+    01234567890123456
+<xxxxxxxxxxxend solo-line read-map
+<-----------start read-map
+000 .................
+001 .................
+002 OO....OO.OO......
+003 OOOOOOOOOOOOO....
+004 OOOOOOOOOOOOOOOO.
+005 OOOOOOOOOOXXXXOO.
+006 OOOOOOOOXXXXXXXX.
+007 OOOOOOOOXXXXXXXX.
+008 OOOOOOOOXXXXXXXX.
+009 OOOOOOOOXXXXXXXX.
+010 OOOOOOOOXXXXXXXX.
+011 OOOOOOOOXXXXXXXXX
+012 .....XXXXXXXXXXX.
+013 ...XXXXXXXXXXXXX.
+014 .......XXXXXXXXX.
+<xxxxxxxxxxx end read-map
+<-----------start piece size
+Piece 1 3:
+<-----------end piece size
+<-----------strart read-piece
+***
+<-----------end read-piece-->
+coo (Y:X) : 0:0
+1
+2
+3
+coo (Y:X) : 0:1
+1
+2
+3
+coo (Y:X) : 0:2
+1
+2
+3
+PLAY - 1
+
+Get aim : 
+data->coo[0] : 3
+
+PLAY - 2
+PLAY - CUT
+<---------Coup : 
+3 12
+<-----------fin coupe
+<-----------start map_size
+<-----------end map_size
+<-----------start solo-line read-map
+    01234567890123456
+<xxxxxxxxxxxend solo-line read-map
+<-----------start read-map
+000 .................
+001 .................
+002 OO....OO.OO......
+003 OOOOOOOOOOOOOOO..
+004 OOOOOOOOOOOOOOOO.
+005 OOOOOOOOOOXXXXOO.
+006 OOOOOOOOXXXXXXXX.
+007 OOOOOOOOXXXXXXXX.
+008 OOOOOOOOXXXXXXXX.
+009 OOOOOOOOXXXXXXXX.
+010 OOOOOOOOXXXXXXXX.
+011 OOOOOOOOXXXXXXXXX
+012 .....XXXXXXXXXXX.
+013 ...XXXXXXXXXXXXX.
+014 ......XXXXXXXXXX.
+<xxxxxxxxxxx end read-map
+<-----------start piece size
+Piece 2 3:
+<-----------end piece size
+<-----------strart read-piece
+.**
+...
+<-----------end read-piece-->
+coo (Y:X) : 0:1
+1
+2
+3
+coo (Y:X) : 0:2
+1
+2
+3
+PLAY - 1
+
+Get aim : 
+data->coo[0] : 3
+
+PLAY - 2
+PLAY - CUT
+<---------Coup : 
+2 0
+<-----------fin coupe
+<-----------start map_size
+<-----------end map_size
+<-----------start solo-line read-map
+    01234567890123456
+<xxxxxxxxxxxend solo-line read-map
+<-----------start read-map
+000 .................
+001 .................
+002 OOO...OO.OO......
+003 OOOOOOOOOOOOOOO..
+004 OOOOOOOOOOOOOOOO.
+005 OOOOOOOOOOXXXXOO.
+006 OOOOOOOOXXXXXXXX.
+007 OOOOOOOOXXXXXXXX.
+008 OOOOOOOOXXXXXXXX.
+009 OOOOOOOOXXXXXXXX.
+010 OOOOOOOOXXXXXXXX.
+011 OOOOOOOOXXXXXXXXX
+012 .....XXXXXXXXXXX.
+013 ...XXXXXXXXXXXXX.
+014 .....XXXXXXXXXXX.
+<xxxxxxxxxxx end read-map
+<-----------start piece size
+Piece 2 3:
+<-----------end piece size
+<-----------strart read-piece
+***
+...
+<-----------end read-piece-->
+coo (Y:X) : 0:0
+1
+2
+3
+coo (Y:X) : 0:1
+1
+2
+3
+coo (Y:X) : 0:2
+1
+2
+3
+PLAY - 1
+
+Get aim : 
+data->coo[0] : 2
+
+PLAY - 2
+PLAY - CUT
+<---------Coup : 
+2 2
+<-----------fin coupe
+<-----------start map_size
+<-----------end map_size
+<-----------start solo-line read-map
+    01234567890123456
+<xxxxxxxxxxxend solo-line read-map
+<-----------start read-map
+000 .................
+001 .................
+002 OOOOO.OO.OO......
+003 OOOOOOOOOOOOOOO..
+004 OOOOOOOOOOOOOOOO.
+005 OOOOOOOOOOXXXXOO.
+006 OOOOOOOOXXXXXXXX.
+007 OOOOOOOOXXXXXXXX.
+008 OOOOOOOOXXXXXXXX.
+009 OOOOOOOOXXXXXXXX.
+010 OOOOOOOOXXXXXXXXX
+011 OOOOOOOOXXXXXXXXX
+012 .....XXXXXXXXXXX.
+013 ...XXXXXXXXXXXXX.
+014 .....XXXXXXXXXXX.
+<xxxxxxxxxxx end read-map
+<-----------start piece size
+Piece 1 3:
+<-----------end piece size
+<-----------strart read-piece
+***
+<-----------end read-piece-->
+coo (Y:X) : 0:0
+1
+2
+3
+coo (Y:X) : 0:1
+1
+2
+3
+coo (Y:X) : 0:2
+1
+2
+3
+PLAY - 1
+
+Get aim : 
+data->coo[0] : 2
+
+PLAY - 2
+PLAY - CUT
+<---------Coup : 
+2 10
+<-----------fin coupe
+<-----------start map_size
+<-----------end map_size
+<-----------start solo-line read-map
+    01234567890123456
+<xxxxxxxxxxxend solo-line read-map
+<-----------start read-map
+000 .................
+001 .................
+002 OOOOO.OO.OOOO....
+003 OOOOOOOOOOOOOOO..
+004 OOOOOOOOOOOOOOOO.
+005 OOOOOOOOOOXXXXOO.
+006 OOOOOOOOXXXXXXXX.
+007 OOOOOOOOXXXXXXXX.
+008 OOOOOOOOXXXXXXXX.
+009 OOOOOOOOXXXXXXXX.
+010 OOOOOOOOXXXXXXXXX
+011 OOOOOOOOXXXXXXXXX
+012 ...XXXXXXXXXXXXX.
+013 ...XXXXXXXXXXXXX.
+014 .....XXXXXXXXXXX.
+<xxxxxxxxxxx end read-map
+<-----------start piece size
+Piece 1 2:
+<-----------end piece size
+<-----------strart read-piece
+**
+<-----------end read-piece-->
+coo (Y:X) : 0:0
+1
+2
+3
+coo (Y:X) : 0:1
+1
+2
+3
+PLAY - 1
+
+Get aim : 
+data->coo[0] : 2
+
+PLAY - 2
+PLAY - CUT
+<---------Coup : 
+2 4
+<-----------fin coupe
+<-----------start map_size
+<-----------end map_size
+<-----------start solo-line read-map
+    01234567890123456
+<xxxxxxxxxxxend solo-line read-map
+<-----------start read-map
+000 .................
+001 .................
+002 OOOOOOOO.OOOO....
+003 OOOOOOOOOOOOOOO..
+004 OOOOOOOOOOOOOOOO.
+005 OOOOOOOOOOXXXXOO.
+006 OOOOOOOOXXXXXXXX.
+007 OOOOOOOOXXXXXXXX.
+008 OOOOOOOOXXXXXXXXX
+009 OOOOOOOOXXXXXXXXX
+010 OOOOOOOOXXXXXXXXX
+011 OOOOOOOOXXXXXXXXX
+012 ...XXXXXXXXXXXXX.
+013 ...XXXXXXXXXXXXX.
+014 .....XXXXXXXXXXX.
+<xxxxxxxxxxx end read-map
+<-----------start piece size
+Piece 2 2:
+<-----------end piece size
+<-----------strart read-piece
+**
+.*
+<-----------end read-piece-->
+coo (Y:X) : 0:0
+1
+2
+3
+coo (Y:X) : 0:1
+1
+2
+3
+coo (Y:X) : 1:1
+1
+2
+3
+PLAY - 1
+
+Get aim : 
+data->coo[0] : 2
+
+PLAY - 2
+PLAY - CUT
+<---------Coup : 
+1 0
+<-----------fin coupe
+<-----------start map_size
+<-----------end map_size
+<-----------start solo-line read-map
+    01234567890123456
+<xxxxxxxxxxxend solo-line read-map
+<-----------start read-map
+000 .................
+001 OO...............
+002 OOOOOOOO.OOOO....
+003 OOOOOOOOOOOOOOO..
+004 OOOOOOOOOOOOOOOO.
+005 OOOOOOOOOOXXXXOO.
+006 OOOOOOOOXXXXXXXX.
+007 OOOOOOOOXXXXXXXX.
+008 OOOOOOOOXXXXXXXXX
+009 OOOOOOOOXXXXXXXXX
+010 OOOOOOOOXXXXXXXXX
+011 OOOOOOOOXXXXXXXXX
+012 ...XXXXXXXXXXXXX.
+013 ..XXXXXXXXXXXXXX.
+014 ..XXXXXXXXXXXXXX.
+<xxxxxxxxxxx end read-map
+<-----------start piece size
+Piece 1 2:
+<-----------end piece size
+<-----------strart read-piece
+**
+<-----------end read-piece-->
+coo (Y:X) : 0:0
+1
+2
+3
+coo (Y:X) : 0:1
+1
+2
+3
+PLAY - 1
+
+Get aim : 
+data->coo[0] : 1
+
+PLAY - 2
+PLAY - CUT
+<---------Coup : 
+2 7
+<-----------fin coupe
+<-----------start map_size
+<-----------end map_size
+<-----------start solo-line read-map
+    01234567890123456
+<xxxxxxxxxxxend solo-line read-map
+<-----------start read-map
+000 .................
+001 OO...............
+002 OOOOOOOOOOOOO....
+003 OOOOOOOOOOOOOOO..
+004 OOOOOOOOOOOOOOOO.
+005 OOOOOOOOOOXXXXOO.
+006 OOOOOOOOXXXXXXXX.
+007 OOOOOOOOXXXXXXXXX
+008 OOOOOOOOXXXXXXXXX
+009 OOOOOOOOXXXXXXXXX
+010 OOOOOOOOXXXXXXXXX
+011 OOOOOOOOXXXXXXXXX
+012 ...XXXXXXXXXXXXX.
+013 ..XXXXXXXXXXXXXX.
+014 ..XXXXXXXXXXXXXX.
+<xxxxxxxxxxx end read-map
+<-----------start piece size
+Piece 2 3:
+<-----------end piece size
+<-----------strart read-piece
+.*.
+***
+<-----------end read-piece-->
+coo (Y:X) : 0:1
+1
+2
+3
+coo (Y:X) : 1:2
+1
+2
+3
+coo (Y:X) : 1:1
+1
+2
+3
+coo (Y:X) : 1:0
+1
+2
+3
+PLAY - 1
+
+Get aim : 
+data->coo[0] : 2
+
+PLAY - 2
+PLAY - CUT
+<---------Coup : 
+1 12
+<-----------fin coupe
+<-----------start map_size
+<-----------end map_size
+<-----------start solo-line read-map
+    01234567890123456
+<xxxxxxxxxxxend solo-line read-map
+<-----------start read-map
+000 .................
+001 OO...........O...
+002 OOOOOOOOOOOOOOO..
+003 OOOOOOOOOOOOOOO..
+004 OOOOOOOOOOOOOOOO.
+005 OOOOOOOOOOXXXXOO.
+006 OOOOOOOOXXXXXXXX.
+007 OOOOOOOOXXXXXXXXX
+008 OOOOOOOOXXXXXXXXX
+009 OOOOOOOOXXXXXXXXX
+010 OOOOOOOOXXXXXXXXX
+011 OOOOOOOOXXXXXXXXX
+012 ..XXXXXXXXXXXXXX.
+013 ..XXXXXXXXXXXXXX.
+014 ..XXXXXXXXXXXXXX.
+<xxxxxxxxxxx end read-map
+<-----------start piece size
+Piece 2 1:
+<-----------end piece size
+<-----------strart read-piece
+*
+*
+<-----------end read-piece-->
+coo (Y:X) : 0:0
+1
+2
+3
+coo (Y:X) : 1:0
+1
+2
+3
+PLAY - 1
+
+Get aim : 
+data->coo[0] : 1
+
+PLAY - 2
+PLAY - CUT
+<---------Coup : 
+1 2
+<-----------fin coupe
+<-----------start map_size
+<-----------end map_size
+<-----------start solo-line read-map
+    01234567890123456
+<xxxxxxxxxxxend solo-line read-map
+<-----------start read-map
+000 .................
+001 OOO..........O...
+002 OOOOOOOOOOOOOOO..
+003 OOOOOOOOOOOOOOO..
+004 OOOOOOOOOOOOOOOO.
+005 OOOOOOOOOOXXXXOO.
+006 OOOOOOOOXXXXXXXX.
+007 OOOOOOOOXXXXXXXXX
+008 OOOOOOOOXXXXXXXXX
+009 OOOOOOOOXXXXXXXXX
+010 OOOOOOOOXXXXXXXXX
+011 OOOOOOOOXXXXXXXXX
+012 ..XXXXXXXXXXXXXX.
+013 XXXXXXXXXXXXXXXX.
+014 ..XXXXXXXXXXXXXX.
+<xxxxxxxxxxx end read-map
+<-----------start piece size
+Piece 1 3:
+<-----------end piece size
+<-----------strart read-piece
+.**
+<-----------end read-piece-->
+coo (Y:X) : 0:1
+1
+2
+3
+coo (Y:X) : 0:2
+1
+2
+3
+PLAY - 1
+
+Get aim : 
+data->coo[0] : 1
+
+PLAY - 2
+PLAY - CUT
+<---------Coup : 
+1 1
+<-----------fin coupe
+<-----------start map_size
+<-----------end map_size
+<-----------start solo-line read-map
+    01234567890123456
+<xxxxxxxxxxxend solo-line read-map
+<-----------start read-map
+000 .................
+001 OOOO.........O...
+002 OOOOOOOOOOOOOOO..
+003 OOOOOOOOOOOOOOO..
+004 OOOOOOOOOOOOOOOO.
+005 OOOOOOOOOOXXXXOO.
+006 OOOOOOOOXXXXXXXXX
+007 OOOOOOOOXXXXXXXXX
+008 OOOOOOOOXXXXXXXXX
+009 OOOOOOOOXXXXXXXXX
+010 OOOOOOOOXXXXXXXXX
+011 OOOOOOOOXXXXXXXXX
+012 ..XXXXXXXXXXXXXX.
+013 XXXXXXXXXXXXXXXX.
+014 ..XXXXXXXXXXXXXX.
+<xxxxxxxxxxx end read-map
+<-----------start piece size
+Piece 2 1:
+<-----------end piece size
+<-----------strart read-piece
+*
+*
+<-----------end read-piece-->
+coo (Y:X) : 0:0
+1
+2
+3
+coo (Y:X) : 1:0
+1
+2
+3
+PLAY - 1
+
+Get aim : 
+data->coo[0] : 1
+
+PLAY - 2
+PLAY - CUT
+<---------Coup : 
+1 4
+<-----------fin coupe
+<-----------start map_size
+<-----------end map_size
+<-----------start solo-line read-map
+    01234567890123456
+<xxxxxxxxxxxend solo-line read-map
+<-----------start read-map
+000 .................
+001 OOOOO........O...
+002 OOOOOOOOOOOOOOO..
+003 OOOOOOOOOOOOOOO..
+004 OOOOOOOOOOOOOOOO.
+005 OOOOOOOOOOXXXXOO.
+006 OOOOOOOOXXXXXXXXX
+007 OOOOOOOOXXXXXXXXX
+008 OOOOOOOOXXXXXXXXX
+009 OOOOOOOOXXXXXXXXX
+010 OOOOOOOOXXXXXXXXX
+011 OOOOOOOOXXXXXXXXX
+012 ..XXXXXXXXXXXXXX.
+013 XXXXXXXXXXXXXXXX.
+014 ..XXXXXXXXXXXXXX.
+<xxxxxxxxxxx end read-map
+<-----------start piece size
+Piece 2 1:
+<-----------end piece size
+<-----------strart read-piece
+*
+*
+<-----------end read-piece-->
+coo (Y:X) : 0:0
+1
+2
+3
+coo (Y:X) : 1:0
+1
+2
+3
+PLAY - 1
+
+Get aim : 
+data->coo[0] : 1
+
+PLAY - 2
+PLAY - CUT
+<---------Coup : 
+1 5
+<-----------fin coupe
+<-----------start map_size
+<-----------end map_size
+<-----------start solo-line read-map
+    01234567890123456
+<xxxxxxxxxxxend solo-line read-map
+<-----------start read-map
+000 .................
+001 OOOOOO.......O...
+002 OOOOOOOOOOOOOOO..
+003 OOOOOOOOOOOOOOO..
+004 OOOOOOOOOOOOOOOO.
+005 OOOOOOOOOOXXXXOO.
+006 OOOOOOOOXXXXXXXXX
+007 OOOOOOOOXXXXXXXXX
+008 OOOOOOOOXXXXXXXXX
+009 OOOOOOOOXXXXXXXXX
+010 OOOOOOOOXXXXXXXXX
+011 OOOOOOOOXXXXXXXXX
+012 ..XXXXXXXXXXXXXX.
+013 XXXXXXXXXXXXXXXX.
+014 ..XXXXXXXXXXXXXX.
+<xxxxxxxxxxx end read-map
+<-----------start piece size
+Piece 2 2:
+<-----------end piece size
+<-----------strart read-piece
+.*
+.*
+<-----------end read-piece-->
+coo (Y:X) : 0:1
+1
+2
+3
+coo (Y:X) : 1:1
+1
+2
+3
+PLAY - 1
+
+Get aim : 
+data->coo[0] : 1
+
+PLAY - 2
+PLAY - CUT
+<---------Coup : 
+1 5
+<-----------fin coupe
+<-----------start map_size
+<-----------end map_size
+<-----------start solo-line read-map
+    01234567890123456
+<xxxxxxxxxxxend solo-line read-map
+<-----------start read-map
+000 .................
+001 OOOOOOO......O...
+002 OOOOOOOOOOOOOOO..
+003 OOOOOOOOOOOOOOO..
+004 OOOOOOOOOOOOOOOO.
+005 OOOOOOOOOOXXXXOO.
+006 OOOOOOOOXXXXXXXXX
+007 OOOOOOOOXXXXXXXXX
+008 OOOOOOOOXXXXXXXXX
+009 OOOOOOOOXXXXXXXXX
+010 OOOOOOOOXXXXXXXXX
+011 OOOOOOOOXXXXXXXXX
+012 ..XXXXXXXXXXXXXX.
+013 XXXXXXXXXXXXXXXX.
+014 ..XXXXXXXXXXXXXX.
+<xxxxxxxxxxx end read-map
+<-----------start piece size
+Piece 2 2:
+<-----------end piece size
+<-----------strart read-piece
+**
+..
+<-----------end read-piece-->
+coo (Y:X) : 0:0
+1
+2
+3
+coo (Y:X) : 0:1
+1
+2
+3
+PLAY - 1
+
+Get aim : 
+data->coo[0] : 1
+
+PLAY - 2
+PLAY - CUT
+<---------Coup : 
+1 6
+<-----------fin coupe
+<-----------start map_size
+<-----------end map_size
+<-----------start solo-line read-map
+    01234567890123456
+<xxxxxxxxxxxend solo-line read-map
+<-----------start read-map
+000 .................
+001 OOOOOOOO.....O...
+002 OOOOOOOOOOOOOOO..
+003 OOOOOOOOOOOOOOO..
+004 OOOOOOOOOOOOOOOO.
+005 OOOOOOOOOOXXXXOO.
+006 OOOOOOOOXXXXXXXXX
+007 OOOOOOOOXXXXXXXXX
+008 OOOOOOOOXXXXXXXXX
+009 OOOOOOOOXXXXXXXXX
+010 OOOOOOOOXXXXXXXXX
+011 OOOOOOOOXXXXXXXXX
+012 ..XXXXXXXXXXXXXX.
+013 XXXXXXXXXXXXXXXX.
+014 ..XXXXXXXXXXXXXX.
+<xxxxxxxxxxx end read-map
+<-----------start piece size
+Piece 2 3:
+<-----------end piece size
+<-----------strart read-piece
+*..
+*..
+<-----------end read-piece-->
+coo (Y:X) : 0:0
+1
+2
+3
+coo (Y:X) : 1:0
+1
+2
+3
+PLAY - 1
+
+Get aim : 
+data->coo[0] : 1
+
+PLAY - 2
+PLAY - CUT
+<---------Coup : 
+1 8
+<-----------fin coupe
+<-----------start map_size
+<-----------end map_size
+<-----------start solo-line read-map
+    01234567890123456
+<xxxxxxxxxxxend solo-line read-map
+<-----------start read-map
+000 .................
+001 OOOOOOOOO....O...
+002 OOOOOOOOOOOOOOO..
+003 OOOOOOOOOOOOOOO..
+004 OOOOOOOOOOOOOOOO.
+005 OOOOOOOOOOXXXXOO.
+006 OOOOOOOOXXXXXXXXX
+007 OOOOOOOOXXXXXXXXX
+008 OOOOOOOOXXXXXXXXX
+009 OOOOOOOOXXXXXXXXX
+010 OOOOOOOOXXXXXXXXX
+011 OOOOOOOOXXXXXXXXX
+012 ..XXXXXXXXXXXXXX.
+013 XXXXXXXXXXXXXXXX.
+014 ..XXXXXXXXXXXXXX.
+<xxxxxxxxxxx end read-map
+<-----------start piece size
+Piece 2 2:
+<-----------end piece size
+<-----------strart read-piece
+.*
+**
+<-----------end read-piece-->
+coo (Y:X) : 0:1
+1
+2
+3
+coo (Y:X) : 1:1
+1
+2
+3
+coo (Y:X) : 1:0
+1
+2
+3
+PLAY - 1
+
+Get aim : 
+data->coo[0] : 1
+
+PLAY - 2
+PLAY - CUT
+<---------Coup : 
+0 8
+<-----------fin coupe
+<-----------start map_size
+<-----------end map_size
+<-----------start solo-line read-map
+    01234567890123456
+<xxxxxxxxxxxend solo-line read-map
+<-----------start read-map
+000 .........O.......
+001 OOOOOOOOOO...O...
+002 OOOOOOOOOOOOOOO..
+003 OOOOOOOOOOOOOOO..
+004 OOOOOOOOOOOOOOOO.
+005 OOOOOOOOOOXXXXOO.
+006 OOOOOOOOXXXXXXXXX
+007 OOOOOOOOXXXXXXXXX
+008 OOOOOOOOXXXXXXXXX
+009 OOOOOOOOXXXXXXXXX
+010 OOOOOOOOXXXXXXXXX
+011 OOOOOOOOXXXXXXXXX
+012 ..XXXXXXXXXXXXXX.
+013 XXXXXXXXXXXXXXXX.
+014 ..XXXXXXXXXXXXXX.
+<xxxxxxxxxxx end read-map
+<-----------start piece size
+Piece 2 3:
+<-----------end piece size
+<-----------strart read-piece
+.**
+...
+<-----------end read-piece-->
+coo (Y:X) : 0:1
+1
+2
+3
+coo (Y:X) : 0:2
+1
+2
+3
+PLAY - 1
+
+Get aim : 
+data->coo[0] : 0
+
+PLAY - 2
+PLAY - CUT
+<---------Coup : 
+1 8
+<-----------fin coupe
+<-----------start map_size
+<-----------end map_size
+<-----------start solo-line read-map
+    01234567890123456
+<xxxxxxxxxxxend solo-line read-map
+<-----------start read-map
+000 .........O.......
+001 OOOOOOOOOOO..O...
+002 OOOOOOOOOOOOOOO..
+003 OOOOOOOOOOOOOOO..
+004 OOOOOOOOOOOOOOOO.
+005 OOOOOOOOOOXXXXOO.
+006 OOOOOOOOXXXXXXXXX
+007 OOOOOOOOXXXXXXXXX
+008 OOOOOOOOXXXXXXXXX
+009 OOOOOOOOXXXXXXXXX
+010 OOOOOOOOXXXXXXXXX
+011 OOOOOOOOXXXXXXXXX
+012 ..XXXXXXXXXXXXXX.
+013 XXXXXXXXXXXXXXXX.
+014 ..XXXXXXXXXXXXXX.
+<xxxxxxxxxxx end read-map
+<-----------start piece size
+Piece 2 1:
+<-----------end piece size
+<-----------strart read-piece
+*
+*
+<-----------end read-piece-->
+coo (Y:X) : 0:0
+1
+2
+3
+coo (Y:X) : 1:0
+1
+2
+3
+PLAY - 1
+
+Get aim : 
+data->coo[0] : 1
+
+PLAY - 2
+PLAY - CUT
+<---------Coup : 
+1 11
+<-----------fin coupe
+<-----------start map_size
+<-----------end map_size
+<-----------start solo-line read-map
+    01234567890123456
+<xxxxxxxxxxxend solo-line read-map
+<-----------start read-map
+000 .........O.......
+001 OOOOOOOOOOOO.O...
+002 OOOOOOOOOOOOOOO..
+003 OOOOOOOOOOOOOOO..
+004 OOOOOOOOOOOOOOOO.
+005 OOOOOOOOOOXXXXOO.
+006 OOOOOOOOXXXXXXXXX
+007 OOOOOOOOXXXXXXXXX
+008 OOOOOOOOXXXXXXXXX
+009 OOOOOOOOXXXXXXXXX
+010 OOOOOOOOXXXXXXXXX
+011 OOOOOOOOXXXXXXXXX
+012 ..XXXXXXXXXXXXXX.
+013 XXXXXXXXXXXXXXXX.
+014 ..XXXXXXXXXXXXXX.
+<xxxxxxxxxxx end read-map
+<-----------start piece size
+Piece 1 2:
+<-----------end piece size
+<-----------strart read-piece
+**
+<-----------end read-piece-->
+coo (Y:X) : 0:0
+1
+2
+3
+coo (Y:X) : 0:1
+1
+2
+3
+PLAY - 1
+
+Get aim : 
+data->coo[0] : 1
+
+PLAY - 2
+PLAY - CUT
+<---------Coup : 
+1 11
+<-----------fin coupe
+<-----------start map_size
+<-----------end map_size
+<-----------start solo-line read-map
+    01234567890123456
+<xxxxxxxxxxxend solo-line read-map
+<-----------start read-map
+000 .........O.......
+001 OOOOOOOOOOOOOO...
+002 OOOOOOOOOOOOOOO..
+003 OOOOOOOOOOOOOOO..
+004 OOOOOOOOOOOOOOOO.
+005 OOOOOOOOOOXXXXOO.
+006 OOOOOOOOXXXXXXXXX
+007 OOOOOOOOXXXXXXXXX
+008 OOOOOOOOXXXXXXXXX
+009 OOOOOOOOXXXXXXXXX
+010 OOOOOOOOXXXXXXXXX
+011 OOOOOOOOXXXXXXXXX
+012 ..XXXXXXXXXXXXXX.
+013 XXXXXXXXXXXXXXXX.
+014 ..XXXXXXXXXXXXXX.
+<xxxxxxxxxxx end read-map
+<-----------start piece size
+Piece 1 2:
+<-----------end piece size
+<-----------strart read-piece
+**
+<-----------end read-piece-->
+coo (Y:X) : 0:0
+1
+2
+3
+coo (Y:X) : 0:1
+1
+2
+3
+PLAY - 1
+
+Get aim : 
+data->coo[0] : 1
+
+PLAY - 2
+PLAY - CUT
+<---------Coup : 
+0 8
+<-----------fin coupe
+<-----------start map_size
+<-----------end map_size
+<-----------start solo-line read-map
+    01234567890123456
+<xxxxxxxxxxxend solo-line read-map
+<-----------start read-map
+000 ........OO.......
+001 OOOOOOOOOOOOOO...
+002 OOOOOOOOOOOOOOO..
+003 OOOOOOOOOOOOOOO..
+004 OOOOOOOOOOOOOOOO.
+005 OOOOOOOOOOXXXXOO.
+006 OOOOOOOOXXXXXXXXX
+007 OOOOOOOOXXXXXXXXX
+008 OOOOOOOOXXXXXXXXX
+009 OOOOOOOOXXXXXXXXX
+010 OOOOOOOOXXXXXXXXX
+011 OOOOOOOOXXXXXXXXX
+012 ..XXXXXXXXXXXXXX.
+013 XXXXXXXXXXXXXXXX.
+014 ..XXXXXXXXXXXXXX.
+<xxxxxxxxxxx end read-map
+<-----------start piece size
+Piece 2 2:
+<-----------end piece size
+<-----------strart read-piece
+**
+**
+<-----------end read-piece-->
+coo (Y:X) : 0:0
+1
+2
+3
+coo (Y:X) : 0:1
+1
+2
+3
+coo (Y:X) : 1:1
+1
+2
+3
+coo (Y:X) : 1:0
+1
+2
+3
+PLAY - 1
+
+Get aim : 
+data->coo[0] : 0
+
+PLAY - 2
+PLAY - CUT
+ft_bruteforce
+<---------Coup : 
+0 13
+<-----------fin coupe
+<-----------start map_size
+<-----------end map_size
+<-----------start solo-line read-map
+    01234567890123456
+<xxxxxxxxxxxend solo-line read-map
+<-----------start read-map
+000 ........OO...OO..
+001 OOOOOOOOOOOOOOO..
+002 OOOOOOOOOOOOOOO..
+003 OOOOOOOOOOOOOOO..
+004 OOOOOOOOOOOOOOOO.
+005 OOOOOOOOOOXXXXOO.
+006 OOOOOOOOXXXXXXXXX
+007 OOOOOOOOXXXXXXXXX
+008 OOOOOOOOXXXXXXXXX
+009 OOOOOOOOXXXXXXXXX
+010 OOOOOOOOXXXXXXXXX
+011 OOOOOOOOXXXXXXXXX
+012 ..XXXXXXXXXXXXXX.
+013 XXXXXXXXXXXXXXXX.
+014 ..XXXXXXXXXXXXXX.
+<xxxxxxxxxxx end read-map
+<-----------start piece size
+Piece 2 2:
+<-----------end piece size
+<-----------strart read-piece
+**
+..
+<-----------end read-piece-->
+coo (Y:X) : 0:0
+1
+2
+3
+coo (Y:X) : 0:1
+1
+2
+3
+PLAY - 1
+
+Get aim : 
+data->coo[0] : 0
+
+PLAY - 2
+PLAY - CUT
+<---------Coup : 
+0 7
+<-----------fin coupe
+<-----------start map_size
+<-----------end map_size
+<-----------start solo-line read-map
+    01234567890123456
+<xxxxxxxxxxxend solo-line read-map
+<-----------start read-map
+000 .......OOO...OO..
+001 OOOOOOOOOOOOOOO..
+002 OOOOOOOOOOOOOOO..
+003 OOOOOOOOOOOOOOO..
+004 OOOOOOOOOOOOOOOO.
+005 OOOOOOOOOOXXXXOO.
+006 OOOOOOOOXXXXXXXXX
+007 OOOOOOOOXXXXXXXXX
+008 OOOOOOOOXXXXXXXXX
+009 OOOOOOOOXXXXXXXXX
+010 OOOOOOOOXXXXXXXXX
+011 OOOOOOOOXXXXXXXXX
+012 ..XXXXXXXXXXXXXX.
+013 XXXXXXXXXXXXXXXX.
+014 ..XXXXXXXXXXXXXX.
+<xxxxxxxxxxx end read-map
+<-----------start piece size
+Piece 2 3:
+<-----------end piece size
+<-----------strart read-piece
+*..
+*..
+<-----------end read-piece-->
+coo (Y:X) : 0:0
+1
+2
+3
+coo (Y:X) : 1:0
+1
+2
+3
+PLAY - 1
+
+Get aim : 
+data->coo[0] : 0
+
+PLAY - 2
+PLAY - CUT
+<---------Coup : 
+0 0
+<-----------fin coupe
+<-----------start map_size
+<-----------end map_size
+<-----------start solo-line read-map
+    01234567890123456
+<xxxxxxxxxxxend solo-line read-map
+<-----------start read-map
+000 O......OOO...OO..
+001 OOOOOOOOOOOOOOO..
+002 OOOOOOOOOOOOOOO..
+003 OOOOOOOOOOOOOOO..
+004 OOOOOOOOOOOOOOOO.
+005 OOOOOOOOOOXXXXOO.
+006 OOOOOOOOXXXXXXXXX
+007 OOOOOOOOXXXXXXXXX
+008 OOOOOOOOXXXXXXXXX
+009 OOOOOOOOXXXXXXXXX
+010 OOOOOOOOXXXXXXXXX
+011 OOOOOOOOXXXXXXXXX
+012 ..XXXXXXXXXXXXXX.
+013 XXXXXXXXXXXXXXXX.
+014 ..XXXXXXXXXXXXXX.
+<xxxxxxxxxxx end read-map
+<-----------start piece size
+Piece 2 2:
+<-----------end piece size
+<-----------strart read-piece
+*.
+*.
+<-----------end read-piece-->
+coo (Y:X) : 0:0
+1
+2
+3
+coo (Y:X) : 1:0
+1
+2
+3
+PLAY - 1
+
+Get aim : 
+data->coo[0] : 0
+
+PLAY - 2
+PLAY - CUT
+<---------Coup : 
+0 1
+<-----------fin coupe
+<-----------start map_size
+<-----------end map_size
+<-----------start solo-line read-map
+    01234567890123456
+<xxxxxxxxxxxend solo-line read-map
+<-----------start read-map
+000 OO.....OOO...OO..
+001 OOOOOOOOOOOOOOO..
+002 OOOOOOOOOOOOOOO..
+003 OOOOOOOOOOOOOOO..
+004 OOOOOOOOOOOOOOOO.
+005 OOOOOOOOOOXXXXOO.
+006 OOOOOOOOXXXXXXXXX
+007 OOOOOOOOXXXXXXXXX
+008 OOOOOOOOXXXXXXXXX
+009 OOOOOOOOXXXXXXXXX
+010 OOOOOOOOXXXXXXXXX
+011 OOOOOOOOXXXXXXXXX
+012 ..XXXXXXXXXXXXXX.
+013 XXXXXXXXXXXXXXXX.
+014 ..XXXXXXXXXXXXXX.
+<xxxxxxxxxxx end read-map
+<-----------start piece size
+Piece 1 2:
+<-----------end piece size
+<-----------strart read-piece
+**
+<-----------end read-piece-->
+coo (Y:X) : 0:0
+1
+2
+3
+coo (Y:X) : 0:1
+1
+2
+3
+PLAY - 1
+
+Get aim : 
+data->coo[0] : 0
+
+PLAY - 2
+PLAY - CUT
+<---------Coup : 
+0 1
+<-----------fin coupe
+<-----------start map_size
+<-----------end map_size
+<-----------start solo-line read-map
+    01234567890123456
+<xxxxxxxxxxxend solo-line read-map
+<-----------start read-map
+000 OOO....OOO...OO..
+001 OOOOOOOOOOOOOOO..
+002 OOOOOOOOOOOOOOO..
+003 OOOOOOOOOOOOOOO..
+004 OOOOOOOOOOOOOOOO.
+005 OOOOOOOOOOXXXXOO.
+006 OOOOOOOOXXXXXXXXX
+007 OOOOOOOOXXXXXXXXX
+008 OOOOOOOOXXXXXXXXX
+009 OOOOOOOOXXXXXXXXX
+010 OOOOOOOOXXXXXXXXX
+011 OOOOOOOOXXXXXXXXX
+012 ..XXXXXXXXXXXXXX.
+013 XXXXXXXXXXXXXXXX.
+014 ..XXXXXXXXXXXXXX.
+<xxxxxxxxxxx end read-map
+<-----------start piece size
+Piece 2 2:
+<-----------end piece size
+<-----------strart read-piece
+*.
+*.
+<-----------end read-piece-->
+coo (Y:X) : 0:0
+1
+2
+3
+coo (Y:X) : 1:0
+1
+2
+3
+PLAY - 1
+
+Get aim : 
+data->coo[0] : 0
+
+PLAY - 2
+PLAY - CUT
+<---------Coup : 
+0 3
+<-----------fin coupe
+<-----------start map_size
+<-----------end map_size
+<-----------start solo-line read-map
+    01234567890123456
+<xxxxxxxxxxxend solo-line read-map
+<-----------start read-map
+000 OOOO...OOO...OO..
+001 OOOOOOOOOOOOOOO..
+002 OOOOOOOOOOOOOOO..
+003 OOOOOOOOOOOOOOO..
+004 OOOOOOOOOOOOOOOO.
+005 OOOOOOOOOOXXXXOO.
+006 OOOOOOOOXXXXXXXXX
+007 OOOOOOOOXXXXXXXXX
+008 OOOOOOOOXXXXXXXXX
+009 OOOOOOOOXXXXXXXXX
+010 OOOOOOOOXXXXXXXXX
+011 OOOOOOOOXXXXXXXXX
+012 ..XXXXXXXXXXXXXX.
+013 XXXXXXXXXXXXXXXX.
+014 ..XXXXXXXXXXXXXX.
+<xxxxxxxxxxx end read-map
+<-----------start piece size
+Piece 2 1:
+<-----------end piece size
+<-----------strart read-piece
+*
+*
+<-----------end read-piece-->
+coo (Y:X) : 0:0
+1
+2
+3
+coo (Y:X) : 1:0
+1
+2
+3
+PLAY - 1
+
+Get aim : 
+data->coo[0] : 0
+
+PLAY - 2
+PLAY - CUT
+<---------Coup : 
+0 4
+<-----------fin coupe
+<-----------start map_size
+<-----------end map_size
+<-----------start solo-line read-map
+    01234567890123456
+<xxxxxxxxxxxend solo-line read-map
+<-----------start read-map
+000 OOOOO..OOO...OO..
+001 OOOOOOOOOOOOOOO..
+002 OOOOOOOOOOOOOOO..
+003 OOOOOOOOOOOOOOO..
+004 OOOOOOOOOOOOOOOO.
+005 OOOOOOOOOOXXXXOO.
+006 OOOOOOOOXXXXXXXXX
+007 OOOOOOOOXXXXXXXXX
+008 OOOOOOOOXXXXXXXXX
+009 OOOOOOOOXXXXXXXXX
+010 OOOOOOOOXXXXXXXXX
+011 OOOOOOOOXXXXXXXXX
+012 ..XXXXXXXXXXXXXX.
+013 XXXXXXXXXXXXXXXX.
+014 ..XXXXXXXXXXXXXX.
+<xxxxxxxxxxx end read-map
+<-----------start piece size
+Piece 1 2:
+<-----------end piece size
+<-----------strart read-piece
+**
+<-----------end read-piece-->
+coo (Y:X) : 0:0
+1
+2
+3
+coo (Y:X) : 0:1
+1
+2
+3
+PLAY - 1
+
+Get aim : 
+data->coo[0] : 0
+
+PLAY - 2
+PLAY - CUT
+<---------Coup : 
+0 4
+<-----------fin coupe
+<-----------start map_size
+<-----------end map_size
+<-----------start solo-line read-map
+    01234567890123456
+<xxxxxxxxxxxend solo-line read-map
+<-----------start read-map
+000 OOOOOO.OOO...OO..
+001 OOOOOOOOOOOOOOO..
+002 OOOOOOOOOOOOOOO..
+003 OOOOOOOOOOOOOOO..
+004 OOOOOOOOOOOOOOOO.
+005 OOOOOOOOOOXXXXOO.
+006 OOOOOOOOXXXXXXXXX
+007 OOOOOOOOXXXXXXXXX
+008 OOOOOOOOXXXXXXXXX
+009 OOOOOOOOXXXXXXXXX
+010 OOOOOOOOXXXXXXXXX
+011 OOOOOOOOXXXXXXXXX
+012 ..XXXXXXXXXXXXXX.
+013 XXXXXXXXXXXXXXXX.
+014 ..XXXXXXXXXXXXXX.
+<xxxxxxxxxxx end read-map
+<-----------start piece size
+Piece 2 3:
+<-----------end piece size
+<-----------strart read-piece
+.**
+..*
+<-----------end read-piece-->
+coo (Y:X) : 0:1
+1
+2
+3
+coo (Y:X) : 0:2
+1
+2
+3
+coo (Y:X) : 1:2
+1
+2
+3
+PLAY - 1
+
+Get aim : 
+data->coo[0] : 0
+
+PLAY - 2
+PLAY - CUT
+<---------Coup : 
+0 9
+<-----------fin coupe
+<-----------start map_size
+<-----------end map_size
+<-----------start solo-line read-map
+    01234567890123456
+<xxxxxxxxxxxend solo-line read-map
+<-----------start read-map
+000 OOOOOO.OOOOO.OO..
+001 OOOOOOOOOOOOOOO..
+002 OOOOOOOOOOOOOOO..
+003 OOOOOOOOOOOOOOO..
+004 OOOOOOOOOOOOOOOO.
+005 OOOOOOOOOOXXXXOO.
+006 OOOOOOOOXXXXXXXXX
+007 OOOOOOOOXXXXXXXXX
+008 OOOOOOOOXXXXXXXXX
+009 OOOOOOOOXXXXXXXXX
+010 OOOOOOOOXXXXXXXXX
+011 OOOOOOOOXXXXXXXXX
+012 ..XXXXXXXXXXXXXX.
+013 XXXXXXXXXXXXXXXX.
+014 ..XXXXXXXXXXXXXX.
+<xxxxxxxxxxx end read-map
+<-----------start piece size
+Piece 2 3:
+<-----------end piece size
+<-----------strart read-piece
+***
+...
+<-----------end read-piece-->
+coo (Y:X) : 0:0
+1
+2
+3
+coo (Y:X) : 0:1
+1
+2
+3
+coo (Y:X) : 0:2
+1
+2
+3
+PLAY - 1
+
+Get aim : 
+data->coo[0] : 0
+
+PLAY - 2
+PLAY - CUT
+ft_bruteforce
+<---------Coup : 
+0 14
+<-----------fin coupe
+<-----------start map_size
+<-----------end map_size
+<-----------start solo-line read-map
+    01234567890123456
+<xxxxxxxxxxxend solo-line read-map
+<-----------start read-map
+000 OOOOOO.OOOOO.OOOO
+001 OOOOOOOOOOOOOOO..
+002 OOOOOOOOOOOOOOO..
+003 OOOOOOOOOOOOOOO..
+004 OOOOOOOOOOOOOOOO.
+005 OOOOOOOOOOXXXXOO.
+006 OOOOOOOOXXXXXXXXX
+007 OOOOOOOOXXXXXXXXX
+008 OOOOOOOOXXXXXXXXX
+009 OOOOOOOOXXXXXXXXX
+010 OOOOOOOOXXXXXXXXX
+011 OOOOOOOOXXXXXXXXX
+012 ..XXXXXXXXXXXXXX.
+013 XXXXXXXXXXXXXXXX.
+014 ..XXXXXXXXXXXXXX.
+<xxxxxxxxxxx end read-map
+<-----------start piece size
+Piece 1 3:
+<-----------end piece size
+<-----------strart read-piece
+.**
+<-----------end read-piece-->
+coo (Y:X) : 0:1
+1
+2
+3
+coo (Y:X) : 0:2
+1
+2
+3
+PLAY - 1
+
+Get aim : 
+data->coo[0] : 0
+
+PLAY - 2
+PLAY - CUT
+<---------Coup : 
+0 4
+<-----------fin coupe
+<-----------start map_size
+<-----------end map_size
+<-----------start solo-line read-map
+    01234567890123456
+<xxxxxxxxxxxend solo-line read-map
+<-----------start read-map
+000 OOOOOOOOOOOO.OOOO
+001 OOOOOOOOOOOOOOO..
+002 OOOOOOOOOOOOOOO..
+003 OOOOOOOOOOOOOOO..
+004 OOOOOOOOOOOOOOOO.
+005 OOOOOOOOOOXXXXOO.
+006 OOOOOOOOXXXXXXXXX
+007 OOOOOOOOXXXXXXXXX
+008 OOOOOOOOXXXXXXXXX
+009 OOOOOOOOXXXXXXXXX
+010 OOOOOOOOXXXXXXXXX
+011 OOOOOOOOXXXXXXXXX
+012 ..XXXXXXXXXXXXXX.
+013 XXXXXXXXXXXXXXXX.
+014 ..XXXXXXXXXXXXXX.
+<xxxxxxxxxxx end read-map
+<-----------start piece size
+Piece 2 3:
+<-----------end piece size
+<-----------strart read-piece
+**.
+..*
+<-----------end read-piece-->
+coo (Y:X) : 0:0
+1
+2
+3
+coo (Y:X) : 0:1
+1
+2
+3
+coo (Y:X) : 1:2
+1
+2
+3
+PLAY - 1
+
+Get aim : 
+data->coo[0] : 0
+
+PLAY - 2
+PLAY - CUT
+ft_bruteforce
+<---------Coup : 
+1 14
+<-----------fin coupe
+<-----------start map_size
+<-----------end map_size
+<-----------start solo-line read-map
+    01234567890123456
+<xxxxxxxxxxxend solo-line read-map
+<-----------start read-map
+000 OOOOOOOOOOOO.OOOO
+001 OOOOOOOOOOOOOOOO.
+002 OOOOOOOOOOOOOOO.O
+003 OOOOOOOOOOOOOOO..
+004 OOOOOOOOOOOOOOOO.
+005 OOOOOOOOOOXXXXOO.
+006 OOOOOOOOXXXXXXXXX
+007 OOOOOOOOXXXXXXXXX
+008 OOOOOOOOXXXXXXXXX
+009 OOOOOOOOXXXXXXXXX
+010 OOOOOOOOXXXXXXXXX
+011 OOOOOOOOXXXXXXXXX
+012 ..XXXXXXXXXXXXXX.
+013 XXXXXXXXXXXXXXXX.
+014 ..XXXXXXXXXXXXXX.
+<xxxxxxxxxxx end read-map
+<-----------start piece size
+Piece 2 1:
+<-----------end piece size
+<-----------strart read-piece
+*
+*
+<-----------end read-piece-->
+coo (Y:X) : 0:0
+1
+2
+3
+coo (Y:X) : 1:0
+1
+2
+3
+PLAY - 1
+
+Get aim : 
+data->coo[0] : 1
+
+PLAY - 2
+PLAY - CUT
+<---------Coup : 
+0 12
+<-----------fin coupe
+<-----------start map_size
+<-----------end map_size
+<-----------start solo-line read-map
+    01234567890123456
+<xxxxxxxxxxxend solo-line read-map
+<-----------start read-map
+000 OOOOOOOOOOOOOOOOO
+001 OOOOOOOOOOOOOOOO.
+002 OOOOOOOOOOOOOOO.O
+003 OOOOOOOOOOOOOOO..
+004 OOOOOOOOOOOOOOOO.
+005 OOOOOOOOOOXXXXOO.
+006 OOOOOOOOXXXXXXXXX
+007 OOOOOOOOXXXXXXXXX
+008 OOOOOOOOXXXXXXXXX
+009 OOOOOOOOXXXXXXXXX
+010 OOOOOOOOXXXXXXXXX
+011 OOOOOOOOXXXXXXXXX
+012 ..XXXXXXXXXXXXXX.
+013 XXXXXXXXXXXXXXXX.
+014 ..XXXXXXXXXXXXXX.
+<xxxxxxxxxxx end read-map
+<-----------start piece size
+Piece 2 3:
+<-----------end piece size
+<-----------strart read-piece
+..*
+.**
+<-----------end read-piece-->
+coo (Y:X) : 0:2
+1
+2
+3
+coo (Y:X) : 1:2
+1
+2
+3
+coo (Y:X) : 1:1
+1
+2
+3
+PLAY - 1
+
+Get aim : 
+data->coo[0] : 0
+
+PLAY - 2
+PLAY - CUT
+ft_bruteforce
+<---------Coup : 
+1 14
+<-----------fin coupe
+<-----------start map_size
+<-----------end map_size
+<-----------start solo-line read-map
+    01234567890123456
+<xxxxxxxxxxxend solo-line read-map
+<-----------start read-map
+000 OOOOOOOOOOOOOOOOO
+001 OOOOOOOOOOOOOOOOO
+002 OOOOOOOOOOOOOOOOO
+003 OOOOOOOOOOOOOOO..
+004 OOOOOOOOOOOOOOOO.
+005 OOOOOOOOOOXXXXOO.
+006 OOOOOOOOXXXXXXXXX
+007 OOOOOOOOXXXXXXXXX
+008 OOOOOOOOXXXXXXXXX
+009 OOOOOOOOXXXXXXXXX
+010 OOOOOOOOXXXXXXXXX
+011 OOOOOOOOXXXXXXXXX
+012 ..XXXXXXXXXXXXXX.
+013 XXXXXXXXXXXXXXXX.
+014 ..XXXXXXXXXXXXXX.
+<xxxxxxxxxxx end read-map
+<-----------start piece size
+Piece 1 2:
+<-----------end piece size
+<-----------strart read-piece
+**
+<-----------end read-piece-->
+coo (Y:X) : 0:0
+1
+2
+3
+coo (Y:X) : 0:1
+1
+2
+3
+PLAY - 1
+
+Get aim : 
+data->coo[0] : 1
+
+PLAY - 2
+PLAY - CUT
+ft_bruteforce
+<---------Coup : 
+3 14
+<-----------fin coupe
+<-----------start map_size
+<-----------end map_size
+<-----------start solo-line read-map
+    01234567890123456
+<xxxxxxxxxxxend solo-line read-map
+<-----------start read-map
+000 OOOOOOOOOOOOOOOOO
+001 OOOOOOOOOOOOOOOOO
+002 OOOOOOOOOOOOOOOOO
+003 OOOOOOOOOOOOOOOO.
+004 OOOOOOOOOOOOOOOO.
+005 OOOOOOOOOOXXXXOO.
+006 OOOOOOOOXXXXXXXXX
+007 OOOOOOOOXXXXXXXXX
+008 OOOOOOOOXXXXXXXXX
+009 OOOOOOOOXXXXXXXXX
+010 OOOOOOOOXXXXXXXXX
+011 OOOOOOOOXXXXXXXXX
+012 ..XXXXXXXXXXXXXX.
+013 XXXXXXXXXXXXXXXX.
+014 ..XXXXXXXXXXXXXX.
+<xxxxxxxxxxx end read-map
+<-----------start piece size
+Piece 2 2:
+<-----------end piece size
+<-----------strart read-piece
+.*
+**
+<-----------end read-piece-->
+coo (Y:X) : 0:1
+1
+2
+3
+coo (Y:X) : 1:1
+1
+2
+3
+coo (Y:X) : 1:0
+1
+2
+3
+PLAY - 1
+
+Get aim : 
+data->coo[0] : 3
+
+PLAY - 2
+PLAY - CUT
+ft_bruteforce
+<---------Coup : 
+3 15
+<-----------fin coupe
+<-----------start map_size
+<-----------end map_size
+<-----------start solo-line read-map
+    01234567890123456
+<xxxxxxxxxxxend solo-line read-map
+<-----------start read-map
+000 OOOOOOOOOOOOOOOOO
+001 OOOOOOOOOOOOOOOOO
+002 OOOOOOOOOOOOOOOOO
+003 OOOOOOOOOOOOOOOOO
+004 OOOOOOOOOOOOOOOOO
+005 OOOOOOOOOOXXXXOO.
+006 OOOOOOOOXXXXXXXXX
+007 OOOOOOOOXXXXXXXXX
+008 OOOOOOOOXXXXXXXXX
+009 OOOOOOOOXXXXXXXXX
+010 OOOOOOOOXXXXXXXXX
+011 OOOOOOOOXXXXXXXXX
+012 ..XXXXXXXXXXXXXX.
+013 XXXXXXXXXXXXXXXX.
+014 ..XXXXXXXXXXXXXX.
+<xxxxxxxxxxx end read-map
+<-----------start piece size
+Piece 2 2:
+<-----------end piece size
+<-----------strart read-piece
+.*
+**
+<-----------end read-piece-->
+coo (Y:X) : 0:1
+1
+2
+3
+coo (Y:X) : 1:1
+1
+2
+3
+coo (Y:X) : 1:0
+1
+2
+3
+PLAY - 1
+
+Get aim : 
+data->coo[0] : 3
+
+PLAY - 2
+PLAY - CUT
+ft_bruteforce
+<---------Coup : 
+11 0
+<-----------fin coupe
+<-----------start map_size
+<-----------end map_size
+<-----------start solo-line read-map
+    01234567890123456
+<xxxxxxxxxxxend solo-line read-map
+<-----------start read-map
+000 OOOOOOOOOOOOOOOOO
+001 OOOOOOOOOOOOOOOOO
+002 OOOOOOOOOOOOOOOOO
+003 OOOOOOOOOOOOOOOOO
+004 OOOOOOOOOOOOOOOOO
+005 OOOOOOOOOOXXXXOO.
+006 OOOOOOOOXXXXXXXXX
+007 OOOOOOOOXXXXXXXXX
+008 OOOOOOOOXXXXXXXXX
+009 OOOOOOOOXXXXXXXXX
+010 OOOOOOOOXXXXXXXXX
+011 OOOOOOOOXXXXXXXXX
+012 OOXXXXXXXXXXXXXX.
+013 XXXXXXXXXXXXXXXX.
+014 ..XXXXXXXXXXXXXX.
+<xxxxxxxxxxx end read-map
+<-----------start piece size
+Piece 5 2:
+<-----------end piece size
+<-----------strart read-piece
+*.
+*.
+*.
+..
+..
+<-----------end read-piece-->
+coo (Y:X) : 0:0
+1
+2
+3
+coo (Y:X) : 1:0
+1
+2
+3
+coo (Y:X) : 2:0
+1
+2
+3
+PLAY - 1
+
+Get aim : 
+data->coo[0] : 11
+
+PLAY - 2
+PLAY - CUT
+ft_bruteforce
+ft_bruteforce
+<---------Coup : 
+0 0
+<-----------fin coupe
+<-----------start map_size
+<-----------end map_size
+<-----------start solo-line read-map
+000 OOOOOOOOOOOOOOOOO
+<xxxxxxxxxxxend solo-line read-map
+<-----------start read-map
+000 OOOOOOOOOOOOOOOOO
+001 OOOOOOOOOOOOOOOOO
+002 OOOOOOOOOOOOOOOOO
+003 OOOOOOOOOOOOOOOOO
+004 OOOOOOOOOOOOOOOOO
+005 OOOOOOOOOOXXXXOO.
+006 OOOOOOOOXXXXXXXXX
+007 OOOOOOOOXXXXXXXXX
+008 OOOOOOOOXXXXXXXXX
+009 OOOOOOOOXXXXXXXXX
+010 OOOOOOOOXXXXXXXXX
+011 OOOOOOOOXXXXXXXXX
+012 OOXXXXXXXXXXXXXX.
+013 XXXXXXXXXXXXXXXX.
+014 ..XXXXXXXXXXXXXX.
+<xxxxxxxxxxx end read-map
+<-----------start piece size
+Read piece exit
+---------start map_size
+<-----------end map_size
+<-----------start solo-line read-map
+    01234567890123456
+<xxxxxxxxxxxend solo-line read-map
+<-----------start read-map
+000 OOOOOOOOOOOOOO.O.
+001 OOOOOOOOOOOOOOOOO
+002 OOOOOOOOOOOOOOOOO
+003 OOOOOOOOOOOOOOOOO
+004 OOOOOOOOOOOOOOOXX
+005 OOOOOOOOOXXXXXXXX
+006 OOOOOOOXXXXXXXXX.
+007 OOOOOOXXXXXXXXXXX
+008 OOOOOOOXXXXXXXXXX
+009 OOOOOOOXXXXXXXXXX
+010 OOOOOOOOXXXXXXXXX
+011 OOOOOOOOXXXXXXXXX
+012 OOO.XXXXXXXXXXXXX
+013 OOOOXXXXXXXXXXXX.
+014 OO.OXXXXXXXXXXX..
+<xxxxxxxxxxx end read-map
+<-----------start piece size
+Piece 1 3:
+<-----------end piece size
+<-----------strart read-piece
+***
+<-----------end read-piece-->
+coo (Y:X) : 0:0
+1
+2
+3
+coo (Y:X) : 0:1
+1
+2
+3
+coo (Y:X) : 0:2
+1
+2
+3
+PLAY - 1
+
+Get aim : 
+data->coo[0] : 0
+
+PLAY - 2
+PLAY - CUT
+ft_bruteforce
+<---------Coup : 
+0 14
+<-----------fin coupe
+<-----------start map_size
+<-----------end map_size
+<-----------start solo-line read-map
+    01234567890123456
+<xxxxxxxxxxxend solo-line read-map
+<-----------start read-map
+000 OOOOOOOOOOOOOOOOO
+001 OOOOOOOOOOOOOOOOO
+002 OOOOOOOOOOOOOOOOO
+003 OOOOOOOOOOOOOOOOO
+004 OOOOOOOOOOOOOOOXX
+005 OOOOOOOOOXXXXXXXX
+006 OOOOOOOXXXXXXXXX.
+007 OOOOOOXXXXXXXXXXX
+008 OOOOOOOXXXXXXXXXX
+009 OOOOOOOXXXXXXXXXX
+010 OOOOOOOOXXXXXXXXX
+011 OOOOOOOOXXXXXXXXX
+012 OOO.XXXXXXXXXXXXX
+013 OOOOXXXXXXXXXXXX.
+014 OO.OXXXXXXXXXXX..
+<xxxxxxxxxxx end read-map
+<-----------start piece size
+Piece 1 2:
+<-----------end piece size
+<-----------strart read-piece
+**
+<-----------end read-piece-->
+coo (Y:X) : 0:0
+1
+2
+3
+coo (Y:X) : 0:1
+1
+2
+3
+PLAY - 1
+
+Get aim : 
+data->coo[0] : 0
+
+PLAY - 2
+PLAY - CUT
+ft_bruteforce
+<---------Coup : 
+12 2
+<-----------fin coupe
+<-----------start map_size
+<-----------end map_size
+<-----------start solo-line read-map
+    01234567890123456
+<xxxxxxxxxxxend solo-line read-map
+<-----------start read-map
+000 OOOOOOOOOOOOOOOOO
+001 OOOOOOOOOOOOOOOOO
+002 OOOOOOOOOOOOOOOOO
+003 OOOOOOOOOOOOOOOOO
+004 OOOOOOOOOOOOOOOXX
+005 OOOOOOOOOXXXXXXXX
+006 OOOOOOOXXXXXXXXX.
+007 OOOOOOXXXXXXXXXXX
+008 OOOOOOOXXXXXXXXXX
+009 OOOOOOOXXXXXXXXXX
+010 OOOOOOOOXXXXXXXXX
+011 OOOOOOOOXXXXXXXXX
+012 OOOOXXXXXXXXXXXXX
+013 OOOOXXXXXXXXXXXX.
+014 OO.OXXXXXXXXXXX..
+<xxxxxxxxxxx end read-map
+<-----------start piece size
+Piece 2 2:
+<-----------end piece size
+<-----------strart read-piece
+**
+**
+<-----------end read-piece-->
+coo (Y:X) : 0:0
+1
+2
+3
+coo (Y:X) : 0:1
+1
+2
+3
+coo (Y:X) : 1:1
+1
+2
+3
+coo (Y:X) : 1:0
+1
+2
+3
+PLAY - 1
+
+Get aim : 
+data->coo[0] : 12
+
+PLAY - 2
+PLAY - CUT
+ft_bruteforce
+ft_bruteforce
+<---------Coup : 
+0 0
+<-----------fin coupe
+<-----------start map_size
+<-----------end map_size
+<-----------start solo-line read-map
+000 OOOOOOOOOOOOOOOOO
+<xxxxxxxxxxxend solo-line read-map
+<-----------start read-map
+000 OOOOOOOOOOOOOOOOO
+001 OOOOOOOOOOOOOOOOO
+002 OOOOOOOOOOOOOOOOO
+003 OOOOOOOOOOOOOOOOO
+004 OOOOOOOOOOOOOOOXX
+005 OOOOOOOOOXXXXXXXX
+006 OOOOOOOXXXXXXXXX.
+007 OOOOOOXXXXXXXXXXX
+008 OOOOOOOXXXXXXXXXX
+009 OOOOOOOXXXXXXXXXX
+010 OOOOOOOOXXXXXXXXX
+011 OOOOOOOOXXXXXXXXX
+012 OOOOXXXXXXXXXXXXX
+013 OOOOXXXXXXXXXXXX.
+014 OO.OXXXXXXXXXXX..
+<xxxxxxxxxxx end read-map
+<-----------start piece size
+Read piece exit
+
+PLAY - 1
+
+Get aim : 
+data->coo[0] : 2
+
+PLAY - 2
+PLAY - CUT
+<---------Coup : 
+2 12
+<-----------fin coupe
+<-----------start map_size
+<-----------end map_size
+<-----------start solo-line read-map
+    01234567890123456
+<xxxxxxxxxxxend solo-line read-map
+<-----------start read-map
+000 .................
+001 ..OO..OO.........
+002 OOOOOOOOOOOOOO...
+003 OOOOOOOOOOOOOOO..
+004 OOOOOOOOOOOOOOO..
+005 OOOOOOOOOOOOOOO..
+006 OOOOOOOOOOOOOOO..
+007 OOOOOOOOOOOOOOO..
+008 OOOOOOOOOOOOOOXX.
+009 OOOOOOOOOOOOOOXXX
+010 OOOOOOOOOOOOOOXXX
+011 OOOOOOOOOOOOOOX..
+012 ..............XX.
+013 .................
+014 .................
+<xxxxxxxxxxx end read-map
+<-----------start piece size
+Piece 1 3:
+<-----------end piece size
+<-----------strart read-piece
+.**
+<-----------end read-piece-->
+coo (Y:X) : 0:1
+1
+2
+3
+coo (Y:X) : 0:2
+1
+2
+3
+PLAY - 1
+
+Get aim : 
+data->coo[0] : 2
+
+PLAY - 2
+PLAY - CUT
+<---------Coup : 
+2 12
+<-----------fin coupe
+<-----------start map_size
+<-----------end map_size
+<-----------start solo-line read-map
+    01234567890123456
+<xxxxxxxxxxxend solo-line read-map
+<-----------start read-map
+000 .................
+001 ..OO..OO.........
+002 OOOOOOOOOOOOOOO..
+003 OOOOOOOOOOOOOOO..
+004 OOOOOOOOOOOOOOO..
+005 OOOOOOOOOOOOOOO..
+006 OOOOOOOOOOOOOOO..
+007 OOOOOOOOOOOOOOO..
+008 OOOOOOOOOOOOOOXX.
+009 OOOOOOOOOOOOOOXXX
+010 OOOOOOOOOOOOOOXXX
+011 OOOOOOOOOOOOOOX..
+012 ..............XX.
+013 .................
+014 .................
+<xxxxxxxxxxx end read-map
+<-----------start piece size
+Piece 2 2:
+<-----------end piece size
+<-----------strart read-piece
+**
+.*
+<-----------end read-piece-->
+coo (Y:X) : 0:0
+1
+2
+3
+coo (Y:X) : 0:1
+1
+2
+3
+coo (Y:X) : 1:1
+1
+2
+3
+PLAY - 1
+
+Get aim : 
+data->coo[0] : 2
+
+PLAY - 2
+PLAY - CUT
+<---------Coup : 
+1 0
+<-----------fin coupe
+<-----------start map_size
+<-----------end map_size
+<-----------start solo-line read-map
+    01234567890123456
+<xxxxxxxxxxxend solo-line read-map
+<-----------start read-map
+000 .................
+001 OOOO..OO.........
+002 OOOOOOOOOOOOOOO..
+003 OOOOOOOOOOOOOOO..
+004 OOOOOOOOOOOOOOO..
+005 OOOOOOOOOOOOOOO..
+006 OOOOOOOOOOOOOOO..
+007 OOOOOOOOOOOOOOO..
+008 OOOOOOOOOOOOOOXX.
+009 OOOOOOOOOOOOOOXXX
+010 OOOOOOOOOOOOOOXXX
+011 OOOOOOOOOOOOOOX..
+012 ..............XX.
+013 .................
+014 .................
+<xxxxxxxxxxx end read-map
+<-----------start piece size
+Piece 2 1:
+<-----------end piece size
+<-----------strart read-piece
+*
+*
+<-----------end read-piece-->
+coo (Y:X) : 0:0
+1
+2
+3
+coo (Y:X) : 1:0
+1
+2
+3
+PLAY - 1
+
+Get aim : 
+data->coo[0] : 1
+
+PLAY - 2
+PLAY - CUT
+<---------Coup : 
+1 4
+<-----------fin coupe
+<-----------start map_size
+<-----------end map_size
+<-----------start solo-line read-map
+    01234567890123456
+<xxxxxxxxxxxend solo-line read-map
+<-----------start read-map
+000 .................
+001 OOOOO.OO.........
+002 OOOOOOOOOOOOOOO..
+003 OOOOOOOOOOOOOOO..
+004 OOOOOOOOOOOOOOO..
+005 OOOOOOOOOOOOOOO..
+006 OOOOOOOOOOOOOOO..
+007 OOOOOOOOOOOOOOO..
+008 OOOOOOOOOOOOOOXX.
+009 OOOOOOOOOOOOOOXXX
+010 OOOOOOOOOOOOOOXXX
+011 OOOOOOOOOOOOOOX..
+012 ..............XX.
+013 .................
+014 .................
+<xxxxxxxxxxx end read-map
+<-----------start piece size
+Piece 1 3:
+<-----------end piece size
+<-----------strart read-piece
+.**
+<-----------end read-piece-->
+coo (Y:X) : 0:1
+1
+2
+3
+coo (Y:X) : 0:2
+1
+2
+3
+PLAY - 1
+
+Get aim : 
+data->coo[0] : 1
+
+PLAY - 2
+PLAY - CUT
+<---------Coup : 
+1 3
+<-----------fin coupe
+<-----------start map_size
+<-----------end map_size
+<-----------start solo-line read-map
+    01234567890123456
+<xxxxxxxxxxxend solo-line read-map
+<-----------start read-map
+000 .................
+001 OOOOOOOO.........
+002 OOOOOOOOOOOOOOO..
+003 OOOOOOOOOOOOOOO..
+004 OOOOOOOOOOOOOOO..
+005 OOOOOOOOOOOOOOO..
+006 OOOOOOOOOOOOOOO..
+007 OOOOOOOOOOOOOOO..
+008 OOOOOOOOOOOOOOXX.
+009 OOOOOOOOOOOOOOXXX
+010 OOOOOOOOOOOOOOXXX
+011 OOOOOOOOOOOOOOX..
+012 ..............XX.
+013 .................
+014 .................
+<xxxxxxxxxxx end read-map
+<-----------start piece size
+Piece 1 3:
+<-----------end piece size
+<-----------strart read-piece
+**.
+<-----------end read-piece-->
+coo (Y:X) : 0:0
+1
+2
+3
+coo (Y:X) : 0:1
+1
+2
+3
+PLAY - 1
+
+Get aim : 
+data->coo[0] : 1
+
+PLAY - 2
+PLAY - CUT
+<---------Coup : 
+1 7
+<-----------fin coupe
+<-----------start map_size
+<-----------end map_size
+<-----------start solo-line read-map
+    01234567890123456
+<xxxxxxxxxxxend solo-line read-map
+<-----------start read-map
+000 .................
+001 OOOOOOOOO........
+002 OOOOOOOOOOOOOOO..
+003 OOOOOOOOOOOOOOO..
+004 OOOOOOOOOOOOOOO..
+005 OOOOOOOOOOOOOOO..
+006 OOOOOOOOOOOOOOO..
+007 OOOOOOOOOOOOOOO..
+008 OOOOOOOOOOOOOOXX.
+009 OOOOOOOOOOOOOOXXX
+010 OOOOOOOOOOOOOOXXX
+011 OOOOOOOOOOOOOOX..
+012 ..............XX.
+013 .................
+014 .................
+<xxxxxxxxxxx end read-map
+<-----------start piece size
+Piece 2 1:
+<-----------end piece size
+<-----------strart read-piece
+*
+*
+<-----------end read-piece-->
+coo (Y:X) : 0:0
+1
+2
+3
+coo (Y:X) : 1:0
+1
+2
+3
+PLAY - 1
+
+Get aim : 
+data->coo[0] : 1
+
+PLAY - 2
+PLAY - CUT
+<---------Coup : 
+1 9
+<-----------fin coupe
+<-----------start map_size
+<-----------end map_size
+<-----------start solo-line read-map
+    01234567890123456
+<xxxxxxxxxxxend solo-line read-map
+<-----------start read-map
+000 .................
+001 OOOOOOOOOO.......
+002 OOOOOOOOOOOOOOO..
+003 OOOOOOOOOOOOOOO..
+004 OOOOOOOOOOOOOOO..
+005 OOOOOOOOOOOOOOO..
+006 OOOOOOOOOOOOOOO..
+007 OOOOOOOOOOOOOOO..
+008 OOOOOOOOOOOOOOXX.
+009 OOOOOOOOOOOOOOXXX
+010 OOOOOOOOOOOOOOXXX
+011 OOOOOOOOOOOOOOX..
+012 ..............XX.
+013 .................
+014 .................
+<xxxxxxxxxxx end read-map
+<-----------start piece size
+Piece 1 2:
+<-----------end piece size
+<-----------strart read-piece
+**
+<-----------end read-piece-->
+coo (Y:X) : 0:0
+1
+2
+3
+coo (Y:X) : 0:1
+1
+2
+3
+PLAY - 1
+
+Get aim : 
+data->coo[0] : 1
+
+PLAY - 2
+PLAY - CUT
+<---------Coup : 
+1 9
+<-----------fin coupe
+<-----------start map_size
+<-----------end map_size
+<-----------start solo-line read-map
+    01234567890123456
+<xxxxxxxxxxxend solo-line read-map
+<-----------start read-map
+000 .................
+001 OOOOOOOOOOO......
+002 OOOOOOOOOOOOOOO..
+003 OOOOOOOOOOOOOOO..
+004 OOOOOOOOOOOOOOO..
+005 OOOOOOOOOOOOOOO..
+006 OOOOOOOOOOOOOOO..
+007 OOOOOOOOOOOOOOO..
+008 OOOOOOOOOOOOOOXX.
+009 OOOOOOOOOOOOOOXXX
+010 OOOOOOOOOOOOOOXXX
+011 OOOOOOOOOOOOOOX..
+012 ..............XX.
+013 .................
+014 .................
+<xxxxxxxxxxx end read-map
+<-----------start piece size
+Piece 1 2:
+<-----------end piece size
+<-----------strart read-piece
+**
+<-----------end read-piece-->
+coo (Y:X) : 0:0
+1
+2
+3
+coo (Y:X) : 0:1
+1
+2
+3
+PLAY - 1
+
+Get aim : 
+data->coo[0] : 1
+
+PLAY - 2
+PLAY - CUT
+<---------Coup : 
+1 10
+<-----------fin coupe
+<-----------start map_size
+<-----------end map_size
+<-----------start solo-line read-map
+    01234567890123456
+<xxxxxxxxxxxend solo-line read-map
+<-----------start read-map
+000 .................
+001 OOOOOOOOOOOO.....
+002 OOOOOOOOOOOOOOO..
+003 OOOOOOOOOOOOOOO..
+004 OOOOOOOOOOOOOOO..
+005 OOOOOOOOOOOOOOO..
+006 OOOOOOOOOOOOOOO..
+007 OOOOOOOOOOOOOOO..
+008 OOOOOOOOOOOOOOXX.
+009 OOOOOOOOOOOOOOXXX
+010 OOOOOOOOOOOOOOXXX
+011 OOOOOOOOOOOOOOX..
+012 ..............XX.
+013 .................
+014 .................
+<xxxxxxxxxxx end read-map
+<-----------start piece size
+Piece 2 3:
+<-----------end piece size
+<-----------strart read-piece
+***
+***
+<-----------end read-piece-->
+coo (Y:X) : 0:0
+1
+2
+3
+coo (Y:X) : 0:1
+1
+2
+3
+coo (Y:X) : 0:2
+1
+2
+3
+coo (Y:X) : 1:2
+1
+2
+3
+coo (Y:X) : 1:1
+1
+2
+3
+coo (Y:X) : 1:0
+1
+2
+3
+PLAY - 1
+
+Get aim : 
+data->coo[0] : 1
+
+PLAY - 2
+PLAY - CUT
+<---------Coup : 
+0 11
+<-----------fin coupe
+<-----------start map_size
+<-----------end map_size
+<-----------start solo-line read-map
+    01234567890123456
+<xxxxxxxxxxxend solo-line read-map
+<-----------start read-map
+000 ...........OOO...
+001 OOOOOOOOOOOOOO...
+002 OOOOOOOOOOOOOOO..
+003 OOOOOOOOOOOOOOO..
+004 OOOOOOOOOOOOOOO..
+005 OOOOOOOOOOOOOOO..
+006 OOOOOOOOOOOOOOO..
+007 OOOOOOOOOOOOOOO..
+008 OOOOOOOOOOOOOOXX.
+009 OOOOOOOOOOOOOOXXX
+010 OOOOOOOOOOOOOOXXX
+011 OOOOOOOOOOOOOOX..
+012 ..............XX.
+013 .................
+014 .................
+<xxxxxxxxxxx end read-map
+<-----------start piece size
+Piece 2 1:
+<-----------end piece size
+<-----------strart read-piece
+*
+*
+<-----------end read-piece-->
+coo (Y:X) : 0:0
+1
+2
+3
+coo (Y:X) : 1:0
+1
+2
+3
+PLAY - 1
+
+Get aim : 
+data->coo[0] : 0
+
+PLAY - 2
+PLAY - CUT
+<---------Coup : 
+0 0
+<-----------fin coupe
+<-----------start map_size
+<-----------end map_size
+<-----------start solo-line read-map
+    01234567890123456
+<xxxxxxxxxxxend solo-line read-map
+<-----------start read-map
+000 O..........OOO...
+001 OOOOOOOOOOOOOO...
+002 OOOOOOOOOOOOOOO..
+003 OOOOOOOOOOOOOOO..
+004 OOOOOOOOOOOOOOO..
+005 OOOOOOOOOOOOOOO..
+006 OOOOOOOOOOOOOOO..
+007 OOOOOOOOOOOOOOO..
+008 OOOOOOOOOOOOOOXX.
+009 OOOOOOOOOOOOOOXXX
+010 OOOOOOOOOOOOOOXXX
+011 OOOOOOOOOOOOOOX..
+012 ..............XX.
+013 .................
+014 .................
+<xxxxxxxxxxx end read-map
+<-----------start piece size
+Piece 2 2:
+<-----------end piece size
+<-----------strart read-piece
+*.
+*.
+<-----------end read-piece-->
+coo (Y:X) : 0:0
+1
+2
+3
+coo (Y:X) : 1:0
+1
+2
+3
+PLAY - 1
+
+Get aim : 
+data->coo[0] : 0
+
+PLAY - 2
+PLAY - CUT
+<---------Coup : 
+0 1
+<-----------fin coupe
+<-----------start map_size
+<-----------end map_size
+<-----------start solo-line read-map
+    01234567890123456
+<xxxxxxxxxxxend solo-line read-map
+<-----------start read-map
+000 OO.........OOO...
+001 OOOOOOOOOOOOOO...
+002 OOOOOOOOOOOOOOO..
+003 OOOOOOOOOOOOOOO..
+004 OOOOOOOOOOOOOOO..
+005 OOOOOOOOOOOOOOO..
+006 OOOOOOOOOOOOOOO..
+007 OOOOOOOOOOOOOOO..
+008 OOOOOOOOOOOOOOXX.
+009 OOOOOOOOOOOOOOXXX
+010 OOOOOOOOOOOOOOXXX
+011 OOOOOOOOOOOOOOX..
+012 ..............XX.
+013 .................
+014 .................
+<xxxxxxxxxxx end read-map
+<-----------start piece size
+Piece 1 2:
+<-----------end piece size
+<-----------strart read-piece
+**
+<-----------end read-piece-->
+coo (Y:X) : 0:0
+1
+2
+3
+coo (Y:X) : 0:1
+1
+2
+3
+PLAY - 1
+
+Get aim : 
+data->coo[0] : 0
+
+PLAY - 2
+PLAY - CUT
+<---------Coup : 
+0 1
+<-----------fin coupe
+<-----------start map_size
+<-----------end map_size
+<-----------start solo-line read-map
+    01234567890123456
+<xxxxxxxxxxxend solo-line read-map
+<-----------start read-map
+000 OOO........OOO...
+001 OOOOOOOOOOOOOO...
+002 OOOOOOOOOOOOOOO..
+003 OOOOOOOOOOOOOOO..
+004 OOOOOOOOOOOOOOO..
+005 OOOOOOOOOOOOOOO..
+006 OOOOOOOOOOOOOOO..
+007 OOOOOOOOOOOOOOO..
+008 OOOOOOOOOOOOOOXX.
+009 OOOOOOOOOOOOOOXXX
+010 OOOOOOOOOOOOOOXXX
+011 OOOOOOOOOOOOOOX..
+012 ..............XX.
+013 .................
+014 .................
+<xxxxxxxxxxx end read-map
+<-----------start piece size
+Piece 2 2:
+<-----------end piece size
+<-----------strart read-piece
+*.
+**
+<-----------end read-piece-->
+coo (Y:X) : 0:0
+1
+2
+3
+coo (Y:X) : 1:1
+1
+2
+3
+coo (Y:X) : 1:0
+1
+2
+3
+PLAY - 1
+
+Get aim : 
+data->coo[0] : 0
+
+PLAY - 2
+PLAY - CUT
+ft_bruteforce
+<---------Coup : 
+1 14
+<-----------fin coupe
+<-----------start map_size
+<-----------end map_size
+<-----------start solo-line read-map
+    01234567890123456
+<xxxxxxxxxxxend solo-line read-map
+<-----------start read-map
+000 OOO........OOO...
+001 OOOOOOOOOOOOOOO..
+002 OOOOOOOOOOOOOOOO.
+003 OOOOOOOOOOOOOOO..
+004 OOOOOOOOOOOOOOO..
+005 OOOOOOOOOOOOOOO..
+006 OOOOOOOOOOOOOOO..
+007 OOOOOOOOOOOOOOO..
+008 OOOOOOOOOOOOOOXX.
+009 OOOOOOOOOOOOOOXXX
+010 OOOOOOOOOOOOOOXXX
+011 OOOOOOOOOOOOOOX..
+012 ..............XX.
+013 .................
+014 .................
+<xxxxxxxxxxx end read-map
+<-----------start piece size
+Piece 1 2:
+<-----------end piece size
+<-----------strart read-piece
+**
+<-----------end read-piece-->
+coo (Y:X) : 0:0
+1
+2
+3
+coo (Y:X) : 0:1
+1
+2
+3
+PLAY - 1
+
+Get aim : 
+data->coo[0] : 1
+
+PLAY - 2
+PLAY - CUT
+<---------Coup : 
+0 2
+<-----------fin coupe
+<-----------start map_size
+<-----------end map_size
+<-----------start solo-line read-map
+    01234567890123456
+<xxxxxxxxxxxend solo-line read-map
+<-----------start read-map
+000 OOOO.......OOO...
+001 OOOOOOOOOOOOOOO..
+002 OOOOOOOOOOOOOOOO.
+003 OOOOOOOOOOOOOOO..
+004 OOOOOOOOOOOOOOO..
+005 OOOOOOOOOOOOOOO..
+006 OOOOOOOOOOOOOOO..
+007 OOOOOOOOOOOOOOO..
+008 OOOOOOOOOOOOOOXX.
+009 OOOOOOOOOOOOOOXXX
+010 OOOOOOOOOOOOOOXXX
+011 OOOOOOOOOOOOOOX..
+012 ..............XX.
+013 .................
+014 .................
+<xxxxxxxxxxx end read-map
+<-----------start piece size
+Piece 2 1:
+<-----------end piece size
+<-----------strart read-piece
+*
+*
+<-----------end read-piece-->
+coo (Y:X) : 0:0
+1
+2
+3
+coo (Y:X) : 1:0
+1
+2
+3
+PLAY - 1
+
+Get aim : 
+data->coo[0] : 0
+
+PLAY - 2
+PLAY - CUT
+<---------Coup : 
+0 4
+<-----------fin coupe
+<-----------start map_size
+<-----------end map_size
+<-----------start solo-line read-map
+    01234567890123456
+<xxxxxxxxxxxend solo-line read-map
+<-----------start read-map
+000 OOOOO......OOO...
+001 OOOOOOOOOOOOOOO..
+002 OOOOOOOOOOOOOOOO.
+003 OOOOOOOOOOOOOOO..
+004 OOOOOOOOOOOOOOO..
+005 OOOOOOOOOOOOOOO..
+006 OOOOOOOOOOOOOOO..
+007 OOOOOOOOOOOOOOO..
+008 OOOOOOOOOOOOOOXX.
+009 OOOOOOOOOOOOOOXXX
+010 OOOOOOOOOOOOOOXXX
+011 OOOOOOOOOOOOOOX..
+012 ..............XX.
+013 .................
+014 .................
+<xxxxxxxxxxx end read-map
+<-----------start piece size
+Piece 2 3:
+<-----------end piece size
+<-----------strart read-piece
+...
+***
+<-----------end read-piece-->
+coo (Y:X) : 1:0
+1
+2
+3
+coo (Y:X) : 1:1
+1
+2
+3
+coo (Y:X) : 1:2
+1
+2
+3
+PLAY - 1
+
+Get aim : 
+data->coo[0] : 0
+
+PLAY - 2
+PLAY - CUT
+ft_bruteforce
+<---------Coup : 
+0 14
+<-----------fin coupe
+<-----------start map_size
+<-----------end map_size
+<-----------start solo-line read-map
+    01234567890123456
+<xxxxxxxxxxxend solo-line read-map
+<-----------start read-map
+000 OOOOO......OOO...
+001 OOOOOOOOOOOOOOOOO
+002 OOOOOOOOOOOOOOOO.
+003 OOOOOOOOOOOOOOO..
+004 OOOOOOOOOOOOOOO..
+005 OOOOOOOOOOOOOOO..
+006 OOOOOOOOOOOOOOO..
+007 OOOOOOOOOOOOOOO..
+008 OOOOOOOOOOOOOOXX.
+009 OOOOOOOOOOOOOOXXX
+010 OOOOOOOOOOOOOOXXX
+011 OOOOOOOOOOOOOOX..
+012 ..............XX.
+013 .................
+014 .................
+<xxxxxxxxxxx end read-map
+<-----------start piece size
+Piece 2 2:
+<-----------end piece size
+<-----------strart read-piece
+*.
+*.
+<-----------end read-piece-->
+coo (Y:X) : 0:0
+1
+2
+3
+coo (Y:X) : 1:0
+1
+2
+3
+PLAY - 1
+
+Get aim : 
+data->coo[0] : 0
+
+PLAY - 2
+PLAY - CUT
+<---------Coup : 
+0 5
+<-----------fin coupe
+<-----------start map_size
+<-----------end map_size
+<-----------start solo-line read-map
+    01234567890123456
+<xxxxxxxxxxxend solo-line read-map
+<-----------start read-map
+000 OOOOOO.....OOO...
+001 OOOOOOOOOOOOOOOOO
+002 OOOOOOOOOOOOOOOO.
+003 OOOOOOOOOOOOOOO..
+004 OOOOOOOOOOOOOOO..
+005 OOOOOOOOOOOOOOO..
+006 OOOOOOOOOOOOOOO..
+007 OOOOOOOOOOOOOOO..
+008 OOOOOOOOOOOOOOXX.
+009 OOOOOOOOOOOOOOXXX
+010 OOOOOOOOOOOOOOXXX
+011 OOOOOOOOOOOOOOX..
+012 ..............XX.
+013 .................
+014 .................
+<xxxxxxxxxxx end read-map
+<-----------start piece size
+Piece 2 3:
+<-----------end piece size
+<-----------strart read-piece
+**.
+***
+<-----------end read-piece-->
+coo (Y:X) : 0:0
+1
+2
+3
+coo (Y:X) : 0:1
+1
+2
+3
+coo (Y:X) : 1:2
+1
+2
+3
+coo (Y:X) : 1:1
+1
+2
+3
+coo (Y:X) : 1:0
+1
+2
+3
+PLAY - 1
+
+Get aim : 
+data->coo[0] : 0
+
+PLAY - 2
+PLAY - CUT
+ft_bruteforce
+ft_bruteforce
+<---------Coup : 
+0 0
+<-----------fin coupe
+<-----------start map_size
+<-----------end map_size
+<-----------start solo-line read-map
+000 OOOOOO.....OOO...
+<xxxxxxxxxxxend solo-line read-map
+<-----------start read-map
+000 OOOOOO.....OOO...
+001 OOOOOOOOOOOOOOOOO
+002 OOOOOOOOOOOOOOOO.
+003 OOOOOOOOOOOOOOO..
+004 OOOOOOOOOOOOOOO..
+005 OOOOOOOOOOOOOOO..
+006 OOOOOOOOOOOOOOO..
+007 OOOOOOOOOOOOOOO..
+008 OOOOOOOOOOOOOOXX.
+009 OOOOOOOOOOOOOOXXX
+010 OOOOOOOOOOOOOOXXX
+011 OOOOOOOOOOOOOOX..
+012 ..............XX.
+013 .................
+014 .................
+<xxxxxxxxxxx end read-map
+<-----------start piece size
+Read piece exit
+.
+<-----------end read-piece-->
+coo (Y:X) : 0:0
+1
+2
+3
+coo (Y:X) : 1:0
+1
+2
+3
+PLAY - 1
+
+Get aim : 
+data->coo[0] : 0
+
+PLAY - 2
+PLAY - CUT
+ft_bruteforce
+<---------Coup : 
+0 14
+<-----------fin coupe
+<-----------start map_size
+<-----------end map_size
+<-----------start solo-line read-map
+    01234567890123456
+<xxxxxxxxxxxend solo-line read-map
+<-----------start read-map
+000 OOOOOOOOOOOOOOO..
+001 OOOOOOOOOOOOOOO..
+002 OOOOOOOOOOOOOOO..
+003 OOOOOOOOOOOOOOO..
+004 OOOOOOOOOOOOOOO..
+005 OOOOOOOOOOOOOOO..
+006 OOOOOOOOOOOOOOO..
+007 OOOOOOOOOOOOOOO..
+008 OOOOOOOOOOOOOOO..
+009 OOOOOOOOOOOOOOO..
+010 OOOOOOOOOOOOOOO..
+011 OOOOOOOOOOOOOOO..
+012 ..............X..
+013 .................
+014 .................
+<xxxxxxxxxxx end read-map
+<-----------start piece size
+Piece 1 2:
+<-----------end piece size
+<-----------strart read-piece
+**
+<-----------end read-piece-->
+coo (Y:X) : 0:0
+1
+2
+3
+coo (Y:X) : 0:1
+1
+2
+3
+PLAY - 1
+
+Get aim : 
+data->coo[0] : 0
+
+PLAY - 2
+PLAY - CUT
+ft_bruteforce
+<---------Coup : 
+0 14
+<-----------fin coupe
+<-----------start map_size
+<-----------end map_size
+<-----------start solo-line read-map
+    01234567890123456
+<xxxxxxxxxxxend solo-line read-map
+<-----------start read-map
+000 OOOOOOOOOOOOOOOO.
+001 OOOOOOOOOOOOOOO..
+002 OOOOOOOOOOOOOOO..
+003 OOOOOOOOOOOOOOO..
+004 OOOOOOOOOOOOOOO..
+005 OOOOOOOOOOOOOOO..
+006 OOOOOOOOOOOOOOO..
+007 OOOOOOOOOOOOOOO..
+008 OOOOOOOOOOOOOOO..
+009 OOOOOOOOOOOOOOO..
+010 OOOOOOOOOOOOOOO..
+011 OOOOOOOOOOOOOOO..
+012 ..............X..
+013 .................
+014 .................
+<xxxxxxxxxxx end read-map
+<-----------start piece size
+Piece 1 3:
+<-----------end piece size
+<-----------strart read-piece
+.**
+<-----------end read-piece-->
+coo (Y:X) : 0:1
+1
+2
+3
+coo (Y:X) : 0:2
+1
+2
+3
+PLAY - 1
+
+Get aim : 
+data->coo[0] : 0
+
+PLAY - 2
+PLAY - CUT
+ft_bruteforce
+<---------Coup : 
+0 14
+<-----------fin coupe
+<-----------start map_size
+<-----------end map_size
+<-----------start solo-line read-map
+    01234567890123456
+<xxxxxxxxxxxend solo-line read-map
+<-----------start read-map
+000 OOOOOOOOOOOOOOOOO
+001 OOOOOOOOOOOOOOO..
+002 OOOOOOOOOOOOOOO..
+003 OOOOOOOOOOOOOOO..
+004 OOOOOOOOOOOOOOO..
+005 OOOOOOOOOOOOOOO..
+006 OOOOOOOOOOOOOOO..
+007 OOOOOOOOOOOOOOO..
+008 OOOOOOOOOOOOOOO..
+009 OOOOOOOOOOOOOOO..
+010 OOOOOOOOOOOOOOO..
+011 OOOOOOOOOOOOOOO..
+012 ..............X..
+013 .................
+014 .................
+<xxxxxxxxxxx end read-map
+<-----------start piece size
+Piece 1 3:
+<-----------end piece size
+<-----------strart read-piece
+***
+<-----------end read-piece-->
+coo (Y:X) : 0:0
+1
+2
+3
+coo (Y:X) : 0:1
+1
+2
+3
+coo (Y:X) : 0:2
+1
+2
+3
+PLAY - 1
+
+Get aim : 
+data->coo[0] : 0
+
+PLAY - 2
+PLAY - CUT
+ft_bruteforce
+<---------Coup : 
+1 14
+<-----------fin coupe
+<-----------start map_size
+<-----------end map_size
+<-----------start solo-line read-map
+    01234567890123456
+<xxxxxxxxxxxend solo-line read-map
+<-----------start read-map
+000 OOOOOOOOOOOOOOOOO
+001 OOOOOOOOOOOOOOOOO
+002 OOOOOOOOOOOOOOO..
+003 OOOOOOOOOOOOOOO..
+004 OOOOOOOOOOOOOOO..
+005 OOOOOOOOOOOOOOO..
+006 OOOOOOOOOOOOOOO..
+007 OOOOOOOOOOOOOOO..
+008 OOOOOOOOOOOOOOO..
+009 OOOOOOOOOOOOOOO..
+010 OOOOOOOOOOOOOOO..
+011 OOOOOOOOOOOOOOO..
+012 ..............X..
+013 .................
+014 .................
+<xxxxxxxxxxx end read-map
+<-----------start piece size
+Piece 2 3:
+<-----------end piece size
+<-----------strart read-piece
+.**
+...
+<-----------end read-piece-->
+coo (Y:X) : 0:1
+1
+2
+3
+coo (Y:X) : 0:2
+1
+2
+3
+PLAY - 1
+
+Get aim : 
+data->coo[0] : 1
+
+PLAY - 2
+PLAY - CUT
+ft_bruteforce
+<---------Coup : 
+2 13
+<-----------fin coupe
+<-----------start map_size
+<-----------end map_size
+<-----------start solo-line read-map
+    01234567890123456
+<xxxxxxxxxxxend solo-line read-map
+<-----------start read-map
+000 OOOOOOOOOOOOOOOOO
+001 OOOOOOOOOOOOOOOOO
+002 OOOOOOOOOOOOOOOO.
+003 OOOOOOOOOOOOOOO..
+004 OOOOOOOOOOOOOOO..
+005 OOOOOOOOOOOOOOO..
+006 OOOOOOOOOOOOOOO..
+007 OOOOOOOOOOOOOOO..
+008 OOOOOOOOOOOOOOO..
+009 OOOOOOOOOOOOOOO..
+010 OOOOOOOOOOOOOOO..
+011 OOOOOOOOOOOOOOO..
+012 ..............X..
+013 .................
+014 .................
+<xxxxxxxxxxx end read-map
+<-----------start piece size
+Piece 1 3:
+<-----------end piece size
+<-----------strart read-piece
+.**
+<-----------end read-piece-->
+coo (Y:X) : 0:1
+1
+2
+3
+coo (Y:X) : 0:2
+1
+2
+3
+PLAY - 1
+
+Get aim : 
+data->coo[0] : 2
+
+PLAY - 2
+PLAY - CUT
+ft_bruteforce
+<---------Coup : 
+2 14
+<-----------fin coupe
+<-----------start map_size
+<-----------end map_size
+<-----------start solo-line read-map
+    01234567890123456
+<xxxxxxxxxxxend solo-line read-map
+<-----------start read-map
+000 OOOOOOOOOOOOOOOOO
+001 OOOOOOOOOOOOOOOOO
+002 OOOOOOOOOOOOOOOOO
+003 OOOOOOOOOOOOOOO..
+004 OOOOOOOOOOOOOOO..
+005 OOOOOOOOOOOOOOO..
+006 OOOOOOOOOOOOOOO..
+007 OOOOOOOOOOOOOOO..
+008 OOOOOOOOOOOOOOO..
+009 OOOOOOOOOOOOOOO..
+010 OOOOOOOOOOOOOOO..
+011 OOOOOOOOOOOOOOO..
+012 ..............X..
+013 .................
+014 .................
+<xxxxxxxxxxx end read-map
+<-----------start piece size
+Piece 2 2:
+<-----------end piece size
+<-----------strart read-piece
+*.
+**
+<-----------end read-piece-->
+coo (Y:X) : 0:0
+1
+2
+3
+coo (Y:X) : 1:1
+1
+2
+3
+coo (Y:X) : 1:0
+1
+2
+3
+PLAY - 1
+
+Get aim : 
+data->coo[0] : 2
+
+PLAY - 2
+PLAY - CUT
+ft_bruteforce
+<---------Coup : 
+2 15
+<-----------fin coupe
+<-----------start map_size
+<-----------end map_size
+<-----------start solo-line read-map
+    01234567890123456
+<xxxxxxxxxxxend solo-line read-map
+<-----------start read-map
+000 OOOOOOOOOOOOOOOOO
+001 OOOOOOOOOOOOOOOOO
+002 OOOOOOOOOOOOOOOOO
+003 OOOOOOOOOOOOOOOOO
+004 OOOOOOOOOOOOOOO..
+005 OOOOOOOOOOOOOOO..
+006 OOOOOOOOOOOOOOO..
+007 OOOOOOOOOOOOOOO..
+008 OOOOOOOOOOOOOOO..
+009 OOOOOOOOOOOOOOO..
+010 OOOOOOOOOOOOOOO..
+011 OOOOOOOOOOOOOOO..
+012 ..............X..
+013 .................
+014 .................
+<xxxxxxxxxxx end read-map
+<-----------start piece size
+Piece 1 2:
+<-----------end piece size
+<-----------strart read-piece
+**
+<-----------end read-piece-->
+coo (Y:X) : 0:0
+1
+2
+3
+coo (Y:X) : 0:1
+1
+2
+3
+PLAY - 1
+
+Get aim : 
+data->coo[0] : 2
+
+PLAY - 2
+PLAY - CUT
+ft_bruteforce
+<---------Coup : 
+4 14
+<-----------fin coupe
+<-----------start map_size
+<-----------end map_size
+<-----------start solo-line read-map
+    01234567890123456
+<xxxxxxxxxxxend solo-line read-map
+<-----------start read-map
+000 OOOOOOOOOOOOOOOOO
+001 OOOOOOOOOOOOOOOOO
+002 OOOOOOOOOOOOOOOOO
+003 OOOOOOOOOOOOOOOOO
+004 OOOOOOOOOOOOOOOO.
+005 OOOOOOOOOOOOOOO..
+006 OOOOOOOOOOOOOOO..
+007 OOOOOOOOOOOOOOO..
+008 OOOOOOOOOOOOOOO..
+009 OOOOOOOOOOOOOOO..
+010 OOOOOOOOOOOOOOO..
+011 OOOOOOOOOOOOOOO..
+012 ..............X..
+013 .................
+014 .................
+<xxxxxxxxxxx end read-map
+<-----------start piece size
+Piece 2 2:
+<-----------end piece size
+<-----------strart read-piece
+**
+..
+<-----------end read-piece-->
+coo (Y:X) : 0:0
+1
+2
+3
+coo (Y:X) : 0:1
+1
+2
+3
+PLAY - 1
+
+Get aim : 
+data->coo[0] : 4
+
+PLAY - 2
+PLAY - CUT
+ft_bruteforce
+<---------Coup : 
+4 15
+<-----------fin coupe
+<-----------start map_size
+<-----------end map_size
+<-----------start solo-line read-map
+    01234567890123456
+<xxxxxxxxxxxend solo-line read-map
+<-----------start read-map
+000 OOOOOOOOOOOOOOOOO
+001 OOOOOOOOOOOOOOOOO
+002 OOOOOOOOOOOOOOOOO
+003 OOOOOOOOOOOOOOOOO
+004 OOOOOOOOOOOOOOOOO
+005 OOOOOOOOOOOOOOO..
+006 OOOOOOOOOOOOOOO..
+007 OOOOOOOOOOOOOOO..
+008 OOOOOOOOOOOOOOO..
+009 OOOOOOOOOOOOOOO..
+010 OOOOOOOOOOOOOOO..
+011 OOOOOOOOOOOOOOO..
+012 ..............X..
+013 .................
+014 .................
+<xxxxxxxxxxx end read-map
+<-----------start piece size
+Piece 1 2:
+<-----------end piece size
+<-----------strart read-piece
+**
+<-----------end read-piece-->
+coo (Y:X) : 0:0
+1
+2
+3
+coo (Y:X) : 0:1
+1
+2
+3
+PLAY - 1
+
+Get aim : 
+data->coo[0] : 4
+
+PLAY - 2
+PLAY - CUT
+ft_bruteforce
+<---------Coup : 
+5 14
+<-----------fin coupe
+<-----------start map_size
+<-----------end map_size
+<-----------start solo-line read-map
+    01234567890123456
+<xxxxxxxxxxxend solo-line read-map
+<-----------start read-map
+000 OOOOOOOOOOOOOOOOO
+001 OOOOOOOOOOOOOOOOO
+002 OOOOOOOOOOOOOOOOO
+003 OOOOOOOOOOOOOOOOO
+004 OOOOOOOOOOOOOOOOO
+005 OOOOOOOOOOOOOOOO.
+006 OOOOOOOOOOOOOOO..
+007 OOOOOOOOOOOOOOO..
+008 OOOOOOOOOOOOOOO..
+009 OOOOOOOOOOOOOOO..
+010 OOOOOOOOOOOOOOO..
+011 OOOOOOOOOOOOOOO..
+012 ..............X..
+013 .................
+014 .................
+<xxxxxxxxxxx end read-map
+<-----------start piece size
+Piece 1 3:
+<-----------end piece size
+<-----------strart read-piece
+**.
+<-----------end read-piece-->
+coo (Y:X) : 0:0
+1
+2
+3
+coo (Y:X) : 0:1
+1
+2
+3
+PLAY - 1
+
+Get aim : 
+data->coo[0] : 5
+
+PLAY - 2
+PLAY - CUT
+ft_bruteforce
+<---------Coup : 
+5 15
+<-----------fin coupe
+<-----------start map_size
+<-----------end map_size
+<-----------start solo-line read-map
+    01234567890123456
+<xxxxxxxxxxxend solo-line read-map
+<-----------start read-map
+000 OOOOOOOOOOOOOOOOO
+001 OOOOOOOOOOOOOOOOO
+002 OOOOOOOOOOOOOOOOO
+003 OOOOOOOOOOOOOOOOO
+004 OOOOOOOOOOOOOOOOO
+005 OOOOOOOOOOOOOOOOO
+006 OOOOOOOOOOOOOOO..
+007 OOOOOOOOOOOOOOO..
+008 OOOOOOOOOOOOOOO..
+009 OOOOOOOOOOOOOOO..
+010 OOOOOOOOOOOOOOO..
+011 OOOOOOOOOOOOOOO..
+012 ..............X..
+013 .................
+014 .................
+<xxxxxxxxxxx end read-map
+<-----------start piece size
+Piece 2 3:
+<-----------end piece size
+<-----------strart read-piece
+..*
+.**
+<-----------end read-piece-->
+coo (Y:X) : 0:2
+1
+2
+3
+coo (Y:X) : 1:2
+1
+2
+3
+coo (Y:X) : 1:1
+1
+2
+3
+PLAY - 1
+
+Get aim : 
+data->coo[0] : 5
+
+PLAY - 2
+PLAY - CUT
+ft_bruteforce
+<---------Coup : 
+5 14
+<-----------fin coupe
+<-----------start map_size
+<-----------end map_size
+<-----------start solo-line read-map
+    01234567890123456
+<xxxxxxxxxxxend solo-line read-map
+<-----------start read-map
+000 OOOOOOOOOOOOOOOOO
+001 OOOOOOOOOOOOOOOOO
+002 OOOOOOOOOOOOOOOOO
+003 OOOOOOOOOOOOOOOOO
+004 OOOOOOOOOOOOOOOOO
+005 OOOOOOOOOOOOOOOOO
+006 OOOOOOOOOOOOOOOOO
+007 OOOOOOOOOOOOOOO..
+008 OOOOOOOOOOOOOOO..
+009 OOOOOOOOOOOOOOO..
+010 OOOOOOOOOOOOOOO..
+011 OOOOOOOOOOOOOOO..
+012 ..............X..
+013 .................
+014 .................
+<xxxxxxxxxxx end read-map
+<-----------start piece size
+Piece 1 2:
+<-----------end piece size
+<-----------strart read-piece
+**
+<-----------end read-piece-->
+coo (Y:X) : 0:0
+1
+2
+3
+coo (Y:X) : 0:1
+1
+2
+3
+PLAY - 1
+
+Get aim : 
+data->coo[0] : 5
+
+PLAY - 2
+PLAY - CUT
+ft_bruteforce
+<---------Coup : 
+7 14
+<-----------fin coupe
+<-----------start map_size
+<-----------end map_size
+<-----------start solo-line read-map
+    01234567890123456
+<xxxxxxxxxxxend solo-line read-map
+<-----------start read-map
+000 OOOOOOOOOOOOOOOOO
+001 OOOOOOOOOOOOOOOOO
+002 OOOOOOOOOOOOOOOOO
+003 OOOOOOOOOOOOOOOOO
+004 OOOOOOOOOOOOOOOOO
+005 OOOOOOOOOOOOOOOOO
+006 OOOOOOOOOOOOOOOOO
+007 OOOOOOOOOOOOOOOO.
+008 OOOOOOOOOOOOOOO..
+009 OOOOOOOOOOOOOOO..
+010 OOOOOOOOOOOOOOO..
+011 OOOOOOOOOOOOOOO..
+012 ..............X..
+013 .................
+014 .................
+<xxxxxxxxxxx end read-map
+<-----------start piece size
+Piece 2 2:
+<-----------end piece size
+<-----------strart read-piece
+*.
+*.
+<-----------end read-piece-->
+coo (Y:X) : 0:0
+1
+2
+3
+coo (Y:X) : 1:0
+1
+2
+3
+PLAY - 1
+
+Get aim : 
+data->coo[0] : 7
+
+PLAY - 2
+PLAY - CUT
+ft_bruteforce
+<---------Coup : 
+7 15
+<-----------fin coupe
+<-----------start map_size
+<-----------end map_size
+<-----------start solo-line read-map
+    01234567890123456
+<xxxxxxxxxxxend solo-line read-map
+<-----------start read-map
+000 OOOOOOOOOOOOOOOOO
+001 OOOOOOOOOOOOOOOOO
+002 OOOOOOOOOOOOOOOOO
+003 OOOOOOOOOOOOOOOOO
+004 OOOOOOOOOOOOOOOOO
+005 OOOOOOOOOOOOOOOOO
+006 OOOOOOOOOOOOOOOOO
+007 OOOOOOOOOOOOOOOO.
+008 OOOOOOOOOOOOOOOO.
+009 OOOOOOOOOOOOOOO..
+010 OOOOOOOOOOOOOOO..
+011 OOOOOOOOOOOOOOO..
+012 ..............X..
+013 .................
+014 .................
+<xxxxxxxxxxx end read-map
+<-----------start piece size
+Piece 1 3:
+<-----------end piece size
+<-----------strart read-piece
+.**
+<-----------end read-piece-->
+coo (Y:X) : 0:1
+1
+2
+3
+coo (Y:X) : 0:2
+1
+2
+3
+PLAY - 1
+
+Get aim : 
+data->coo[0] : 7
+
+PLAY - 2
+PLAY - CUT
+ft_bruteforce
+<---------Coup : 
+7 14
+<-----------fin coupe
+<-----------start map_size
+<-----------end map_size
+<-----------start solo-line read-map
+    01234567890123456
+<xxxxxxxxxxxend solo-line read-map
+<-----------start read-map
+000 OOOOOOOOOOOOOOOOO
+001 OOOOOOOOOOOOOOOOO
+002 OOOOOOOOOOOOOOOOO
+003 OOOOOOOOOOOOOOOOO
+004 OOOOOOOOOOOOOOOOO
+005 OOOOOOOOOOOOOOOOO
+006 OOOOOOOOOOOOOOOOO
+007 OOOOOOOOOOOOOOOOO
+008 OOOOOOOOOOOOOOOO.
+009 OOOOOOOOOOOOOOO..
+010 OOOOOOOOOOOOOOO..
+011 OOOOOOOOOOOOOOO..
+012 ..............X..
+013 .................
+014 .................
+<xxxxxxxxxxx end read-map
+<-----------start piece size
+Piece 1 3:
+<-----------end piece size
+<-----------strart read-piece
+.**
+<-----------end read-piece-->
+coo (Y:X) : 0:1
+1
+2
+3
+coo (Y:X) : 0:2
+1
+2
+3
+PLAY - 1
+
+Get aim : 
+data->coo[0] : 7
+
+***** FILL *****PLAY - 2
+PLAY - FILL
+<---------Coup : 
+8 14
+<-----------fin coupe
+<-----------start map_size
+<-----------end map_size
+<-----------start solo-line read-map
+    01234567890123456
+<xxxxxxxxxxxend solo-line read-map
+<-----------start read-map
+000 OOOOOOOOOOOOOOOOO
+001 OOOOOOOOOOOOOOOOO
+002 OOOOOOOOOOOOOOOOO
+003 OOOOOOOOOOOOOOOOO
+004 OOOOOOOOOOOOOOOOO
+005 OOOOOOOOOOOOOOOOO
+006 OOOOOOOOOOOOOOOOO
+007 OOOOOOOOOOOOOOOOO
+008 OOOOOOOOOOOOOOOOO
+009 OOOOOOOOOOOOOOO..
+010 OOOOOOOOOOOOOOO..
+011 OOOOOOOOOOOOOOO..
+012 ..............X..
+013 .................
+014 .................
+<xxxxxxxxxxx end read-map
+<-----------start piece size
+Piece 1 3:
+<-----------end piece size
+<-----------strart read-piece
+***
+<-----------end read-piece-->
+coo (Y:X) : 0:0
+1
+2
+3
+coo (Y:X) : 0:1
+1
+2
+3
+coo (Y:X) : 0:2
+1
+2
+3
+PLAY - 1
+
+Get aim : 
+data->coo[0] : 8
+
+***** FILL *****PLAY - 2
+PLAY - FILL
+<---------Coup : 
+9 14
+<-----------fin coupe
+<-----------start map_size
+<-----------end map_size
+<-----------start solo-line read-map
+    01234567890123456
+<xxxxxxxxxxxend solo-line read-map
+<-----------start read-map
+000 OOOOOOOOOOOOOOOOO
+001 OOOOOOOOOOOOOOOOO
+002 OOOOOOOOOOOOOOOOO
+003 OOOOOOOOOOOOOOOOO
+004 OOOOOOOOOOOOOOOOO
+005 OOOOOOOOOOOOOOOOO
+006 OOOOOOOOOOOOOOOOO
+007 OOOOOOOOOOOOOOOOO
+008 OOOOOOOOOOOOOOOOO
+009 OOOOOOOOOOOOOOOOO
+010 OOOOOOOOOOOOOOO..
+011 OOOOOOOOOOOOOOO..
+012 ..............X..
+013 .................
+014 .................
+<xxxxxxxxxxx end read-map
+<-----------start piece size
+Piece 1 2:
+<-----------end piece size
+<-----------strart read-piece
+**
+<-----------end read-piece-->
+coo (Y:X) : 0:0
+1
+2
+3
+coo (Y:X) : 0:1
+1
+2
+3
+PLAY - 1
+
+Get aim : 
+data->coo[0] : 9
+
+***** FILL *****PLAY - 2
+PLAY - FILL
+<---------Coup : 
+10 14
+<-----------fin coupe
+<-----------start map_size
+<-----------end map_size
+<-----------start solo-line read-map
+    01234567890123456
+<xxxxxxxxxxxend solo-line read-map
+<-----------start read-map
+000 OOOOOOOOOOOOOOOOO
+001 OOOOOOOOOOOOOOOOO
+002 OOOOOOOOOOOOOOOOO
+003 OOOOOOOOOOOOOOOOO
+004 OOOOOOOOOOOOOOOOO
+005 OOOOOOOOOOOOOOOOO
+006 OOOOOOOOOOOOOOOOO
+007 OOOOOOOOOOOOOOOOO
+008 OOOOOOOOOOOOOOOOO
+009 OOOOOOOOOOOOOOOOO
+010 OOOOOOOOOOOOOOOO.
+011 OOOOOOOOOOOOOOO..
+012 ..............X..
+013 .................
+014 .................
+<xxxxxxxxxxx end read-map
+<-----------start piece size
+Piece 2 3:
+<-----------end piece size
+<-----------strart read-piece
+*..
+*..
+<-----------end read-piece-->
+coo (Y:X) : 0:0
+1
+2
+3
+coo (Y:X) : 1:0
+1
+2
+3
+PLAY - 1
+
+Get aim : 
+data->coo[0] : 10
+
+***** FILL *****PLAY - 2
+PLAY - FILL
+<---------Coup : 
+10 15
+<-----------fin coupe
+<-----------start map_size
+<-----------end map_size
+<-----------start solo-line read-map
+    01234567890123456
+<xxxxxxxxxxxend solo-line read-map
+<-----------start read-map
+000 OOOOOOOOOOOOOOOOO
+001 OOOOOOOOOOOOOOOOO
+002 OOOOOOOOOOOOOOOOO
+003 OOOOOOOOOOOOOOOOO
+004 OOOOOOOOOOOOOOOOO
+005 OOOOOOOOOOOOOOOOO
+006 OOOOOOOOOOOOOOOOO
+007 OOOOOOOOOOOOOOOOO
+008 OOOOOOOOOOOOOOOOO
+009 OOOOOOOOOOOOOOOOO
+010 OOOOOOOOOOOOOOOO.
+011 OOOOOOOOOOOOOOOO.
+012 ..............X..
+013 .................
+014 .................
+<xxxxxxxxxxx end read-map
+<-----------start piece size
+Piece 2 1:
+<-----------end piece size
+<-----------strart read-piece
+*
+*
+<-----------end read-piece-->
+coo (Y:X) : 0:0
+1
+2
+3
+coo (Y:X) : 1:0
+1
+2
+3
+PLAY - 1
+
+Get aim : 
+data->coo[0] : 10
+
+***** FILL *****PLAY - 2
+PLAY - FILL
+<---------Coup : 
+11 15
+<-----------fin coupe
+<-----------start map_size
+<-----------end map_size
+<-----------start solo-line read-map
+    01234567890123456
+<xxxxxxxxxxxend solo-line read-map
+<-----------start read-map
+000 OOOOOOOOOOOOOOOOO
+001 OOOOOOOOOOOOOOOOO
+002 OOOOOOOOOOOOOOOOO
+003 OOOOOOOOOOOOOOOOO
+004 OOOOOOOOOOOOOOOOO
+005 OOOOOOOOOOOOOOOOO
+006 OOOOOOOOOOOOOOOOO
+007 OOOOOOOOOOOOOOOOO
+008 OOOOOOOOOOOOOOOOO
+009 OOOOOOOOOOOOOOOOO
+010 OOOOOOOOOOOOOOOO.
+011 OOOOOOOOOOOOOOOO.
+012 ..............XO.
+013 .................
+014 .................
+<xxxxxxxxxxx end read-map
+<-----------start piece size
+Piece 1 3:
+<-----------end piece size
+<-----------strart read-piece
+**.
+<-----------end read-piece-->
+coo (Y:X) : 0:0
+1
+2
+3
+coo (Y:X) : 0:1
+1
+2
+3
+PLAY - 1
+
+Get aim : 
+data->coo[0] : 11
+
+***** FILL *****PLAY - 2
+PLAY - FILL
+<---------Coup : 
+10 15
+<-----------fin coupe
+<-----------start map_size
+<-----------end map_size
+<-----------start solo-line read-map
+    01234567890123456
+<xxxxxxxxxxxend solo-line read-map
+<-----------start read-map
+000 OOOOOOOOOOOOOOOOO
+001 OOOOOOOOOOOOOOOOO
+002 OOOOOOOOOOOOOOOOO
+003 OOOOOOOOOOOOOOOOO
+004 OOOOOOOOOOOOOOOOO
+005 OOOOOOOOOOOOOOOOO
+006 OOOOOOOOOOOOOOOOO
+007 OOOOOOOOOOOOOOOOO
+008 OOOOOOOOOOOOOOOOO
+009 OOOOOOOOOOOOOOOOO
+010 OOOOOOOOOOOOOOOOO
+011 OOOOOOOOOOOOOOOO.
+012 ..............XO.
+013 .................
+014 .................
+<xxxxxxxxxxx end read-map
+<-----------start piece size
+Piece 2 2:
+<-----------end piece size
+<-----------strart read-piece
+**
+..
+<-----------end read-piece-->
+coo (Y:X) : 0:0
+1
+2
+3
+coo (Y:X) : 0:1
+1
+2
+3
+PLAY - 1
+
+Get aim : 
+data->coo[0] : 10
+
+***** FILL *****PLAY - 2
+PLAY - FILL
+<---------Coup : 
+11 15
+<-----------fin coupe
+<-----------start map_size
+<-----------end map_size
+<-----------start solo-line read-map
+    01234567890123456
+<xxxxxxxxxxxend solo-line read-map
+<-----------start read-map
+000 OOOOOOOOOOOOOOOOO
+001 OOOOOOOOOOOOOOOOO
+002 OOOOOOOOOOOOOOOOO
+003 OOOOOOOOOOOOOOOOO
+004 OOOOOOOOOOOOOOOOO
+005 OOOOOOOOOOOOOOOOO
+006 OOOOOOOOOOOOOOOOO
+007 OOOOOOOOOOOOOOOOO
+008 OOOOOOOOOOOOOOOOO
+009 OOOOOOOOOOOOOOOOO
+010 OOOOOOOOOOOOOOOOO
+011 OOOOOOOOOOOOOOOOO
+012 ..............XO.
+013 .................
+014 .................
+<xxxxxxxxxxx end read-map
+<-----------start piece size
+Piece 1 3:
+<-----------end piece size
+<-----------strart read-piece
+**.
+<-----------end read-piece-->
+coo (Y:X) : 0:0
+1
+2
+3
+coo (Y:X) : 0:1
+1
+2
+3
+PLAY - 1
+
+Get aim : 
+data->coo[0] : 11
+
+***** FILL *****PLAY - 2
+PLAY - FILL
+<---------Coup : 
+12 15
+<-----------fin coupe
+<-----------start map_size
+<-----------end map_size
+<-----------start solo-line read-map
+    01234567890123456
+<xxxxxxxxxxxend solo-line read-map
+<-----------start read-map
+000 OOOOOOOOOOOOOOOOO
+001 OOOOOOOOOOOOOOOOO
+002 OOOOOOOOOOOOOOOOO
+003 OOOOOOOOOOOOOOOOO
+004 OOOOOOOOOOOOOOOOO
+005 OOOOOOOOOOOOOOOOO
+006 OOOOOOOOOOOOOOOOO
+007 OOOOOOOOOOOOOOOOO
+008 OOOOOOOOOOOOOOOOO
+009 OOOOOOOOOOOOOOOOO
+010 OOOOOOOOOOOOOOOOO
+011 OOOOOOOOOOOOOOOOO
+012 ..............XOO
+013 .................
+014 .................
+<xxxxxxxxxxx end read-map
+<-----------start piece size
+Piece 1 3:
+<-----------end piece size
+<-----------strart read-piece
+.**
+<-----------end read-piece-->
+coo (Y:X) : 0:1
+1
+2
+3
+coo (Y:X) : 0:2
+1
+2
+3
+PLAY - 1
+
+Get aim : 
+data->coo[0] : 12
+
+***** FILL *****PLAY - 2
+PLAY - FILL
+ft_bruteforce
+ft_bruteforce
+<---------Coup : 
+0 0
+<-----------fin coupe
+<-----------start map_size
+<-----------end map_size
+<-----------start solo-line read-map
+000 OOOOOOOOOOOOOOOOO
+<xxxxxxxxxxxend solo-line read-map
+<-----------start read-map
+000 OOOOOOOOOOOOOOOOO
+001 OOOOOOOOOOOOOOOOO
+002 OOOOOOOOOOOOOOOOO
+003 OOOOOOOOOOOOOOOOO
+004 OOOOOOOOOOOOOOOOO
+005 OOOOOOOOOOOOOOOOO
+006 OOOOOOOOOOOOOOOOO
+007 OOOOOOOOOOOOOOOOO
+008 OOOOOOOOOOOOOOOOO
+009 OOOOOOOOOOOOOOOOO
+010 OOOOOOOOOOOOOOOOO
+011 OOOOOOOOOOOOOOOOO
+012 ..............XOO
+013 .................
+014 .................
+<xxxxxxxxxxx end read-map
+<-----------start piece size
+Read piece exit
