@@ -6,7 +6,7 @@
 /*   By: amamy <amamy@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/07/07 18:27:03 by amamy             #+#    #+#             */
-/*   Updated: 2019/07/14 14:58:15 by amamy            ###   ########.fr       */
+/*   Updated: 2019/07/16 17:12:04 by amamy            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -114,27 +114,66 @@ int	ft_go_fill(t_data *data)
 		ft_fill_bot(data);
 	return (0);
 }
+static	int	ft_fullest_line(t_data *data)
+{
+	int	x;
+	int	y;
+	int	tokens;
+	int	best[2];
+
+	y = 0;
+	x = 0;
+	ft_bzero(best, 2);
+	tokens = 0;
+	while (y < data->map_size[0])
+	{
+		if (data->map[y][x] == data->tok_me[0]
+			|| data->map[y][x] == data->tok_me[1])
+				tokens++;
+		if (x++ >= data->map_size[1] - 4)
+		{
+			if (tokens > best[0])
+			{
+				best[1] = y;
+				best[0] = tokens;
+			}
+			tokens = 0;
+			y++;
+		}
+	}
+	return (best[1]);
+}
 
 int	ft_go_cut(t_data *data)
 {
-	data->coo[0] = data->mid;
+	int	y_save;
+
+	y_save = data->coo[0];
 	data->coo[1] = -(data->piece_size[1] - 1);
+	data->coo[0] = ft_fullest_line(data);
 	// dprintf(data->fd2, "ft_go_cut\n");
-	// dprintf(data->fd2, "go_cut - y : %d 	| x : %d\n", data->coo[0], data->coo[1]);
+	dprintf(data->fd2, "go_cut - y : %d 	| x : %d\n", data->coo[0], data->coo[1]);
 	while ((ft_check_play(data)) != 0	\
-		 && data->coo[0] < data->map_size[0])
+		 && data->coo[0] > y_save - 3)
 		{
+			dprintf(data->fd2, "go_cut - y : %d 	| x : %d\n", data->coo[0], data->coo[1]);
 			// dprintf(data->fd2, "go_cut - y : %d 	| x : %d\n", data->coo[0], data->coo[1]);
 			data->coo[1]++;
 			if ((data->coo[1] > (data->map_size[1] - 1)))
 			{
-				data->coo[1] = -(data->piece_size[1] - 1);;
+				data->coo[1] = -(data->piece_size[1] + 3);;
 				data->coo[0]--;
 			}
-			if (data->coo[0] < 0)
-			{
-				ft_bruteforce(data);
-			}
+			// if (data->coo[1] >= data->map_size[1] + 4
+			// 	&& (data->map[data->coo[0]][data->coo[1]] == data->tok_me[0] \)
+			// 	|| data->map[data->coo[0]][data->coo[1]] == data->tok_me[1]) )
+			// 	{
+			// 		data->coo[1] = -(data->piece_size[1] - 1);
+			// 	}
+			// if (data->coo[0] < 0)
+			// {
+			// 	ft_bruteforce(data);
+			// }
 		}
 	return (0);
 }

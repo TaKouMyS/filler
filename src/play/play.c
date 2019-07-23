@@ -6,7 +6,7 @@
 /*   By: amamy <amamy@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/20 16:29:17 by amamy             #+#    #+#             */
-/*   Updated: 2019/07/14 14:55:59 by amamy            ###   ########.fr       */
+/*   Updated: 2019/07/14 17:39:15 by amamy            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -73,25 +73,25 @@ int ft_play(t_data *data)
 			return (-1);
 		}
 	}
-	else if (data->aim & UP)
-	{
-		dprintf(data->fd2, "PLAY - UP\n");
-		if (ft_go_up(data) == -1)
-		{
-			dprintf(data->fd2, "return -1 ft_go_up\n");
-			return (-1);
-		}
-		// ////ft_putstr("ft_play3\n");
-	}
-	else if (data->aim & DOWN)
-	{
-		dprintf(data->fd2, "PLAY - UP\n");
-		if (ft_go_down(data) == -1)
-		{
-			dprintf(data->fd2, "return -1 ft_go_down\n");
-			return (-1);
-		}
-	}
+	// else if (data->aim & UP)
+	// {
+	// 	dprintf(data->fd2, "PLAY - UP\n");
+	// 	if (ft_go_up(data) == -1)
+	// 	{
+	// 		dprintf(data->fd2, "return -1 ft_go_up\n");
+	// 		return (-1);
+	// 	}
+	// 	// ////ft_putstr("ft_play3\n");
+	// }
+	// else if (data->aim & DOWN)
+	// {
+	// 	dprintf(data->fd2, "PLAY - UP\n");
+	// 	if (ft_go_down(data) == -1)
+	// 	{
+	// 		dprintf(data->fd2, "return -1 ft_go_down\n");
+	// 		return (-1);
+	// 	}
+	// }
 	if (ft_check_play(data) == -1)
 		ft_bruteforce(data);
 	if (ft_check_play(data) == -1)\
