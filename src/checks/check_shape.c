@@ -6,7 +6,7 @@
 /*   By: amamy <amamy@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/07/09 21:18:00 by amamy             #+#    #+#             */
-/*   Updated: 2019/07/14 17:07:34 by amamy            ###   ########.fr       */
+/*   Updated: 2019/07/24 15:11:52 by amamy            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,18 +57,15 @@ int	ft_check_shape(t_data *data, int y, int x, char **piece)
 	if (piece[y][x] == 'F')
 		found = 1;
 	piece[y][x] = '.';
-	dprintf(data->fd2, "1\n");
 	if (y > 0 && piece[y - 1][x] == '*' &&(found += 1))
 	{
 		found += ft_check_shape(data, y - 1, x, piece);
 	}
-	dprintf(data->fd2, "2\n");
 	if (y > 0 && piece[y][x] != '\0' && piece[y - 1][x + 1] == '*' \
 		&& (found += 1))
 	{
 			found += ft_check_shape(data, y - 1, x + 1, piece);
 	}
-	dprintf(data->fd2, "3\n");
 	if (piece[y][x] != '\0' && piece[y][x + 1] == '*' && (found += 1))
 	{
 		found += ft_check_shape(data, y, x + 1, piece);

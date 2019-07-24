@@ -1,18 +1,5 @@
 Work :
-- go up									: ok
-- go down								: ok
-- finish check play :
-	- check if * is on the map_size 	: ok  - hard to test but
-	- check if * is on adversary token 	: ok
-- update chek_integrity for pieces like : ok
-	**.
-	..*
-
-stuck on gnl in a case : 				: ok
-
-
-- go cut								: ok
-- go fill								:
+check play : we do all checks in stack, it might be smart to do that in heap!
 
 
 

@@ -6,7 +6,7 @@
 /*   By: amamy <amamy@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/07/13 20:09:26 by amamy             #+#    #+#             */
-/*   Updated: 2019/07/13 20:09:34 by amamy            ###   ########.fr       */
+/*   Updated: 2019/07/24 15:46:12 by amamy            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,9 @@ static void ft_store_first_piece(t_data *data, int tmp[4])
 		data->coo_op[1] = tmp[1] - 4;
 	}
 	data->mid = (data->coo[0] + data->coo_op[0]) / 2;
-	dprintf(data->fd2, "Mid stored : %d\n", data->mid);
+	data->sq_center[0] = data->coo[0];
+	data->sq_center[1] = data->coo[1] + 4;
+	data->sq_dist = 1;
 }
 
 void ft_get_first_piece(t_data *data)

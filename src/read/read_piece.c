@@ -6,7 +6,7 @@
 /*   By: amamy <amamy@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/02 11:02:39 by amamy             #+#    #+#             */
-/*   Updated: 2019/07/13 19:38:44 by amamy            ###   ########.fr       */
+/*   Updated: 2019/07/24 15:26:58 by amamy            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,15 +54,21 @@ int	ft_read_piece(t_data *data)
 	char	*str_piece_size;
 	i = 0;
 
-	// if (!(str_piece_size = ft_memalloc(sizeof(char) * (30))))
-	// 	return (-1);
 	dprintf(data->fd2, "%s\n", "<-----------start piece size");
 		int ret;
 	if ((ret = get_next_line(data->fd, &str_piece_size)) == -1)
+	{
+
+		dprintf(data->fd2, "GNL\n");
 		return (-1);
+	}
 	if (ret == 0)
+	{
+
+		dprintf(data->fd2, "ret == 0\n");
 		return (-1);
-	dprintf(data->fd2, "%s\n", str_piece_size); //Use of uninitialised value of size 8 && Invalid read of size 1
+	}
+	dprintf(data->fd2, "%s\n", str_piece_size);
 		dprintf(data->fd2, "%s\n", "<-----------end piece size");
 	ft_read_piece_size(data, str_piece_size);
 	free(str_piece_size);

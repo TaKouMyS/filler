@@ -6,7 +6,7 @@
 /*   By: amamy <amamy@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/20 16:29:17 by amamy             #+#    #+#             */
-/*   Updated: 2019/07/14 17:39:15 by amamy            ###   ########.fr       */
+/*   Updated: 2019/07/24 15:27:57 by amamy            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,60 +49,35 @@
 // static void	ft_go_fill(t_data *data)
 
 
-int ft_play(t_data *data)
+int ft_play(t_data *d)
 {
+	dprintf(d->fd2, "sq_dist : %d\ncenter : %d:%d\n", d->sq_dist, d->sq_center[0], d->sq_center[1]);
+	d->coo[1] = d->sq_center[1] - d->sq_dist - (d->piece_size[1] - 1);
+	d->coo[0] = d->sq_center[0] - d->sq_dist - (d->piece_size[0] - 1);
+	while (ft_check_play(d) != 0 \
+		&& d->coo[0] <= (d->sq_center[0] + d->sq_dist))
+		{
+			dprintf(d->fd2, "We checked : %d:%d\n", d->coo[0], d->coo[1] - 4);
+			d->coo[1]++;
+			if (d->coo[1] > (d->sq_center[1] + d->sq_dist))
+			{
+				d->coo[1] = d->sq_center[1] - d->sq_dist;
+				d->coo[0]++;
+			}
+		}
 	// //ft_putstr("ft_play1\n");
-	dprintf(data->fd2, "PLAY - 1\n");
-	ft_analyse(data);
-	dprintf(data->fd2, "PLAY - 2\n");
-	if (data->aim & FILL)
+
+	if (ft_check_play(d) == -1)
+		ft_bruteforce(d);
+	if (ft_check_play(d) == -1)\
 	{
-		dprintf(data->fd2, "PLAY - FILL\n");
-		if (ft_go_fill(data) == -1)
-		{
-			dprintf(data->fd2, "return -1 ft_go_fill\n");
-			return (-1);
-		}
+		d->coo[0] = 0;
+		d->coo[1] = 4;
 	}
-	else if (data->aim & CUT)
-	{
-		dprintf(data->fd2, "PLAY - CUT\n");
-		if (ft_go_cut(data) == -1)
-		{
-			dprintf(data->fd2, "return -1 ft_go_cut\n");
-			return (-1);
-		}
-	}
-	// else if (data->aim & UP)
-	// {
-	// 	dprintf(data->fd2, "PLAY - UP\n");
-	// 	if (ft_go_up(data) == -1)
-	// 	{
-	// 		dprintf(data->fd2, "return -1 ft_go_up\n");
-	// 		return (-1);
-	// 	}
-	// 	// ////ft_putstr("ft_play3\n");
-	// }
-	// else if (data->aim & DOWN)
-	// {
-	// 	dprintf(data->fd2, "PLAY - UP\n");
-	// 	if (ft_go_down(data) == -1)
-	// 	{
-	// 		dprintf(data->fd2, "return -1 ft_go_down\n");
-	// 		return (-1);
-	// 	}
-	// }
-	if (ft_check_play(data) == -1)
-		ft_bruteforce(data);
-	if (ft_check_play(data) == -1)\
-	{
-		data->coo[0] = 0;
-		data->coo[1] = 4;
-	}
-	dprintf(data->fd2, "<---------Coup : \n%d %d\n<-----------fin coupe\n", data->coo[0], data->coo[1] - 4);
-	ft_putnbr(data->coo[0]);
-	ft_putstr(" ");
-	ft_putnbr(data->coo[1] - 4);
+	dprintf(d->fd2, "<---------Coup : \n%d %d\n<-----------fin coupe\n", d->coo[0], d->coo[1] - 4);
+	ft_putnbr(d->coo[0]);
+		ft_putstr(" ");
+	ft_putnbr(d->coo[1] - 4);
 	ft_putstr("\n");
 	return (0);
 }
