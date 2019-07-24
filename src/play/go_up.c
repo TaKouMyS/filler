@@ -6,7 +6,7 @@
 /*   By: amamy <amamy@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/26 17:11:58 by amamy             #+#    #+#             */
-/*   Updated: 2019/07/14 14:53:58 by amamy            ###   ########.fr       */
+/*   Updated: 2019/07/24 17:48:17 by amamy            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -66,7 +66,7 @@ int	ft_go_up(t_data *data)
 	data->coo[1] = top_tok[1] - (data->piece_size[1] - 1);
 	x0 = data->coo[1];
 	// ft_putstr("wertyui -1\n");
-	while ((ret = ft_check_play(data)) != 0 \
+	while ((ret = ft_check_play(data, 1)) != 0 \
 		&& data->coo[0] < data->map_size[0] - 1)
 		{
 			// dprintf(data->fd2, "Go up - while check play\n");
@@ -77,7 +77,7 @@ int	ft_go_up(t_data *data)
 				data->coo[0]++;
 			}
 		}
-	if (ft_check_play(data) == -1)
+	if (ft_check_play(data, 1) == -1)
 		ft_bruteforce(data);
 	// dprintf(data->fd2, "return 0 go up\n");
 	return (0);

@@ -6,7 +6,7 @@
 /*   By: amamy <amamy@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/28 17:57:31 by amamy             #+#    #+#             */
-/*   Updated: 2019/07/24 14:47:30 by amamy            ###   ########.fr       */
+/*   Updated: 2019/07/24 17:47:09 by amamy            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,7 +58,7 @@ int		ft_go_fill(t_data *data);
 void	ft_bruteforce(t_data *data);
 int		ft_star_line(char *line, char token);
 int		ft_line_mine(t_data *data, char *line);
-int		ft_check_play(t_data *data);
+int		ft_check_play(t_data *data, int mode);
 int		ft_make_square(t_data *d);
 int		ft_check_square(t_data *data, int *coo_map);
 

@@ -6,7 +6,7 @@
 /*   By: amamy <amamy@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/26 12:32:03 by amamy             #+#    #+#             */
-/*   Updated: 2019/07/24 15:08:40 by amamy            ###   ########.fr       */
+/*   Updated: 2019/07/24 17:44:33 by amamy            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -73,11 +73,13 @@ static int	ft_coo_star_map(t_data *data, int *coo_star, int *coo_map)
 	return (0);
 }
 
-static int	ft_chk_coup(t_data *data, int *coo_star, int *coo_map, int st_star)
+static int	ft_chk_coup(t_data *data, int *coo_star, int *coo_map, int mode)
 {
 	int	cover;
+	int	st_star;
 
 	cover = 0;
+	st_star = 1;
 	while (ft_coo_next_star(data, coo_star, st_star) == 1)
 	{
 		st_star = 0;
@@ -85,8 +87,9 @@ static int	ft_chk_coup(t_data *data, int *coo_star, int *coo_map, int st_star)
 		|| coo_map[0] < 0 || coo_map[0] > (data->map_size[0] - 1)	\
 		|| coo_map[1] > (data->map_size[1] + 3) || coo_map[1] < 4	\
 		|| data->map[coo_map[0]][coo_map[1]] == data->tok_op[0]		\
-		|| data->map[coo_map[0]][coo_map[1]] == data->tok_op[1]	\
-		|| (ft_check_square(data, coo_map) == -1))
+		|| data->map[coo_map[0]][coo_map[1]] == data->tok_op[1])
+			return (-1);
+		if (mode == 0 && (ft_check_square(data, coo_map) == -1))
 			return (-1);
 		if (data->map[coo_map[0]][coo_map[1]] == data->tok_me[0] 	\
 			|| data->map[coo_map[0]][coo_map[1]] == (data->tok_me[1]))
@@ -98,18 +101,16 @@ static int	ft_chk_coup(t_data *data, int *coo_star, int *coo_map, int st_star)
 }
 
 
-int	ft_check_play(t_data *data)
+int	ft_check_play(t_data *data, int mode)
 {
 	int	*coo_star;
 	int	*coo_map;
-	int	first_star;
 
-	first_star = 1;
 	if (!(coo_star = ft_memalloc(sizeof(int) * 2)))
 		return (-1);
 	if (!(coo_map = ft_memalloc(sizeof(int) * 2)))
 		return (-1);
-	if (ft_chk_coup(data, coo_star, coo_map, first_star) == -1)
+	if (ft_chk_coup(data, coo_star, coo_map, mode) == -1)
 		return (-1);
 	free(coo_star);
 	free(coo_map);
