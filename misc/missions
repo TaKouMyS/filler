@@ -1,12 +1,12 @@
 Work :
+leaks :
+read_piece 75 : we malloc over an over a each iteration
 check play : we do all checks in stack, it might be smart to do that in heap!
 
 
 
 
 Bugs :
-map 00 -> doesnt go to the last 2
-check play, has bugs? often miss
 
 
 ideas :

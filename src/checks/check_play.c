@@ -6,7 +6,7 @@
 /*   By: amamy <amamy@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/26 12:32:03 by amamy             #+#    #+#             */
-/*   Updated: 2019/07/25 13:51:26 by amamy            ###   ########.fr       */
+/*   Updated: 2019/07/25 17:29:30 by amamy            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -116,9 +116,16 @@ int			ft_check_play(t_data *data, int mode)
 	if (!(coo_star = ft_memalloc(sizeof(int) * 2)))
 		return (-1);
 	if (!(coo_map = ft_memalloc(sizeof(int) * 2)))
+	{
+		free(coo_star);
 		return (-1);
+	}
 	if (ft_chk_coup(data, coo_star, coo_map, mode) == -1)
+	{
+		free(coo_star);
+		free(coo_map);
 		return (-1);
+	}
 	free(coo_star);
 	free(coo_map);
 	return (0);
