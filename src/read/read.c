@@ -6,7 +6,7 @@
 /*   By: amamy <amamy@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/30 14:26:37 by amamy             #+#    #+#             */
-/*   Updated: 2019/07/24 15:42:50 by amamy            ###   ########.fr       */
+/*   Updated: 2019/07/25 17:07:04 by amamy            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,8 +17,9 @@
 
 /*
 ** ft_store_token :
-**
+** Depending on players number's, store X or O in mathcing variables.
 */
+
 static void	ft_store_token(t_data *data)
 {
 	if (data->player_number == 1)
@@ -27,7 +28,6 @@ static void	ft_store_token(t_data *data)
 		data->tok_me[1] = 'o';
 		data->tok_op[0] = 'X';
 		data->tok_op[1] = 'x';
-
 	}
 	if (data->player_number == 2)
 	{
@@ -45,6 +45,7 @@ static void	ft_store_token(t_data *data)
 ** data->map_size[0] = Y
 ** data->map_size[1] = X.
 */
+
 static int	ft_read_map_size(char *tmp, t_data *data)
 {
 	int		i;
@@ -61,7 +62,7 @@ static int	ft_read_map_size(char *tmp, t_data *data)
 		i++;
 	}
 	if (tmp[8 + i++] != ' ')
-	return (-1);
+		return (-1);
 	while (ft_isdigit(tmp[8 + i]) && str_map_size[1][2] == '\0')
 	{
 		str_map_size[1][i2++] = tmp[8 + i];
@@ -76,18 +77,19 @@ static int	ft_read_map_size(char *tmp, t_data *data)
 ** ft_data_mallocation :
 ** Get memory allocation for most of the structure data (t_data type).
 */
+
 static int	ft_data_mallocation(t_data *data, char *map_size)
 {
 	if (!(data->piece_size = ft_memalloc(sizeof(int) * 2)))
 		return (-1);
 	if (!(data->map_size = ft_memalloc(sizeof(int) * 2)))
 		return (-1);
-		if (!(ft_strncmp(map_size, "Plateau ", 8) == 0) \
-			|| (ft_read_map_size(map_size, data) == -1))
-		{
-			free(map_size);
-			return (-1);
-		}
+	if (!(ft_strncmp(map_size, "Plateau ", 8) == 0) \
+		|| (ft_read_map_size(map_size, data) == -1))
+	{
+		free(map_size);
+		return (-1);
+	}
 	if (!(data->piece = ft_memalloc(sizeof(char*) * data->map_size[0])))
 		return (-1);
 	if (!(data->map = ft_memalloc(sizeof(char*) * (data->map_size[0] + 1))))
@@ -103,11 +105,12 @@ static int	ft_data_mallocation(t_data *data, char *map_size)
 	return (0);
 }
 
-
 /*
 ** ft_get_player :
-** Given the strings written by th VM which specifies players number, get and ** store the player's number in int data->player_number.
+** Given the strings written by th VM which specifies players number, get and
+** store the player's number in int data->player_number.
 */
+
 static int	ft_get_player(t_data *data)
 {
 	char	*player;
@@ -116,9 +119,8 @@ static int	ft_get_player(t_data *data)
 	if (!(data->coo = ft_memalloc(sizeof(int) * 2)))
 		return (-1);
 	dprintf(data->fd2, "%s\n", "<-----------start read-player");
-	if (get_next_line(data->fd, &player) == -1)
+	if (get_next_line(data->fd, &player) != 1)
 	{
-
 		dprintf(data->fd2, "GNL error\n");
 		return (-1);
 	}
@@ -126,7 +128,7 @@ static int	ft_get_player(t_data *data)
 	dprintf(data->fd2, "%s\n", "<-----------end read-player");
 	if (!(ft_strncmp(player, "$$$ exec p1 : ", 14) == 0 \
 		|| ft_strncmp(player, "$$$ exec p2 : ", 14) == 0))
-			return (-1);
+		return (-1);
 	if (ft_strstr(player, "p1"))
 		data->player_number = 1;
 	else if (ft_strstr(player, "p2"))
@@ -139,14 +141,21 @@ static int	ft_get_player(t_data *data)
 
 /*
 ** ft_read :
-** Central point of stdin reading.
+** Called only on the first iteration of the map.
+** Central point of stdout reading.
+** Read the first line sent to get player nubmer, save tokens in variables,
+** read the map and the piece sent and look for players spawns.
 */
-int	ft_read(t_data *data)
+
+int			ft_read(t_data *data)
 {
 	char	*map_size;
 
+	int ret;
+
+	ret = 99;
 	if ((ft_get_player(data) == -1) \
-		|| (get_next_line(data->fd, &map_size) == -1) \
+		|| (ret = get_next_line(data->fd, &map_size) != 1) \
 		|| (ft_data_mallocation(data, map_size) == -1))
 			return (-1);
 	ft_store_token(data);
@@ -155,7 +164,7 @@ int	ft_read(t_data *data)
 	dprintf(data->fd2, "%s\n", "<-----------end read-map_size - 1 ");
 	free(map_size);
 	if ((ft_read_map(data) == -1) || (ft_read_piece(data) == -1))
-			return (-1);
+		return (-1);
 	ft_get_first_piece(data);
 	return (0);
 }

@@ -6,7 +6,7 @@
 /*   By: amamy <amamy@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/15 20:23:00 by amamy             #+#    #+#             */
-/*   Updated: 2019/07/24 15:11:34 by amamy            ###   ########.fr       */
+/*   Updated: 2019/07/25 13:05:33 by amamy            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,7 @@
 ** ft_free_piece :
 ** Free allocations made for data->piece;
 */
+
 static void	ft_free_piece(t_data *data, char **piece)
 {
 	int y;
@@ -35,6 +36,7 @@ static void	ft_free_piece(t_data *data, char **piece)
 ** ft_piece_cpy :
 ** make a copy of data->piece.
 */
+
 static char	**ft_piece_cpy(t_data *data, char **piece)
 {
 	int y;
@@ -66,6 +68,7 @@ static char	**ft_piece_cpy(t_data *data, char **piece)
 ** find the first star and send the piece copy and star's coordonates to
 ** ft_check_shape allowint it to do the job;
 */
+
 static int	ft_check_integrity(t_data *data)
 {
 	int		y;
@@ -101,6 +104,7 @@ static int	ft_check_integrity(t_data *data)
 ** and '*', and with ft_check_integrity, that all the stars are next to an other
 ** star.
 */
+
 int			ft_check_piece(t_data *data)
 {
 	int	y;

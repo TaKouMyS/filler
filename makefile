@@ -18,28 +18,21 @@ OBJDIR = obj
 SRCDIR = src
 SRC_READ_DIR = $(SRCDIR)/read
 SRC_CHECKS_DIR = $(SRCDIR)/checks
-SRC_PLAY_DIR = $(SRCDIR)/play
 LIBDIR	= libft
 HEAD	= $(SRCDIR)/filler.h
 
 SRCS 	= $(SRCDIR)/main.c					\
 		$(SRCDIR)/free.c					\
-		$(SRCDIR)/line_tools.c				\
+		$(SRCDIR)/play.c					\
 		$(SRC_READ_DIR)/read.c				\
 		$(SRC_READ_DIR)/read_map.c			\
 		$(SRC_READ_DIR)/read_piece.c		\
 		$(SRC_READ_DIR)/get_first_piece.c	\
-		$(SRC_CHECKS_DIR)/checks.c			\
-		$(SRC_CHECKS_DIR)/check_map.c		\
 		$(SRC_CHECKS_DIR)/check_piece.c		\
 		$(SRC_CHECKS_DIR)/check_shape.c		\
 		$(SRC_CHECKS_DIR)/check_square.c	\
-		$(SRC_CHECKS_DIR)/check_play.c		\
-		$(SRC_PLAY_DIR)/play.c				\
-		$(SRC_PLAY_DIR)/analyse.c			\
-		$(SRC_PLAY_DIR)/go_up.c				\
-		$(SRC_PLAY_DIR)/go_down.c			\
-		$(SRC_PLAY_DIR)/go_cut_fill.c		
+		$(SRC_CHECKS_DIR)/check_play.c
+
 
 ALLFLAGS = -I$(LIBDIR) -I$(SRCDIR) -o
 OBJ = $(addprefix $(OBJDIR)/, $(SRCS:.c=.o))
@@ -70,7 +63,7 @@ $(OBJDIR)/%.o: %.c $(HEAD)
 
 
 $(OBJDIR) :
-	@mkdir  $@ $@/$(SRCDIR) $@/$(LIBDIR) $@/$(SRC_READ_DIR) $@/$(SRC_CHECKS_DIR) $@/$(SRC_PLAY_DIR)
+	@mkdir  $@ $@/$(SRCDIR) $@/$(LIBDIR) $@/$(SRC_READ_DIR) $@/$(SRC_CHECKS_DIR)
 
 $(OBJ) : | $(OBJDIR)
 

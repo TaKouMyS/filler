@@ -6,7 +6,7 @@
 /*   By: amamy <amamy@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/19 16:28:09 by amamy             #+#    #+#             */
-/*   Updated: 2019/07/14 17:45:59 by amamy            ###   ########.fr       */
+/*   Updated: 2019/07/25 13:25:13 by amamy            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,15 +19,11 @@ static	void ft_get_aim(t_data *data)
 {
 	int i;
 	int ret;
-	// int mid;
 
 	i = 0;
 	ret = 0;
-	// mid = data->mid - 3;
-	dprintf(data->fd2, "\nGet aim : \ndata->coo[0] : %d\n\n", data->coo[0]);
 	if (data->aim & CUT)
 	{
-		// dprintf(data->fd2, "GO FOR FILL\n");
 		while (i < data->map_size[0] \
 			&& (ret = ft_line_mine(data, data->map[i])) != 1)
 				i++;

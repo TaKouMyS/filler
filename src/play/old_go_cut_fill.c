@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   go_cut_fill.c                                      :+:      :+:    :+:   */
+/*   old_go_cut_fill.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: amamy <amamy@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/07/07 18:27:03 by amamy             #+#    #+#             */
-/*   Updated: 2019/07/24 17:49:10 by amamy            ###   ########.fr       */
+/*   Updated: 2019/07/25 14:07:49 by amamy            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,22 +29,6 @@
 // 	return (0);
 // }
 
-void	ft_bruteforce(t_data *data)
-{
-	dprintf(data->fd2, "ft_bruteforce\n");
-	data->coo[1] = -(data->piece_size[1] - 1);
-	data->coo[0] = 0;
-	while ((ft_check_play(data, 1)) != 0 && data->coo[0] < data->map_size[0])
-	{
-		data->coo[1]++;
-		if (data->coo[1] == data->map_size[1] + 3)
-		{
-			data->coo[1] = -(data->piece_size[1] - 1);
-			data->coo[0]++;
-		}
-	}
-
-}
 static void	ft_fill_top(t_data *data)
 {
 	int	y_save;

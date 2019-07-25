@@ -6,7 +6,7 @@
 /*   By: amamy <amamy@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/02 11:02:39 by amamy             #+#    #+#             */
-/*   Updated: 2019/07/24 15:26:58 by amamy            ###   ########.fr       */
+/*   Updated: 2019/07/25 17:16:25 by amamy            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,8 @@
 ** data->piece_size[0] = Y;
 ** data->piece_size[1] = X;
 */
-static void ft_read_piece_size(t_data *data, char *str)
+
+static void	ft_read_piece_size(t_data *data, char *str)
 {
 	int		i;
 	int		i2;
@@ -48,26 +49,22 @@ static void ft_read_piece_size(t_data *data, char *str)
 	data->piece_size[1] = ft_atoi(str_piece_size[1]);
 }
 
-int	ft_read_piece(t_data *data)
+/*
+** ft_read_piece :
+** Read standard output to read the piece given by the vm then send it to
+** check_map for verification.
+*/
+
+int			ft_read_piece(t_data *data)
 {
 	int		i;
 	char	*str_piece_size;
+	int		ret;
+
 	i = 0;
-
-	dprintf(data->fd2, "%s\n", "<-----------start piece size");
-		int ret;
-	if ((ret = get_next_line(data->fd, &str_piece_size)) == -1)
-	{
-
-		dprintf(data->fd2, "GNL\n");
+		dprintf(data->fd2, "%s\n", "<-----------start piece size");
+	if ((ret = get_next_line(data->fd, &str_piece_size)) != 1)
 		return (-1);
-	}
-	if (ret == 0)
-	{
-
-		dprintf(data->fd2, "ret == 0\n");
-		return (-1);
-	}
 	dprintf(data->fd2, "%s\n", str_piece_size);
 		dprintf(data->fd2, "%s\n", "<-----------end piece size");
 	ft_read_piece_size(data, str_piece_size);
@@ -75,9 +72,9 @@ int	ft_read_piece(t_data *data)
 		dprintf(data->fd2, "%s\n", "<-----------strart read-piece");
 	while (i < data->piece_size[0])
 	{
-		get_next_line(data->fd, &data->piece[i]);
+		if (get_next_line(data->fd, &data->piece[i]) != 1)
+			return (-1);
 		dprintf(data->fd2, "%s\n", data->piece[i]);
-		// dprintf(data->fd2, "test\n");
 		i++;
 	}
 		dprintf(data->fd2, "%s\n", "<-----------end read-piece-->");
