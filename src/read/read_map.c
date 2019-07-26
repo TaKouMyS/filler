@@ -6,7 +6,7 @@
 /*   By: amamy <amamy@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/01 17:41:13 by amamy             #+#    #+#             */
-/*   Updated: 2019/07/25 17:09:44 by amamy            ###   ########.fr       */
+/*   Updated: 2019/07/26 12:15:34 by amamy            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,7 +55,7 @@ static int	ft_check_map(t_data *data, int i)
 /*
 ** ft_read_map :
 ** Read standard output to read the map given by the vm then send it to
-** check_map for verification.
+** check_map for verifications.
 */
 
 int			ft_read_map(t_data *data)
@@ -70,12 +70,14 @@ int			ft_read_map(t_data *data)
 		dprintf(data->fd2, "%s\n", "<-----------start map_size");
 		if (get_next_line(data->fd, &data->map[i]) != 1)
 			return (-1);
+		free(data->map[i]);
 		dprintf(data->fd2, "%s\n", "<-----------end map_size");
 	}
 	dprintf(data->fd2, "%s\n", "<-----------start solo-line read-map");
 	if (get_next_line(data->fd, &data->map[i]) != 1)
 		return (-1);
-	dprintf(data->fd2, "%s\n", data->map[i]);
+	ft_memdel((void*)&data->map[i]);
+	// dprintf(data->fd2, "%s\n", data->map[i]);
 	dprintf(data->fd2, "%s\n", "<xxxxxxxxxxxend solo-line read-map");
 	dprintf(data->fd2, "%s\n", "<-----------start read-map");
 	while (i < data->map_size[0])

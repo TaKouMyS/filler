@@ -6,7 +6,7 @@
 /*   By: amamy <amamy@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/30 14:26:37 by amamy             #+#    #+#             */
-/*   Updated: 2019/07/25 17:07:04 by amamy            ###   ########.fr       */
+/*   Updated: 2019/07/26 12:19:45 by amamy            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -76,6 +76,7 @@ static int	ft_read_map_size(char *tmp, t_data *data)
 /*
 ** ft_data_mallocation :
 ** Get memory allocation for most of the structure data (t_data type).
+** Execptions : data->coo (in ft_get_player).
 */
 
 static int	ft_data_mallocation(t_data *data, char *map_size)
@@ -87,7 +88,7 @@ static int	ft_data_mallocation(t_data *data, char *map_size)
 	if (!(ft_strncmp(map_size, "Plateau ", 8) == 0) \
 		|| (ft_read_map_size(map_size, data) == -1))
 	{
-		free(map_size);
+		ft_memdel((void*)&map_size);
 		return (-1);
 	}
 	if (!(data->piece = ft_memalloc(sizeof(char*) * data->map_size[0])))
@@ -128,14 +129,20 @@ static int	ft_get_player(t_data *data)
 	dprintf(data->fd2, "%s\n", "<-----------end read-player");
 	if (!(ft_strncmp(player, "$$$ exec p1 : ", 14) == 0 \
 		|| ft_strncmp(player, "$$$ exec p2 : ", 14) == 0))
-		return (-1);
+		{
+			ft_memdel((void*)&player);
+			return (-1);
+		}
 	if (ft_strstr(player, "p1"))
 		data->player_number = 1;
 	else if (ft_strstr(player, "p2"))
 		data->player_number = 2;
 	else
+	{
+		ft_memdel((void*)&player);
 		return (-1);
-	free(player);
+	}
+	ft_memdel((void*)&player);
 	return (0);
 }
 
@@ -162,7 +169,7 @@ int			ft_read(t_data *data)
 	dprintf(data->fd2, "%s\n", "<-----------start read-map_size - 1");
 	dprintf(data->fd2, "%s\n", map_size);
 	dprintf(data->fd2, "%s\n", "<-----------end read-map_size - 1 ");
-	free(map_size);
+	ft_memdel((void*)&map_size);
 	if ((ft_read_map(data) == -1) || (ft_read_piece(data) == -1))
 		return (-1);
 	ft_get_first_piece(data);

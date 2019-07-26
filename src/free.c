@@ -6,7 +6,7 @@
 /*   By: amamy <amamy@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/05 09:09:54 by amamy             #+#    #+#             */
-/*   Updated: 2019/06/05 10:56:38 by amamy            ###   ########.fr       */
+/*   Updated: 2019/07/26 12:25:05 by amamy            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,14 +35,21 @@ void	ft_free(t_data *data)
 	int i;
 
 	i = 0;
-	while (i < data->map_size[0] + 1)
-		free(data->map[i++]);
-	free(data->map);
+	if (data->map_size)
+		while (i < data->map_size[0])
+			ft_memdel((void*)&data->map[i++]);
+	ft_memdel((void*)&data->map);
 	i = 0;
-	while (i < data->map_size[0])
-		free(data->piece[i++]);
-	free(data->map_size);
-	free(data->piece);
-	free(data->piece_size);
-	free(data);
+	if (data->piece_size)
+		while (i < data->piece_size[0])
+			ft_memdel((void*)&data->piece[i++]);
+	ft_memdel((void*)&data->map_size);
+	ft_memdel((void*)&data->piece);
+	ft_memdel((void*)&data->piece_size);
+	ft_memdel((void*)&data->sq_center);
+	ft_memdel((void*)&data->coo_op);
+	ft_memdel((void*)&data->coo);
+	ft_memdel((void*)&data->tok_me);
+	ft_memdel((void*)&data->tok_op);
+	ft_memdel((void*)&data);
 }

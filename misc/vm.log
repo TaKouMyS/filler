@@ -1,11 +1,12 @@
 <-----------start read-player
-$$$ exec p1 : [../amamy.filler]
-<-----------end read-player
-<-----------start read-map_size - 1
+GNL error
+Exit at ft_read in main.c
+--------end read-player
+Exit at ft_read in main.c
+_size - 1
 Plateau 15 17:
 <-----------end read-map_size - 1 
 <-----------start solo-line read-map
-    01234567890123456
 <xxxxxxxxxxxend solo-line read-map
 <-----------start read-map
 000 .................
@@ -35,7 +36,6 @@ coo (Y:X) : 1:1
 <-----------start map_size
 <-----------end map_size
 <-----------start solo-line read-map
-    01234567890123456
 <xxxxxxxxxxxend solo-line read-map
 <-----------start read-map
 000 .................
@@ -57,14 +57,14 @@ coo (Y:X) : 1:1
 Piece 1 2:
 <-----------end piece size
 <-----------strart read-piece
-**
+*
 <-----------end read-piece-->
-coo (Y:X) : 0:0
+Read piece exit
+
 coo (Y:X) : 0:1
 <-----------start map_size
 <-----------end map_size
 <-----------start solo-line read-map
-    01234567890123456
 <xxxxxxxxxxxend solo-line read-map
 <-----------start read-map
 000 .................
@@ -94,7 +94,6 @@ coo (Y:X) : 1:0
 <-----------start map_size
 <-----------end map_size
 <-----------start solo-line read-map
-    01234567890123456
 <xxxxxxxxxxxend solo-line read-map
 <-----------start read-map
 000 .................
@@ -124,7 +123,6 @@ coo (Y:X) : 1:2
 <-----------start map_size
 <-----------end map_size
 <-----------start solo-line read-map
-    01234567890123456
 <xxxxxxxxxxxend solo-line read-map
 <-----------start read-map
 000 .................
@@ -154,7 +152,6 @@ coo (Y:X) : 1:0
 <-----------start map_size
 <-----------end map_size
 <-----------start solo-line read-map
-    01234567890123456
 <xxxxxxxxxxxend solo-line read-map
 <-----------start read-map
 000 .................
@@ -185,7 +182,6 @@ coo (Y:X) : 0:2
 <-----------start map_size
 <-----------end map_size
 <-----------start solo-line read-map
-    01234567890123456
 <xxxxxxxxxxxend solo-line read-map
 <-----------start read-map
 000 OOOOOOOOOO..XXXXX
@@ -217,7 +213,6 @@ coo (Y:X) : 1:0
 <-----------start map_size
 <-----------end map_size
 <-----------start solo-line read-map
-    01234567890123456
 <xxxxxxxxxxxend solo-line read-map
 <-----------start read-map
 000 OOOOOOOOOO..XXXXX
@@ -246,7 +241,6 @@ coo (Y:X) : 0:2
 <-----------start map_size
 <-----------end map_size
 <-----------start solo-line read-map
-    01234567890123456
 <xxxxxxxxxxxend solo-line read-map
 <-----------start read-map
 000 OOOOOOOOOO..XXXXX
@@ -276,7 +270,6 @@ coo (Y:X) : 1:0
 <-----------start map_size
 <-----------end map_size
 <-----------start solo-line read-map
-    01234567890123456
 <xxxxxxxxxxxend solo-line read-map
 <-----------start read-map
 000 OOOOOOOOOOo.XXXXX
@@ -305,7 +298,6 @@ coo (Y:X) : 0:1
 <-----------start map_size
 <-----------end map_size
 <-----------start solo-line read-map
-    01234567890123456
 <xxxxxxxxxxxend solo-line read-map
 <-----------start read-map
 000 OOOOOOOOOOO.XXXXX
@@ -322,6 +314,19 @@ coo (Y:X) : 0:1
 011 OOOOOOOXXXXXXXXXX
 012 OOOOXXXXXXXXXXXXX
 013 XOOXXXXXXXXXXXXXX
+014 XXXXXXXXXXXXXXXXX
+<-----------start piece size
+Piece 2 2:
+<-----------end piece size
+<-----------strart read-piece
+..
+**
+<-----------end read-piece-->
+coo (Y:X) : 1:0
+coo (Y:X) : 1:1
+ft_bruteforce
+<-----------start map_size
+Read map exit
 014 XXXXXXXXXXXXXXXXX
 <-----------start piece size
 Piece 2 2:
