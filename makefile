@@ -34,7 +34,7 @@ SRCS 	= $(SRCDIR)/main.c					\
 		$(SRC_CHECKS_DIR)/check_play.c
 
 
-ALLFLAGS = -I$(LIBDIR) -I$(SRCDIR) -o
+ALLFLAGS = -I$(LIBDIR)/includes -I$(SRCDIR) -o
 OBJ = $(addprefix $(OBJDIR)/, $(SRCS:.c=.o))
 LIB		= $(LIBDIR)/libft.a
 RM = rm -rf
@@ -46,6 +46,14 @@ _CYAN=\e[36m
 _END=\e[0m
 
 all: $(NAME)
+	@echo "                                               __ _ _ _           "
+	@echo "                                              / _(_) | |          "
+	@echo "   __ _ _ __ ___   __ _ _ __ ___  _   _      | |_ _| | | ___ _ __ "
+	@echo "  / _\` | '_ \` _ \ / _\` | '_ \` _ \| | | |     |  _| | | |/ _ \ '__|"
+	@echo " | (_| | | | | | | (_| | | | | | | |_| |  _  | | | | | |  __/ |   "
+	@echo "  \__,_|_| |_| |_|\__,_|_| |_| |_|\__, | (_) |_| |_|_|_|\___|_|   "
+	@echo "                                   __/ |                          "
+	@echo "                                  |___/                           "
 
 $(NAME): $(LIB) $(OBJ)
 	@$(PRINT) "Compilation OK! "
@@ -53,11 +61,11 @@ $(NAME): $(LIB) $(OBJ)
 	@$(PRINT) "[$(_GREEN)✓$(_END)]\n"
 
 $(LIB): | $(OBJDIR)
-	@$(PRINT) "Libft : "
+	@$(PRINT) "Compiling objects :\n"
 	@make -C $(LIBDIR)
 
 $(OBJDIR)/%.o: %.c $(HEAD)
-	@$(PRINT) "Sources : "
+	@$(PRINT) "Filler : "
 	@$(CC) -c $(CFLAGS) $(ALLFLAGS) $@ $<
 	@$(PRINT) "$(_CYAN)$<\n$(_END)"
 
