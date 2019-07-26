@@ -6,7 +6,7 @@
 /*   By: amamy <amamy@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/01 17:41:13 by amamy             #+#    #+#             */
-/*   Updated: 2019/07/26 12:15:34 by amamy            ###   ########.fr       */
+/*   Updated: 2019/07/26 20:34:10 by amamy            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -70,7 +70,7 @@ int			ft_read_map(t_data *data)
 		dprintf(data->fd2, "%s\n", "<-----------start map_size");
 		if (get_next_line(data->fd, &data->map[i]) != 1)
 			return (-1);
-		free(data->map[i]);
+		ft_memdel((void*)&data->map[i]);
 		dprintf(data->fd2, "%s\n", "<-----------end map_size");
 	}
 	dprintf(data->fd2, "%s\n", "<-----------start solo-line read-map");

@@ -6,7 +6,7 @@
 /*   By: amamy <amamy@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/12/10 19:28:19 by amamy             #+#    #+#             */
-/*   Updated: 2019/07/13 19:12:47 by amamy            ###   ########.fr       */
+/*   Updated: 2019/07/26 20:45:43 by amamy            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,7 +45,7 @@ static char	*ft_read_str(const int fd, char **str)
 			save_str = *str;
 			if (!(*str = ft_strjoin(save_str, buf)))
 				return (NULL);
-			free(save_str);
+			ft_memdel((void*)&save_str);
 		}
 		else if (size == -1)
 			return (NULL);
@@ -70,13 +70,13 @@ static char	*ft_stock_line(char **str)
 		save_str = *str;
 		if (!(*str = ft_strdup(save_str + cnt + 1)))
 			return (NULL);
-		free(save_str);
+		ft_memdel((void*)&save_str);
 	}
 	else if (!(newline = ft_strdup(*str)))
 		return (NULL);
 	if (*str == NULL || save_str == NULL)
 	{
-		free(*str);
+		ft_memdel((void*)&*str);
 		*str = NULL;
 	}
 	return (newline);
@@ -92,11 +92,20 @@ int			get_next_line(const int fd, char **line)
 	if (!str)
 		str = ft_strnew(0);
 	if (((str = (ft_read_str(fd, &str))) == NULL))
+	{
+		ft_memdel((void*)&str);
 		return (-1);
+	}
 	if (*str)
 	{
-		*line = ft_stock_line(&str);
+		if (!(*line = ft_stock_line(&str)))
+		{
+			ft_memdel((void*)&str);
+			return (-1);
+		}
+		ft_memdel((void*)&str);
 		return (1);
 	}
+	ft_memdel((void*)&str);
 	return (0);
 }

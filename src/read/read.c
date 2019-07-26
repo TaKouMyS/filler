@@ -6,7 +6,7 @@
 /*   By: amamy <amamy@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/30 14:26:37 by amamy             #+#    #+#             */
-/*   Updated: 2019/07/26 12:19:45 by amamy            ###   ########.fr       */
+/*   Updated: 2019/07/26 13:01:01 by amamy            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -123,6 +123,7 @@ static int	ft_get_player(t_data *data)
 	if (get_next_line(data->fd, &player) != 1)
 	{
 		dprintf(data->fd2, "GNL error\n");
+		ft_memdel((void*)&player);
 		return (-1);
 	}
 	dprintf(data->fd2, "%s\n", player);
