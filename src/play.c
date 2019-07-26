@@ -6,7 +6,7 @@
 /*   By: amamy <amamy@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/20 16:29:17 by amamy             #+#    #+#             */
-/*   Updated: 2019/07/26 11:15:35 by amamy            ###   ########.fr       */
+/*   Updated: 2019/07/27 00:24:58 by amamy            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -88,15 +88,9 @@ int			ft_play(t_data *data)
 	ft_putstr(" ");
 	ft_putnbr(data->coo[1] - 4);
 	ft_putstr("\n");
-
-
 	i = 0;
 	while (i < data->map_size[0])
-	{
-		// ft_putnbr(i);
-		// ft_putstr("\n");
 		ft_memdel((void*)&data->map[i++]);
-	}
 	i = 0;
 	while (i < data->piece_size[0])
 		ft_memdel((void*)&data->piece[i++]);
