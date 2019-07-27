@@ -6,7 +6,7 @@
 /*   By: amamy <amamy@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/05 09:09:54 by amamy             #+#    #+#             */
-/*   Updated: 2019/07/26 12:25:05 by amamy            ###   ########.fr       */
+/*   Updated: 2019/07/27 18:40:37 by amamy            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,9 +36,11 @@ void	ft_free(t_data *data)
 
 	i = 0;
 	if (data->map_size)
-		while (i < data->map_size[0])
+		while (i < BOARD_H)
 			ft_memdel((void*)&data->map[i++]);
 	ft_memdel((void*)&data->map);
+	while (i < BOARD_H)
+		ft_memdel((void*)&data->hmap[i++]);
 	i = 0;
 	if (data->piece_size)
 		while (i < data->piece_size[0])
@@ -51,5 +53,6 @@ void	ft_free(t_data *data)
 	ft_memdel((void*)&data->coo);
 	ft_memdel((void*)&data->tok_me);
 	ft_memdel((void*)&data->tok_op);
+	ft_memdel((void*)&data->hmap);
 	ft_memdel((void*)&data);
 }

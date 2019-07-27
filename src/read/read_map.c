@@ -6,7 +6,7 @@
 /*   By: amamy <amamy@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/01 17:41:13 by amamy             #+#    #+#             */
-/*   Updated: 2019/07/27 01:12:36 by amamy            ###   ########.fr       */
+/*   Updated: 2019/07/27 19:22:54 by amamy            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -66,36 +66,64 @@ int			ft_read_map(t_data *data)
 	i = 0;
 	err = 0;
 	if (data->piece_size[0])
-	{
-		dprintf(data->fd2, "%s\n", "<-----------start map_size");
 		if (get_next_line(data->fd, &data->map[i]) != 1)
 			return (-1);
-		ft_memdel((void*)&data->map[i]);
-		dprintf(data->fd2, "%s\n", "<-----------end map_size");
-	}
-	dprintf(data->fd2, "%s\n", "<-----------start solo-line read-map");
+	ft_memdel((void*)&data->map[i]);
 	if (get_next_line(data->fd, &data->map[i]) != 1)
 		return (-1);
 	ft_memdel((void*)&data->map[i]);
-	// dprintf(data->fd2, "%s\n", data->map[i]);
-	dprintf(data->fd2, "%s\n", "<xxxxxxxxxxxend solo-line read-map");
-	dprintf(data->fd2, "%s\n", "<-----------start read-map");
-	dprintf(data->fd_heat, "%s\n", "<-----------start read-map");
 	while (i < data->map_size[0])
 	{
 		if (get_next_line(data->fd, &data->map[i]) != 1)
 			return (-1);
-		ft_strcpy(data->heatmap[i], &data->map[i][4]);
-		dprintf(data->fd2, "%s\n", data->map[i]);
-		dprintf(data->fd_heat, "%s\n", data->heatmap[i]);
 		i++;
 	}
-	dprintf(data->fd_heat, "%s\n", "<-----------end read-map");
 	if (ft_check_map(data, i) == -1)
 	{
-		dprintf(data->fd2, "%s\n", "<map error\n");
 		ft_putstr("\n\nMap error\n\n");
 		return (-1);
 	}
 	return (0);
 }
+
+// int			ft_read_map(t_data *data)
+// {
+// 	int	i;
+// 	int	err;
+//
+// 	i = 0;
+// 	err = 0;
+// 	if (data->piece_size[0])
+// 	{
+// 		dprintf(data->fd2, "%s\n", "<-----------start map_size");
+// 		if (get_next_line(data->fd, &data->map[i]) != 1)
+// 			return (-1);
+// 		ft_memdel((void*)&data->map[i]);
+// 		dprintf(data->fd2, "%s\n", "<-----------end map_size");
+// 	}
+// 	dprintf(data->fd2, "%s\n", "<-----------start solo-line read-map");
+// 	if (get_next_line(data->fd, &data->map[i]) != 1)
+// 		return (-1);
+// 	ft_memdel((void*)&data->map[i]);
+// 	// dprintf(data->fd2, "%s\n", data->map[i]);
+// 	dprintf(data->fd2, "%s\n", "<xxxxxxxxxxxend solo-line read-map");
+// 	dprintf(data->fd2, "%s\n", "<-----------start read-map");
+// 	dprintf(data->fd_heat, "%s\n", "<-----------start read-map");
+// 	while (i < data->map_size[0])
+// 	{
+// 		if (get_next_line(data->fd, &data->map[i]) != 1)
+// 			return (-1);
+// 		ft_strcpy(data->heatmap[i], &data->map[i][4]);
+// 		dprintf(data->fd2, "%s\n", data->map[i]);
+// 		dprintf(data->fd_heat, "%s\n", data->heatmap[i]);
+// 		i++;
+// 	}
+// 	dprintf(data->fd_heat, "%s\n", "<-----------end read-map");
+// 	if (ft_check_map(data, i) == -1)
+// 	{
+// 		dprintf(data->fd2, "%s\n", "<map error\n");
+// 		ft_putstr("\n\nMap error\n\n");
+// 		return (-1);
+// 	}
+// 	return (0);
+// }

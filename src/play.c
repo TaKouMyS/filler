@@ -6,7 +6,7 @@
 /*   By: amamy <amamy@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/20 16:29:17 by amamy             #+#    #+#             */
-/*   Updated: 2019/07/27 00:33:18 by amamy            ###   ########.fr       */
+/*   Updated: 2019/07/27 20:28:49 by amamy            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -71,12 +71,34 @@ static void	ft_thinking(t_data *d)
 ** ft_play :
 ** If thinking ha failed to find somewhere.
 */
+static void	ft_view_hmap(t_data *data)
+{
+	int y;
+	int x;
+
+	y = 0;
+	x = 0;
+	while ( y < BOARD_H)
+	{
+		while (x < BOARD_W)
+		{
+			dprintf(data->fd_heat, "|%d", data->hmap[y][x++]);
+		}
+		x = 0;
+		y++;
+		dprintf(data->fd_heat, "|\n");
+	}
+	dprintf(data->fd_heat, "\n");
+}
 
 int			ft_play(t_data *data)
 {
 	int i;
 
 	ft_thinking(data);
+	ft_make_heatmap(data);
+	ft_init_heatmap(data);
+	ft_view_hmap(data);
 	if (ft_check_play(data, 1) == -1)
 		ft_bruteforce(data);
 	if (ft_check_play(data, 1) == -1)\

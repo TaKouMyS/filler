@@ -6,12 +6,17 @@
 /*   By: amamy <amamy@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/28 17:57:31 by amamy             #+#    #+#             */
-/*   Updated: 2019/07/27 01:09:30 by amamy            ###   ########.fr       */
+/*   Updated: 2019/07/27 19:25:05 by amamy            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef FILLER_H
 # define FILLER_H
+
+# define BOARD_W data->map_size[1]
+# define BOARD_H data->map_size[0]
+# define ME -1
+# define OP -2
 
 # define UP 1
 # define DOWN 2
@@ -22,7 +27,7 @@ typedef struct	s_data
 {
 	int			*map_size;
 	char		**map;
-	char		**heatmap;
+	int			**hmap;
 	int			*piece_size;
 	char		**piece;
 	int			player_number;
@@ -52,5 +57,7 @@ int		ft_check_shape(t_data *data, int y, int x, char **piece);
 int		ft_play(t_data *data);
 int		ft_check_play(t_data *data, int mode);
 int		ft_check_square(t_data *data, int *coo_map);
+int		ft_make_heatmap(t_data *data);
+void	ft_init_heatmap(t_data *data);
 
 #endif

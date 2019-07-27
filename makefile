@@ -18,6 +18,7 @@ OBJDIR = obj
 SRCDIR = src
 SRC_READ_DIR = $(SRCDIR)/read
 SRC_CHECKS_DIR = $(SRCDIR)/checks
+SRC_HEATMAP_DIR = $(SRCDIR)/heatmap
 LIBDIR	= libft
 HEAD	= $(SRCDIR)/filler.h
 
@@ -31,7 +32,9 @@ SRCS 	= $(SRCDIR)/main.c					\
 		$(SRC_CHECKS_DIR)/check_piece.c		\
 		$(SRC_CHECKS_DIR)/check_shape.c		\
 		$(SRC_CHECKS_DIR)/check_square.c	\
-		$(SRC_CHECKS_DIR)/check_play.c
+		$(SRC_CHECKS_DIR)/check_play.c		\
+		$(SRC_HEATMAP_DIR)/make_heatmap.c	\
+		$(SRC_HEATMAP_DIR)/init_heatmap.c
 
 
 ALLFLAGS = -I$(LIBDIR)/includes -I$(SRCDIR) -o
@@ -71,7 +74,8 @@ $(OBJDIR)/%.o: %.c $(HEAD)
 
 
 $(OBJDIR) :
-	@mkdir  $@ $@/$(SRCDIR) $@/$(LIBDIR) $@/$(SRC_READ_DIR) $@/$(SRC_CHECKS_DIR)
+	@mkdir  $@ $@/$(SRCDIR) $@/$(LIBDIR) $@/$(SRC_READ_DIR) \
+		$@/$(SRC_CHECKS_DIR) $@/$(SRC_HEATMAP_DIR)
 
 $(OBJ) : | $(OBJDIR)
 
