@@ -57,7 +57,7 @@ all: $(NAME)
 
 $(NAME): $(LIB) $(OBJ)
 	@$(PRINT) "Compilation OK! "
-	@$(CC) -o $@ $^
+	@$(CC) $(CFLAGS) $(OBJ) $< -o $@
 	@$(PRINT) "[$(_GREEN)✓$(_END)]\n"
 
 $(LIB): | $(OBJDIR)
