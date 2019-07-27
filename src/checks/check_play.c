@@ -6,7 +6,7 @@
 /*   By: amamy <amamy@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/26 12:32:03 by amamy             #+#    #+#             */
-/*   Updated: 2019/07/25 17:29:30 by amamy            ###   ########.fr       */
+/*   Updated: 2019/07/27 23:45:34 by amamy            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,8 +63,8 @@ static int	ft_coo_star_map(t_data *data, int *coo_star, int *coo_map)
 	x = coo_star[0];
 	coo_map[1] = data->coo[1] + y;
 	coo_map[0] = data->coo[0] + x;
-	if (coo_map[0] > data->map_size[0] - 1 \
-		|| coo_map[1] > (data->map_size[1] + 4))
+	if (coo_map[0] > BOARD_H - 1 \
+		|| coo_map[1] > (BOARD_W))
 		return (-1);
 	return (0);
 }
@@ -79,15 +79,17 @@ static int	ft_chk_coup(t_data *data, int *coo_star, int *coo_map, int mode)
 {
 	int	cover;
 	int	st_star;
+	int best;
 
+	best = data->best;
 	cover = 0;
 	st_star = 1;
 	while (ft_coo_next_star(data, coo_star, st_star) == 1)
 	{
 		st_star = 0;
 		if ((ft_coo_star_map(data, coo_star, coo_map) == -1)		\
-		|| coo_map[0] < 0 || coo_map[0] > (data->map_size[0] - 1)	\
-		|| coo_map[1] > (data->map_size[1] + 3) || coo_map[1] < 4	\
+		|| coo_map[0] < 0 || coo_map[0] > (BOARD_H - 1)	\
+		|| coo_map[1] > (BOARD_W - 1) || coo_map[1] < 0	\
 		|| data->map[coo_map[0]][coo_map[1]] == data->tok_op[0]		\
 		|| data->map[coo_map[0]][coo_map[1]] == data->tok_op[1])
 			return (-1);
@@ -96,9 +98,14 @@ static int	ft_chk_coup(t_data *data, int *coo_star, int *coo_map, int mode)
 		if (data->map[coo_map[0]][coo_map[1]] == data->tok_me[0] 	\
 			|| data->map[coo_map[0]][coo_map[1]] == (data->tok_me[1]))
 			cover++;
+		dprintf(data->fd2, "temp : %d 	| best : %d\n", data->hmap[coo_map[0]][coo_map[1]], best);
+		if (data->hmap[coo_map[0]][coo_map[1]] < best)
+			best = data->map[coo_map[0]][coo_map[1]];
 	}
 	if (cover != 1)
 		return (-1);
+	if ((data->best > 1 && best < data->best) || (data->best == 1 && best == 1))
+		return (1);
 	return (0);
 }
 
@@ -112,6 +119,7 @@ int			ft_check_play(t_data *data, int mode)
 {
 	int	*coo_star;
 	int	*coo_map;
+	int ret;
 
 	if (!(coo_star = ft_memalloc(sizeof(int) * 2)))
 		return (-1);
@@ -120,7 +128,7 @@ int			ft_check_play(t_data *data, int mode)
 		free(coo_star);
 		return (-1);
 	}
-	if (ft_chk_coup(data, coo_star, coo_map, mode) == -1)
+	if ((ret = ft_chk_coup(data, coo_star, coo_map, mode)) == -1)
 	{
 		free(coo_star);
 		free(coo_map);
@@ -128,5 +136,5 @@ int			ft_check_play(t_data *data, int mode)
 	}
 	free(coo_star);
 	free(coo_map);
-	return (0);
+	return (ret);
 }

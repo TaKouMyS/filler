@@ -6,7 +6,7 @@
 /*   By: amamy <amamy@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/07/13 20:09:26 by amamy             #+#    #+#             */
-/*   Updated: 2019/07/26 20:23:55 by amamy            ###   ########.fr       */
+/*   Updated: 2019/07/27 23:05:38 by amamy            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,22 +26,26 @@ static void	ft_store_first_piece(t_data *data, int tmp[4])
 {
 	if (data->player_number == 1)
 	{
-		data->coo[0] = tmp[0];
-		data->coo[1] = tmp[1] - 4;
+		data->coo[0] = tmp[0] - (data->piece_size[0] - 1);
+		data->coo[1] = tmp[1] - (data->piece_size[1] - 1);
 		data->coo_op[0] = tmp[2];
-		data->coo_op[1] = tmp[3] - 4;
+		data->coo_op[1] = tmp[3];
 	}
 	if (data->player_number == 2)
 	{
-		data->coo[0] = tmp[2];
-		data->coo[1] = tmp[3] - 4;
+		data->coo[0] = tmp[2] - (data->piece_size[0] - 1);
+		data->coo[1] = tmp[3] - (data->piece_size[1] - 1);
 		data->coo_op[0] = tmp[0];
-		data->coo_op[1] = tmp[1] - 4;
+		data->coo_op[1] = tmp[1];
 	}
 	data->mid = (data->coo[0] + data->coo_op[0]) / 2;
 	data->sq_center[0] = data->coo[0];
-	data->sq_center[1] = data->coo[1] + 4;
+	data->sq_center[1] = data->coo[1];
 	data->sq_dist = 1;
+
+	// tests
+	data->coo[0] = 0;
+	data->coo[1] = 0;
 }
 
 /*

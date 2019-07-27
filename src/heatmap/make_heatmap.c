@@ -6,7 +6,7 @@
 /*   By: amamy <amamy@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/07/27 18:17:29 by amamy             #+#    #+#             */
-/*   Updated: 2019/07/27 20:30:45 by amamy            ###   ########.fr       */
+/*   Updated: 2019/07/27 22:26:49 by amamy            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,13 +28,13 @@ int	ft_make_heatmap(t_data *data)
 			return (-1);
 		while (x < BOARD_W)
 		{
-			if (data->map[y][x + 4] == '.')
+			if (data->map[y][x] == '.')
 				data->hmap[y][x] = 0;
-			if (data->map[y][x + 4] == data->tok_me[0] \
-				|| data->map[y][x + 4] == data->tok_me[1])
+			if (data->map[y][x] == data->tok_me[0] \
+				|| data->map[y][x] == data->tok_me[1])
 				data->hmap[y][x] = -1;
-			if (data->map[y][x + 4] == data->tok_op[0] \
-				|| data->map[y][x + 4] == data->tok_op[1])
+			if (data->map[y][x] == data->tok_op[0] \
+				|| data->map[y][x] == data->tok_op[1])
 				data->hmap[y][x] = -2;
 			x++;
 		}

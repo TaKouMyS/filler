@@ -4,53 +4,23 @@ $$$ exec p1 : [../amamy.filler]
 <-----------start read-map_size - 1
 Plateau 15 17:
 <-----------end read-map_size - 1 
-<-----------start solo-line read-map
-<xxxxxxxxxxxend solo-line read-map
 <-----------start read-map
-000 .................
-001 .................
-002 .................
-003 .................
-004 .................
-005 .................
-006 .................
-007 .................
-008 ..O..............
-009 .................
-010 .................
-011 .................
-012 ..............X..
-013 .................
-014 .................
-<-----------start piece size
-Piece 2 2:
-<-----------end piece size
-<-----------strart read-piece
-..
-**
-<-----------end read-piece-->
-coo (Y:X) : 1:0
-coo (Y:X) : 1:1
-<-----------start map_size
-<-----------end map_size
-<-----------start solo-line read-map
-<xxxxxxxxxxxend solo-line read-map
-<-----------start read-map
-000 .................
-001 .................
-002 .................
-003 .................
-004 .................
-005 .................
-006 .................
-007 .................
-008 .OO..............
-009 .................
-010 .................
-011 .................
-012 ..............x..
-013 ..............x..
-014 .................
+................. : 0
+................. : 1
+................. : 2
+................. : 3
+................. : 4
+................. : 5
+................. : 6
+................. : 7
+..O.............. : 8
+................. : 9
+................. : 10
+................. : 11
+..............X.. : 12
+................. : 13
+................. : 14
+<-----------end read-map
 <-----------start piece size
 Piece 1 2:
 <-----------end piece size
@@ -59,2408 +29,1006 @@ Piece 1 2:
 <-----------end read-piece-->
 coo (Y:X) : 0:0
 coo (Y:X) : 0:1
-<-----------start map_size
-<-----------end map_size
-<-----------start solo-line read-map
-<xxxxxxxxxxxend solo-line read-map
-<-----------start read-map
-000 .................
-001 .................
-002 .................
-003 .................
-004 .................
-005 .................
-006 .................
-007 .................
-008 .OOO.............
-009 .................
-010 .................
-011 .................
-012 ..............X..
-013 ..............xx.
-014 ...............x.
-<-----------start piece size
-Piece 2 1:
-<-----------end piece size
-<-----------strart read-piece
-*
-*
-<-----------end read-piece-->
-coo (Y:X) : 0:0
-coo (Y:X) : 1:0
-<-----------start map_size
-<-----------end map_size
-<-----------start solo-line read-map
-<xxxxxxxxxxxend solo-line read-map
-<-----------start read-map
-000 .................
-001 .................
-002 .................
-003 .................
-004 .................
-005 .................
-006 .................
-007 ..O..............
-008 .OOO.............
-009 .................
-010 .................
-011 .................
-012 ..............X..
-013 ..............Xxx
-014 ...............X.
-<-----------start piece size
-Piece 2 3:
-<-----------end piece size
-<-----------strart read-piece
-...
-.**
-<-----------end read-piece-->
-coo (Y:X) : 1:1
-coo (Y:X) : 1:2
-<-----------start map_size
-<-----------end map_size
-<-----------start solo-line read-map
-<xxxxxxxxxxxend solo-line read-map
-<-----------start read-map
-000 .................
-001 .................
-002 .................
-003 .................
-004 .................
-005 .................
-006 .................
-007 .OO..............
-008 .OOO.............
-009 .................
-010 .................
-011 .................
-012 ..............X..
-013 ..............XXX
-014 ..............xxx
-<-----------start piece size
-Piece 2 1:
-<-----------end piece size
-<-----------strart read-piece
-*
-*
-<-----------end read-piece-->
-coo (Y:X) : 0:0
-coo (Y:X) : 1:0
-<-----------start map_size
-<-----------end map_size
-<-----------start solo-line read-map
-<xxxxxxxxxxxend solo-line read-map
-<-----------start read-map
-000 .................
-001 .................
-002 .................
-003 .................
-004 .................
-005 .................
-006 ..O..............
-007 .OO..............
-008 .OOO.............
-009 .................
-010 .................
-011 .................
-012 ..............Xx.
-013 ..............XxX
-014 ..............XXX
-<-----------start piece size
-Piece 2 3:
-<-----------end piece size
-<-----------strart read-piece
-***
-...
-<-----------end read-piece-->
-coo (Y:X) : 0:0
-coo (Y:X) : 0:1
-coo (Y:X) : 0:2
-<-----------start map_size
-<-----------end map_size
-<-----------start solo-line read-map
-<xxxxxxxxxxxend solo-line read-map
-<-----------start read-map
-000 OOOOOOOOOO..XXXXX
-001 OOOOOOOOOoo.XXXXX
-002 OOOOOOOOOOO.XXXXX
-003 OOOOOOOOOO..XXXXX
-004 OOOOOOOOOOOOXXXXX
-005 OOOOOOOOOOOO.XXXX
-006 OOOOOOOOOXXXXXXXX
-007 OOOOOOOOOOXXXXXXX
-008 OOOOOOOOOOOOOXXXX
-009 OOOOOOOOOOXOXXXXX
-010 OOOOOOOOOXXXXXXXX
-011 OOOOOOOXXXXXXXXXX
-012 OOOOXXXXXXXXXXXXX
-013 XOOXXXXXXXXXXXXXX
-014 XXXXXXXXXXXXXXXXX
-<-----------start piece size
-Piece 2 2:
-<-----------end piece size
-<-----------strart read-piece
-**
-**
-<-----------end read-piece-->
-coo (Y:X) : 0:0
-coo (Y:X) : 0:1
-coo (Y:X) : 1:1
-coo (Y:X) : 1:0
-<-----------start map_size
-<-----------end map_size
-<-----------start solo-line read-map
-<xxxxxxxxxxxend solo-line read-map
-<-----------start read-map
-000 OOOOOOOOOO..XXXXX
-001 OOOOOOOOOOO.XXXXX
-002 OOOOOOOOOOooXXXXX
-003 OOOOOOOOOOooXXXXX
-004 OOOOOOOOOOOOXXXXX
-005 OOOOOOOOOOOO.XXXX
-006 OOOOOOOOOXXXXXXXX
-007 OOOOOOOOOOXXXXXXX
-008 OOOOOOOOOOOOOXXXX
-009 OOOOOOOOOOXOXXXXX
-010 OOOOOOOOOXXXXXXXX
-011 OOOOOOOXXXXXXXXXX
-012 OOOOXXXXXXXXXXXXX
-013 XOOXXXXXXXXXXXXXX
-014 XXXXXXXXXXXXXXXXX
-<-----------start piece size
-Piece 1 3:
-<-----------end piece size
-<-----------strart read-piece
-.**
-<-----------end read-piece-->
-coo (Y:X) : 0:1
-coo (Y:X) : 0:2
-<-----------start map_size
-<-----------end map_size
-<-----------start solo-line read-map
-<xxxxxxxxxxxend solo-line read-map
-<-----------start read-map
-000 OOOOOOOOOO..XXXXX
-001 OOOOOOOOOOO.XXXXX
-002 OOOOOOOOOOOOXXXXX
-003 OOOOOOOOOOOOXXXXX
-004 OOOOOOOOOOOOXXXXX
-005 OOOOOOOOOOOooXXXX
-006 OOOOOOOOOXXXXXXXX
-007 OOOOOOOOOOXXXXXXX
-008 OOOOOOOOOOOOOXXXX
-009 OOOOOOOOOOXOXXXXX
-010 OOOOOOOOOXXXXXXXX
-011 OOOOOOOXXXXXXXXXX
-012 OOOOXXXXXXXXXXXXX
-013 XOOXXXXXXXXXXXXXX
-014 XXXXXXXXXXXXXXXXX
-<-----------start piece size
-Piece 2 1:
-<-----------end piece size
-<-----------strart read-piece
-*
-*
-<-----------end read-piece-->
-coo (Y:X) : 0:0
-coo (Y:X) : 1:0
-<-----------start map_size
-<-----------end map_size
-<-----------start solo-line read-map
-<xxxxxxxxxxxend solo-line read-map
-<-----------start read-map
-000 OOOOOOOOOOo.XXXXX
-001 OOOOOOOOOOo.XXXXX
-002 OOOOOOOOOOOOXXXXX
-003 OOOOOOOOOOOOXXXXX
-004 OOOOOOOOOOOOXXXXX
-005 OOOOOOOOOOOOOXXXX
-006 OOOOOOOOOXXXXXXXX
-007 OOOOOOOOOOXXXXXXX
-008 OOOOOOOOOOOOOXXXX
-009 OOOOOOOOOOXOXXXXX
-010 OOOOOOOOOXXXXXXXX
-011 OOOOOOOXXXXXXXXXX
-012 OOOOXXXXXXXXXXXXX
-013 XOOXXXXXXXXXXXXXX
-014 XXXXXXXXXXXXXXXXX
-<-----------start piece size
-Piece 1 3:
-<-----------end piece size
-<-----------strart read-piece
-**.
-<-----------end read-piece-->
-coo (Y:X) : 0:0
-coo (Y:X) : 0:1
-<-----------start map_size
-<-----------end map_size
-<-----------start solo-line read-map
-<xxxxxxxxxxxend solo-line read-map
-<-----------start read-map
-000 OOOOOOOOOOO.XXXXX
-001 OOOOOOOOOOooXXXXX
-002 OOOOOOOOOOOOXXXXX
-003 OOOOOOOOOOOOXXXXX
-004 OOOOOOOOOOOOXXXXX
-005 OOOOOOOOOOOOOXXXX
-006 OOOOOOOOOXXXXXXXX
-007 OOOOOOOOOOXXXXXXX
-008 OOOOOOOOOOOOOXXXX
-009 OOOOOOOOOOXOXXXXX
-010 OOOOOOOOOXXXXXXXX
-011 OOOOOOOXXXXXXXXXX
-012 OOOOXXXXXXXXXXXXX
-013 XOOXXXXXXXXXXXXXX
-014 XXXXXXXXXXXXXXXXX
-<-----------start piece size
-Piece 2 2:
-<-----------end piece size
-<-----------strart read-piece
-..
-**
-<-----------end read-piece-->
-coo (Y:X) : 1:0
-coo (Y:X) : 1:1
-ft_bruteforce
-<-----------start map_size
-Read map exit
-ze
-<-----------start solo-line read-map
-<xxxxxxxxxxxend solo-line read-map
-<-----------start read-map
-000 .................
-001 .................
-002 .................
-003 .................
-004 .................
-005 .................
-006 .OOO.............
-007 OOOO.............
-008 OOOOO............
-009 .OOO.............
-010 .................
-011 ...............XX
-012 ............XXXXX
-013 ...........XXXXXX
-014 ...........XX.XXX
-<-----------start piece size
-Piece 2 2:
-<-----------end piece size
-<-----------strart read-piece
-*.
-*.
-<-----------end read-piece-->
-coo (Y:X) : 0:0
-coo (Y:X) : 1:0
-<-----------start map_size
-<-----------end map_size
-<-----------start solo-line read-map
-<xxxxxxxxxxxend solo-line read-map
-<-----------start read-map
-000 .................
-001 .................
-002 .................
-003 .................
-004 .................
-005 ..O..............
-006 .OOO.............
-007 OOOO.............
-008 OOOOO............
-009 .OOO.............
-010 .................
-011 ...............XX
-012 ...........XXXXXX
-013 ..........XXXXXXX
-014 ...........XX.XXX
-<-----------start piece size
-Piece 1 2:
-<-----------end piece size
-<-----------strart read-piece
-**
-<-----------end read-piece-->
-coo (Y:X) : 0:0
-coo (Y:X) : 0:1
-<-----------start map_size
-<-----------end map_size
-<-----------start solo-line read-map
-<xxxxxxxxxxxend solo-line read-map
-<-----------start read-map
-000 .................
-001 .................
-002 .................
-003 .................
-004 .................
-005 ..O..............
-006 .OOO.............
-007 OOOOO............
-008 OOOOO............
-009 .OOO.............
-010 .................
-011 .............XXXX
-012 ...........XXXXXX
-013 ..........XXXXXXX
-014 ...........XX.XXX
-<-----------start piece size
-Piece 2 2:
-<-----------end piece size
-<-----------strart read-piece
-.*
-**
-<-----------end read-piece-->
-coo (Y:X) : 0:1
-coo (Y:X) : 1:1
-coo (Y:X) : 1:0
-<-----------start map_size
-<-----------end map_size
-<-----------start solo-line read-map
-<xxxxxxxxxxxend solo-line read-map
-<-----------start read-map
-000 .................
-001 .................
-002 .................
-003 .................
-004 .................
-005 ..O..............
-006 .OOO.............
-007 OOOOO............
-008 OOOOO............
-009 .OOO.............
-010 .OO..............
-011 .............XXXX
-012 ...........XXXXXX
-013 .........XXXXXXXX
-014 ...........XX.XXX
-<-----------start piece size
-Piece 1 3:
-<-----------end piece size
-<-----------strart read-piece
-.**
-<-----------end read-piece-->
-coo (Y:X) : 0:1
-coo (Y:X) : 0:2
-<-----------start map_size
-<-----------end map_size
-<-----------start solo-line read-map
-<xxxxxxxxxxxend solo-line read-map
-<-----------start read-map
-000 .................
-001 .................
-002 .................
-003 .................
-004 .................
-005 ..O..............
-006 .OOO.............
-007 OOOOO............
-008 OOOOOO...........
-009 .OOO.............
-010 .OO.........X....
-011 ............XXXXX
-012 ...........XXXXXX
-013 .........XXXXXXXX
-014 ...........XX.XXX
-<-----------start piece size
-Piece 2 3:
-<-----------end piece size
-<-----------strart read-piece
-...
-***
-<-----------end read-piece-->
-coo (Y:X) : 1:0
-coo (Y:X) : 1:1
-coo (Y:X) : 1:2
-<-----------start map_size
-<-----------end map_size
-<-----------start solo-line read-map
-<xxxxxxxxxxxend solo-line read-map
-<-----------start read-map
-000 .................
-001 .................
-002 .................
-003 .................
-004 .................
-005 .OOO.............
-006 .OOO.............
-007 OOOOO............
-008 OOOOOO...........
-009 .OOO.............
-010 .OO.........X....
-011 ............XXXXX
-012 ...........XXXXXX
-013 .........XXXXXXXX
-014 ...........XXXXXX
-<-----------start piece size
-Piece 2 2:
-<-----------end piece size
-<-----------strart read-piece
-**
-**
-<-----------end read-piece-->
-coo (Y:X) : 0:0
-coo (Y:X) : 0:1
-coo (Y:X) : 1:1
-coo (Y:X) : 1:0
-<-----------start map_size
-<-----------end map_size
-<-----------start solo-line read-map
-<xxxxxxxxxxxend solo-line read-map
-<-----------start read-map
-000 .................
-001 .................
-002 .................
-003 .................
-004 .................
-005 .OOO.............
-006 .OOO.............
-007 OOOOO............
-008 OOOOOO...........
-009 .OOOO........XX..
-010 .OOOO.......XXX..
-011 ............XXXXX
-012 ...........XXXXXX
-013 .........XXXXXXXX
-014 ...........XXXXXX
-<-----------start piece size
-Piece 1 3:
-<-----------end piece size
-<-----------strart read-piece
-***
-<-----------end read-piece-->
-coo (Y:X) : 0:0
-coo (Y:X) : 0:1
-coo (Y:X) : 0:2
-<-----------start map_size
-<-----------end map_size
-<-----------start solo-line read-map
-<xxxxxxxxxxxend solo-line read-map
-<-----------start read-map
-000 .................
-001 .................
-002 .................
-003 .................
-004 .................
-005 .OOO.............
-006 .OOOOO...........
-007 OOOOO............
-008 OOOOOO...........
-009 .OOOO........XX..
-010 .OOOO.......XXX..
-011 ............XXXXX
-012 ...........XXXXXX
-013 .........XXXXXXXX
-014 ..........XXXXXXX
-<-----------start piece size
-Piece 2 2:
-<-----------end piece size
-<-----------strart read-piece
-**
-..
-<-----------end read-piece-->
-coo (Y:X) : 0:0
-coo (Y:X) : 0:1
-<-----------start map_size
-<-----------end map_size
-<-----------start solo-line read-map
-<xxxxxxxxxxxend solo-line read-map
-<-----------start read-map
-000 .................
-001 .................
-002 .................
-003 .................
-004 .................
-005 OOOO.............
-006 .OOOOO...........
-007 OOOOO............
-008 OOOOOO...........
-009 .OOOO........XX..
-010 .OOOO.......XXXXX
-011 ............XXXXX
-012 ...........XXXXXX
-013 .........XXXXXXXX
-014 ..........XXXXXXX
-<-----------start piece size
-Piece 2 3:
-<-----------end piece size
-<-----------strart read-piece
-.**
-.**
-<-----------end read-piece-->
-coo (Y:X) : 0:1
-coo (Y:X) : 0:2
-coo (Y:X) : 1:2
-coo (Y:X) : 1:1
-<-----------start map_size
-<-----------end map_size
-<-----------start solo-line read-map
-<xxxxxxxxxxxend solo-line read-map
-<-----------start read-map
-000 .................
-001 .................
-002 .................
-003 .................
-004 .................
-005 OOOO.............
-006 .OOOOO...........
-007 OOOOOOO..........
-008 OOOOOOO..........
-009 .OOOO........XX..
-010 .OOOO.......XXXXX
-011 ............XXXXX
-012 ...........XXXXXX
-013 .......XXXXXXXXXX
-014 .......XXXXXXXXXX
-<-----------start piece size
-Piece 2 1:
-<-----------end piece size
-<-----------strart read-piece
-*
-*
-<-----------end read-piece-->
-coo (Y:X) : 0:0
-coo (Y:X) : 1:0
-<-----------start map_size
-<-----------end map_size
-<-----------start solo-line read-map
-<xxxxxxxxxxxend solo-line read-map
-<-----------start read-map
-000 .................
-001 .................
-002 .................
-003 .................
-004 .O...............
-005 OOOO.............
-006 .OOOOO.......XX..
-007 OOOOOOO....XXX...
-008 OOOOOOO.....X....
-009 .OOOO.......XXX..
-010 .OOOO.......XXXXX
-011 ............XXXXX
-012 ...........XXXXXX
-013 .......XXXXXXXXXX
-014 .......XXXXXXXXXX
-<-----------start piece size
-Piece 1 2:
-<-----------end piece size
-<-----------strart read-piece
-**
-<-----------end read-piece-->
-coo (Y:X) : 0:0
-coo (Y:X) : 0:1
-<-----------start map_size
-<-----------end map_size
-<-----------start solo-line read-map
-<xxxxxxxxxxxend solo-line read-map
-<-----------start read-map
-000 .................
-001 .................
-002 .................
-003 .................
-004 .OO..............
-005 OOOO.............
-006 .OOOOO.......XX..
-007 OOOOOOO....XXX...
-008 OOOOOOO.....X....
-009 .OOOO.......XXX..
-010 .OOOO.......XXXXX
-011 ............XXXXX
-012 ...........XXXXXX
-013 .......XXXXXXXXXX
-014 ......XXXXXXXXXXX
-<-----------start piece size
-Piece 2 1:
-<-----------end piece size
-<-----------strart read-piece
-*
-*
-<-----------end read-piece-->
-coo (Y:X) : 0:0
-coo (Y:X) : 1:0
-<-----------start map_size
-<-----------end map_size
-<-----------start solo-line read-map
-<xxxxxxxxxxxend solo-line read-map
-<-----------start read-map
-000 .................
-001 .................
-002 .................
-003 ..O..............
-004 .OO..............
-005 OOOO.............
-006 .OOOOO.......XXXX
-007 OOOOOOO....XXX.XX
-008 OOOOOOO.....X....
-009 .OOOO.......XXX..
-010 .OOOO.......XXXXX
-011 ............XXXXX
-012 ...........XXXXXX
-013 .......XXXXXXXXXX
-014 ......XXXXXXXXXXX
-<-----------start piece size
-Piece 2 3:
-<-----------end piece size
-<-----------strart read-piece
-.**
-**.
-<-----------end read-piece-->
-coo (Y:X) : 0:1
-coo (Y:X) : 0:2
-coo (Y:X) : 1:1
-coo (Y:X) : 1:0
-<-----------start map_size
-<-----------end map_size
-<-----------start solo-line read-map
-<xxxxxxxxxxxend solo-line read-map
-<-----------start read-map
-000 .................
-001 .................
-002 .................
-003 ..O..............
-004 .OO..............
-005 OOOO.............
-006 .OOOOO.......XXXX
-007 OOOOOOO....XXX.XX
-008 OOOOOOOO....X....
-009 .OOOOOO.....XXX..
-010 .OOOO.......XXXXX
-011 ............XXXXX
-012 ...........XXXXXX
-013 ......XXXXXXXXXXX
-014 ......XXXXXXXXXXX
-<-----------start piece size
-Piece 2 2:
-<-----------end piece size
-<-----------strart read-piece
-.*
-.*
-<-----------end read-piece-->
-coo (Y:X) : 0:1
-coo (Y:X) : 1:1
-<-----------start map_size
-<-----------end map_size
-<-----------start solo-line read-map
-<xxxxxxxxxxxend solo-line read-map
-<-----------start read-map
-000 .................
-001 .................
-002 .................
-003 ..O..............
-004 .OOO.............
-005 OOOO.............
-006 .OOOOO.......XXXX
-007 OOOOOOO....XXX.XX
-008 OOOOOOOO....X..XX
-009 .OOOOOO.....XXXX.
-010 .OOOO.......XXXXX
-011 ............XXXXX
-012 ...........XXXXXX
-013 ......XXXXXXXXXXX
-014 ......XXXXXXXXXXX
-<-----------start piece size
-Piece 2 2:
-<-----------end piece size
-<-----------strart read-piece
-**
-**
-<-----------end read-piece-->
-coo (Y:X) : 0:0
-coo (Y:X) : 0:1
-coo (Y:X) : 1:1
-coo (Y:X) : 1:0
-<-----------start map_size
-<-----------end map_size
-<-----------start solo-line read-map
-<xxxxxxxxxxxend solo-line read-map
-<-----------start read-map
-000 .................
-001 .................
-002 .................
-003 ..O..............
-004 .OOO.............
-005 OOOO.............
-006 .OOOOO.......XXXX
-007 OOOOOOO....XXX.XX
-008 OOOOOOOO....X..XX
-009 .OOOOOO.....XXXX.
-010 OOOOO.......XXXXX
-011 OO..........XXXXX
-012 ..........XXXXXXX
-013 ......XXXXXXXXXXX
-014 ......XXXXXXXXXXX
-<-----------start piece size
-Piece 2 2:
-<-----------end piece size
-<-----------strart read-piece
-*.
-*.
-<-----------end read-piece-->
-coo (Y:X) : 0:0
-coo (Y:X) : 1:0
-<-----------start map_size
-<-----------end map_size
-<-----------start solo-line read-map
-<xxxxxxxxxxxend solo-line read-map
-<-----------start read-map
-000 .................
-001 .................
-002 .................
-003 ..O..............
-004 .OOO.............
-005 OOOO.........X...
-006 OOOOOO......XXXXX
-007 OOOOOOO....XXX.XX
-008 OOOOOOOO....X..XX
-009 .OOOOOO.....XXXX.
-010 OOOOO.......XXXXX
-011 OO..........XXXXX
-012 ..........XXXXXXX
-013 ......XXXXXXXXXXX
-014 ......XXXXXXXXXXX
-<-----------start piece size
-Piece 1 2:
-<-----------end piece size
-<-----------strart read-piece
-**
-<-----------end read-piece-->
-coo (Y:X) : 0:0
-coo (Y:X) : 0:1
-<-----------start map_size
-<-----------end map_size
-<-----------start solo-line read-map
-<xxxxxxxxxxxend solo-line read-map
-<-----------start read-map
-000 .................
-001 .................
-002 .................
-003 ..O..............
-004 .OOO.............
-005 OOOOO........X...
-006 OOOOOO......XXXXX
-007 OOOOOOO....XXX.XX
-008 OOOOOOOO....X..XX
-009 .OOOOOO.....XXXX.
-010 OOOOO.......XXXXX
-011 OO..........XXXXX
-012 .........XXXXXXXX
-013 ......XXXXXXXXXXX
-014 ......XXXXXXXXXXX
-<-----------start piece size
-Piece 2 3:
-<-----------end piece size
-<-----------strart read-piece
-*..
-*..
-<-----------end read-piece-->
-coo (Y:X) : 0:0
-coo (Y:X) : 1:0
-<-----------start map_size
-<-----------end map_size
-<-----------start solo-line read-map
-<xxxxxxxxxxxend solo-line read-map
-<-----------start read-map
-000 .................
-001 .................
-002 .................
-003 ..O..............
-004 .OOO.............
-005 OOOOO........X...
-006 OOOOOO......XXXXX
-007 OOOOOOO....XXXXXX
-008 OOOOOOOO....X.XXX
-009 OOOOOOO.....XXXX.
-010 OOOOO.......XXXXX
-011 OO..........XXXXX
-012 .........XXXXXXXX
-013 ......XXXXXXXXXXX
-014 ......XXXXXXXXXXX
-<-----------start piece size
-Piece 1 2:
-<-----------end piece size
-<-----------strart read-piece
-**
-<-----------end read-piece-->
-coo (Y:X) : 0:0
-coo (Y:X) : 0:1
-<-----------start map_size
-<-----------end map_size
-<-----------start solo-line read-map
-<xxxxxxxxxxxend solo-line read-map
-<-----------start read-map
-000 .................
-001 .................
-002 .................
-003 ..O..............
-004 .OOO.............
-005 OOOOO........X...
-006 OOOOOO......XXXXX
-007 OOOOOOO....XXXXXX
-008 OOOOOOOO....X.XXX
-009 OOOOOOO.....XXXX.
-010 OOOOOO......XXXXX
-011 OO..........XXXXX
-012 ........XXXXXXXXX
-013 ......XXXXXXXXXXX
-014 ......XXXXXXXXXXX
-<-----------start piece size
-Piece 2 3:
-<-----------end piece size
-<-----------strart read-piece
-***
-...
-<-----------end read-piece-->
-coo (Y:X) : 0:0
-coo (Y:X) : 0:1
-coo (Y:X) : 0:2
-<-----------start map_size
-<-----------end map_size
-<-----------start solo-line read-map
-<xxxxxxxxxxxend solo-line read-map
-<-----------start read-map
-000 .................
-001 .................
-002 .................
-003 ..O..............
-004 .OOO.............
-005 OOOOO........X...
-006 OOOOOO......XXXXX
-007 OOOOOOO....XXXXXX
-008 OOOOOOOO....X.XXX
-009 OOOOOOO.....XXXXX
-010 OOOOOO......XXXXX
-011 OOOO........XXXXX
-012 ........XXXXXXXXX
-013 ......XXXXXXXXXXX
-014 ......XXXXXXXXXXX
-<-----------start piece size
-Piece 2 3:
-<-----------end piece size
-<-----------strart read-piece
-***
-**.
-<-----------end read-piece-->
-coo (Y:X) : 0:0
-coo (Y:X) : 0:1
-coo (Y:X) : 0:2
-coo (Y:X) : 1:1
-coo (Y:X) : 1:0
-<-----------start map_size
-<-----------end map_size
-<-----------start solo-line read-map
-<xxxxxxxxxxxend solo-line read-map
-<-----------start read-map
-000 .................
-001 .................
-002 .................
-003 ..O..............
-004 .OOO.............
-005 OOOOO........X...
-006 OOOOOO......XXXXX
-007 OOOOOOO....XXXXXX
-008 OOOOOOOO....X.XXX
-009 OOOOOOO.....XXXXX
-010 OOOOOO......XXXXX
-011 OOOOOO......XXXXX
-012 ...OO..XXXXXXXXXX
-013 ......XXXXXXXXXXX
-014 ......XXXXXXXXXXX
-<-----------start piece size
-Piece 1 3:
-<-----------end piece size
-<-----------strart read-piece
-.**
-<-----------end read-piece-->
-coo (Y:X) : 0:1
-coo (Y:X) : 0:2
-<-----------start map_size
-<-----------end map_size
-<-----------start solo-line read-map
-<xxxxxxxxxxxend solo-line read-map
-<-----------start read-map
-000 .................
-001 .................
-002 .................
-003 .OO..............
-004 .OOO.............
-005 OOOOO........X.X.
-006 OOOOOO......XXXXX
-007 OOOOOOO....XXXXXX
-008 OOOOOOOO....X.XXX
-009 OOOOOOO.....XXXXX
-010 OOOOOO......XXXXX
-011 OOOOOO......XXXXX
-012 ...OO..XXXXXXXXXX
-013 ......XXXXXXXXXXX
-014 ......XXXXXXXXXXX
-<-----------start piece size
-Piece 1 3:
-<-----------end piece size
-<-----------strart read-piece
-***
-<-----------end read-piece-->
-coo (Y:X) : 0:0
-coo (Y:X) : 0:1
-coo (Y:X) : 0:2
-<-----------start map_size
-<-----------end map_size
-<-----------start solo-line read-map
-<xxxxxxxxxxxend solo-line read-map
-<-----------start read-map
-000 .................
-001 .................
-002 .................
-003 .OO..............
-004 .OOO.............
-005 OOOOO........X.X.
-006 OOOOOO......XXXXX
-007 OOOOOOO....XXXXXX
-008 OOOOOOOO....X.XXX
-009 OOOOOOO.....XXXXX
-010 OOOOOO......XXXXX
-011 OOOOOO......XXXXX
-012 .OOOO..XXXXXXXXXX
-013 ......XXXXXXXXXXX
-014 .....XXXXXXXXXXXX
-<-----------start piece size
-Piece 2 3:
-<-----------end piece size
-<-----------strart read-piece
-...
-.**
-<-----------end read-piece-->
-coo (Y:X) : 1:1
-coo (Y:X) : 1:2
-<-----------start map_size
-<-----------end map_size
-<-----------start solo-line read-map
-<xxxxxxxxxxxend solo-line read-map
-<-----------start read-map
-000 .................
-001 .................
-002 .................
-003 .OOO.............
-004 .OOO..........X..
-005 OOOOO........X.X.
-006 OOOOOO......XXXXX
-007 OOOOOOO....XXXXXX
-008 OOOOOOOO....X.XXX
-009 OOOOOOO.....XXXXX
-010 OOOOOO......XXXXX
-011 OOOOOO......XXXXX
-012 .OOOO..XXXXXXXXXX
-013 ......XXXXXXXXXXX
-014 .....XXXXXXXXXXXX
-<-----------start piece size
-Piece 2 2:
-<-----------end piece size
-<-----------strart read-piece
-*.
-**
-<-----------end read-piece-->
-coo (Y:X) : 0:0
-coo (Y:X) : 1:1
-coo (Y:X) : 1:0
-<-----------start map_size
-<-----------end map_size
-<-----------start solo-line read-map
-<xxxxxxxxxxxend solo-line read-map
-<-----------start read-map
-000 .................
-001 .................
-002 .................
-003 .OOO.............
-004 .OOOO.........X..
-005 OOOOOO.......X.X.
-006 OOOOOO......XXXXX
-007 OOOOOOO....XXXXXX
-008 OOOOOOOO....X.XXX
-009 OOOOOOO.....XXXXX
-010 OOOOOO......XXXXX
-011 OOOOOO......XXXXX
-012 .OOOO..XXXXXXXXXX
-013 ...XX.XXXXXXXXXXX
-014 ....XXXXXXXXXXXXX
-<-----------start piece size
-Piece 2 2:
-<-----------end piece size
-<-----------strart read-piece
-*.
-*.
-<-----------end read-piece-->
-coo (Y:X) : 0:0
-coo (Y:X) : 1:0
-<-----------start map_size
-<-----------end map_size
-<-----------start solo-line read-map
-<xxxxxxxxxxxend solo-line read-map
-<-----------start read-map
-000 .................
-001 .................
-002 ..O..............
-003 .OOO.............
-004 .OOOO.........X..
-005 OOOOOO.......X.XX
-006 OOOOOO......XXXXX
-007 OOOOOOO....XXXXXX
-008 OOOOOOOO....X.XXX
-009 OOOOOOO.....XXXXX
-010 OOOOOO......XXXXX
-011 OOOOOO......XXXXX
-012 .OOOO..XXXXXXXXXX
-013 ...XX.XXXXXXXXXXX
-014 ....XXXXXXXXXXXXX
-<-----------start piece size
-Piece 2 3:
-<-----------end piece size
-<-----------strart read-piece
-..*
-..*
-<-----------end read-piece-->
-coo (Y:X) : 0:2
-coo (Y:X) : 1:2
-<-----------start map_size
-<-----------end map_size
-<-----------start solo-line read-map
-<xxxxxxxxxxxend solo-line read-map
-<-----------start read-map
-000 .................
-001 .................
-002 ..O..............
-003 .OOO.............
-004 OOOOO.........X..
-005 OOOOOO.......X.XX
-006 OOOOOO......XXXXX
-007 OOOOOOO....XXXXXX
-008 OOOOOOOO....X.XXX
-009 OOOOOOO.....XXXXX
-010 OOOOOO......XXXXX
-011 OOOOOO......XXXXX
-012 .OOOOX.XXXXXXXXXX
-013 ...XXXXXXXXXXXXXX
-014 ....XXXXXXXXXXXXX
-<-----------start piece size
-Piece 1 3:
-<-----------end piece size
-<-----------strart read-piece
-***
-<-----------end read-piece-->
-coo (Y:X) : 0:0
-coo (Y:X) : 0:1
-coo (Y:X) : 0:2
-<-----------start map_size
-<-----------end map_size
-<-----------start solo-line read-map
-<xxxxxxxxxxxend solo-line read-map
-<-----------start read-map
-000 .................
-001 .................
-002 .OOO.............
-003 .OOO.............
-004 OOOOO.........XXX
-005 OOOOOO.......X.XX
-006 OOOOOO......XXXXX
-007 OOOOOOO....XXXXXX
-008 OOOOOOOO....X.XXX
-009 OOOOOOO.....XXXXX
-010 OOOOOO......XXXXX
-011 OOOOOO......XXXXX
-012 .OOOOX.XXXXXXXXXX
-013 ...XXXXXXXXXXXXXX
-014 ....XXXXXXXXXXXXX
-<-----------start piece size
-Piece 2 1:
-<-----------end piece size
-<-----------strart read-piece
-*
-*
-<-----------end read-piece-->
-coo (Y:X) : 0:0
-coo (Y:X) : 1:0
-<-----------start map_size
-<-----------end map_size
-<-----------start solo-line read-map
-<xxxxxxxxxxxend solo-line read-map
-<-----------start read-map
-000 .................
-001 ..O..............
-002 .OOO.............
-003 .OOO.............
-004 OOOOO.........XXX
-005 OOOOOO.......X.XX
-006 OOOOOO......XXXXX
-007 OOOOOOO....XXXXXX
-008 OOOOOOOO....X.XXX
-009 OOOOOOO.....XXXXX
-010 OOOOOO......XXXXX
-011 OOOOOO......XXXXX
-012 .OOOOX.XXXXXXXXXX
-013 ..XXXXXXXXXXXXXXX
-014 ....XXXXXXXXXXXXX
-<-----------start piece size
-Piece 2 2:
-<-----------end piece size
-<-----------strart read-piece
-**
-.*
-<-----------end read-piece-->
-coo (Y:X) : 0:0
-coo (Y:X) : 0:1
-coo (Y:X) : 1:1
-<-----------start map_size
-<-----------end map_size
-<-----------start solo-line read-map
-<xxxxxxxxxxxend solo-line read-map
-<-----------start read-map
-000 .................
-001 ..O..............
-002 .OOO.............
-003 .OOO.........XX..
-004 OOOOO........XXXX
-005 OOOOOOO......X.XX
-006 OOOOOOO.....XXXXX
-007 OOOOOOO....XXXXXX
-008 OOOOOOOO....X.XXX
-009 OOOOOOO.....XXXXX
-010 OOOOOO......XXXXX
-011 OOOOOO......XXXXX
-012 .OOOOX.XXXXXXXXXX
-013 ..XXXXXXXXXXXXXXX
-014 ....XXXXXXXXXXXXX
-<-----------start piece size
-Piece 2 3:
-<-----------end piece size
-<-----------strart read-piece
-*..
-*..
-<-----------end read-piece-->
-coo (Y:X) : 0:0
-coo (Y:X) : 1:0
-<-----------start map_size
-<-----------end map_size
-<-----------start solo-line read-map
-<xxxxxxxxxxxend solo-line read-map
-<-----------start read-map
-000 .................
-001 ..O..............
-002 .OOO.............
-003 OOOO.........XX..
-004 OOOOO........XXXX
-005 OOOOOOO......X.XX
-006 OOOOOOO.....XXXXX
-007 OOOOOOO....XXXXXX
-008 OOOOOOOO....X.XXX
-009 OOOOOOO.....XXXXX
-010 OOOOOO......XXXXX
-011 OOOOOO......XXXXX
-012 .OOOOX.XXXXXXXXXX
-013 ..XXXXXXXXXXXXXXX
-014 ...XXXXXXXXXXXXXX
-<-----------start piece size
-Piece 2 1:
-<-----------end piece size
-<-----------strart read-piece
-*
-*
-<-----------end read-piece-->
-coo (Y:X) : 0:0
-coo (Y:X) : 1:0
-<-----------start map_size
-<-----------end map_size
-<-----------start solo-line read-map
-<xxxxxxxxxxxend solo-line read-map
-<-----------start read-map
-000 .................
-001 ..O..............
-002 .OOO..........X..
-003 OOOOO........XXXX
-004 OOOOO........XXXX
-005 OOOOOOO......X.XX
-006 OOOOOOO.....XXXXX
-007 OOOOOOO....XXXXXX
-008 OOOOOOOO....X.XXX
-009 OOOOOOO.....XXXXX
-010 OOOOOO......XXXXX
-011 OOOOOO......XXXXX
-012 .OOOOX.XXXXXXXXXX
-013 ..XXXXXXXXXXXXXXX
-014 ...XXXXXXXXXXXXXX
-<-----------start piece size
-Piece 1 3:
-<-----------end piece size
-<-----------strart read-piece
-**.
-<-----------end read-piece-->
-coo (Y:X) : 0:0
-coo (Y:X) : 0:1
-<-----------start map_size
-<-----------end map_size
-<-----------start solo-line read-map
-<xxxxxxxxxxxend solo-line read-map
-<-----------start read-map
-000 .................
-001 ..O..............
-002 .OOO..........X..
-003 OOOOO........XXXX
-004 OOOOOO.......XXXX
-005 OOOOOOO......X.XX
-006 OOOOOOO.....XXXXX
-007 OOOOOOO....XXXXXX
-008 OOOOOOOO....X.XXX
-009 OOOOOOO.....XXXXX
-010 OOOOOO...X..XXXXX
-011 OOOOOO..XXXXXXXXX
-012 .OOOOX.XXXXXXXXXX
-013 ..XXXXXXXXXXXXXXX
-014 ...XXXXXXXXXXXXXX
-<-----------start piece size
-Piece 2 3:
-<-----------end piece size
-<-----------strart read-piece
-...
-.**
-<-----------end read-piece-->
-coo (Y:X) : 1:1
-coo (Y:X) : 1:2
-<-----------start map_size
-<-----------end map_size
-<-----------start solo-line read-map
-<xxxxxxxxxxxend solo-line read-map
-<-----------start read-map
-000 .................
-001 ..O..............
-002 .OOO..........XX.
-003 OOOOO........XXXX
-004 OOOOOO.......XXXX
-005 OOOOOOO......X.XX
-006 OOOOOOOO....XXXXX
-007 OOOOOOO....XXXXXX
-008 OOOOOOOO....X.XXX
-009 OOOOOOO.....XXXXX
-010 OOOOOO...X..XXXXX
-011 OOOOOO..XXXXXXXXX
-012 .OOOOX.XXXXXXXXXX
-013 ..XXXXXXXXXXXXXXX
-014 ...XXXXXXXXXXXXXX
-<-----------start piece size
-Piece 2 1:
-<-----------end piece size
-<-----------strart read-piece
-*
-*
-<-----------end read-piece-->
-coo (Y:X) : 0:0
-coo (Y:X) : 1:0
-<-----------start map_size
-<-----------end map_size
-<-----------start solo-line read-map
-<xxxxxxxxxxxend solo-line read-map
-<-----------start read-map
-000 .................
-001 ..O..............
-002 .OOO..........XX.
-003 OOOOO........XXXX
-004 OOOOOO.......XXXX
-005 OOOOOOO......X.XX
-006 OOOOOOOO....XXXXX
-007 OOOOOOOO...XXXXXX
-008 OOOOOOOO....X.XXX
-009 OOOOOOO.....XXXXX
-010 OOOOOO...X..XXXXX
-011 OOOOOO..XXXXXXXXX
-012 .OOOOX.XXXXXXXXXX
-013 ..XXXXXXXXXXXXXXX
-014 ..XXXXXXXXXXXXXXX
-<-----------start piece size
-Piece 6 11:
-<-----------end piece size
-<-----------strart read-piece
-.....*****.
-......**...
-...***.***.
-.......*...
-......**...
-......**...
-<-----------end read-piece-->
-coo (Y:X) : 0:5
-coo (Y:X) : 0:6
-coo (Y:X) : 0:7
-coo (Y:X) : 0:8
-coo (Y:X) : 0:9
-coo (Y:X) : 1:7
-coo (Y:X) : 2:8
-coo (Y:X) : 2:9
-coo (Y:X) : 3:7
-coo (Y:X) : 2:7
-coo (Y:X) : 1:6
-coo (Y:X) : 2:5
-coo (Y:X) : 2:4
-coo (Y:X) : 2:3
-coo (Y:X) : 4:7
-coo (Y:X) : 5:7
-coo (Y:X) : 5:6
-coo (Y:X) : 4:6
-<-----------start map_size
-<-----------end map_size
-<-----------start solo-line read-map
-<xxxxxxxxxxxend solo-line read-map
-<-----------start read-map
-000 .................
-001 ..O..............
-002 .OOO...OOOOO..XX.
-003 OOOOO...OO...XXXX
-004 OOOOOOOO.OOO.XXXX
-005 OOOOOOO..O...XXXX
-006 OOOOOOOOOO..XXXXX
-007 OOOOOOOOOO.XXXXXX
-008 OOOOOOOO....X.XXX
-009 OOOOOOO.....XXXXX
-010 OOOOOO...X..XXXXX
-011 OOOOOO..XXXXXXXXX
-012 .OOOOX.XXXXXXXXXX
-013 ..XXXXXXXXXXXXXXX
-014 ..XXXXXXXXXXXXXXX
-<-----------start piece size
-Piece 2 3:
-<-----------end piece size
-<-----------strart read-piece
-...
-.**
-<-----------end read-piece-->
-coo (Y:X) : 1:1
-coo (Y:X) : 1:2
-<-----------start map_size
-<-----------end map_size
-<-----------start solo-line read-map
-<xxxxxxxxxxxend solo-line read-map
-<-----------start read-map
-000 .................
-001 .OO..............
-002 .OOO...OOOOO..XX.
-003 OOOOO...OO...XXXX
-004 OOOOOOOO.OOO.XXXX
-005 OOOOOOO..O...XXXX
-006 OOOOOOOOOO..XXXXX
-007 OOOOOOOOOO.XXXXXX
-008 OOOOOOOO....X.XXX
-009 OOOOOOO.....XXXXX
-010 OOOOOO...X..XXXXX
-011 OOOOOO..XXXXXXXXX
-012 .OOOOX.XXXXXXXXXX
-013 ..XXXXXXXXXXXXXXX
-014 XXXXXXXXXXXXXXXXX
-<-----------start piece size
-Piece 2 3:
-<-----------end piece size
-<-----------strart read-piece
-***
-*..
-<-----------end read-piece-->
-coo (Y:X) : 0:0
-coo (Y:X) : 0:1
-coo (Y:X) : 0:2
-coo (Y:X) : 1:0
-<-----------start map_size
-<-----------end map_size
-<-----------start solo-line read-map
-<xxxxxxxxxxxend solo-line read-map
-<-----------start read-map
-000 .OOO.............
-001 .OO..............
-002 .OOO...OOOOO..XXX
-003 OOOOO...OO...XXXX
-004 OOOOOOOO.OOO.XXXX
-005 OOOOOOO..O...XXXX
-006 OOOOOOOOOO..XXXXX
-007 OOOOOOOOOO.XXXXXX
-008 OOOOOOOO....X.XXX
-009 OOOOOOO.....XXXXX
-010 OOOOOO...X..XXXXX
-011 OOOOOO..XXXXXXXXX
-012 .OOOOX.XXXXXXXXXX
-013 ..XXXXXXXXXXXXXXX
-014 XXXXXXXXXXXXXXXXX
-<-----------start piece size
-Piece 1 2:
-<-----------end piece size
-<-----------strart read-piece
-**
-<-----------end read-piece-->
-coo (Y:X) : 0:0
-coo (Y:X) : 0:1
-<-----------start map_size
-<-----------end map_size
-<-----------start solo-line read-map
-<xxxxxxxxxxxend solo-line read-map
-<-----------start read-map
-000 OOOO.............
-001 .OO..............
-002 .OOO...OOOOO..XXX
-003 OOOOO...OO...XXXX
-004 OOOOOOOO.OOO.XXXX
-005 OOOOOOO..O...XXXX
-006 OOOOOOOOOO..XXXXX
-007 OOOOOOOOOO.XXXXXX
-008 OOOOOOOO....X.XXX
-009 OOOOOOO.....XXXXX
-010 OOOOOO...X..XXXXX
-011 OOOOOO..XXXXXXXXX
-012 .OOOOX.XXXXXXXXXX
-013 .XXXXXXXXXXXXXXXX
-014 XXXXXXXXXXXXXXXXX
-<-----------start piece size
-Piece 2 2:
-<-----------end piece size
-<-----------strart read-piece
-*.
-.*
-<-----------end read-piece-->
-coo (Y:X) : 0:0
-coo (Y:X) : 1:1
-<-----------start map_size
-<-----------end map_size
-<-----------start solo-line read-map
-<xxxxxxxxxxxend solo-line read-map
-<-----------start read-map
-000 OOOO.............
-001 .OOO............X
-002 .OOO...OOOOO..XXX
-003 OOOOO...OO...XXXX
-004 OOOOOOOO.OOO.XXXX
-005 OOOOOOO..O...XXXX
-006 OOOOOOOOOO..XXXXX
-007 OOOOOOOOOO.XXXXXX
-008 OOOOOOOO....X.XXX
-009 OOOOOOO.....XXXXX
-010 OOOOOO...X..XXXXX
-011 OOOOOO..XXXXXXXXX
-012 .OOOOX.XXXXXXXXXX
-013 .XXXXXXXXXXXXXXXX
-014 XXXXXXXXXXXXXXXXX
-<-----------start piece size
-Piece 2 3:
-<-----------end piece size
-<-----------strart read-piece
-...
-.**
-<-----------end read-piece-->
-coo (Y:X) : 1:1
-coo (Y:X) : 1:2
-<-----------start map_size
-<-----------end map_size
-<-----------start solo-line read-map
-<xxxxxxxxxxxend solo-line read-map
-<-----------start read-map
-000 OOOOO............
-001 .OOO............X
-002 .OOO...OOOOO..XXX
-003 OOOOO...OO...XXXX
-004 OOOOOOOO.OOO.XXXX
-005 OOOOOOO..O...XXXX
-006 OOOOOOOOOO..XXXXX
-007 OOOOOOOOOO.XXXXXX
-008 OOOOOOOO....X.XXX
-009 OOOOOOO.....XXXXX
-010 OOOOOO...X..XXXXX
-011 OOOOOO..XXXXXXXXX
-012 .OOOOX.XXXXXXXXXX
-013 XXXXXXXXXXXXXXXXX
-014 XXXXXXXXXXXXXXXXX
-<-----------start piece size
-Piece 1 2:
-<-----------end piece size
-<-----------strart read-piece
-**
-<-----------end read-piece-->
-coo (Y:X) : 0:0
-coo (Y:X) : 0:1
-<-----------start map_size
-<-----------end map_size
-<-----------start solo-line read-map
-<xxxxxxxxxxxend solo-line read-map
-<-----------start read-map
-000 OOOOOO...........
-001 .OOO...........XX
-002 .OOO...OOOOO..XXX
-003 OOOOO...OO...XXXX
-004 OOOOOOOO.OOO.XXXX
-005 OOOOOOO..O...XXXX
-006 OOOOOOOOOO..XXXXX
-007 OOOOOOOOOO.XXXXXX
-008 OOOOOOOO....X.XXX
-009 OOOOOOO.....XXXXX
-010 OOOOOO...X..XXXXX
-011 OOOOOO..XXXXXXXXX
-012 .OOOOX.XXXXXXXXXX
-013 XXXXXXXXXXXXXXXXX
-014 XXXXXXXXXXXXXXXXX
-<-----------start piece size
-Piece 2 4:
-<-----------end piece size
-<-----------strart read-piece
-..**
-....
-<-----------end read-piece-->
-coo (Y:X) : 0:2
-coo (Y:X) : 0:3
-<-----------start map_size
-<-----------end map_size
-<-----------start solo-line read-map
-<xxxxxxxxxxxend solo-line read-map
-<-----------start read-map
-000 OOOOOOO..........
-001 .OOO...........XX
-002 .OOO...OOOOO..XXX
-003 OOOOO...OO...XXXX
-004 OOOOOOOO.OOO.XXXX
-005 OOOOOOO..O...XXXX
-006 OOOOOOOOOO..XXXXX
-007 OOOOOOOOOO.XXXXXX
-008 OOOOOOOO....X.XXX
-009 OOOOOOO.....XXXXX
-010 OOOOOO...X..XXXXX
-011 OOOOOO..XXXXXXXXX
-012 .OOOOXXXXXXXXXXXX
-013 XXXXXXXXXXXXXXXXX
-014 XXXXXXXXXXXXXXXXX
-<-----------start piece size
-Piece 1 2:
-<-----------end piece size
-<-----------strart read-piece
-**
-<-----------end read-piece-->
-coo (Y:X) : 0:0
-coo (Y:X) : 0:1
-<-----------start map_size
-<-----------end map_size
-<-----------start solo-line read-map
-<xxxxxxxxxxxend solo-line read-map
-<-----------start read-map
-000 OOOOOOOO.......X.
-001 .OOO...........XX
-002 .OOO...OOOOO..XXX
-003 OOOOO...OO...XXXX
-004 OOOOOOOO.OOO.XXXX
-005 OOOOOOO..O...XXXX
-006 OOOOOOOOOO..XXXXX
-007 OOOOOOOOOO.XXXXXX
-008 OOOOOOOO....X.XXX
-009 OOOOOOO.....XXXXX
-010 OOOOOO...X..XXXXX
-011 OOOOOO..XXXXXXXXX
-012 .OOOOXXXXXXXXXXXX
-013 XXXXXXXXXXXXXXXXX
-014 XXXXXXXXXXXXXXXXX
-<-----------start piece size
-Piece 1 3:
-<-----------end piece size
-<-----------strart read-piece
-**.
-<-----------end read-piece-->
-coo (Y:X) : 0:0
-coo (Y:X) : 0:1
-<-----------start map_size
-<-----------end map_size
-<-----------start solo-line read-map
-<xxxxxxxxxxxend solo-line read-map
-<-----------start read-map
-000 OOOOOOOOO......X.
-001 .OOO...........XX
-002 .OOO...OOOOO..XXX
-003 OOOOO...OO...XXXX
-004 OOOOOOOO.OOO.XXXX
-005 OOOOOOO..O...XXXX
-006 OOOOOOOOOO..XXXXX
-007 OOOOOOOOOO.XXXXXX
-008 OOOOOOOO....X.XXX
-009 OOOOOOO.....XXXXX
-010 OOOOOO...X..XXXXX
-011 OOOOOO.XXXXXXXXXX
-012 .OOOOXXXXXXXXXXXX
-013 XXXXXXXXXXXXXXXXX
-014 XXXXXXXXXXXXXXXXX
-<-----------start piece size
-Piece 1 2:
-<-----------end piece size
-<-----------strart read-piece
-**
-<-----------end read-piece-->
-coo (Y:X) : 0:0
-coo (Y:X) : 0:1
-<-----------start map_size
-<-----------end map_size
-<-----------start solo-line read-map
-<xxxxxxxxxxxend solo-line read-map
-<-----------start read-map
-000 OOOOOOOOOO.....X.
-001 .OOO..........XXX
-002 .OOO...OOOOO.XXXX
-003 OOOOO...OO...XXXX
-004 OOOOOOOO.OOO.XXXX
-005 OOOOOOO..O...XXXX
-006 OOOOOOOOOO..XXXXX
-007 OOOOOOOOOO.XXXXXX
-008 OOOOOOOO....X.XXX
-009 OOOOOOO.....XXXXX
-010 OOOOOO...X..XXXXX
-011 OOOOOO.XXXXXXXXXX
-012 .OOOOXXXXXXXXXXXX
-013 XXXXXXXXXXXXXXXXX
-014 XXXXXXXXXXXXXXXXX
-<-----------start piece size
-Piece 1 2:
-<-----------end piece size
-<-----------strart read-piece
-**
-<-----------end read-piece-->
-coo (Y:X) : 0:0
-coo (Y:X) : 0:1
-<-----------start map_size
-<-----------end map_size
-<-----------start solo-line read-map
-<xxxxxxxxxxxend solo-line read-map
-<-----------start read-map
-000 OOOOOOOOOO.....X.
-001 OOOO..........XXX
-002 .OOO...OOOOO.XXXX
-003 OOOOO...OO...XXXX
-004 OOOOOOOO.OOO.XXXX
-005 OOOOOOO..O...XXXX
-006 OOOOOOOOOO..XXXXX
-007 OOOOOOOOOO.XXXXXX
-008 OOOOOOOO....X.XXX
-009 OOOOOOO.....XXXXX
-010 OOOOOO...X..XXXXX
-011 OOOOOOXXXXXXXXXXX
-012 .OOOOXXXXXXXXXXXX
-013 XXXXXXXXXXXXXXXXX
-014 XXXXXXXXXXXXXXXXX
-<-----------start piece size
-Piece 2 1:
-<-----------end piece size
-<-----------strart read-piece
-*
-*
-<-----------end read-piece-->
-coo (Y:X) : 0:0
-coo (Y:X) : 1:0
-<-----------start map_size
-<-----------end map_size
-<-----------start solo-line read-map
-<xxxxxxxxxxxend solo-line read-map
-<-----------start read-map
-000 OOOOOOOOOO....XX.
-001 OOOOO........XXXX
-002 .OOO...OOOOO.XXXX
-003 OOOOO...OO...XXXX
-004 OOOOOOOO.OOO.XXXX
-005 OOOOOOO..O...XXXX
-006 OOOOOOOOOO..XXXXX
-007 OOOOOOOOOO.XXXXXX
-008 OOOOOOOO....X.XXX
-009 OOOOOOO.....XXXXX
-010 OOOOOO...X..XXXXX
-011 OOOOOOXXXXXXXXXXX
-012 .OOOOXXXXXXXXXXXX
-013 XXXXXXXXXXXXXXXXX
-014 XXXXXXXXXXXXXXXXX
-<-----------start piece size
-Piece 1 2:
-<-----------end piece size
-<-----------strart read-piece
-**
-<-----------end read-piece-->
-coo (Y:X) : 0:0
-coo (Y:X) : 0:1
-<-----------start map_size
-<-----------end map_size
-<-----------start solo-line read-map
-<xxxxxxxxxxxend solo-line read-map
-<-----------start read-map
-000 OOOOOOOOOO....XX.
-001 OOOOOO.......XXXX
-002 .OOO...OOOOO.XXXX
-003 OOOOO...OO...XXXX
-004 OOOOOOOO.OOO.XXXX
-005 OOOOOOO..O...XXXX
-006 OOOOOOOOOO..XXXXX
-007 OOOOOOOOOO.XXXXXX
-008 OOOOOOOO....X.XXX
-009 OOOOOOO.....XXXXX
-010 OOOOOO...X.XXXXXX
-011 OOOOOOXXXXXXXXXXX
-012 .OOOOXXXXXXXXXXXX
-013 XXXXXXXXXXXXXXXXX
-014 XXXXXXXXXXXXXXXXX
-<-----------start piece size
-Piece 2 1:
-<-----------end piece size
-<-----------strart read-piece
-*
-*
-<-----------end read-piece-->
-coo (Y:X) : 0:0
-coo (Y:X) : 1:0
-<-----------start map_size
-<-----------end map_size
-<-----------start solo-line read-map
-<xxxxxxxxxxxend solo-line read-map
-<-----------start read-map
-000 OOOOOOOOOO....XXX
-001 OOOOOOO......XXXX
-002 .OOO...OOOOO.XXXX
-003 OOOOO...OO...XXXX
-004 OOOOOOOO.OOO.XXXX
-005 OOOOOOO..O...XXXX
-006 OOOOOOOOOO..XXXXX
-007 OOOOOOOOOO.XXXXXX
-008 OOOOOOOO....X.XXX
-009 OOOOOOO.....XXXXX
-010 OOOOOO...X.XXXXXX
-011 OOOOOOXXXXXXXXXXX
-012 .OOOOXXXXXXXXXXXX
-013 XXXXXXXXXXXXXXXXX
-014 XXXXXXXXXXXXXXXXX
-<-----------start piece size
-Piece 2 2:
-<-----------end piece size
-<-----------strart read-piece
-*.
-*.
-<-----------end read-piece-->
-coo (Y:X) : 0:0
-coo (Y:X) : 1:0
-<-----------start map_size
-<-----------end map_size
-<-----------start solo-line read-map
-<xxxxxxxxxxxend solo-line read-map
-<-----------start read-map
-000 OOOOOOOOOO....XXX
-001 OOOOOOOO.....XXXX
-002 .OOO...OOOOO.XXXX
-003 OOOOO...OO...XXXX
-004 OOOOOOOO.OOO.XXXX
-005 OOOOOOO..O...XXXX
-006 OOOOOOOOOO..XXXXX
-007 OOOOOOOOOO.XXXXXX
-008 OOOOOOOO....X.XXX
-009 OOOOOOO.....XXXXX
-010 OOOOOO...X.XXXXXX
-011 OOOOOOXXXXXXXXXXX
-012 XOOOOXXXXXXXXXXXX
-013 XXXXXXXXXXXXXXXXX
-014 XXXXXXXXXXXXXXXXX
-<-----------start piece size
-Piece 1 2:
-<-----------end piece size
-<-----------strart read-piece
-**
-<-----------end read-piece-->
-coo (Y:X) : 0:0
-coo (Y:X) : 0:1
-<-----------start map_size
-<-----------end map_size
-<-----------start solo-line read-map
-<xxxxxxxxxxxend solo-line read-map
-<-----------start read-map
-000 OOOOOOOOOO...XXXX
-001 OOOOOOOOO....XXXX
-002 .OOO...OOOOO.XXXX
-003 OOOOO...OO...XXXX
-004 OOOOOOOO.OOO.XXXX
-005 OOOOOOO..O...XXXX
-006 OOOOOOOOOO..XXXXX
-007 OOOOOOOOOO.XXXXXX
-008 OOOOOOOO....X.XXX
-009 OOOOOOO.....XXXXX
-010 OOOOOO...X.XXXXXX
-011 OOOOOOXXXXXXXXXXX
-012 XOOOOXXXXXXXXXXXX
-013 XXXXXXXXXXXXXXXXX
-014 XXXXXXXXXXXXXXXXX
-<-----------start piece size
-Piece 1 3:
-<-----------end piece size
-<-----------strart read-piece
-.**
-<-----------end read-piece-->
-coo (Y:X) : 0:1
-coo (Y:X) : 0:2
-<-----------start map_size
-<-----------end map_size
-<-----------start solo-line read-map
-<xxxxxxxxxxxend solo-line read-map
-<-----------start read-map
-000 OOOOOOOOOO...XXXX
-001 OOOOOOOOOO...XXXX
-002 .OOO...OOOOO.XXXX
-003 OOOOO...OO...XXXX
-004 OOOOOOOO.OOO.XXXX
-005 OOOOOOO..O...XXXX
-006 OOOOOOOOOO..XXXXX
-007 OOOOOOOOOO.XXXXXX
-008 OOOOOOOO....X.XXX
-009 OOOOOOO...XXXXXXX
-010 OOOOOO...XXXXXXXX
-011 OOOOOOXXXXXXXXXXX
-012 XOOOOXXXXXXXXXXXX
-013 XXXXXXXXXXXXXXXXX
-014 XXXXXXXXXXXXXXXXX
-<-----------start piece size
-Piece 1 3:
-<-----------end piece size
-<-----------strart read-piece
-.**
-<-----------end read-piece-->
-coo (Y:X) : 0:1
-coo (Y:X) : 0:2
-<-----------start map_size
-<-----------end map_size
-<-----------start solo-line read-map
-<xxxxxxxxxxxend solo-line read-map
-<-----------start read-map
-000 OOOOOOOOOO...XXXX
-001 OOOOOOOOOOO..XXXX
-002 .OOO...OOOOO.XXXX
-003 OOOOO...OO...XXXX
-004 OOOOOOOO.OOO.XXXX
-005 OOOOOOO..O...XXXX
-006 OOOOOOOOOO..XXXXX
-007 OOOOOOOOOO.XXXXXX
-008 OOOOOOOO....XXXXX
-009 OOOOOOO...XXXXXXX
-010 OOOOOO...XXXXXXXX
-011 OOOOOOXXXXXXXXXXX
-012 XOOOOXXXXXXXXXXXX
-013 XXXXXXXXXXXXXXXXX
-014 XXXXXXXXXXXXXXXXX
-<-----------start piece size
-Piece 2 2:
-<-----------end piece size
-<-----------strart read-piece
-**
-*.
-<-----------end read-piece-->
-coo (Y:X) : 0:0
-coo (Y:X) : 0:1
-coo (Y:X) : 1:0
-<-----------start map_size
-<-----------end map_size
-<-----------start solo-line read-map
-<xxxxxxxxxxxend solo-line read-map
-<-----------start read-map
-000 OOOOOOOOOO...XXXX
-001 OOOOOOOOOOO..XXXX
-002 .OOOOO.OOOOO.XXXX
-003 OOOOO...OO...XXXX
-004 OOOOOOOO.OOO.XXXX
-005 OOOOOOO..O...XXXX
-006 OOOOOOOOOO..XXXXX
-007 OOOOOOOOOO.XXXXXX
-008 OOOOOOOO....XXXXX
-009 OOOOOOOX..XXXXXXX
-010 OOOOOO.XXXXXXXXXX
-011 OOOOOOXXXXXXXXXXX
-012 XOOOOXXXXXXXXXXXX
-013 XXXXXXXXXXXXXXXXX
-014 XXXXXXXXXXXXXXXXX
-<-----------start piece size
-Piece 1 2:
-<-----------end piece size
-<-----------strart read-piece
-**
-<-----------end read-piece-->
-coo (Y:X) : 0:0
-coo (Y:X) : 0:1
-<-----------start map_size
-<-----------end map_size
-<-----------start solo-line read-map
-<xxxxxxxxxxxend solo-line read-map
-<-----------start read-map
-000 OOOOOOOOOO...XXXX
-001 OOOOOOOOOOO..XXXX
-002 OOOOOO.OOOOO.XXXX
-003 OOOOO...OO...XXXX
-004 OOOOOOOO.OOO.XXXX
-005 OOOOOOO..O..XXXXX
-006 OOOOOOOOOO..XXXXX
-007 OOOOOOOOOO.XXXXXX
-008 OOOOOOOO....XXXXX
-009 OOOOOOOX..XXXXXXX
-010 OOOOOO.XXXXXXXXXX
-011 OOOOOOXXXXXXXXXXX
-012 XOOOOXXXXXXXXXXXX
-013 XXXXXXXXXXXXXXXXX
-014 XXXXXXXXXXXXXXXXX
-<-----------start piece size
-Piece 2 3:
-<-----------end piece size
-<-----------strart read-piece
-*..
-*..
-<-----------end read-piece-->
-coo (Y:X) : 0:0
-coo (Y:X) : 1:0
-<-----------start map_size
-<-----------end map_size
-<-----------start solo-line read-map
-<xxxxxxxxxxxend solo-line read-map
-<-----------start read-map
-000 OOOOOOOOOO...XXXX
-001 OOOOOOOOOOO..XXXX
-002 OOOOOOOOOOOO.XXXX
-003 OOOOO...OO...XXXX
-004 OOOOOOOO.OOO.XXXX
-005 OOOOOOO..O..XXXXX
-006 OOOOOOOOOO..XXXXX
-007 OOOOOOOOOO.XXXXXX
-008 OOOOOOOO....XXXXX
-009 OOOOOOOX..XXXXXXX
-010 OOOOOOXXXXXXXXXXX
-011 OOOOOOXXXXXXXXXXX
-012 XOOOOXXXXXXXXXXXX
-013 XXXXXXXXXXXXXXXXX
-014 XXXXXXXXXXXXXXXXX
-<-----------start piece size
-Piece 2 3:
-<-----------end piece size
-<-----------strart read-piece
-*.*
-.**
-<-----------end read-piece-->
-coo (Y:X) : 0:0
-coo (Y:X) : 1:1
-coo (Y:X) : 0:2
-coo (Y:X) : 1:2
-<-----------start map_size
-<-----------end map_size
-<-----------start solo-line read-map
-<xxxxxxxxxxxend solo-line read-map
-<-----------start read-map
-000 OOOOOOOOOO...XXXX
-001 OOOOOOOOOOO..XXXX
-002 OOOOOOOOOOOO.XXXX
-003 OOOOO...OOO.OXXXX
-004 OOOOOOOO.OOOOXXXX
-005 OOOOOOO..O..XXXXX
-006 OOOOOOOOOO.XXXXXX
-007 OOOOOOOOOO.XXXXXX
-008 OOOOOOOO....XXXXX
-009 OOOOOOOX..XXXXXXX
-010 OOOOOOXXXXXXXXXXX
-011 OOOOOOXXXXXXXXXXX
-012 XOOOOXXXXXXXXXXXX
-013 XXXXXXXXXXXXXXXXX
-014 XXXXXXXXXXXXXXXXX
-<-----------start piece size
-Piece 2 1:
-<-----------end piece size
-<-----------strart read-piece
-*
-*
-<-----------end read-piece-->
-coo (Y:X) : 0:0
-coo (Y:X) : 1:0
-<-----------start map_size
-<-----------end map_size
-<-----------start solo-line read-map
-<xxxxxxxxxxxend solo-line read-map
-<-----------start read-map
-000 OOOOOOOOOO...XXXX
-001 OOOOOOOOOOO..XXXX
-002 OOOOOOOOOOOO.XXXX
-003 OOOOOO..OOO.OXXXX
-004 OOOOOOOO.OOOOXXXX
-005 OOOOOOO..O..XXXXX
-006 OOOOOOOOOO.XXXXXX
-007 OOOOOOOOOO.XXXXXX
-008 OOOOOOOO....XXXXX
-009 OOOOOOOX.XXXXXXXX
-010 OOOOOOXXXXXXXXXXX
-011 OOOOOOXXXXXXXXXXX
-012 XOOOOXXXXXXXXXXXX
-013 XXXXXXXXXXXXXXXXX
-014 XXXXXXXXXXXXXXXXX
-<-----------start piece size
-Piece 2 2:
-<-----------end piece size
-<-----------strart read-piece
-**
-..
-<-----------end read-piece-->
-coo (Y:X) : 0:0
-coo (Y:X) : 0:1
-<-----------start map_size
-<-----------end map_size
-<-----------start solo-line read-map
-<xxxxxxxxxxxend solo-line read-map
-<-----------start read-map
-000 OOOOOOOOOO...XXXX
-001 OOOOOOOOOOO..XXXX
-002 OOOOOOOOOOOO.XXXX
-003 OOOOOOO.OOO.OXXXX
-004 OOOOOOOO.OOOOXXXX
-005 OOOOOOO..O.XXXXXX
-006 OOOOOOOOOO.XXXXXX
-007 OOOOOOOOOO.XXXXXX
-008 OOOOOOOO....XXXXX
-009 OOOOOOOX.XXXXXXXX
-010 OOOOOOXXXXXXXXXXX
-011 OOOOOOXXXXXXXXXXX
-012 XOOOOXXXXXXXXXXXX
-013 XXXXXXXXXXXXXXXXX
-014 XXXXXXXXXXXXXXXXX
-<-----------start piece size
-Piece 1 3:
-<-----------end piece size
-<-----------strart read-piece
-***
-<-----------end read-piece-->
-coo (Y:X) : 0:0
-coo (Y:X) : 0:1
-coo (Y:X) : 0:2
-<-----------start map_size
-<-----------end map_size
-<-----------start solo-line read-map
-<xxxxxxxxxxxend solo-line read-map
-<-----------start read-map
-000 OOOOOOOOOO...XXXX
-001 OOOOOOOOOOO..XXXX
-002 OOOOOOOOOOOO.XXXX
-003 OOOOOOO.OOO.OXXXX
-004 OOOOOOOO.OOOOXXXX
-005 OOOOOOOOOO.XXXXXX
-006 OOOOOOOOOO.XXXXXX
-007 OOOOOOOOOO.XXXXXX
-008 OOOOOOOO..XXXXXXX
-009 OOOOOOOX.XXXXXXXX
-010 OOOOOOXXXXXXXXXXX
-011 OOOOOOXXXXXXXXXXX
-012 XOOOOXXXXXXXXXXXX
-013 XXXXXXXXXXXXXXXXX
-014 XXXXXXXXXXXXXXXXX
-<-----------start piece size
-Piece 2 2:
-<-----------end piece size
-<-----------strart read-piece
-**
-.*
-<-----------end read-piece-->
-coo (Y:X) : 0:0
-coo (Y:X) : 0:1
-coo (Y:X) : 1:1
-<-----------start map_size
-<-----------end map_size
-<-----------start solo-line read-map
-<xxxxxxxxxxxend solo-line read-map
-<-----------start read-map
-000 OOOOOOOOOO..XXXXX
-001 OOOOOOOOOOO..XXXX
-002 OOOOOOOOOOOO.XXXX
-003 OOOOOOOOOOO.OXXXX
-004 OOOOOOOOOOOOOXXXX
-005 OOOOOOOOOO.XXXXXX
-006 OOOOOOOOOO.XXXXXX
-007 OOOOOOOOOO.XXXXXX
-008 OOOOOOOO..XXXXXXX
-009 OOOOOOOX.XXXXXXXX
-010 OOOOOOXXXXXXXXXXX
-011 OOOOOOXXXXXXXXXXX
-012 XOOOOXXXXXXXXXXXX
-013 XXXXXXXXXXXXXXXXX
-014 XXXXXXXXXXXXXXXXX
-<-----------start piece size
-Piece 2 1:
-<-----------end piece size
-<-----------strart read-piece
-*
-*
-<-----------end read-piece-->
-coo (Y:X) : 0:0
-coo (Y:X) : 1:0
-<-----------start map_size
-<-----------end map_size
-<-----------start solo-line read-map
-<xxxxxxxxxxxend solo-line read-map
-<-----------start read-map
-000 OOOOOOOOOO..XXXXX
-001 OOOOOOOOOOO..XXXX
-002 OOOOOOOOOOOO.XXXX
-003 OOOOOOOOOOOOOXXXX
-004 OOOOOOOOOOOOOXXXX
-005 OOOOOOOOOO.XXXXXX
-006 OOOOOOOOOO.XXXXXX
-007 OOOOOOOOOO.XXXXXX
-008 OOOOOOOO..XXXXXXX
-009 OOOOOOOX.XXXXXXXX
-010 OOOOOOXXXXXXXXXXX
-011 OOOOOOXXXXXXXXXXX
-012 XOOOOXXXXXXXXXXXX
-013 XXXXXXXXXXXXXXXXX
-014 XXXXXXXXXXXXXXXXX
-<-----------start piece size
-Piece 2 3:
-<-----------end piece size
-<-----------strart read-piece
-..*
-***
-<-----------end read-piece-->
-coo (Y:X) : 0:2
-coo (Y:X) : 1:2
-coo (Y:X) : 1:1
-coo (Y:X) : 1:0
-ft_bruteforce
-<-----------start map_size
-Read map exit
-XXXXXXXXXXXXXXXX
-014 XXXXXXXXXXXXXXXXX
-<-----------start piece size
-Piece 1 3:
-<-----------end piece size
-<-----------strart read-piece
-.**
-<-----------end read-piece-->
-coo (Y:X) : 0:1
-coo (Y:X) : 0:2
-<-----------start map_size
-<-----------end map_size
-<-----------start solo-line read-map
-    01234567890123456
-<xxxxxxxxxxxend solo-line read-map
-<-----------start read-map
-000 OOOOOOOO.........
-001 OOOOOOOO...XXXXXX
-002 OOOOOOOOO..XXXXXX
-003 OOOOOOOOOO..XXXXX
-004 OOOOOOOOOOO..XXXX
-005 OOOOOOOOOOOXXXXXX
-006 OOOOOOOOOOOXXXXXX
-007 OOOOOOOOOOOXXXXXX
-008 OOOOOOOOOOOOXXXXX
-009 OOOOOOOOOOOXXXXXX
-010 OOOOOOOOXXXXXXXXX
-011 XOOOOXXXXXXXXXXXX
-012 XOOOXXXXXXXXXXXXX
-013 XXXXXXXXXXXXXXXXX
-014 XXXXXXXXXXXXXXXXX
-<-----------start piece size
-Piece 1 2:
-<-----------end piece size
-<-----------strart read-piece
-**
-<-----------end read-piece-->
-coo (Y:X) : 0:0
-coo (Y:X) : 0:1
-<-----------start map_size
-<-----------end map_size
-<-----------start solo-line read-map
-    01234567890123456
-<xxxxxxxxxxxend solo-line read-map
-<-----------start read-map
-000 OOOOOOOO.........
-001 OOOOOOOOO..XXXXXX
-002 OOOOOOOOO..XXXXXX
-003 OOOOOOOOOO..XXXXX
-004 OOOOOOOOOOOXXXXXX
-005 OOOOOOOOOOOXXXXXX
-006 OOOOOOOOOOOXXXXXX
-007 OOOOOOOOOOOXXXXXX
-008 OOOOOOOOOOOOXXXXX
-009 OOOOOOOOOOOXXXXXX
-010 OOOOOOOOXXXXXXXXX
-011 XOOOOXXXXXXXXXXXX
-012 XOOOXXXXXXXXXXXXX
-013 XXXXXXXXXXXXXXXXX
-014 XXXXXXXXXXXXXXXXX
-<-----------start piece size
-Piece 1 2:
-<-----------end piece size
-<-----------strart read-piece
-**
-<-----------end read-piece-->
-coo (Y:X) : 0:0
-coo (Y:X) : 0:1
-<-----------start map_size
-<-----------end map_size
-<-----------start solo-line read-map
-    01234567890123456
-<xxxxxxxxxxxend solo-line read-map
-<-----------start read-map
-000 OOOOOOOO.........
-001 OOOOOOOOO..XXXXXX
-002 OOOOOOOOOO.XXXXXX
-003 OOOOOOOOOO.XXXXXX
-004 OOOOOOOOOOOXXXXXX
-005 OOOOOOOOOOOXXXXXX
-006 OOOOOOOOOOOXXXXXX
-007 OOOOOOOOOOOXXXXXX
-008 OOOOOOOOOOOOXXXXX
-009 OOOOOOOOOOOXXXXXX
-010 OOOOOOOOXXXXXXXXX
-011 XOOOOXXXXXXXXXXXX
-012 XOOOXXXXXXXXXXXXX
-013 XXXXXXXXXXXXXXXXX
-014 XXXXXXXXXXXXXXXXX
-<-----------start piece size
-Piece 2 3:
-<-----------end piece size
-<-----------strart read-piece
-**.
-**.
-<-----------end read-piece-->
-coo (Y:X) : 0:0
-coo (Y:X) : 0:1
-coo (Y:X) : 1:1
-coo (Y:X) : 1:0
-<-----------start map_size
-<-----------end map_size
-<-----------start solo-line read-map
-    01234567890123456
-<xxxxxxxxxxxend solo-line read-map
-<-----------start read-map
-000 OOOOOOOOOO.......
-001 OOOOOOOOOO.XXXXXX
-002 OOOOOOOOOO.XXXXXX
-003 OOOOOOOOOOXXXXXXX
-004 OOOOOOOOOOOXXXXXX
-005 OOOOOOOOOOOXXXXXX
-006 OOOOOOOOOOOXXXXXX
-007 OOOOOOOOOOOXXXXXX
-008 OOOOOOOOOOOOXXXXX
-009 OOOOOOOOOOOXXXXXX
-010 OOOOOOOOXXXXXXXXX
-011 XOOOOXXXXXXXXXXXX
-012 XOOOXXXXXXXXXXXXX
-013 XXXXXXXXXXXXXXXXX
-014 XXXXXXXXXXXXXXXXX
-<-----------start piece size
-Piece 1 3:
-<-----------end piece size
-<-----------strart read-piece
-***
-<-----------end read-piece-->
-coo (Y:X) : 0:0
-coo (Y:X) : 0:1
-coo (Y:X) : 0:2
-ft_bruteforce
-<-----------start map_size
-<-----------end map_size
-<-----------start solo-line read-map
-    01234567890123456
-<xxxxxxxxxxxend solo-line read-map
-<-----------start read-map
-000 OOOOOOOOOOOO.....
-001 OOOOOOOOOO.XXXXXX
-002 OOOOOOOOOO.XXXXXX
-003 OOOOOOOOOOXXXXXXX
-004 OOOOOOOOOOOXXXXXX
-005 OOOOOOOOOOOXXXXXX
-006 OOOOOOOOOOOXXXXXX
-007 OOOOOOOOOOOXXXXXX
-008 OOOOOOOOOOOOXXXXX
-009 OOOOOOOOOOOXXXXXX
-010 OOOOOOOOXXXXXXXXX
-011 XOOOOXXXXXXXXXXXX
-012 XOOOXXXXXXXXXXXXX
-013 XXXXXXXXXXXXXXXXX
-014 XXXXXXXXXXXXXXXXX
-<-----------start piece size
-Piece 2 3:
-<-----------end piece size
-<-----------strart read-piece
-...
-.**
-<-----------end read-piece-->
-coo (Y:X) : 1:1
-coo (Y:X) : 1:2
-ft_bruteforce
-<-----------start map_size
-<-----------end map_size
-<-----------start solo-line read-map
-    01234567890123456
-<xxxxxxxxxxxend solo-line read-map
-<-----------start read-map
-000 OOOOOOOOOOOO.....
-001 OOOOOOOOOOOXXXXXX
-002 OOOOOOOOOO.XXXXXX
-003 OOOOOOOOOOXXXXXXX
-004 OOOOOOOOOOOXXXXXX
-005 OOOOOOOOOOOXXXXXX
-006 OOOOOOOOOOOXXXXXX
-007 OOOOOOOOOOOXXXXXX
-008 OOOOOOOOOOOOXXXXX
-009 OOOOOOOOOOOXXXXXX
-010 OOOOOOOOXXXXXXXXX
-011 XOOOOXXXXXXXXXXXX
-012 XOOOXXXXXXXXXXXXX
-013 XXXXXXXXXXXXXXXXX
-014 XXXXXXXXXXXXXXXXX
-<-----------start piece size
-Piece 1 2:
-<-----------end piece size
-<-----------strart read-piece
-**
-<-----------end read-piece-->
-coo (Y:X) : 0:0
-coo (Y:X) : 0:1
-ft_bruteforce
-<-----------start map_size
-<-----------end map_size
-<-----------start solo-line read-map
-    01234567890123456
-<xxxxxxxxxxxend solo-line read-map
-<-----------start read-map
-000 OOOOOOOOOOOOO....
-001 OOOOOOOOOOOXXXXXX
-002 OOOOOOOOOO.XXXXXX
-003 OOOOOOOOOOXXXXXXX
-004 OOOOOOOOOOOXXXXXX
-005 OOOOOOOOOOOXXXXXX
-006 OOOOOOOOOOOXXXXXX
-007 OOOOOOOOOOOXXXXXX
-008 OOOOOOOOOOOOXXXXX
-009 OOOOOOOOOOOXXXXXX
-010 OOOOOOOOXXXXXXXXX
-011 XOOOOXXXXXXXXXXXX
-012 XOOOXXXXXXXXXXXXX
-013 XXXXXXXXXXXXXXXXX
-014 XXXXXXXXXXXXXXXXX
-<-----------start piece size
-Piece 2 2:
-<-----------end piece size
-<-----------strart read-piece
-..
-**
-<-----------end read-piece-->
-coo (Y:X) : 1:0
-coo (Y:X) : 1:1
-ft_bruteforce
-<-----------start map_size
-<-----------end map_size
-<-----------start solo-line read-map
-    01234567890123456
-<xxxxxxxxxxxend solo-line read-map
-<-----------start read-map
-000 OOOOOOOOOOOOO....
-001 OOOOOOOOOOOXXXXXX
-002 OOOOOOOOOOOXXXXXX
-003 OOOOOOOOOOXXXXXXX
-004 OOOOOOOOOOOXXXXXX
-005 OOOOOOOOOOOXXXXXX
-006 OOOOOOOOOOOXXXXXX
-007 OOOOOOOOOOOXXXXXX
-008 OOOOOOOOOOOOXXXXX
-009 OOOOOOOOOOOXXXXXX
-010 OOOOOOOOXXXXXXXXX
-011 XOOOOXXXXXXXXXXXX
-012 XOOOXXXXXXXXXXXXX
-013 XXXXXXXXXXXXXXXXX
-014 XXXXXXXXXXXXXXXXX
-<-----------start piece size
-Piece 2 3:
-<-----------end piece size
-<-----------strart read-piece
-*..
-*..
-<-----------end read-piece-->
-coo (Y:X) : 0:0
-coo (Y:X) : 1:0
-ft_bruteforce
-<-----------start map_size
-Read map exit
+temp : 14 	| best : 17
+temp : 13 	| best : 46
+ret = -1
+Y:X | 0:0
+temp : 13 	| best : 17
+temp : 12 	| best : 46
+ret = -1
+Y:X | 0:1
+temp : 12 	| best : 17
+temp : 12 	| best : 46
+ret = -1
+Y:X | 0:2
+temp : 12 	| best : 17
+temp : 12 	| best : 46
+ret = -1
+Y:X | 0:3
+temp : 12 	| best : 17
+temp : 12 	| best : 46
+ret = -1
+Y:X | 0:4
+temp : 12 	| best : 17
+temp : 12 	| best : 46
+ret = -1
+Y:X | 0:5
+temp : 12 	| best : 17
+temp : 12 	| best : 46
+ret = -1
+Y:X | 0:6
+temp : 12 	| best : 17
+temp : 12 	| best : 46
+ret = -1
+Y:X | 0:7
+temp : 12 	| best : 17
+temp : 12 	| best : 46
+ret = -1
+Y:X | 0:8
+temp : 12 	| best : 17
+temp : 12 	| best : 46
+ret = -1
+Y:X | 0:9
+temp : 12 	| best : 17
+temp : 12 	| best : 46
+ret = -1
+Y:X | 0:10
+temp : 12 	| best : 17
+temp : 12 	| best : 46
+ret = -1
+Y:X | 0:11
+temp : 12 	| best : 17
+temp : 12 	| best : 46
+ret = -1
+Y:X | 0:12
+temp : 12 	| best : 17
+temp : 12 	| best : 46
+ret = -1
+Y:X | 0:13
+temp : 12 	| best : 17
+temp : 12 	| best : 46
+ret = -1
+Y:X | 0:14
+temp : 12 	| best : 17
+temp : 12 	| best : 46
+ret = -1
+Y:X | 0:15
+temp : 12 	| best : 17
+ret = -1
+Y:X | 0:16
+temp : 14 	| best : 17
+temp : 13 	| best : 46
+ret = -1
+Y:X | 1:0
+temp : 13 	| best : 17
+temp : 12 	| best : 46
+ret = -1
+Y:X | 1:1
+temp : 12 	| best : 17
+temp : 11 	| best : 46
+ret = -1
+Y:X | 1:2
+temp : 11 	| best : 17
+temp : 11 	| best : 46
+ret = -1
+Y:X | 1:3
+temp : 11 	| best : 17
+temp : 11 	| best : 46
+ret = -1
+Y:X | 1:4
+temp : 11 	| best : 17
+temp : 11 	| best : 46
+ret = -1
+Y:X | 1:5
+temp : 11 	| best : 17
+temp : 11 	| best : 46
+ret = -1
+Y:X | 1:6
+temp : 11 	| best : 17
+temp : 11 	| best : 46
+ret = -1
+Y:X | 1:7
+temp : 11 	| best : 17
+temp : 11 	| best : 46
+ret = -1
+Y:X | 1:8
+temp : 11 	| best : 17
+temp : 11 	| best : 46
+ret = -1
+Y:X | 1:9
+temp : 11 	| best : 17
+temp : 11 	| best : 46
+ret = -1
+Y:X | 1:10
+temp : 11 	| best : 17
+temp : 11 	| best : 46
+ret = -1
+Y:X | 1:11
+temp : 11 	| best : 17
+temp : 11 	| best : 46
+ret = -1
+Y:X | 1:12
+temp : 11 	| best : 17
+temp : 11 	| best : 46
+ret = -1
+Y:X | 1:13
+temp : 11 	| best : 17
+temp : 11 	| best : 46
+ret = -1
+Y:X | 1:14
+temp : 11 	| best : 17
+temp : 11 	| best : 46
+ret = -1
+Y:X | 1:15
+temp : 11 	| best : 17
+ret = -1
+Y:X | 1:16
+temp : 14 	| best : 17
+temp : 13 	| best : 46
+ret = -1
+Y:X | 2:0
+temp : 13 	| best : 17
+temp : 12 	| best : 46
+ret = -1
+Y:X | 2:1
+temp : 12 	| best : 17
+temp : 11 	| best : 46
+ret = -1
+Y:X | 2:2
+temp : 11 	| best : 17
+temp : 10 	| best : 46
+ret = -1
+Y:X | 2:3
+temp : 10 	| best : 17
+temp : 10 	| best : 46
+ret = -1
+Y:X | 2:4
+temp : 10 	| best : 17
+temp : 10 	| best : 46
+ret = -1
+Y:X | 2:5
+temp : 10 	| best : 17
+temp : 10 	| best : 46
+ret = -1
+Y:X | 2:6
+temp : 10 	| best : 17
+temp : 10 	| best : 46
+ret = -1
+Y:X | 2:7
+temp : 10 	| best : 17
+temp : 10 	| best : 46
+ret = -1
+Y:X | 2:8
+temp : 10 	| best : 17
+temp : 10 	| best : 46
+ret = -1
+Y:X | 2:9
+temp : 10 	| best : 17
+temp : 10 	| best : 46
+ret = -1
+Y:X | 2:10
+temp : 10 	| best : 17
+temp : 10 	| best : 46
+ret = -1
+Y:X | 2:11
+temp : 10 	| best : 17
+temp : 10 	| best : 46
+ret = -1
+Y:X | 2:12
+temp : 10 	| best : 17
+temp : 10 	| best : 46
+ret = -1
+Y:X | 2:13
+temp : 10 	| best : 17
+temp : 10 	| best : 46
+ret = -1
+Y:X | 2:14
+temp : 10 	| best : 17
+temp : 10 	| best : 46
+ret = -1
+Y:X | 2:15
+temp : 10 	| best : 17
+ret = -1
+Y:X | 2:16
+temp : 14 	| best : 17
+temp : 13 	| best : 46
+ret = -1
+Y:X | 3:0
+temp : 13 	| best : 17
+temp : 12 	| best : 46
+ret = -1
+Y:X | 3:1
+temp : 12 	| best : 17
+temp : 11 	| best : 46
+ret = -1
+Y:X | 3:2
+temp : 11 	| best : 17
+temp : 10 	| best : 46
+ret = -1
+Y:X | 3:3
+temp : 10 	| best : 17
+temp : 9 	| best : 46
+ret = -1
+Y:X | 3:4
+temp : 9 	| best : 17
+temp : 9 	| best : 46
+ret = -1
+Y:X | 3:5
+temp : 9 	| best : 17
+temp : 9 	| best : 46
+ret = -1
+Y:X | 3:6
+temp : 9 	| best : 17
+temp : 9 	| best : 46
+ret = -1
+Y:X | 3:7
+temp : 9 	| best : 17
+temp : 9 	| best : 46
+ret = -1
+Y:X | 3:8
+temp : 9 	| best : 17
+temp : 9 	| best : 46
+ret = -1
+Y:X | 3:9
+temp : 9 	| best : 17
+temp : 9 	| best : 46
+ret = -1
+Y:X | 3:10
+temp : 9 	| best : 17
+temp : 9 	| best : 46
+ret = -1
+Y:X | 3:11
+temp : 9 	| best : 17
+temp : 9 	| best : 46
+ret = -1
+Y:X | 3:12
+temp : 9 	| best : 17
+temp : 9 	| best : 46
+ret = -1
+Y:X | 3:13
+temp : 9 	| best : 17
+temp : 9 	| best : 46
+ret = -1
+Y:X | 3:14
+temp : 9 	| best : 17
+temp : 9 	| best : 46
+ret = -1
+Y:X | 3:15
+temp : 9 	| best : 17
+ret = -1
+Y:X | 3:16
+temp : 14 	| best : 17
+temp : 13 	| best : 46
+ret = -1
+Y:X | 4:0
+temp : 13 	| best : 17
+temp : 12 	| best : 46
+ret = -1
+Y:X | 4:1
+temp : 12 	| best : 17
+temp : 11 	| best : 46
+ret = -1
+Y:X | 4:2
+temp : 11 	| best : 17
+temp : 10 	| best : 46
+ret = -1
+Y:X | 4:3
+temp : 10 	| best : 17
+temp : 9 	| best : 46
+ret = -1
+Y:X | 4:4
+temp : 9 	| best : 17
+temp : 8 	| best : 46
+ret = -1
+Y:X | 4:5
+temp : 8 	| best : 17
+temp : 8 	| best : 46
+ret = -1
+Y:X | 4:6
+temp : 8 	| best : 17
+temp : 8 	| best : 46
+ret = -1
+Y:X | 4:7
+temp : 8 	| best : 17
+temp : 8 	| best : 46
+ret = -1
+Y:X | 4:8
+temp : 8 	| best : 17
+temp : 8 	| best : 46
+ret = -1
+Y:X | 4:9
+temp : 8 	| best : 17
+temp : 8 	| best : 46
+ret = -1
+Y:X | 4:10
+temp : 8 	| best : 17
+temp : 8 	| best : 46
+ret = -1
+Y:X | 4:11
+temp : 8 	| best : 17
+temp : 8 	| best : 46
+ret = -1
+Y:X | 4:12
+temp : 8 	| best : 17
+temp : 8 	| best : 46
+ret = -1
+Y:X | 4:13
+temp : 8 	| best : 17
+temp : 8 	| best : 46
+ret = -1
+Y:X | 4:14
+temp : 8 	| best : 17
+temp : 8 	| best : 46
+ret = -1
+Y:X | 4:15
+temp : 8 	| best : 17
+ret = -1
+Y:X | 4:16
+temp : 14 	| best : 17
+temp : 13 	| best : 46
+ret = -1
+Y:X | 5:0
+temp : 13 	| best : 17
+temp : 12 	| best : 46
+ret = -1
+Y:X | 5:1
+temp : 12 	| best : 17
+temp : 11 	| best : 46
+ret = -1
+Y:X | 5:2
+temp : 11 	| best : 17
+temp : 10 	| best : 46
+ret = -1
+Y:X | 5:3
+temp : 10 	| best : 17
+temp : 9 	| best : 46
+ret = -1
+Y:X | 5:4
+temp : 9 	| best : 17
+temp : 8 	| best : 46
+ret = -1
+Y:X | 5:5
+temp : 8 	| best : 17
+temp : 7 	| best : 46
+ret = -1
+Y:X | 5:6
+temp : 7 	| best : 17
+temp : 7 	| best : 46
+ret = -1
+Y:X | 5:7
+temp : 7 	| best : 17
+temp : 7 	| best : 46
+ret = -1
+Y:X | 5:8
+temp : 7 	| best : 17
+temp : 7 	| best : 46
+ret = -1
+Y:X | 5:9
+temp : 7 	| best : 17
+temp : 7 	| best : 46
+ret = -1
+Y:X | 5:10
+temp : 7 	| best : 17
+temp : 7 	| best : 46
+ret = -1
+Y:X | 5:11
+temp : 7 	| best : 17
+temp : 7 	| best : 46
+ret = -1
+Y:X | 5:12
+temp : 7 	| best : 17
+temp : 7 	| best : 46
+ret = -1
+Y:X | 5:13
+temp : 7 	| best : 17
+temp : 7 	| best : 46
+ret = -1
+Y:X | 5:14
+temp : 7 	| best : 17
+temp : 7 	| best : 46
+ret = -1
+Y:X | 5:15
+temp : 7 	| best : 17
+ret = -1
+Y:X | 5:16
+temp : 14 	| best : 17
+temp : 13 	| best : 46
+ret = -1
+Y:X | 6:0
+temp : 13 	| best : 17
+temp : 12 	| best : 46
+ret = -1
+Y:X | 6:1
+temp : 12 	| best : 17
+temp : 11 	| best : 46
+ret = -1
+Y:X | 6:2
+temp : 11 	| best : 17
+temp : 10 	| best : 46
+ret = -1
+Y:X | 6:3
+temp : 10 	| best : 17
+temp : 9 	| best : 46
+ret = -1
+Y:X | 6:4
+temp : 9 	| best : 17
+temp : 8 	| best : 46
+ret = -1
+Y:X | 6:5
+temp : 8 	| best : 17
+temp : 7 	| best : 46
+ret = -1
+Y:X | 6:6
+temp : 7 	| best : 17
+temp : 6 	| best : 46
+ret = -1
+Y:X | 6:7
+temp : 6 	| best : 17
+temp : 6 	| best : 46
+ret = -1
+Y:X | 6:8
+temp : 6 	| best : 17
+temp : 6 	| best : 46
+ret = -1
+Y:X | 6:9
+temp : 6 	| best : 17
+temp : 6 	| best : 46
+ret = -1
+Y:X | 6:10
+temp : 6 	| best : 17
+temp : 6 	| best : 46
+ret = -1
+Y:X | 6:11
+temp : 6 	| best : 17
+temp : 6 	| best : 46
+ret = -1
+Y:X | 6:12
+temp : 6 	| best : 17
+temp : 6 	| best : 46
+ret = -1
+Y:X | 6:13
+temp : 6 	| best : 17
+temp : 6 	| best : 46
+ret = -1
+Y:X | 6:14
+temp : 6 	| best : 17
+temp : 6 	| best : 46
+ret = -1
+Y:X | 6:15
+temp : 6 	| best : 17
+ret = -1
+Y:X | 6:16
+temp : 14 	| best : 17
+temp : 13 	| best : 46
+ret = -1
+Y:X | 7:0
+temp : 13 	| best : 17
+temp : 12 	| best : 46
+ret = -1
+Y:X | 7:1
+temp : 12 	| best : 17
+temp : 11 	| best : 46
+ret = -1
+Y:X | 7:2
+temp : 11 	| best : 17
+temp : 10 	| best : 46
+ret = -1
+Y:X | 7:3
+temp : 10 	| best : 17
+temp : 9 	| best : 46
+ret = -1
+Y:X | 7:4
+temp : 9 	| best : 17
+temp : 8 	| best : 46
+ret = -1
+Y:X | 7:5
+temp : 8 	| best : 17
+temp : 7 	| best : 46
+ret = -1
+Y:X | 7:6
+temp : 7 	| best : 17
+temp : 6 	| best : 46
+ret = -1
+Y:X | 7:7
+temp : 6 	| best : 17
+temp : 5 	| best : 46
+ret = -1
+Y:X | 7:8
+temp : 5 	| best : 17
+temp : 5 	| best : 46
+ret = -1
+Y:X | 7:9
+temp : 5 	| best : 17
+temp : 5 	| best : 46
+ret = -1
+Y:X | 7:10
+temp : 5 	| best : 17
+temp : 5 	| best : 46
+ret = -1
+Y:X | 7:11
+temp : 5 	| best : 17
+temp : 5 	| best : 46
+ret = -1
+Y:X | 7:12
+temp : 5 	| best : 17
+temp : 5 	| best : 46
+ret = -1
+Y:X | 7:13
+temp : 5 	| best : 17
+temp : 5 	| best : 46
+ret = -1
+Y:X | 7:14
+temp : 5 	| best : 17
+temp : 5 	| best : 46
+ret = -1
+Y:X | 7:15
+temp : 5 	| best : 17
+ret = -1
+Y:X | 7:16
+temp : 14 	| best : 17
+temp : 13 	| best : 46
+ret = -1
+Y:X | 8:0
+temp : 13 	| best : 17
+temp : -1 	| best : 46
+ret = 0
+Y:X | 8:1
+temp : -1 	| best : 17
+temp : 11 	| best : 79
+ret = 0
+Y:X | 8:2
+temp : 11 	| best : 17
+temp : 10 	| best : 46
+ret = -1
+Y:X | 8:3
+temp : 10 	| best : 17
+temp : 9 	| best : 46
+ret = -1
+Y:X | 8:4
+temp : 9 	| best : 17
+temp : 8 	| best : 46
+ret = -1
+Y:X | 8:5
+temp : 8 	| best : 17
+temp : 7 	| best : 46
+ret = -1
+Y:X | 8:6
+temp : 7 	| best : 17
+temp : 6 	| best : 46
+ret = -1
+Y:X | 8:7
+temp : 6 	| best : 17
+temp : 5 	| best : 46
+ret = -1
+Y:X | 8:8
+temp : 5 	| best : 17
+temp : 4 	| best : 46
+ret = -1
+Y:X | 8:9
+temp : 4 	| best : 17
+temp : 4 	| best : 46
+ret = -1
+Y:X | 8:10
+temp : 4 	| best : 17
+temp : 4 	| best : 46
+ret = -1
+Y:X | 8:11
+temp : 4 	| best : 17
+temp : 4 	| best : 46
+ret = -1
+Y:X | 8:12
+temp : 4 	| best : 17
+temp : 4 	| best : 46
+ret = -1
+Y:X | 8:13
+temp : 4 	| best : 17
+temp : 4 	| best : 46
+ret = -1
+Y:X | 8:14
+temp : 4 	| best : 17
+temp : 4 	| best : 46
+ret = -1
+Y:X | 8:15
+temp : 4 	| best : 17
+ret = -1
+Y:X | 8:16
+temp : 14 	| best : 17
+temp : 13 	| best : 46
+ret = -1
+Y:X | 9:0
+temp : 13 	| best : 17
+temp : 12 	| best : 46
+ret = -1
+Y:X | 9:1
+temp : 12 	| best : 17
+temp : 11 	| best : 46
+ret = -1
+Y:X | 9:2
+temp : 11 	| best : 17
+temp : 10 	| best : 46
+ret = -1
+Y:X | 9:3
+temp : 10 	| best : 17
+temp : 9 	| best : 46
+ret = -1
+Y:X | 9:4
+temp : 9 	| best : 17
+temp : 8 	| best : 46
+ret = -1
+Y:X | 9:5
+temp : 8 	| best : 17
+temp : 7 	| best : 46
+ret = -1
+Y:X | 9:6
+temp : 7 	| best : 17
+temp : 6 	| best : 46
+ret = -1
+Y:X | 9:7
+temp : 6 	| best : 17
+temp : 5 	| best : 46
+ret = -1
+Y:X | 9:8
+temp : 5 	| best : 17
+temp : 4 	| best : 46
+ret = -1
+Y:X | 9:9
+temp : 4 	| best : 17
+temp : 3 	| best : 46
+ret = -1
+Y:X | 9:10
+temp : 3 	| best : 17
+temp : 3 	| best : 46
+ret = -1
+Y:X | 9:11
+temp : 3 	| best : 17
+temp : 3 	| best : 46
+ret = -1
+Y:X | 9:12
+temp : 3 	| best : 17
+temp : 3 	| best : 46
+ret = -1
+Y:X | 9:13
+temp : 3 	| best : 17
+temp : 3 	| best : 46
+ret = -1
+Y:X | 9:14
+temp : 3 	| best : 17
+temp : 3 	| best : 46
+ret = -1
+Y:X | 9:15
+temp : 3 	| best : 17
+ret = -1
+Y:X | 9:16
+temp : 14 	| best : 17
+temp : 13 	| best : 46
+ret = -1
+Y:X | 10:0
+temp : 13 	| best : 17
+temp : 12 	| best : 46
+ret = -1
+Y:X | 10:1
+temp : 12 	| best : 17
+temp : 11 	| best : 46
+ret = -1
+Y:X | 10:2
+temp : 11 	| best : 17
+temp : 10 	| best : 46
+ret = -1
+Y:X | 10:3
+temp : 10 	| best : 17
+temp : 9 	| best : 46
+ret = -1
+Y:X | 10:4
+temp : 9 	| best : 17
+temp : 8 	| best : 46
+ret = -1
+Y:X | 10:5
+temp : 8 	| best : 17
+temp : 7 	| best : 46
+ret = -1
+Y:X | 10:6
+temp : 7 	| best : 17
+temp : 6 	| best : 46
+ret = -1
+Y:X | 10:7
+temp : 6 	| best : 17
+temp : 5 	| best : 46
+ret = -1
+Y:X | 10:8
+temp : 5 	| best : 17
+temp : 4 	| best : 46
+ret = -1
+Y:X | 10:9
+temp : 4 	| best : 17
+temp : 3 	| best : 46
+ret = -1
+Y:X | 10:10
+temp : 3 	| best : 17
+temp : 2 	| best : 46
+ret = -1
+Y:X | 10:11
+temp : 2 	| best : 17
+temp : 2 	| best : 46
+ret = -1
+Y:X | 10:12
+temp : 2 	| best : 17
+temp : 2 	| best : 46
+ret = -1
+Y:X | 10:13
+temp : 2 	| best : 17
+temp : 2 	| best : 46
+ret = -1
+Y:X | 10:14
+temp : 2 	| best : 17
+temp : 2 	| best : 46
+ret = -1
+Y:X | 10:15
+temp : 2 	| best : 17
+ret = -1
+Y:X | 10:16
+temp : 14 	| best : 17
+temp : 13 	| best : 46
+ret = -1
+Y:X | 11:0
+temp : 13 	| best : 17
+temp : 12 	| best : 46
+ret = -1
+Y:X | 11:1
+temp : 12 	| best : 17
+temp : 11 	| best : 46
+ret = -1
+Y:X | 11:2
+temp : 11 	| best : 17
+temp : 10 	| best : 46
+ret = -1
+Y:X | 11:3
+temp : 10 	| best : 17
+temp : 9 	| best : 46
+ret = -1
+Y:X | 11:4
+temp : 9 	| best : 17
+temp : 8 	| best : 46
+ret = -1
+Y:X | 11:5
+temp : 8 	| best : 17
+temp : 7 	| best : 46
+ret = -1
+Y:X | 11:6
+temp : 7 	| best : 17
+temp : 6 	| best : 46
+ret = -1
+Y:X | 11:7
+temp : 6 	| best : 17
+temp : 5 	| best : 46
+ret = -1
+Y:X | 11:8
+temp : 5 	| best : 17
+temp : 4 	| best : 46
+ret = -1
+Y:X | 11:9
+temp : 4 	| best : 17
+temp : 3 	| best : 46
+ret = -1
+Y:X | 11:10
+temp : 3 	| best : 17
+temp : 2 	| best : 46
+ret = -1
+Y:X | 11:11
+temp : 2 	| best : 17
+temp : 1 	| best : 46
+ret = -1
+Y:X | 11:12
+temp : 1 	| best : 17
+temp : 1 	| best : 46
+ret = -1
+Y:X | 11:13
+temp : 1 	| best : 17
+temp : 1 	| best : 46
+ret = -1
+Y:X | 11:14
+temp : 1 	| best : 17
+temp : 2 	| best : 46
+ret = -1
+Y:X | 11:15
+temp : 2 	| best : 17
+ret = -1
+Y:X | 11:16
+temp : 14 	| best : 17
+temp : 13 	| best : 46
+ret = -1
+Y:X | 12:0
+temp : 13 	| best : 17
+temp : 12 	| best : 46
+ret = -1
+Y:X | 12:1
+temp : 12 	| best : 17
+temp : 11 	| best : 46
+ret = -1
+Y:X | 12:2
+temp : 11 	| best : 17
+temp : 10 	| best : 46
+ret = -1
+Y:X | 12:3
+temp : 10 	| best : 17
+temp : 9 	| best : 46
+ret = -1
+Y:X | 12:4
+temp : 9 	| best : 17
+temp : 8 	| best : 46
+ret = -1
+Y:X | 12:5
+temp : 8 	| best : 17
+temp : 7 	| best : 46
+ret = -1
+Y:X | 12:6
+temp : 7 	| best : 17
+temp : 6 	| best : 46
+ret = -1
+Y:X | 12:7
+temp : 6 	| best : 17
+temp : 5 	| best : 46
+ret = -1
+Y:X | 12:8
+temp : 5 	| best : 17
+temp : 4 	| best : 46
+ret = -1
+Y:X | 12:9
+temp : 4 	| best : 17
+temp : 3 	| best : 46
+ret = -1
+Y:X | 12:10
+temp : 3 	| best : 17
+temp : 2 	| best : 46
+ret = -1
+Y:X | 12:11
+temp : 2 	| best : 17
+temp : 1 	| best : 46
+ret = -1
+Y:X | 12:12
+temp : 1 	| best : 17
+ret = -1
+Y:X | 12:13
+ret = -1
+Y:X | 12:14
+temp : 1 	| best : 17
+temp : 2 	| best : 46
+ret = -1
+Y:X | 12:15
+temp : 2 	| best : 17
+ret = -1
+Y:X | 12:16
+temp : 14 	| best : 17
+temp : 13 	| best : 46
+ret = -1
+Y:X | 13:0
+temp : 13 	| best : 17
+temp : 12 	| best : 46
+ret = -1
+Y:X | 13:1
+temp : 12 	| best : 17
+temp : 11 	| best : 46
+ret = -1
+Y:X | 13:2
+temp : 11 	| best : 17
+temp : 10 	| best : 46
+ret = -1
+Y:X | 13:3
+temp : 10 	| best : 17
+temp : 9 	| best : 46
+ret = -1
+Y:X | 13:4
+temp : 9 	| best : 17
+temp : 8 	| best : 46
+ret = -1
+Y:X | 13:5
+temp : 8 	| best : 17
+temp : 7 	| best : 46
+ret = -1
+Y:X | 13:6
+temp : 7 	| best : 17
+temp : 6 	| best : 46
+ret = -1
+Y:X | 13:7
+temp : 6 	| best : 17
+temp : 5 	| best : 46
+ret = -1
+Y:X | 13:8
+temp : 5 	| best : 17
+temp : 4 	| best : 46
+ret = -1
+Y:X | 13:9
+temp : 4 	| best : 17
+temp : 3 	| best : 46
+ret = -1
+Y:X | 13:10
+temp : 3 	| best : 17
+temp : 2 	| best : 46
+ret = -1
+Y:X | 13:11
+temp : 2 	| best : 17
+temp : 1 	| best : 46
+ret = -1
+Y:X | 13:12
+temp : 1 	| best : 17
+temp : 1 	| best : 46
+ret = -1
+Y:X | 13:13
+temp : 1 	| best : 17
+temp : 1 	| best : 46
+ret = -1
+Y:X | 13:14
+temp : 1 	| best : 17
+temp : 2 	| best : 46
+ret = -1
+Y:X | 13:15
+temp : 2 	| best : 17
+ret = -1
+Y:X | 13:16
+temp : 14 	| best : 17
+temp : 13 	| best : 46
+ret = -1
+Y:X | 14:0
+temp : 13 	| best : 17
+temp : 12 	| best : 46
+ret = -1
+Y:X | 14:1
+temp : 12 	| best : 17
+temp : 11 	| best : 46
+ret = -1
+Y:X | 14:2
+temp : 11 	| best : 17
+temp : 10 	| best : 46
+ret = -1
+Y:X | 14:3
+temp : 10 	| best : 17
+temp : 9 	| best : 46
+ret = -1
+Y:X | 14:4
+temp : 9 	| best : 17
+temp : 8 	| best : 46
+ret = -1
+Y:X | 14:5
+temp : 8 	| best : 17
+temp : 7 	| best : 46
+ret = -1
+Y:X | 14:6
+temp : 7 	| best : 17
+temp : 6 	| best : 46
+ret = -1
+Y:X | 14:7
+temp : 6 	| best : 17
+temp : 5 	| best : 46
+ret = -1
+Y:X | 14:8
+temp : 5 	| best : 17
+temp : 4 	| best : 46
+ret = -1
+Y:X | 14:9
+temp : 4 	| best : 17
+temp : 3 	| best : 46
+ret = -1
+Y:X | 14:10
+temp : 3 	| best : 17
+temp : 2 	| best : 46
+ret = -1
+Y:X | 14:11
+temp : 2 	| best : 17
+temp : 2 	| best : 46
+ret = -1
+Y:X | 14:12
+temp : 2 	| best : 17
+temp : 2 	| best : 46
+ret = -1
+Y:X | 14:13
+temp : 2 	| best : 17
+temp : 2 	| best : 46
+ret = -1
+Y:X | 14:14
+temp : 2 	| best : 17
+temp : 2 	| best : 46
+ret = -1
+Y:X | 14:15
+temp : 2 	| best : 17
+ret = -1
+Y:X | 14:16
+y:x | 15:0

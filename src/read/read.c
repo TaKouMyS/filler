@@ -6,7 +6,7 @@
 /*   By: amamy <amamy@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/30 14:26:37 by amamy             #+#    #+#             */
-/*   Updated: 2019/07/27 19:48:07 by amamy            ###   ########.fr       */
+/*   Updated: 2019/07/27 23:10:15 by amamy            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -81,6 +81,8 @@ static int	ft_read_map_size(char *tmp, t_data *data)
 
 static int	ft_data_mallocation(t_data *data, char *map_size)
 {
+	int i;
+
 	if (!(data->piece_size = ft_memalloc(sizeof(int) * 2)))
 		return (-1);
 	if (!(data->map_size = ft_memalloc(sizeof(int) * 2)))
@@ -95,6 +97,10 @@ static int	ft_data_mallocation(t_data *data, char *map_size)
 		return (-1);
 	if (!(data->map = ft_memalloc(sizeof(char*) * (data->map_size[0] + 1))))
 		return (-1);
+	i = 0;
+	while (i < data->map_size[0])
+		if (!(data->map[i++] = ft_memalloc(sizeof(char) * (BOARD_W + 1))))
+			return (-1);
 	if (!(data->hmap = ft_memalloc(sizeof(int*) * (data->map_size[0]))))
 		return (-1);
 	if (!(data->sq_center = ft_memalloc(sizeof(int) * 2)))
@@ -175,5 +181,6 @@ int			ft_read(t_data *data)
 	if ((ft_read_map(data) == -1) || (ft_read_piece(data) == -1))
 		return (-1);
 	ft_get_first_piece(data);
+	data->best = BOARD_W;
 	return (0);
 }

@@ -6,7 +6,7 @@
 /*   By: amamy <amamy@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/01 17:41:13 by amamy             #+#    #+#             */
-/*   Updated: 2019/07/27 19:22:54 by amamy            ###   ########.fr       */
+/*   Updated: 2019/07/27 22:46:07 by amamy            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,39 +15,47 @@
 
 #include <stdio.h>
 
+//** - the first 3 characters are digits and the fourth a space,
+static int	ft_check_line_nb(char *str)
+{
+	int i;
+
+	i = 0;
+	while (i < 3)
+		if (!(ft_isdigit(str[i++])))
+			return (-1);
+	if (str[i++] != ' ')
+		return (-1);
+	return (0);
+}
+
 /*
 ** ft_check_map :
 ** Will check that the map read and stored is as expected :
 ** - all lines have the expected number of characters,
-** - the first 3 characters are digits and the fourth a space,
 ** - all following characters are '.', 'X', 'x', 'o, 'O.
 */
 
-static int	ft_check_map(t_data *data, int i)
+static int	ft_check_map(t_data *data, int y)
 {
-	int	i2;
+	int	x;
 
-	i = 0;
-	i2 = 0;
-	while (i < data->map_size[0])
+	y = 0;
+	x = 0;
+	while (y < BOARD_H)
 	{
-		if ((int)ft_strlen(data->map[i]) != (data->map_size[1] + 4))
+		if ((int)ft_strlen(data->map[y]) != (BOARD_W))
 			return (-1);
-		while (i2 < 3)
-			if (!(ft_isdigit(data->map[i][i2++])))
-				return (-1);
-		if (data->map[i][i2++] != ' ')
-			return (-1);
-		while (data->map[i][i2] != '\0')
+		while (data->map[y][x] != '\0')
 		{
-			if (data->map[i][i2] != '.' && data->map[i][i2] != 'O'		\
-				&& data->map[i][i2] != 'o' && data->map[i][i2] != 'X'	\
-				&& data->map[i][i2] != 'x')
+			if (data->map[y][x] != '.' && data->map[y][x] != 'O'		\
+				&& data->map[y][x] != 'o' && data->map[y][x] != 'X'	\
+				&& data->map[y][x] != 'x')
 				return (-1);
-			i2++;
+			x++;
 		}
-		i++;
-		i2 = 0;
+		y++;
+		x = 0;
 	}
 	return (0);
 }
@@ -61,23 +69,29 @@ static int	ft_check_map(t_data *data, int i)
 int			ft_read_map(t_data *data)
 {
 	int	i;
-	int	err;
+	char *line;
 
 	i = 0;
-	err = 0;
 	if (data->piece_size[0])
-		if (get_next_line(data->fd, &data->map[i]) != 1)
+	{
+		if (get_next_line(data->fd, &line) != 1)
 			return (-1);
-	ft_memdel((void*)&data->map[i]);
-	if (get_next_line(data->fd, &data->map[i]) != 1)
+		ft_memdel((void*)&line);
+	}
+	if (get_next_line(data->fd, &line) != 1)
 		return (-1);
-	ft_memdel((void*)&data->map[i]);
+	ft_memdel((void*)&line);
+		dprintf(data->fd2, "%s\n", "<-----------start read-map");
 	while (i < data->map_size[0])
 	{
-		if (get_next_line(data->fd, &data->map[i]) != 1)
+		if (get_next_line(data->fd, &line) != 1 || ft_check_line_nb(line) != 0)
 			return (-1);
+		ft_strcpy(data->map[i], &line[4]);
+			dprintf(data->fd2, "%s : %d\n", data->map[i], i);
 		i++;
+		ft_memdel((void*)&line);
 	}
+	dprintf(data->fd2, "%s\n", "<-----------end read-map");
 	if (ft_check_map(data, i) == -1)
 	{
 		ft_putstr("\n\nMap error\n\n");
@@ -113,8 +127,6 @@ int			ft_read_map(t_data *data)
 // 	{
 // 		if (get_next_line(data->fd, &data->map[i]) != 1)
 // 			return (-1);
-// 		ft_strcpy(data->heatmap[i], &data->map[i][4]);
-// 		dprintf(data->fd2, "%s\n", data->map[i]);
 // 		dprintf(data->fd_heat, "%s\n", data->heatmap[i]);
 // 		i++;
 // 	}

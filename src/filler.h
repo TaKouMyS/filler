@@ -6,7 +6,7 @@
 /*   By: amamy <amamy@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/28 17:57:31 by amamy             #+#    #+#             */
-/*   Updated: 2019/07/27 19:25:05 by amamy            ###   ########.fr       */
+/*   Updated: 2019/07/27 23:24:39 by amamy            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,11 +35,14 @@ typedef struct	s_data
 	char		*tok_op;
 	int			*coo_op;
 	int			*coo;
+	int 		y;
+	int 		x;
 	int			stars;
 	int			mid;
 	int			sq_dist;
 	int			*sq_center;
 	int			fd;
+	int			best;
 
 	int			fd2;
 	int			fd_heat;
