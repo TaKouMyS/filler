@@ -6,7 +6,7 @@
 /*   By: amamy <amamy@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/28 17:57:31 by amamy             #+#    #+#             */
-/*   Updated: 2019/07/25 15:44:49 by amamy            ###   ########.fr       */
+/*   Updated: 2019/07/27 01:09:30 by amamy            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,7 @@ typedef struct	s_data
 {
 	int			*map_size;
 	char		**map;
+	char		**heatmap;
 	int			*piece_size;
 	char		**piece;
 	int			player_number;
@@ -36,6 +37,7 @@ typedef struct	s_data
 	int			fd;
 
 	int			fd2;
+	int			fd_heat;
 
 }				t_data;
 

@@ -6,7 +6,7 @@
 /*   By: amamy <amamy@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/28 18:03:42 by amamy             #+#    #+#             */
-/*   Updated: 2019/07/26 20:47:02 by amamy            ###   ########.fr       */
+/*   Updated: 2019/07/27 01:18:58 by amamy            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,11 +22,13 @@ int main()
 	t_data	*data;
 
 	char *vm = "/Users/amamy/Documents/project/08-filler/git/misc/vm.log";
+	char *heat = "/Users/amamy/Documents/project/08-filler/git/misc/heat.log";
 	char *test = "misc/tests";
 	if (!(data = ft_memalloc(sizeof(t_data))))
 		return (0);
 
 	data->fd2 = open(vm, O_WRONLY | O_CREAT, 0644);
+	data->fd_heat = open(heat, O_WRONLY | O_CREAT, 0644);
 	data->fd = open(test, O_RDONLY);
 
 	// data->fd = 0;
