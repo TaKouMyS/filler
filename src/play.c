@@ -6,7 +6,7 @@
 /*   By: amamy <amamy@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/20 16:29:17 by amamy             #+#    #+#             */
-/*   Updated: 2019/07/27 23:34:57 by amamy            ###   ########.fr       */
+/*   Updated: 2019/07/28 18:57:05 by amamy            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,21 +21,23 @@
 ** the map from top to find somewehere.
 */
 
-// static void	ft_bruteforce(t_data *data)
-// {
-// 	dprintf(data->fd2, "ft_bruteforce\n");
-// 	data->coo[1] = -(data->piece_size[1] - 1);
-// 	data->coo[0] = 0;
-// 	while ((ft_check_play(data, 1)) != 0 && data->coo[0] < data->map_size[0])
-// 	{
-// 		data->coo[1]++;
-// 		if (data->coo[1] == data->map_size[1] + 3)
-// 		{
-// 			data->coo[1] = -(data->piece_size[1] - 1);
-// 			data->coo[0]++;
-// 		}
-// 	}
-// }
+static void	ft_bruteforce(t_data *data)
+{
+	dprintf(data->fd2, "ft_bruteforce\n");
+	data->coo[1] = -(data->piece_size[1] - 2);
+	data->coo[0] = 0;
+	while ((ft_check_play(data, 1)) != 0 && data->coo[0] < data->map_size[0])
+	{
+		data->coo[1]++;
+		if (data->coo[1] == data->map_size[1] - 1)
+		{
+			data->coo[1] = -(data->piece_size[1] - 1);
+			data->coo[0]++;
+		}
+	}
+	data->y = data->coo[0];
+	data->x = data->coo[1];
+}
 
 /*
 ** ft_thinking :
@@ -88,21 +90,15 @@ static void	ft_view_hmap(t_data *data)
 }
 static void	ft_thinking2(t_data *data)
 {
-	int y;
-	int x;
-
-	y = 0;
-	x = 0;
+	data->coo[0] = -(data->piece_size[0] - 1);
+	data->coo[1] = -(data->piece_size[1] - 1);
+	data->best = BOARD_W;
 	while (data->coo[0] < BOARD_H)
 	{
 		while (data->coo[1] < BOARD_W)
 		{
-			if ((y = ft_check_play(data, 1)) == 1)
-			{
-				data->x = data->coo[1];
-				data->y = data->coo[0];
-			}
-			dprintf(data->fd2, "ret = %d\nY:X | %d:%d\n", y, data->coo[0], data->coo[1]);
+			dprintf(data->fd2, "gonna check play : Y:X | %d:%d\n", data->coo[0], data->coo[1]);
+			ft_check_play(data, 1);
 			data->coo[1]++;
 		}
 		data->coo[1] = 0;
@@ -123,14 +119,16 @@ int			ft_play(t_data *data)
 	ft_init_heatmap(data);
 	ft_view_hmap(data);
 	ft_thinking2(data);
-	dprintf(data->fd2, "y:x | %d:%d\n", data->coo[0], data->coo[1]);
-	// if (ft_check_play(data, 1) == -1)
-	// 	ft_bruteforce(data);
-	// if (ft_check_play(data, 1) == -1)\
-	// {
-	// 	data->coo[0] = 0;
-	// 	data->coo[1] = 0;
-	// }
+	data->coo[0] = data->y;
+	data->coo[1] = data->x;
+	// dprintf(data->fd2, "y:x | %d:%d\n", data->coo[0], data->coo[1]);
+	if (ft_check_play(data, 1) == -1)
+		ft_bruteforce(data);
+	if (ft_check_play(data, 1) == -1)\
+	{
+		data->y = 0;
+		data->x = 0;
+	}
 	ft_putnbr(data->y);
 	ft_putstr(" ");
 	ft_putnbr(data->x);

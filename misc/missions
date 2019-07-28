@@ -3,11 +3,8 @@ leaks :
 read_piece 75 : we malloc over an over a each iteration
 check play : we do all checks in stack, it might be smart to do that in heap!
 
-
-
-
 Bugs :
-
+comaring data->best each tour , wrong because values decrease each turn
 
 ideas :
 - Parse during gnl, like :

@@ -6,7 +6,7 @@
 /*   By: amamy <amamy@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/30 14:26:37 by amamy             #+#    #+#             */
-/*   Updated: 2019/07/27 23:10:15 by amamy            ###   ########.fr       */
+/*   Updated: 2019/07/28 17:16:47 by amamy            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -181,6 +181,5 @@ int			ft_read(t_data *data)
 	if ((ft_read_map(data) == -1) || (ft_read_piece(data) == -1))
 		return (-1);
 	ft_get_first_piece(data);
-	data->best = BOARD_W;
 	return (0);
 }
