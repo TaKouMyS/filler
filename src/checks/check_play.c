@@ -6,14 +6,12 @@
 /*   By: amamy <amamy@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/26 12:32:03 by amamy             #+#    #+#             */
-/*   Updated: 2019/07/28 18:47:56 by amamy            ###   ########.fr       */
+/*   Updated: 2019/07/28 20:08:36 by amamy            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include "filler.h"
-
-#include <stdio.h>
 
 /*
 ** ft_coo_next_star:
@@ -63,8 +61,6 @@ static int	ft_coo_star_map(t_data *data, int *coo_star, int *coo_map)
 	x = coo_star[0];
 	coo_map[1] = data->coo[1] + y;
 	coo_map[0] = data->coo[0] + x;
-	// dprintf(data->fd2, "Coo On the map: 					%d:%d\n
-		// ----------------------------------------\n", coo_map[0], coo_map[1]);
 	if (coo_map[0] > BOARD_H - 1 \
 		|| coo_map[1] > (BOARD_W))
 		return (-1);
@@ -77,18 +73,15 @@ static int	ft_coo_star_map(t_data *data, int *coo_star, int *coo_map)
 ** one and check if this is a valid coup.
 */
 
-static int	ft_chk_coup(t_data *data, int *coo_star, int *coo_map, int mode)
+static int	ft_check_play3(t_data *data, int *coo_star, int *coo_map, int *best)
 {
 	int	cover;
 	int	st_star;
-	int best;
 
-	best = BOARD_W;
-	cover = 0;
 	st_star = 1;
+	cover = 0;
 	while (ft_coo_next_star(data, coo_star, st_star) == 1)
 	{
-		// dprintf(data->fd2, "Coo star: 					%d:%d\n", coo_star[0], coo_star[1]);
 		st_star = 0;
 		if ((ft_coo_star_map(data, coo_star, coo_map) == -1)		\
 		|| coo_map[0] < 0 || coo_map[0] > (BOARD_H - 1)	\
@@ -96,24 +89,35 @@ static int	ft_chk_coup(t_data *data, int *coo_star, int *coo_map, int mode)
 		|| data->map[coo_map[0]][coo_map[1]] == data->tok_op[0]		\
 		|| data->map[coo_map[0]][coo_map[1]] == data->tok_op[1])
 			return (-1);
-		if (mode == 0 && (ft_check_square(data, coo_map) == -1))
-			return (-1);
 		if (data->map[coo_map[0]][coo_map[1]] == data->tok_me[0] 	\
 			|| data->map[coo_map[0]][coo_map[1]] == (data->tok_me[1]))
 			cover++;
-		// dprintf(data->fd2, "temp : %d 	| best : %d\n", data->hmap[coo_map[0]][coo_map[1]], best);
-		if (data->hmap[coo_map[0]][coo_map[1]] < best \
+		if (data->hmap[coo_map[0]][coo_map[1]] < *best \
 			&& data->hmap[coo_map[0]][coo_map[1]] > 0)
-			best = data->hmap[coo_map[0]][coo_map[1]];
+			*best = data->hmap[coo_map[0]][coo_map[1]];
 	}
+	return (cover);
+}
+
+static int	ft_check_play2(t_data *data, int *coo_star, int *coo_map)
+{
+	int *best;
+	int cover;
+
+	if (!(best = ft_memalloc(sizeof(int) * 1)))
+		return (-1);
+	*best = BOARD_W;
+	if ((cover = ft_check_play3(data, coo_star, coo_map, best)) == -1)
+		return (-1);
 	if (cover != 1)
 		return (-1);
-	if (best < data->best)
+	if (*best < data->best)
 	{
-		data->best = best;
+		data->best = *best;
 		data->x = data->coo[1];
 		data->y = data->coo[0];
 	}
+	ft_memdel((void*)&best);
 	return (0);
 }
 
@@ -124,7 +128,7 @@ static int	ft_chk_coup(t_data *data, int *coo_star, int *coo_map, int mode)
 ** coordonate is in the square or not.
 */
 
-int			ft_check_play(t_data *data, int mode)
+int			ft_check_play(t_data *data)
 {
 	int	*coo_star;
 	int	*coo_map;
@@ -137,7 +141,7 @@ int			ft_check_play(t_data *data, int mode)
 		free(coo_star);
 		return (-1);
 	}
-	if ((ret = ft_chk_coup(data, coo_star, coo_map, mode)) == -1)
+	if ((ret = ft_check_play2(data, coo_star, coo_map)) == -1)
 	{
 		free(coo_star);
 		free(coo_map);

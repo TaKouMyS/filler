@@ -6,7 +6,7 @@
 /*   By: amamy <amamy@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/28 17:57:31 by amamy             #+#    #+#             */
-/*   Updated: 2019/07/27 23:24:39 by amamy            ###   ########.fr       */
+/*   Updated: 2019/07/28 19:52:23 by amamy            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,7 +58,7 @@ int		ft_read_map(t_data *data);
 int		ft_check_piece(t_data *data);
 int		ft_check_shape(t_data *data, int y, int x, char **piece);
 int		ft_play(t_data *data);
-int		ft_check_play(t_data *data, int mode);
+int		ft_check_play(t_data *data);
 int		ft_check_square(t_data *data, int *coo_map);
 int		ft_make_heatmap(t_data *data);
 void	ft_init_heatmap(t_data *data);
