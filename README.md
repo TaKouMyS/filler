@@ -28,11 +28,15 @@ This allows to know which squares are close to oponent's pieces.
 
 Once the heatmap created, it iterates the map and try to place the piece. Will be played the valid coordonates with the lowest heatscore.
 
-# How To Play
+# Installation
+
+    make
+
+# Run
 
 To launch the game, you have to launch the virtual machine in the ressource directory and give it : 
  - a map and  2 players as follow : 
 
-./filler_vm -f [MAP] -p1 ./[PLAYER] -p2 ./[PLAYER]
+    ./filler_vm -f [MAP] -p1 ./[PLAYER] -p2 ./[PLAYER]
 
-(-p1 and -p2 can be reversed).
+
