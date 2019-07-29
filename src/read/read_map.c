@@ -6,7 +6,7 @@
 /*   By: amamy <amamy@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/01 17:41:13 by amamy             #+#    #+#             */
-/*   Updated: 2019/07/29 15:41:18 by amamy            ###   ########.fr       */
+/*   Updated: 2019/07/29 16:13:09 by amamy            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,9 +26,15 @@ static int	ft_check_line_nb(char *str)
 	i = 0;
 	while (i < 3)
 		if (!(ft_isdigit(str[i++])))
+		{
+			ft_memdel((void*)&str);
 			return (-1);
+		}
 	if (str[i++] != ' ')
+	{
+		ft_memdel((void*)&str);
 		return (-1);
+	}
 	return (0);
 }
 

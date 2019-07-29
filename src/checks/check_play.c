@@ -6,7 +6,7 @@
 /*   By: amamy <amamy@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/26 12:32:03 by amamy             #+#    #+#             */
-/*   Updated: 2019/07/29 15:39:41 by amamy            ###   ########.fr       */
+/*   Updated: 2019/07/29 16:17:03 by amamy            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -117,10 +117,12 @@ static int	ft_check_play2(t_data *data, int *coo_star, int *coo_map)
 	if (!(best = ft_memalloc(sizeof(int) * 1)))
 		return (-1);
 	*best = BOARD_W;
-	if ((cover = ft_check_play3(data, coo_star, coo_map, best)) == -1)
-		return (-1);
-	if (cover != 1)
-		return (-1);
+	if (((cover = ft_check_play3(data, coo_star, coo_map, best)) == -1) \
+		|| (cover != 1))
+		{
+			ft_memdel((void*)&best);
+			return (-1);
+		}
 	if (*best < data->best)
 	{
 		data->best = *best;
