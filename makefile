@@ -31,7 +31,6 @@ SRCS 	= $(SRCDIR)/main.c					\
 		$(SRC_READ_DIR)/get_first_piece.c	\
 		$(SRC_CHECKS_DIR)/check_piece.c		\
 		$(SRC_CHECKS_DIR)/check_shape.c		\
-		$(SRC_CHECKS_DIR)/check_square.c	\
 		$(SRC_CHECKS_DIR)/check_play.c		\
 		$(SRC_HEATMAP_DIR)/make_heatmap.c	\
 		$(SRC_HEATMAP_DIR)/init_heatmap.c

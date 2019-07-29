@@ -6,7 +6,7 @@
 /*   By: amamy <amamy@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/26 12:32:03 by amamy             #+#    #+#             */
-/*   Updated: 2019/07/28 20:08:36 by amamy            ###   ########.fr       */
+/*   Updated: 2019/07/29 15:39:41 by amamy            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -68,9 +68,13 @@ static int	ft_coo_star_map(t_data *data, int *coo_star, int *coo_map)
 }
 
 /*
-** ft_coo_chk_coup:
+** ft_check_play3:
 ** According to coordonates stored in data->coo, get the piece's stars one by
-** one and check if this is a valid coup.
+** one and check if this is a valid coup :
+** 	- Check if all stars of the piece are on the board or on oponent's piece,
+** 	- Check if all stars of the piece aren't on oponent's piece,
+** 	- Count stars covering an star already on the board,
+**	- Give the heat score of the piece.
 */
 
 static int	ft_check_play3(t_data *data, int *coo_star, int *coo_map, int *best)
@@ -99,6 +103,12 @@ static int	ft_check_play3(t_data *data, int *coo_star, int *coo_map, int *best)
 	return (cover);
 }
 
+/*
+** ft_check_play2:
+** Prepare field for ft_check_play3, check the covering stars's number and
+** if the piece has a better heatscore, save the coordonates.
+*/
+
 static int	ft_check_play2(t_data *data, int *coo_star, int *coo_map)
 {
 	int *best;
@@ -123,9 +133,7 @@ static int	ft_check_play2(t_data *data, int *coo_star, int *coo_map)
 
 /*
 ** ft_check_play:
-** Starting point for ft_chk_coup.
-** Mode, which is used in ft_chk_coup, will tell if we have to check that the
-** coordonate is in the square or not.
+** Starting point for the ft_check_play bundle.
 */
 
 int			ft_check_play(t_data *data)

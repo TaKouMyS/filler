@@ -6,14 +6,20 @@
 /*   By: amamy <amamy@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/07/27 18:17:29 by amamy             #+#    #+#             */
-/*   Updated: 2019/07/27 22:26:49 by amamy            ###   ########.fr       */
+/*   Updated: 2019/07/29 16:06:27 by amamy            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "filler.h"
 #include "libft.h"
 
-#include <stdio.h>
+/*
+** ft_make_heatmap :
+** Read for classique map and make an other :
+** '.' Becomes 0
+** I Becomes -1
+** Oponent's Becomes -2
+*/
 
 int	ft_make_heatmap(t_data *data)
 {

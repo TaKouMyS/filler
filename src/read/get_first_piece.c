@@ -6,14 +6,12 @@
 /*   By: amamy <amamy@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/07/13 20:09:26 by amamy             #+#    #+#             */
-/*   Updated: 2019/07/28 17:46:13 by amamy            ###   ########.fr       */
+/*   Updated: 2019/07/29 15:40:50 by amamy            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include "filler.h"
-
-#include <stdio.h>
 
 /*
 ** ft_store_first_piece :
@@ -38,10 +36,6 @@ static void	ft_store_first_piece(t_data *data, int tmp[4])
 		data->coo_op[0] = tmp[0];
 		data->coo_op[1] = tmp[1];
 	}
-	data->mid = (data->coo[0] + data->coo_op[0]) / 2;
-	data->sq_center[0] = data->coo[0];
-	data->sq_center[1] = data->coo[1];
-	data->sq_dist = 1;
 }
 
 /*

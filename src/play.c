@@ -6,7 +6,7 @@
 /*   By: amamy <amamy@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/20 16:29:17 by amamy             #+#    #+#             */
-/*   Updated: 2019/07/28 20:01:12 by amamy            ###   ########.fr       */
+/*   Updated: 2019/07/29 16:06:48 by amamy            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,26 +36,10 @@ static void	ft_bruteforce(t_data *data)
 	data->x = data->coo[1];
 }
 
-
-// static void	ft_view_hmap(t_data *data)
-// {
-// 	int y;
-// 	int x;
-//
-// 	y = 0;
-// 	x = 0;
-// 	while ( y < BOARD_H)
-// 	{
-// 		while (x < BOARD_W)
-// 		{
-// 			dprintf(data->fd_heat, "|%d", data->hmap[y][x++]);
-// 		}
-// 		x = 0;
-// 		y++;
-// 		dprintf(data->fd_heat, "|\n");
-// 	}
-// 	dprintf(data->fd_heat, "\n");
-// }
+/*
+** ft_thinking :
+**	Iterate all the map, trying every possible combination for the piece.
+*/
 
 static void	ft_thinking(t_data *data)
 {
@@ -76,15 +60,16 @@ static void	ft_thinking(t_data *data)
 
 /*
 ** ft_play :
-** If thinking ha failed to find somewhere.
+** Release heatmap, find the most optimized location tu put it. If no optimized
+** location, just place it somewehere, if still not possible, return 0:0;
 */
+
 int			ft_play(t_data *data)
 {
 	int i;
 
 	ft_make_heatmap(data);
 	ft_init_heatmap(data);
-	// ft_view_hmap(data);
 	ft_thinking(data);
 	data->coo[0] = data->y;
 	data->coo[1] = data->x;

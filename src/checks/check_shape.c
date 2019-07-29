@@ -6,14 +6,12 @@
 /*   By: amamy <amamy@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/07/09 21:18:00 by amamy             #+#    #+#             */
-/*   Updated: 2019/07/28 17:11:36 by amamy            ###   ########.fr       */
+/*   Updated: 2019/07/29 15:32:53 by amamy            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include "filler.h"
-
-#include <stdio.h>
 
 static int	ft_check_shape_next(t_data *data, int y, int x, char **piece)
 {
@@ -53,7 +51,6 @@ int			ft_check_shape(t_data *data, int y, int x, char **piece)
 {
 	int		found;
 
-	// dprintf(data->fd2, "coo (Y:X) : %d:%d\n", y, x);
 	found = 0;
 	if (piece[y][x] == 'F')
 		found = 1;

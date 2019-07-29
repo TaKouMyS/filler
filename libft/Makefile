@@ -6,14 +6,14 @@
 #    By: amamy <amamy@student.42.fr>                +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/11/10 20:19:54 by amamy             #+#    #+#              #
-#    Updated: 2019/07/26 22:59:59 by amamy            ###   ########.fr        #
+#    Updated: 2019/07/29 15:26:30 by amamy            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = libft.a
 SHELL = /bin/sh
 CC = clang
-CFLAGS += -Wall -Werror -Wextra
+CFLAGS += -Wall -Werror -Wextra -g
 OBJDIR = obj
 FT_IS_DIR = is
 FT_LST_DIR = lst
