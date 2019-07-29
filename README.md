@@ -30,13 +30,16 @@ Once the heatmap created, it iterates the map and try to place the piece. Will b
 
 # Installation
 
+```
     make
+```
 
 # Run
 
 To launch the game, you have to launch the virtual machine in the ressource directory and give it : 
  - a map and  2 players as follow : 
 
+```
     ./filler_vm -f [MAP] -p1 ./[PLAYER] -p2 ./[PLAYER]
-
+```
 
